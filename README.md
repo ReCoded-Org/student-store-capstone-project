@@ -2,11 +2,11 @@
 
 ## Project information
 
-- Project name:
-- Project description:
+- Project name: Student Store
+- Project description: 
 - Technology used: Nextjs, TailwindCSS, i18next, Husky, Prettier, Eslint, Commitlinter (Conventional Commits)
-- Team members:
-- Team lead:
+- Team members: Beyza, Gizem, Mohammed, Nouh, Selin
+- Team lead: Salah 
 - Bootcamp: BPRM TR 2022
 
 ## Development process
