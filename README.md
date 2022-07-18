@@ -3,7 +3,7 @@
 ## Project information
 
 - Project name: Student Store
-- Project description: 
+- Project description: A marketplace made for all students in Turkey. Any student could sell or buy or even borrow any type of products like electronics,  games, study books, all products supposed to be cheap and used in most cases.
 - Technology used: Nextjs, TailwindCSS, i18next, Husky, Prettier, Eslint, Commitlinter (Conventional Commits)
 - Team members: Beyza, Gizem, Mohammed, Nouh, Selin
 - Team lead: Salah 
