@@ -11,7 +11,7 @@
         "lint:strict": "eslint --max-warnings=0 src",
         "typecheck": "tsc --noEmit --incremental false",
         "test:watch": "jest --watch",
-        "test": "jest",
+        "test": "jest --passWithNoTests",
         "format": "prettier -w .",
         "format:check": "prettier -c .",
         "release": "standard-version",
