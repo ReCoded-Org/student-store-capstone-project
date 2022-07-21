@@ -2,13 +2,14 @@ import Image from "next/image";
 import { useState } from "react";
 import { BiSearchAlt } from "react-icons/bi";
 import { MdShoppingCart } from "react-icons/md";
-import { RiArrowDropDownLine } from "react-icons/ri";
 import { TbWorld } from "react-icons/tb";
 
 import logo from "../../../public/images/logo.png";
 
 function Header() {
     const [isNavOpen, setIsNavOpen] = useState(false);
+    const [isLanguageOpen, setIsLanguageOpen] = useState(false);
+
     return (
         <>
             <nav className='mb-2 flex max-w-[1440px] flex-row  p-2'>
@@ -71,7 +72,12 @@ function Header() {
                                         <line x1='6' y1='6' x2='18' y2='18' />
                                     </svg>
                                 </div>
-                                <ul className='MENU-OPEN flex min-h-[250px] flex-col items-center justify-between'>
+                                <ul className='MENU-OPEN mt-10 flex min-h-[250px] flex-col items-center justify-between'>
+                                    <li className='flex flex-row items-center justify-start'>
+                                        <a href='#'>EN &nbsp;&nbsp;</a> |
+                                        <a href='#'>&nbsp;&nbsp; TR</a>
+                                    </li>
+
                                     <li className='my-8 border-b border-pumpkin'>
                                         <a href='#'>About Us</a>
                                     </li>
@@ -105,13 +111,76 @@ function Header() {
                             </button>
                         </div>
                         <div className=' hidden lg:flex lg:flex-row '>
-                            <button type='submit' className=' flex'>
-                                <TbWorld size={26} color='#32314D' />
-                                <RiArrowDropDownLine
-                                    size={26}
-                                    color='#32314D'
-                                />
-                            </button>
+                            <div className='relative inline-block text-left'>
+                                <div>
+                                    <button
+                                        type='button'
+                                        className='inline-flex w-full justify-center rounded-md bg-white px-4 py-2 text-sm font-medium text-pumpkin hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100'
+                                        id='menu-button'
+                                        aria-expanded='true'
+                                        aria-haspopup='true'
+                                        onClick={() =>
+                                            setIsLanguageOpen((prev) => !prev)
+                                        }
+                                    >
+                                        <TbWorld size={24} />
+                                        <svg
+                                            className='-mr-1 ml-2 h-5 w-5'
+                                            xmlns='http://www.w3.org/2000/svg'
+                                            viewBox='0 0 20 20'
+                                            fill='currentColor'
+                                            aria-hidden='true'
+                                        >
+                                            <path
+                                                fillRule='evenodd'
+                                                d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z'
+                                                clipRule='evenodd'
+                                            />
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <div
+                                    className={`
+                                    focus:outline-none' absolute right-0 mt-2 flex w-16 rounded-md  
+                                                                       bg-white
+                                                                           shadow-md ring-1
+                                                                           ring-black ring-opacity-5
+                                                                            ${
+                                                                                isLanguageOpen
+                                                                                    ? "showLanguage"
+                                                                                    : "hideLanguage"
+                                                                            }`}
+                                    role='menu'
+                                    aria-orientation='vertical'
+                                    aria-labelledby='menu-button'
+                                    tabIndex='-1'
+                                >
+                                    <div
+                                        className='flex flex-col items-center py-1'
+                                        role='none'
+                                    >
+                                        <a
+                                            href='#'
+                                            className='block px-4 py-2 text-sm text-gray-700'
+                                            role='menuitem'
+                                            tabIndex='-1'
+                                            id='menu-item-0'
+                                        >
+                                            English
+                                        </a>
+                                        <a
+                                            href='#'
+                                            className='block px-4 py-2 text-sm text-gray-700'
+                                            role='menuitem'
+                                            tabIndex='-1'
+                                            id='menu-item-1'
+                                        >
+                                            Turkish
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div className='hidden md:flex md:items-center lg:flex lg:items-center'>
                             <a
@@ -149,7 +218,14 @@ function Header() {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-      }`}</style>
+      }
+      .showLanguage {
+        display: block;
+        }
+        .hideLanguage {
+            display: none;
+        }
+      `}</style>
             </nav>
         </>
     );
