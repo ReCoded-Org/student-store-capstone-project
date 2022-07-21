@@ -1,11 +1,35 @@
 /** @type {import('next').NextConfig} */
 const { i18n } = require("./next-i18next.config");
 
+const withImages = require("next-images");
+module.exports = withImages();
+
 module.exports = {
     i18n,
     eslint: {
         dirs: ["src"],
     },
+    plugins: [
+        [
+            "inline-react-svg",
+            {
+                svgo: {
+                    plugins: [
+                        {
+                            name: "preset-default",
+                            params: {
+                                overrides: {
+                                    inlineStyles: {
+                                        onlyMatchedOnce: false,
+                                    },
+                                },
+                            },
+                        },
+                    ],
+                },
+            },
+        ],
+    ],
 
     reactStrictMode: true,
 
