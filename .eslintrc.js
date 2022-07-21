@@ -3,10 +3,12 @@ module.exports = {
         browser: true,
         es2021: true,
         node: true,
+        "jest/globals": true,
     },
-    plugins: ["simple-import-sort", "unused-imports"],
+    plugins: ["jest", "simple-import-sort", "unused-imports"],
     extends: ["eslint:recommended", "next", "next/core-web-vitals", "prettier"],
     rules: {
+        "jest/consistent-test-it": "off",
         "no-unused-vars": "off",
         "no-console": "warn",
 
