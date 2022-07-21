@@ -5,10 +5,10 @@ import * as React from "react";
 
 import styles from "../styles/headers.module.css";
 
+import Filter from "@/components/filter";
 import catergories from "@/components/filter/categories";
-import Filter from "@/components/filter/Filter";
 import Layout from "@/components/layout/Layout";
-import PriceSlider from "@/components/price-slider/PriceSlider";
+import PriceFilter from "@/components/price-filter";
 
 export default function HomePage() {
     const { t } = useTranslation("common");
@@ -27,13 +27,17 @@ export default function HomePage() {
                     <a>Turkish</a>
                 </Link>
             </div>
-            <div className='p-5'>
-                <div className='invisible mx-5 my-2 grid gap-5 text-xl font-bold text-purple lg:visible lg:grid-cols-2'>
-                    <h1 className={styles.brush}>Categories</h1>
-                    <h1 className={styles.brush}>Price</h1>
+            <div className='px-[15px] py-5'>
+                <div className='invisible mx-5 my-2 grid gap-5 text-xl font-bold text-purple lg:visible lg:grid-cols-3'>
+                    <div className='col-span-2'>
+                        <h1 className={styles.brush}>Categories</h1>
+                    </div>
+                    <div>
+                        <h1 className={styles.brush}>Price</h1>
+                    </div>
                 </div>
-                <div className='grid rounded-full bg-clay sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2'>
-                    <div className='row-auto mx-5 my-2 flex flex-shrink-0 flex-wrap items-center justify-center gap-5 sm:gap-8 md:gap-8'>
+                <div className='grid rounded-full bg-clay xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3'>
+                    <div className='col-span-2 row-auto my-2 flex items-center justify-center xs:gap-1 md:gap-8'>
                         {catergories.map((catergory, i) => (
                             <Filter
                                 key={catergory[i].id}
@@ -43,7 +47,7 @@ export default function HomePage() {
                         ))}
                     </div>
                     <div className='my-3 flex items-center justify-center'>
-                        <PriceSlider />
+                        <PriceFilter />
                     </div>
                 </div>
             </div>

@@ -1,8 +1,8 @@
 import renderer from "react-test-renderer";
 
-import Filter from "../Filter";
+import PriceFilter from "../PriceFilter";
 
 it("renders correctly", () => {
-    const tree = renderer.create(<Filter />).toJSON();
+    const tree = renderer.create(<PriceFilter />).toJSON();
     expect(tree).toMatchSnapshot();
 });

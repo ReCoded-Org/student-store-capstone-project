@@ -1,7 +1,7 @@
 const Filter = ({ bgColor, svg }) => {
     return (
         <div
-            className={`m-1 flex h-20 w-20 items-center justify-center rounded-full ${bgColor}`}
+            className={`flex h-20 w-20 items-center justify-center rounded-full xs:scale-[50%] sm:m-1 sm:scale-90 md:scale-90 lg:scale-100 ${bgColor}`}
         >
             <svg viewBox='0 0 24 24' className='h-12 w-12 shrink fill-white'>
                 <path
