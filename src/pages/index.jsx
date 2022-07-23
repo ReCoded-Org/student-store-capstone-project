@@ -36,8 +36,8 @@ export default function HomePage() {
                         <h1 className={styles.brush}>Price</h1>
                     </div>
                 </div>
-                <div className='grid rounded-full bg-clay xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3'>
-                    <div className='col-span-2 row-auto my-3 flex items-center justify-center xs:gap-1 md:gap-8'>
+                <div className='grid overflow-hidden rounded-full bg-clay xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3'>
+                    <div className='col-span-2 my-3 grid grid-flow-col justify-center overflow-x-auto scrollbar-hide xs:gap-1 md:gap-8'>
                         {catergories.map((catergory, i) => (
                             <Filter
                                 key={catergory[i].id}

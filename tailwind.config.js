@@ -1,4 +1,5 @@
 const { fontFamily } = require("tailwindcss/defaultTheme");
+const plugin = require("tailwindcss/plugin");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -31,5 +32,20 @@ module.exports = {
             },
         },
     },
-    plugins: [require("@tailwindcss/forms")],
+    plugins: [
+        require("@tailwindcss/forms"),
+        plugin(function ({ addUtilities }) {
+            addUtilities({
+                ".scrollbar-hide": {
+                    /* Firefox */
+                    "scrollbar-width": "none",
+
+                    /* Safari and Chrome */
+                    "&::-webkit-scrollbar": {
+                        display: "none",
+                    },
+                },
+            });
+        }),
+    ],
 };
