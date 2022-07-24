@@ -1,7 +1,296 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`U R THE Boss Well done 1`] = `
-<div>
-  ListOfProducts
+<div
+  className="container mx-auto flex flex-wrap justify-center lg:justify-start "
+>
+  <div
+    className="my-4 w-full transform font-Poppins shadow-xl transition duration-500 hover:scale-105 sm:w-2/3 md:w-5/12 lg:mx-3 lg:w-1/4 xl:w-1/5 "
+  >
+    <div
+      className="mb-1 overflow-hidden rounded-lg bg-white"
+    >
+      <img
+        alt="image"
+        className="h-72 w-full cursor-pointer"
+        src="https://productimages.hepsiburada.net/s/32/375/10354042765362.jpg"
+      />
+      <div
+        className="p-8 text-center sm:p-9 md:p-7 xl:p-9"
+      >
+        <h3 />
+        <div
+          className="flex justify-between "
+        >
+          <div
+            className=" text-body-color mb-2 text-xl leading-relaxed"
+          >
+            Apple iPad Pro 
+          </div>
+          <span
+            className="text-lg font-bold"
+          >
+            ₺
+            4000
+          </span>
+        </div>
+        <div
+          className="flex items-baseline justify-between"
+        >
+          <span
+            className="inline-block rounded-full bg-teal-200 px-2 text-xs font-semibold uppercase tracking-wide text-teal-800"
+          >
+            electronics
+          </span>
+          <span
+            className="text-xs"
+          >
+            izmir
+            /Turkey
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="my-4 w-full transform font-Poppins shadow-xl transition duration-500 hover:scale-105 sm:w-2/3 md:w-5/12 lg:mx-3 lg:w-1/4 xl:w-1/5 "
+  >
+    <div
+      className="mb-1 overflow-hidden rounded-lg bg-white"
+    >
+      <img
+        alt="image"
+        className="h-72 w-full cursor-pointer"
+        src="https://static01.nyt.com/images/2017/01/27/arts/27bookorwell/27bookorwell-superJumbo.jpg"
+      />
+      <div
+        className="p-8 text-center sm:p-9 md:p-7 xl:p-9"
+      >
+        <h3 />
+        <div
+          className="flex justify-between "
+        >
+          <div
+            className=" text-body-color mb-2 text-xl leading-relaxed"
+          >
+            1994
+          </div>
+          <span
+            className="text-lg font-bold"
+          >
+            ₺
+            250
+          </span>
+        </div>
+        <div
+          className="flex items-baseline justify-between"
+        >
+          <span
+            className="inline-block rounded-full bg-teal-200 px-2 text-xs font-semibold uppercase tracking-wide text-teal-800"
+          >
+            books
+          </span>
+          <span
+            className="text-xs"
+          >
+            istanbul
+            /Turkey
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="my-4 w-full transform font-Poppins shadow-xl transition duration-500 hover:scale-105 sm:w-2/3 md:w-5/12 lg:mx-3 lg:w-1/4 xl:w-1/5 "
+  >
+    <div
+      className="mb-1 overflow-hidden rounded-lg bg-white"
+    >
+      <img
+        alt="image"
+        className="h-72 w-full cursor-pointer"
+        src="https://cdn.shopify.com/s/files/1/1126/3188/products/moto-leather-jacket-compressor_1024x1024.jpg?v=1567465461"
+      />
+      <div
+        className="p-8 text-center sm:p-9 md:p-7 xl:p-9"
+      >
+        <h3 />
+        <div
+          className="flex justify-between "
+        >
+          <div
+            className=" text-body-color mb-2 text-xl leading-relaxed"
+          >
+            leather jacket
+          </div>
+          <span
+            className="text-lg font-bold"
+          >
+            ₺
+            570
+          </span>
+        </div>
+        <div
+          className="flex items-baseline justify-between"
+        >
+          <span
+            className="inline-block rounded-full bg-teal-200 px-2 text-xs font-semibold uppercase tracking-wide text-teal-800"
+          >
+            clothes
+          </span>
+          <span
+            className="text-xs"
+          >
+            ankra
+            /Turkey
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="my-4 w-full transform font-Poppins shadow-xl transition duration-500 hover:scale-105 sm:w-2/3 md:w-5/12 lg:mx-3 lg:w-1/4 xl:w-1/5 "
+  >
+    <div
+      className="mb-1 overflow-hidden rounded-lg bg-white"
+    >
+      <img
+        alt="image"
+        className="h-72 w-full cursor-pointer"
+        src="https://img.freepik.com/free-psd/white-t-shirt-with-silkscreen-mockup_125540-697.jpg?w=2000"
+      />
+      <div
+        className="p-8 text-center sm:p-9 md:p-7 xl:p-9"
+      >
+        <h3 />
+        <div
+          className="flex justify-between "
+        >
+          <div
+            className=" text-body-color mb-2 text-xl leading-relaxed"
+          >
+            Defacto-shirt
+          </div>
+          <span
+            className="text-lg font-bold"
+          >
+            ₺
+            110
+          </span>
+        </div>
+        <div
+          className="flex items-baseline justify-between"
+        >
+          <span
+            className="inline-block rounded-full bg-teal-200 px-2 text-xs font-semibold uppercase tracking-wide text-teal-800"
+          >
+            clothes
+          </span>
+          <span
+            className="text-xs"
+          >
+            mersin
+            /Turkey
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="my-4 w-full transform font-Poppins shadow-xl transition duration-500 hover:scale-105 sm:w-2/3 md:w-5/12 lg:mx-3 lg:w-1/4 xl:w-1/5 "
+  >
+    <div
+      className="mb-1 overflow-hidden rounded-lg bg-white"
+    >
+      <img
+        alt="image"
+        className="h-72 w-full cursor-pointer"
+        src="https://productimages.hepsiburada.net/s/32/375/10354042765362.jpg"
+      />
+      <div
+        className="p-8 text-center sm:p-9 md:p-7 xl:p-9"
+      >
+        <h3 />
+        <div
+          className="flex justify-between "
+        >
+          <div
+            className=" text-body-color mb-2 text-xl leading-relaxed"
+          >
+            The Secret
+          </div>
+          <span
+            className="text-lg font-bold"
+          >
+            ₺
+            220
+          </span>
+        </div>
+        <div
+          className="flex items-baseline justify-between"
+        >
+          <span
+            className="inline-block rounded-full bg-teal-200 px-2 text-xs font-semibold uppercase tracking-wide text-teal-800"
+          >
+            books
+          </span>
+          <span
+            className="text-xs"
+          >
+            adana
+            /Turkey
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="my-4 w-full transform font-Poppins shadow-xl transition duration-500 hover:scale-105 sm:w-2/3 md:w-5/12 lg:mx-3 lg:w-1/4 xl:w-1/5 "
+  >
+    <div
+      className="mb-1 overflow-hidden rounded-lg bg-white"
+    >
+      <img
+        alt="image"
+        className="h-72 w-full cursor-pointer"
+        src="https://www.notebookcheck-tr.com/uploads/tx_nbc2/Apple_new-ipad-pro-apple-pencil-pro-display_03182020.jpg"
+      />
+      <div
+        className="p-8 text-center sm:p-9 md:p-7 xl:p-9"
+      >
+        <h3 />
+        <div
+          className="flex justify-between "
+        >
+          <div
+            className=" text-body-color mb-2 text-xl leading-relaxed"
+          >
+            Iphone 6 mini
+          </div>
+          <span
+            className="text-lg font-bold"
+          >
+            ₺
+            2400
+          </span>
+        </div>
+        <div
+          className="flex items-baseline justify-between"
+        >
+          <span
+            className="inline-block rounded-full bg-teal-200 px-2 text-xs font-semibold uppercase tracking-wide text-teal-800"
+          >
+            electronics
+          </span>
+          <span
+            className="text-xs"
+          >
+            istanbul
+            /Turkey
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 `;

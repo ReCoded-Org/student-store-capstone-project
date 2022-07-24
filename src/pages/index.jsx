@@ -5,6 +5,7 @@ import * as React from "react";
 
 import Layout from "@/components/layout/Layout";
 
+import ListOfProducts from "../components/ListOfProducts/index";
 export default function HomePage() {
     const { t } = useTranslation("common");
 
@@ -22,6 +23,7 @@ export default function HomePage() {
                     <a>Turkish</a>
                 </Link>
             </div>
+            <ListOfProducts />
         </Layout>
     );
 }
