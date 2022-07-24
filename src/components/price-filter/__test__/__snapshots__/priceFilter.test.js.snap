@@ -5,7 +5,7 @@ exports[`renders correctly 1`] = `
   className="flex justify-center"
 >
   <div
-    className="xs:scale-[70%] sm:w-80 sm:scale-[80%] md:scale-100 xl:w-80"
+    className="xs:scale-[70%] sm:w-80 sm:scale-[80%] md:scale-100 xl:w-96"
   >
     <div
       className="input-group relative flex w-full flex-wrap items-stretch xs:pb-2 lg:pb-0"
@@ -13,14 +13,14 @@ exports[`renders correctly 1`] = `
       <input
         aria-describedby="button-addon2"
         aria-label="Search"
-        className="form-control relative m-0 block w-[50%] min-w-0 flex-auto rounded border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-1.5 text-base font-normal text-gray-700 transition ease-in-out focus:border-purple focus:bg-white focus:text-gray-700 focus:outline-none"
+        className="form-control relative m-0 block w-[50%] min-w-0 flex-auto rounded-2xl border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-1.5 text-base font-normal text-gray-700 transition ease-in-out focus:border-purple focus:bg-white focus:text-gray-700 focus:outline-none"
         placeholder="Min price"
         type="search"
       />
       <input
         aria-describedby="button-addon2"
         aria-label="Search"
-        className="form-control relative m-0 block w-[50%] min-w-0 flex-auto rounded border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-1.5 text-base font-normal text-gray-700 transition ease-in-out focus:border-purple focus:bg-white focus:text-gray-700 focus:outline-none"
+        className="form-control relative m-0 block w-[50%] min-w-0 flex-auto rounded-2xl border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-1.5 text-base font-normal text-gray-700 transition ease-in-out focus:border-purple focus:bg-white focus:text-gray-700 focus:outline-none"
         placeholder="Max price"
         type="search"
       />
