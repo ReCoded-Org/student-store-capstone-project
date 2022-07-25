@@ -12,7 +12,7 @@ function Header() {
 
     return (
         <>
-            <nav className='mb-2 flex max-w-[1440px] flex-row  p-2'>
+            <nav className='mb-2 flex max-w-[1440px] flex-row  p-2 shadow-sm'>
                 <div className='flex flex-grow items-center justify-around px-4 md:flex md:flex-row md:items-center md:justify-between lg:flex lg:flex-row lg:items-center lg:justify-between'>
                     <div className='flex w-full flex-row items-center justify-between  md:w-auto md:justify-start lg:w-auto lg:justify-start'>
                         <div className='mx-2 py-1'>
