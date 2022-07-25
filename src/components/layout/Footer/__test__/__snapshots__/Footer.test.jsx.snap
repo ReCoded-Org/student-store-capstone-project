@@ -2,16 +2,16 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="bg-black justify-center items-center"
+  className="items-center justify-center bg-black"
 >
   <div
-    className="text-white m-auto max-w-screen-2xl justify-around gap-5 pt-14 pb-14 flex flex-wrap"
+    className="m-auto flex max-w-screen-2xl flex-wrap justify-around gap-5 pt-14 pb-14 text-white"
   >
     <div
-      className="logo flex flex-col text-2xl w-96 mb-5"
+      className="logo mb-5 flex w-96 flex-col text-2xl"
     >
       <div
-        className=" flex flex-row items-center mb-3 ml-5"
+        className=" mb-3 ml-5 flex flex-row items-center"
       >
         <span
           style={
@@ -247,7 +247,7 @@ exports[`renders correctly 1`] = `
         </span>
       </div>
       <div
-        className="flex flex-row justify-around items-center mt-3 mr-10"
+        className="mt-3 mr-10 flex flex-row items-center justify-around"
       >
         <a
           href="/"
@@ -618,10 +618,10 @@ exports[`renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="flex flex-col w-96 ml-20 mb-5"
+      className="ml-20 mb-5 flex w-96 flex-col"
     >
       <a
-        className="font-bold mb-8 text-xl"
+        className="mb-8 text-xl font-bold"
         href="/"
         onClick={[Function]}
         onMouseEnter={[Function]}
@@ -629,7 +629,7 @@ exports[`renders correctly 1`] = `
         About Us
       </a>
       <a
-        className="font-bold mb-8 text-xl"
+        className="mb-8 text-xl font-bold"
         href="/"
         onClick={[Function]}
         onMouseEnter={[Function]}
@@ -637,7 +637,7 @@ exports[`renders correctly 1`] = `
         Get Help
       </a>
       <p
-        className="font-bold text-xl "
+        className="text-xl font-bold "
       >
         Contact Us:
       </p>
@@ -658,10 +658,10 @@ exports[`renders correctly 1`] = `
       </p>
     </div>
     <div
-      className="flex flex-col w-96 ml-20 mb-5"
+      className="ml-20 mb-5 flex w-96 flex-col"
     >
       <a
-        className="font-bold mb-8 text-xl "
+        className="mb-8 text-xl font-bold "
         href="/"
         onClick={[Function]}
         onMouseEnter={[Function]}
@@ -669,7 +669,7 @@ exports[`renders correctly 1`] = `
         Shop Now !
       </a>
       <a
-        className="font-bold mb-8 text-xl "
+        className="mb-8 text-xl font-bold "
         href="/"
         onClick={[Function]}
         onMouseEnter={[Function]}
@@ -677,7 +677,7 @@ exports[`renders correctly 1`] = `
         Register For Free
       </a>
       <a
-        className="font-bold mb-8 text-xl "
+        className="mb-8 text-xl font-bold "
         href="/"
         onClick={[Function]}
         onMouseEnter={[Function]}
@@ -685,7 +685,7 @@ exports[`renders correctly 1`] = `
         Delivery Fee and Policies
       </a>
       <a
-        className="font-bold mb-8 text-xl "
+        className="mb-8 text-xl font-bold "
         href="/"
         onClick={[Function]}
         onMouseEnter={[Function]}
@@ -694,7 +694,7 @@ exports[`renders correctly 1`] = `
       </a>
     </div>
     <div
-      className="flex flex-row gap-36 flex-wrap items-center mb-5"
+      className="mb-5 flex flex-row flex-wrap items-center gap-36"
     >
       <a
         href="/"
