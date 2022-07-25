@@ -89,7 +89,7 @@ export default function Footer() {
                         </a>
                     </Link>
                 </div>
-                <div className='mb-5 flex flex-row flex-wrap items-center gap-36'>
+                <div className='mb-5 mr-5 flex flex-row flex-wrap items-center gap-3'>
                     <Link href='/'>
                         <a>
                             <Image
