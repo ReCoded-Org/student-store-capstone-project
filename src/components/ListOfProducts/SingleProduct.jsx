@@ -19,7 +19,7 @@ export default function SingleProduct({ product }) {
                             <div className=' text-body-color mb-2 text-xl leading-relaxed'>
                                 {product.title}
                             </div>
-                            <span className='text-lg font-bold'>
+                            <span className='custom-bold text-2xl'>
                                 ₺{product.price}
                             </span>
                         </div>

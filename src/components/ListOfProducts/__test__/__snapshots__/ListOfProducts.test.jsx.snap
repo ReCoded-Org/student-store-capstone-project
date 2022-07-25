@@ -28,7 +28,7 @@ exports[`U R THE Boss Well done 1`] = `
             Apple iPad Pro 
           </div>
           <span
-            className="text-lg font-bold"
+            className="custom-bold text-2xl"
           >
             ₺
             4000
@@ -76,7 +76,7 @@ exports[`U R THE Boss Well done 1`] = `
             1994
           </div>
           <span
-            className="text-lg font-bold"
+            className="custom-bold text-2xl"
           >
             ₺
             250
@@ -124,7 +124,7 @@ exports[`U R THE Boss Well done 1`] = `
             leather jacket
           </div>
           <span
-            className="text-lg font-bold"
+            className="custom-bold text-2xl"
           >
             ₺
             570
@@ -172,7 +172,7 @@ exports[`U R THE Boss Well done 1`] = `
             Defacto-shirt
           </div>
           <span
-            className="text-lg font-bold"
+            className="custom-bold text-2xl"
           >
             ₺
             110
@@ -220,7 +220,7 @@ exports[`U R THE Boss Well done 1`] = `
             The Secret
           </div>
           <span
-            className="text-lg font-bold"
+            className="custom-bold text-2xl"
           >
             ₺
             220
@@ -268,7 +268,7 @@ exports[`U R THE Boss Well done 1`] = `
             Iphone 6 mini
           </div>
           <span
-            className="text-lg font-bold"
+            className="custom-bold text-2xl"
           >
             ₺
             2400
