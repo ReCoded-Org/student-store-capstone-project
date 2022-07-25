@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <nav
-  className="mb-2 flex max-w-[1440px] flex-row p-2"
+  className="mb-2 flex max-w-[1440px] flex-row p-2 shadow-sm"
 >
   <div
     className="flex flex-grow items-center justify-around px-4 md:flex md:flex-row md:items-center md:justify-between lg:flex lg:flex-row lg:items-center lg:justify-between"
