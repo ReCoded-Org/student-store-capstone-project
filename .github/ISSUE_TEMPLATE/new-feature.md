@@ -1,10 +1,9 @@
 ---
 name: New feature
 about: New component
-title: ''
-labels: ''
-assignees: ''
-
+title: ""
+labels: ""
+assignees: ""
 ---
 
 **Task title**
@@ -18,7 +17,6 @@ Put the subtasks here if any (optional)
 
 **Screenshots**
 Put at least one screenshot here
-
 
 **Link to the component on Figma**
 Put the link here

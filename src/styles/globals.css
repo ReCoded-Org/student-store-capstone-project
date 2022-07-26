@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -23,4 +24,8 @@
     .carouselItem {
         height: 205px;
     }
+}
+
+.custom-bold {
+    font-weight: 800;
 }
