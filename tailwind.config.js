@@ -17,7 +17,6 @@ module.exports = {
             fontFamily: {
                 Poppins: ['"Poppins"', "serif"],
             },
-
             // The project custom colors
             colors: {
                 white: "#FFFFFF",
@@ -29,6 +28,11 @@ module.exports = {
                 extraDarkPurple: "#32314D",
                 black: "#000000",
                 yellow: "#ebda41",
+                lightpurple: "#7874F2",
+                darkpurple: "#32314D",
+                pumpkin: "#FF8A57",
+                cyanaqua: "#90EEE1",
+                iceblue: "#565584",
             },
         },
     },
