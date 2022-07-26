@@ -15,7 +15,7 @@ module.exports = {
         },
         extend: {
             fontFamily: {
-                primary: ["Inter", ...fontFamily.sans],
+                Poppins: ['"Poppins"', "serif"],
             },
 
             // The project custom colors
