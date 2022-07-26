@@ -8,6 +8,7 @@ module.exports = {
     plugins: ["simple-import-sort", "unused-imports", "jest"],
     extends: ["eslint:recommended", "next", "next/core-web-vitals", "prettier"],
     rules: {
+        "jest/consistent-test-it": "off",
         "no-unused-vars": "off",
         "no-console": "warn",
         "react/display-name": "off",
