@@ -22,9 +22,9 @@
 const Details = () => {
     return (
         <div className='bg-clay p-10'>
-            <div className='grid md:grid-cols-2 md:gap-2'>
+            <div className='grid md:gap-2 lg:grid-cols-2'>
                 {/* product photos & info */}
-                <div className='grid gap-3 md:grid-rows-2'>
+                <div className='grid gap-3 xs:mb-0 md:mb-[-18rem] md:grid-rows-2 lg:mb-0'>
                     {/* photos */}
                     <div className='grid items-center justify-center'>
                         {/* main photo */}
@@ -34,7 +34,7 @@ const Details = () => {
                             className='w-[32rem] rounded-xl'
                         />
                     </div>
-                    <div className='grid justify-center xs:scale-90 xs:grid-cols-3 xs:gap-4 md:scale-100 md:grid-cols-3 xl:px-[4rem]'>
+                    <div className='grid justify-center xs:mx-0 xs:scale-90 xs:grid-cols-3 xs:gap-4 md:mx-[6rem] md:scale-100 md:grid-cols-3 lg:mx-0 xl:px-[4rem]'>
                         {/* the 3 photos */}
                         <div className='grid justify-center'>
                             <img
@@ -59,15 +59,12 @@ const Details = () => {
                         </div>
                     </div>
                 </div>
-                {/* <div className='grid grid-rows-6 xs:scale-90 xs:px-0 md:px-4 lg:scale-100 lg:px-10'> */}
                 <div className='grid grid-flow-row xs:scale-90 xs:px-0 md:px-4 lg:scale-100 lg:px-10'>
                     {/* Details */}
                     <div>
                         <div className='grid pb-8'>
                             {/* Headers */}
-                            {/* <div className='col-span-3'> */}
                             <div>
-                                {/* <div> */}
                                 <h1 className='text-3xl font-bold text-purple'>
                                     Two Seat Sofa
                                 </h1>
@@ -84,7 +81,6 @@ const Details = () => {
                                 </div>
                             </div>
                         </div>
-                        {/* <div className='row-span-2 grid'> */}
                         <div>
                             {/* Description */}
                             <div className='grid-row-2 grid content-start justify-start gap-3'>
@@ -109,25 +105,26 @@ const Details = () => {
                                 </div>
                             </div>
                         </div>
-                        {/* <div className='grid scale-[80%] grid-cols-3  items-center justify-center gap-6 rounded-l-full bg-darkPurple'> */}
-                        <div className='grid scale-[70%] grid-cols-3 items-center justify-center gap-6 overflow-hidden rounded-l-full bg-darkPurple lg:scale-[75%]'>
+                        <div className='grid grid-cols-3 items-center justify-center gap-4 overflow-hidden rounded-l-full bg-darkPurple xs:scale-[80%] sm:scale-[70%]'>
                             {/* User */}
                             {/* <div> */}
                             {/* User photo */}
                             <img
                                 src='https://149366112.v2.pressablecdn.com/wp-content/uploads/2014/07/m1lead.jpg'
                                 alt='Cat user'
-                                // className='m-4 rounded-full border-r-2 border-white shadow-xl xs:h-[4rem] sm:h-28 md:h-20 lg:h-32 xl:h-36'
-                                className='h-full w-full object-cover shadow-xl'
+                                className='h-full w-full border-r-4 border-white object-cover shadow-2xl'
                             />
-                            {/* </div> */}
-                            <div className='col-span-2 grid border-l-2 border-white p-4 text-xl text-white xs:scale-90 md:scale-95'>
+                            <div className='col-span-2 grid overflow-x-auto p-4 text-xl text-white scrollbar-hide'>
                                 {/* User info */}
-                                <h2 className='text-2xl font-bold'>
+                                <h2 className='font-bold xs:text-lg sm:text-xl md:text-2xl lg:text-xl xl:text-2xl'>
                                     Mr. nice cat
                                 </h2>
-                                <h2>mrNiceCat@fake.com</h2>
-                                <h2>Istanbul/Turkeky</h2>
+                                <h2 className='xs:text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl'>
+                                    mrNiceCat@fake.com
+                                </h2>
+                                <h2 className='xs:text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl'>
+                                    Istanbul/Turkeky
+                                </h2>
                             </div>
                         </div>
                     </div>
