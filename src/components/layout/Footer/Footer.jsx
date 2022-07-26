@@ -4,7 +4,7 @@ import * as React from "react";
 
 export default function Footer() {
     return (
-        <div className='items-center justify-center bg-black'>
+        <div className='items-center justify-center bg-darkpurple font-Poppins'>
             <div className='m-auto flex max-w-screen-2xl flex-wrap justify-around gap-5 pt-14 pb-14 text-white'>
                 <div className='logo mb-5 flex w-96 flex-col	text-2xl'>
                     <div className=' mb-3 ml-5 flex flex-row items-center'>

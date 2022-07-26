@@ -1,0 +1,232 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="slick-slider mx-10 my-5 slick-initialized"
+  dir="ltr"
+>
+  <button
+    className="slick-arrow slick-prev"
+    data-role="none"
+    onClick={[Function]}
+    style={
+      Object {
+        "display": "block",
+      }
+    }
+    type="button"
+  >
+     
+    Previous
+  </button>
+  <div
+    className="slick-list"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={null}
+    onMouseMove={null}
+    onMouseUp={[Function]}
+    onTouchCancel={null}
+    onTouchEnd={[Function]}
+    onTouchMove={null}
+    onTouchStart={[Function]}
+    style={Object {}}
+  >
+    <div
+      className="slick-track"
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      onMouseOver={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <div
+        aria-hidden={false}
+        className="slick-slide slick-active slick-current"
+        data-index={0}
+        onClick={[Function]}
+        style={
+          Object {
+            "left": -0,
+            "opacity": 1,
+            "outline": "none",
+            "position": "relative",
+            "transition": "opacity 500ms ease, visibility 500ms ease",
+            "width": 0,
+          }
+        }
+        tabIndex="-1"
+      >
+        <div>
+          <div
+            className="carouselItem carouselItem1"
+            style={
+              Object {
+                "display": "inline-block",
+                "width": "100%",
+              }
+            }
+            tabIndex={-1}
+          />
+        </div>
+      </div>
+      <div
+        aria-hidden={true}
+        className="slick-slide"
+        data-index={1}
+        onClick={[Function]}
+        style={
+          Object {
+            "left": -0,
+            "opacity": 0,
+            "outline": "none",
+            "position": "relative",
+            "transition": "opacity 500ms ease, visibility 500ms ease",
+            "width": 0,
+          }
+        }
+        tabIndex="-1"
+      >
+        <div>
+          <div
+            className="carouselItem carouselItem2"
+            style={
+              Object {
+                "display": "inline-block",
+                "width": "100%",
+              }
+            }
+            tabIndex={-1}
+          />
+        </div>
+      </div>
+      <div
+        aria-hidden={true}
+        className="slick-slide"
+        data-index={2}
+        onClick={[Function]}
+        style={
+          Object {
+            "left": -0,
+            "opacity": 0,
+            "outline": "none",
+            "position": "relative",
+            "transition": "opacity 500ms ease, visibility 500ms ease",
+            "width": 0,
+          }
+        }
+        tabIndex="-1"
+      >
+        <div>
+          <div
+            className="carouselItem carouselItem3"
+            style={
+              Object {
+                "display": "inline-block",
+                "width": "100%",
+              }
+            }
+            tabIndex={-1}
+          />
+        </div>
+      </div>
+      <div
+        aria-hidden={true}
+        className="slick-slide"
+        data-index={3}
+        onClick={[Function]}
+        style={
+          Object {
+            "left": -0,
+            "opacity": 0,
+            "outline": "none",
+            "position": "relative",
+            "transition": "opacity 500ms ease, visibility 500ms ease",
+            "width": 0,
+          }
+        }
+        tabIndex="-1"
+      >
+        <div>
+          <div
+            className="carouselItem carouselItem4"
+            style={
+              Object {
+                "display": "inline-block",
+                "width": "100%",
+              }
+            }
+            tabIndex={-1}
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="slick-arrow slick-next"
+    data-role="none"
+    onClick={[Function]}
+    style={
+      Object {
+        "display": "block",
+      }
+    }
+    type="button"
+  >
+     
+    Next
+  </button>
+  <ul
+    className="slick-dots"
+    onMouseEnter={null}
+    onMouseLeave={null}
+    onMouseOver={null}
+    style={
+      Object {
+        "display": "block",
+      }
+    }
+  >
+    <li
+      className="slick-active"
+    >
+      <button
+        onClick={[Function]}
+      >
+        1
+      </button>
+    </li>
+    <li
+      className=""
+    >
+      <button
+        onClick={[Function]}
+      >
+        2
+      </button>
+    </li>
+    <li
+      className=""
+    >
+      <button
+        onClick={[Function]}
+      >
+        3
+      </button>
+    </li>
+    <li
+      className=""
+    >
+      <button
+        onClick={[Function]}
+      >
+        4
+      </button>
+    </li>
+  </ul>
+</div>
+`;

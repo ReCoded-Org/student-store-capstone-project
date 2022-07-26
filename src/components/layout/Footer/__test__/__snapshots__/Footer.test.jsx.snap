@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="items-center justify-center bg-black"
+  className="items-center justify-center bg-darkpurple font-Poppins"
 >
   <div
     className="m-auto flex max-w-screen-2xl flex-wrap justify-around gap-5 pt-14 pb-14 text-white"
