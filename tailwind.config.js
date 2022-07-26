@@ -9,8 +9,8 @@ module.exports = {
                 Poppins: ['"Poppins"', "serif"],
             },
             colors: {
-                purple: "#7874F2",
                 lightpurple: "#7874F2",
+                purple: "#585785",
                 darkpurple: "#32314D",
                 pumpkin: "#FF8A57",
                 cyanaqua: "#90EEE1",

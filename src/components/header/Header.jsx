@@ -4,43 +4,42 @@ import { BiSearchAlt } from "react-icons/bi";
 import { MdShoppingCart } from "react-icons/md";
 import { TbWorld } from "react-icons/tb";
 
-import logo from "../../../public/images/logo.png";
-
 function Header() {
     const [isNavOpen, setIsNavOpen] = useState(false);
     const [isLanguageOpen, setIsLanguageOpen] = useState(false);
 
     return (
         <>
-            <nav className='mb-2 flex max-w-[1440px] flex-row  p-2 shadow-sm'>
-                <div className='flex flex-grow items-center justify-around px-4 md:flex md:flex-row md:items-center md:justify-between lg:flex lg:flex-row lg:items-center lg:justify-between'>
-                    <div className='flex w-full flex-row items-center justify-between  md:w-auto md:justify-start lg:w-auto lg:justify-start'>
+            <nav className=' mb-2 flex max-w-[1440px] flex-row p-2 shadow-sm'>
+                <div className=' flex flex-grow items-center justify-around px-4 md:flex md:flex-row md:items-center md:justify-between'>
+                    <div className='flex w-full flex-row items-center justify-between md:w-auto  md:justify-start'>
                         <div className='mx-2 py-1'>
                             <Image
-                                src={logo}
+                                src='/images/logo.png'
                                 alt='logo'
+                                layout='fixed'
                                 height={60}
                                 width={150}
                             />
                         </div>
-                        <div className='hidden w-full flex-grow px-8 md:inline-block md:w-auto lg:flex lg:w-auto lg:items-center lg:px-3'>
-                            <div className='text-md text-darkpurple md:flex lg:flex-grow'>
+                        <div className='hidden w-full flex-grow px-8 md:flex md:w-auto lg:flex lg:w-auto lg:items-center lg:px-3'>
+                            <div className='text-md text-purple md:flex md:flex-grow'>
                                 <a
                                     href='#'
-                                    className='mr-2 block rounded-[20px] px-4 py-2 hover:bg-purple hover:text-white md:inline-block lg:mt-0 lg:inline-block'
+                                    className='mr-2 rounded-[20px] px-4 py-2 hover:bg-lightpurple hover:text-white md:inline-block md:flex-grow lg:mt-0'
                                 >
                                     About Us
                                 </a>
                                 <a
                                     href='#'
-                                    className=' mr-2 block rounded-[20px] px-4 py-2 hover:bg-purple hover:text-white lg:mt-0 lg:inline-block'
+                                    className=' mr-2 block rounded-[20px] px-4 py-2 hover:bg-lightpurple hover:text-white md:inline-block lg:mt-0'
                                 >
                                     Our Team
                                 </a>
                             </div>
                         </div>
 
-                        <section className='flex md:hidden lg:hidden'>
+                        <section className='flex md:hidden'>
                             <div
                                 className='HAMBURGER space-y-2'
                                 onClick={() => setIsNavOpen((prev) => !prev)}
@@ -98,7 +97,7 @@ function Header() {
                         </section>
                     </div>
 
-                    <div className='flex flex-row  items-center justify-between md:justify-start lg:justify-start'>
+                    <div className='flex flex-row  items-center justify-between md:justify-start'>
                         <div className=' mx-2 hidden flex-row text-gray-600 lg:flex lg:flex-row '>
                             <input
                                 className='h-10 w-96 rounded-[20px] border-2 border-gray-300 bg-white pl-2 pr-8  text-sm focus:outline-none'
@@ -182,16 +181,16 @@ function Header() {
                                 </div>
                             </div>
                         </div>
-                        <div className='hidden md:flex md:items-center lg:flex lg:items-center'>
+                        <div className='hidden px-8 md:flex md:w-full md:items-center'>
                             <a
                                 href='#'
-                                className='text-md mx-3 block rounded-[20px]  bg-darkpurple px-4 py-2 text-white hover:bg-purple '
+                                className='text-md mx-3 block rounded-[20px]  bg-purple px-4 py-2 text-white hover:bg-lightpurple '
                             >
                                 Sign Up
                             </a>
                             <a
                                 href='#'
-                                className=' text-md mr-2 block rounded-[20px] bg-darkpurple px-4  py-2 text-white hover:bg-purple'
+                                className=' text-md mr-2 block rounded-[20px] bg-purple px-4  py-2 text-white hover:bg-lightpurple'
                             >
                                 Sell Items
                             </a>

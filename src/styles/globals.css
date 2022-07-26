@@ -5,7 +5,8 @@
 @tailwind utilities;
 
 @layer base {
-    nav {
+    nav,
+    button {
         @apply font-Poppins;
     }
 }
