@@ -2,13 +2,13 @@
 
 exports[`renders correctly 1`] = `
 <nav
-  className="mb-2 flex max-w-[1440px] flex-row p-2 shadow-sm"
+  className=" mb-2 flex max-w-[1440px] flex-row p-2 shadow-sm"
 >
   <div
-    className="flex flex-grow items-center justify-around px-4 md:flex md:flex-row md:items-center md:justify-between lg:flex lg:flex-row lg:items-center lg:justify-between"
+    className=" flex flex-grow items-center justify-around px-4 md:flex md:flex-row md:items-center md:justify-between"
   >
     <div
-      className="flex w-full flex-row items-center justify-between md:w-auto md:justify-start lg:w-auto lg:justify-start"
+      className="flex w-full flex-row items-center justify-between md:w-auto md:justify-start"
     >
       <div
         className="mx-2 py-1"
@@ -20,55 +20,19 @@ exports[`renders correctly 1`] = `
               "border": 0,
               "boxSizing": "border-box",
               "display": "inline-block",
-              "height": "initial",
+              "height": 60,
               "margin": 0,
-              "maxWidth": "100%",
               "opacity": 1,
               "overflow": "hidden",
               "padding": 0,
               "position": "relative",
-              "width": "initial",
+              "width": 150,
             }
           }
         >
-          <span
-            style={
-              Object {
-                "background": "none",
-                "border": 0,
-                "boxSizing": "border-box",
-                "display": "block",
-                "height": "initial",
-                "margin": 0,
-                "maxWidth": "100%",
-                "opacity": 1,
-                "padding": 0,
-                "width": "initial",
-              }
-            }
-          >
-            <img
-              alt=""
-              aria-hidden={true}
-              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27150%27%20height=%2760%27/%3e"
-              style={
-                Object {
-                  "background": "none",
-                  "border": 0,
-                  "display": "block",
-                  "height": "initial",
-                  "margin": 0,
-                  "maxWidth": "100%",
-                  "opacity": 1,
-                  "padding": 0,
-                  "width": "initial",
-                }
-              }
-            />
-          </span>
           <img
             alt="logo"
-            data-nimg="intrinsic"
+            data-nimg="fixed"
             decoding="async"
             onError={[Function]}
             onLoad={[Function]}
@@ -99,11 +63,11 @@ exports[`renders correctly 1`] = `
           <noscript>
             <img
               alt="logo"
-              data-nimg="intrinsic"
+              data-nimg="fixed"
               decoding="async"
               loading="lazy"
-              src="/_next/image?url=%2Fimg.jpg&w=384&q=75"
-              srcSet="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=384&q=75 2x"
+              src="/_next/image?url=%2Fimages%2Flogo.png&w=384&q=75"
+              srcSet="/_next/image?url=%2Fimages%2Flogo.png&w=256&q=75 1x, /_next/image?url=%2Fimages%2Flogo.png&w=384&q=75 2x"
               style={
                 Object {
                   "border": "none",
@@ -131,19 +95,19 @@ exports[`renders correctly 1`] = `
         </span>
       </div>
       <div
-        className="hidden w-full flex-grow px-8 md:inline-block md:w-auto lg:flex lg:w-auto lg:items-center lg:px-3"
+        className="hidden w-full flex-grow px-8 md:flex md:w-auto lg:flex lg:w-auto lg:items-center lg:px-3"
       >
         <div
-          className="text-md text-darkpurple md:flex lg:flex-grow"
+          className="text-md text-purple md:flex md:flex-grow"
         >
           <a
-            className="mr-2 block rounded-[20px] px-4 py-2 hover:bg-purple hover:text-white md:inline-block lg:mt-0 lg:inline-block"
+            className="mr-2 rounded-[20px] px-4 py-2 hover:bg-lightpurple hover:text-white md:inline-block md:flex-grow lg:mt-0"
             href="#"
           >
             About Us
           </a>
           <a
-            className=" mr-2 block rounded-[20px] px-4 py-2 hover:bg-purple hover:text-white lg:mt-0 lg:inline-block"
+            className=" mr-2 block rounded-[20px] px-4 py-2 hover:bg-lightpurple hover:text-white md:inline-block lg:mt-0"
             href="#"
           >
             Our Team
@@ -151,7 +115,7 @@ exports[`renders correctly 1`] = `
         </div>
       </div>
       <section
-        className="flex md:hidden lg:hidden"
+        className="flex md:hidden"
       >
         <div
           className="HAMBURGER space-y-2"
@@ -265,7 +229,7 @@ exports[`renders correctly 1`] = `
       </section>
     </div>
     <div
-      className="flex flex-row items-center justify-between md:justify-start lg:justify-start"
+      className="flex flex-row items-center justify-between md:justify-start"
     >
       <div
         className=" mx-2 hidden flex-row text-gray-600 lg:flex lg:flex-row "
@@ -418,16 +382,16 @@ exports[`renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="hidden md:flex md:items-center lg:flex lg:items-center"
+        className="hidden px-8 md:flex md:w-full md:items-center"
       >
         <a
-          className="text-md mx-3 block rounded-[20px] bg-darkpurple px-4 py-2 text-white hover:bg-purple "
+          className="text-md mx-3 block rounded-[20px] bg-purple px-4 py-2 text-white hover:bg-lightpurple "
           href="#"
         >
           Sign Up
         </a>
         <a
-          className=" text-md mr-2 block rounded-[20px] bg-darkpurple px-4 py-2 text-white hover:bg-purple"
+          className=" text-md mr-2 block rounded-[20px] bg-purple px-4 py-2 text-white hover:bg-lightpurple"
           href="#"
         >
           Sell Items

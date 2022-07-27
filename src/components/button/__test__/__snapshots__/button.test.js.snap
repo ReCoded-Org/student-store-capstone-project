@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="p-1"
+>
+  <button
+    className="h-10 w-40 m-1 p-1 px-4 rounded-lg border-2 bg-pumpkin font-extralight text-[15px] text-white shadow-md"
+  />
+</div>
+`;
