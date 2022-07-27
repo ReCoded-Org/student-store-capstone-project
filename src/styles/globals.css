@@ -35,3 +35,10 @@
 .custom-bold {
     font-weight: 800;
 }
+
+.activeLink {
+    background-image: url("../../public/images/highlight.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
