@@ -1,21 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-// Once the data is ready we can use this function to get the paths
-
-// export const getStaticPaths = async () => {
-//     const res = await fetch("");
-//     const products = await res.json();
-
-//     const paths = products((product) => {
-//         return {
-//             params: { id: product.id.toString() },
-//         };
-//     });
-
-//     return {
-//         paths,
-//         fallback: false,
-//     };
-// };
 
 // import styles from "../../styles/headers.module.css";
 
@@ -59,13 +42,13 @@ const Details = () => {
                         </div>
                     </div>
                 </div>
+                {/* Details */}
                 <div className='grid grid-flow-row xs:scale-90 xs:px-0 md:px-4 lg:scale-100 lg:px-10'>
-                    {/* Details */}
                     <div>
-                        <div className='grid pb-8'>
-                            {/* Headers */}
-                            <div>
-                                <h1 className='text-3xl font-bold text-purple'>
+                        {/* Headers */}
+                        <div className='grid grid-cols-3 pb-6'>
+                            <div className='col-span-2'>
+                                <h1 className='font-bold text-purple xs:text-2xl sm:text-3xl'>
                                     Two Seat Sofa
                                 </h1>
                                 <h2 className='text-darkPurple'>
@@ -74,15 +57,15 @@ const Details = () => {
                                 <h2 className='pb-2 text-darkPurple'>
                                     <b>Condition:</b> Used
                                 </h2>
-                                <div className='grid w-full rounded-full bg-orange px-8'>
-                                    <h1 className='text-center text-3xl font-bold text-white'>
-                                        $2793
-                                    </h1>
-                                </div>
+                            </div>
+                            <div className='grid h-fit rounded-full '>
+                                <h1 className='text-end font-bold text-orange xs:text-2xl sm:text-3xl'>
+                                    $2793
+                                </h1>
                             </div>
                         </div>
+                        {/* Description */}
                         <div>
-                            {/* Description */}
                             <div className='grid-row-2 grid content-start justify-start gap-3'>
                                 <div className='border-b-2 border-purple'>
                                     <h2 className='text-2xl text-darkPurple'>
@@ -105,17 +88,16 @@ const Details = () => {
                                 </div>
                             </div>
                         </div>
+                        {/* User */}
                         <div className='grid grid-cols-3 items-center justify-center gap-4 overflow-hidden rounded-l-full bg-darkPurple xs:scale-[80%] sm:scale-[70%]'>
-                            {/* User */}
-                            {/* <div> */}
                             {/* User photo */}
                             <img
                                 src='https://149366112.v2.pressablecdn.com/wp-content/uploads/2014/07/m1lead.jpg'
                                 alt='Cat user'
                                 className='h-full w-full border-r-4 border-white object-cover shadow-2xl'
                             />
+                            {/* User info */}
                             <div className='col-span-2 grid overflow-x-auto p-4 text-xl text-white scrollbar-hide'>
-                                {/* User info */}
                                 <h2 className='font-bold xs:text-lg sm:text-xl md:text-2xl lg:text-xl xl:text-2xl'>
                                     Mr. nice cat
                                 </h2>
