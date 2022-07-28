@@ -1,0 +1,263 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="flex font-Poppins flex-row flex-wrap justify-around items-center bg-iceblue max-w-[1440px]"
+>
+  <div
+    className="p-7"
+  >
+    <span
+      style={
+        Object {
+          "background": "none",
+          "border": 0,
+          "boxSizing": "border-box",
+          "display": "inline-block",
+          "height": "initial",
+          "margin": 0,
+          "maxWidth": "100%",
+          "opacity": 1,
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "relative",
+          "width": "initial",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "background": "none",
+            "border": 0,
+            "boxSizing": "border-box",
+            "display": "block",
+            "height": "initial",
+            "margin": 0,
+            "maxWidth": "100%",
+            "opacity": 1,
+            "padding": 0,
+            "width": "initial",
+          }
+        }
+      >
+        <img
+          alt=""
+          aria-hidden={true}
+          src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%271024%27%20height=%27512%27/%3e"
+          style={
+            Object {
+              "background": "none",
+              "border": 0,
+              "display": "block",
+              "height": "initial",
+              "margin": 0,
+              "maxWidth": "100%",
+              "opacity": 1,
+              "padding": 0,
+              "width": "initial",
+            }
+          }
+        />
+      </span>
+      <img
+        alt="donation image"
+        data-nimg="intrinsic"
+        decoding="async"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        style={
+          Object {
+            "border": "none",
+            "bottom": 0,
+            "boxSizing": "border-box",
+            "display": "block",
+            "height": 0,
+            "left": 0,
+            "margin": "auto",
+            "maxHeight": "100%",
+            "maxWidth": "100%",
+            "minHeight": "100%",
+            "minWidth": "100%",
+            "objectFit": undefined,
+            "objectPosition": undefined,
+            "padding": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+            "width": 0,
+          }
+        }
+      />
+      <noscript>
+        <img
+          alt="donation image"
+          data-nimg="intrinsic"
+          decoding="async"
+          loading="lazy"
+          src="/_next/image?url=%2Fimages%2Fdonation.png&w=2048&q=75"
+          srcSet="/_next/image?url=%2Fimages%2Fdonation.png&w=1080&q=75 1x, /_next/image?url=%2Fimages%2Fdonation.png&w=2048&q=75 2x"
+          style={
+            Object {
+              "border": "none",
+              "bottom": 0,
+              "boxSizing": "border-box",
+              "display": "block",
+              "height": 0,
+              "left": 0,
+              "margin": "auto",
+              "maxHeight": "100%",
+              "maxWidth": "100%",
+              "minHeight": "100%",
+              "minWidth": "100%",
+              "objectFit": undefined,
+              "objectPosition": undefined,
+              "padding": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "width": 0,
+            }
+          }
+        />
+      </noscript>
+    </span>
+  </div>
+  <div
+    className="text-center text-4xl font-bold htext text-purple donationbrush"
+  >
+    <h2>
+      Make a Difference by Donating!
+    </h2>
+  </div>
+  <div
+    className="flex flex-row flexing flex-wrap justify-around items-center p-10 gap-12"
+  >
+    <div
+      className=" w-72 h-64 flex flex-col justify-center donationCard donationCardPhone mt-8 text-darkpurple bg-white rounded-lg shadow-lg "
+    >
+      <div
+        className="flex flex-col items-center p-10 "
+      >
+        <span
+          className="font-semibold text-xl"
+        >
+          Help
+        </span>
+        <div
+          className="flex items-center"
+        >
+          <span
+            className="text-3xl"
+          >
+            $
+          </span>
+          <span
+            className="text-6xl font-bold mt-3"
+          >
+            10
+          </span>
+        </div>
+      </div>
+      <div
+        className="flex px-10 pb-10 justfy-center"
+      >
+        <button
+          className="flex font-semibold items-center justify-center w-full h-12 px-6 text-sm uppercase bg-pumpkin text-white rounded-lg"
+        >
+          Donate now !
+        </button>
+      </div>
+    </div>
+    <div
+      className=" w-72 h-72 flex flex-col donationCard donationCardPhone mt-8 justify-center bg-white text-darkpurple rounded-lg shadow-lg "
+    >
+      <div
+        className="flex flex-col items-center p-10 "
+      >
+        <span
+          className="font-semibold text-xl"
+        >
+          Some Help
+        </span>
+        <div
+          className="flex items-center"
+        >
+          <span
+            className="text-3xl"
+          >
+            $
+          </span>
+          <span
+            className="text-6xl font-bold mt-3"
+          >
+            25
+          </span>
+        </div>
+      </div>
+      <div
+        className="flex px-10 pb-10 justfy-center"
+      >
+        <button
+          className="flex font-semibold items-center justify-center w-full h-12 px-6 text-sm uppercase bg-pumpkin text-white rounded-lg"
+        >
+          Donate now !
+        </button>
+      </div>
+    </div>
+    <div
+      className=" w-72 h-80 flex flex-col donationCard donationCardPhone mt-8 justify-center bg-white text-darkpurple rounded-lg shadow-lg "
+    >
+      <div
+        className="flex flex-col items-center p-10 "
+      >
+        <span
+          className="font-semibold text-xl"
+        >
+          BIG HELP
+        </span>
+        <div
+          className="flex items-center"
+        >
+          <span
+            className="text-3xl"
+          >
+            $
+          </span>
+          <span
+            className="text-6xl font-bold mt-3"
+          >
+            50
+          </span>
+        </div>
+      </div>
+      <div
+        className="flex px-10 pb-10 justfy-center"
+      >
+        <button
+          className="flex items-center font-semibold justify-center w-full h-12 px-6 text-sm uppercase bg-pumpkin text-white rounded-lg"
+        >
+          Donate now !
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="flex flex-col mb-36 items-center max-w-4xl gap-12"
+  >
+    <div
+      className="text-4xl font-bold w-72 h-12 donationbrush brushphone text-purple htext"
+    >
+      <h2>
+        Why Donate?
+      </h2>
+    </div>
+    <p
+      className="text-2xl leading-loose text-darkpurple ptexttab p-3"
+    >
+      Life is busy, and it can sometimes be easy to forget to show your gratitude for all that you’ve been given. Students have low budgets and they’re in need of financial support. When you are ready to give and are researching groups of people to support, this can remind us of all that we have, and the act of donating to charity is a way to express our feelings gratitude. Inspire others to give by posting your kind action on social media to inspire others to give generously.
+    </p>
+  </div>
+</div>
+`;

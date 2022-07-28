@@ -14,7 +14,7 @@ module.exports = {
                 darkpurple: "#32314D",
                 pumpkin: "#FF8A57",
                 cyanaqua: "#90EEE1",
-                iceblue: "#565584",
+                iceblue: "#F1F6FA",
             },
         },
     },
