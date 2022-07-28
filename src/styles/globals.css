@@ -70,3 +70,15 @@
         height: 40px;
     }
 }
+/* for footer responsiveness */
+@media screen and (max-width: 768px) {
+    .logosizingtab {
+        width: 280px;
+        margin-left: 4px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .logosizingphone {
+        width: 270px;
+    }
+}
