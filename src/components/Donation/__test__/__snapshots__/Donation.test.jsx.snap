@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="flex font-Poppins flex-row flex-wrap justify-around items-center bg-iceblue max-w-[1440px]"
+  className="flex max-w-[1440px] flex-row flex-wrap items-center justify-around bg-iceblue font-Poppins"
 >
   <div
     className="p-7"
@@ -125,23 +125,23 @@ exports[`renders correctly 1`] = `
     </span>
   </div>
   <div
-    className="text-center text-4xl font-bold htext text-purple donationbrush"
+    className="htext donationbrush text-center text-4xl font-bold text-purple"
   >
     <h2>
       Make a Difference by Donating!
     </h2>
   </div>
   <div
-    className="flex flex-row flexing flex-wrap justify-around items-center p-10 gap-12"
+    className="flexing flex flex-row flex-wrap items-center justify-around gap-12 p-10"
   >
     <div
-      className=" w-72 h-64 flex flex-col justify-center donationCard donationCardPhone mt-8 text-darkpurple bg-white rounded-lg shadow-lg "
+      className=" donationCard donationCardPhone mt-8 flex h-64 w-72 flex-col justify-center rounded-lg bg-white text-darkpurple shadow-lg "
     >
       <div
         className="flex flex-col items-center p-10 "
       >
         <span
-          className="font-semibold text-xl"
+          className="text-xl font-semibold"
         >
           Help
         </span>
@@ -154,30 +154,30 @@ exports[`renders correctly 1`] = `
             $
           </span>
           <span
-            className="text-6xl font-bold mt-3"
+            className="mt-3 text-6xl font-bold"
           >
             10
           </span>
         </div>
       </div>
       <div
-        className="flex px-10 pb-10 justfy-center"
+        className="justfy-center flex px-10 pb-10"
       >
         <button
-          className="flex font-semibold items-center justify-center w-full h-12 px-6 text-sm uppercase bg-pumpkin text-white rounded-lg"
+          className="flex h-12 w-full items-center justify-center rounded-lg bg-pumpkin px-6 text-sm font-semibold uppercase text-white"
         >
           Donate now !
         </button>
       </div>
     </div>
     <div
-      className=" w-72 h-72 flex flex-col donationCard donationCardPhone mt-8 justify-center bg-white text-darkpurple rounded-lg shadow-lg "
+      className=" donationCard donationCardPhone mt-8 flex h-72 w-72 flex-col justify-center rounded-lg bg-white text-darkpurple shadow-lg "
     >
       <div
         className="flex flex-col items-center p-10 "
       >
         <span
-          className="font-semibold text-xl"
+          className="text-xl font-semibold"
         >
           Some Help
         </span>
@@ -190,30 +190,30 @@ exports[`renders correctly 1`] = `
             $
           </span>
           <span
-            className="text-6xl font-bold mt-3"
+            className="mt-3 text-6xl font-bold"
           >
             25
           </span>
         </div>
       </div>
       <div
-        className="flex px-10 pb-10 justfy-center"
+        className="justfy-center flex px-10 pb-10"
       >
         <button
-          className="flex font-semibold items-center justify-center w-full h-12 px-6 text-sm uppercase bg-pumpkin text-white rounded-lg"
+          className="flex h-12 w-full items-center justify-center rounded-lg bg-pumpkin px-6 text-sm font-semibold uppercase text-white"
         >
           Donate now !
         </button>
       </div>
     </div>
     <div
-      className=" w-72 h-80 flex flex-col donationCard donationCardPhone mt-8 justify-center bg-white text-darkpurple rounded-lg shadow-lg "
+      className=" donationCard donationCardPhone mt-8 flex h-80 w-72 flex-col justify-center rounded-lg bg-white text-darkpurple shadow-lg "
     >
       <div
         className="flex flex-col items-center p-10 "
       >
         <span
-          className="font-semibold text-xl"
+          className="text-xl font-semibold"
         >
           BIG HELP
         </span>
@@ -226,17 +226,17 @@ exports[`renders correctly 1`] = `
             $
           </span>
           <span
-            className="text-6xl font-bold mt-3"
+            className="mt-3 text-6xl font-bold"
           >
             50
           </span>
         </div>
       </div>
       <div
-        className="flex px-10 pb-10 justfy-center"
+        className="justfy-center flex px-10 pb-10"
       >
         <button
-          className="flex items-center font-semibold justify-center w-full h-12 px-6 text-sm uppercase bg-pumpkin text-white rounded-lg"
+          className="flex h-12 w-full items-center justify-center rounded-lg bg-pumpkin px-6 text-sm font-semibold uppercase text-white"
         >
           Donate now !
         </button>
@@ -244,17 +244,17 @@ exports[`renders correctly 1`] = `
     </div>
   </div>
   <div
-    className="flex flex-col mb-36 items-center max-w-4xl gap-12"
+    className="mb-36 flex max-w-4xl flex-col items-center gap-12"
   >
     <div
-      className="text-4xl font-bold w-72 h-12 donationbrush brushphone text-purple htext"
+      className="donationbrush brushphone htext h-12 w-72 text-4xl font-bold text-purple"
     >
       <h2>
         Why Donate?
       </h2>
     </div>
     <p
-      className="text-2xl leading-loose text-darkpurple ptexttab p-3"
+      className="ptexttab p-3 text-2xl leading-loose text-darkpurple"
     >
       Life is busy, and it can sometimes be easy to forget to show your gratitude for all that you’ve been given. Students have low budgets and they’re in need of financial support. When you are ready to give and are researching groups of people to support, this can remind us of all that we have, and the act of donating to charity is a way to express our feelings gratitude. Inspire others to give by posting your kind action on social media to inspire others to give generously.
     </p>
