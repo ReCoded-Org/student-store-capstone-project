@@ -1,6 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 
-// import styles from "../../styles/headers.module.css";
+import React from "react";
+
+import Map from "@/components/map/Map";
 
 const Details = () => {
     return (
@@ -112,7 +114,11 @@ const Details = () => {
                     </div>
                 </div>
             </div>
-            <div className='grid justify-center'>Google Map</div>
+            <div className='sm:visibl grid justify-center xs:invisible'>
+                <div className='rounded-3xl xs:invisible xs:scale-[80%] sm:visible sm:scale-[90%] lg:mt-[-12rem] lg:scale-95'>
+                    <Map />
+                </div>
+            </div>
         </div>
     );
 };
