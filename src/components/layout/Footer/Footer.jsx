@@ -6,7 +6,7 @@ export default function Footer() {
     return (
         <div className='items-center justify-center bg-darkpurple font-Poppins'>
             <div className='m-auto flex max-w-screen-2xl flex-wrap justify-around gap-5 pt-14 pb-14 text-white'>
-                <div className='logo mb-5 flex w-96 flex-col	text-2xl'>
+                <div className='logo logosizingphone logosizingtab mb-5 flex w-96 flex-col text-2xl'>
                     <div className=' mb-3 ml-5 flex flex-row items-center'>
                         <Image
                             src='/images/loggo.png'
@@ -89,7 +89,7 @@ export default function Footer() {
                         </a>
                     </Link>
                 </div>
-                <div className='mb-5 mr-5 flex flex-row flex-wrap items-center gap-3'>
+                <div className='mb-5 mr-5 flex flex-row flex-wrap items-center justify-center gap-3'>
                     <Link href='/'>
                         <a>
                             <Image
