@@ -7,7 +7,7 @@ export default function Layout({ children }) {
     // Put Header or Footer around the children element
     return (
         <>
-            <Header /> {children} <Footer />{" "}
+            <Header /> {children} <Footer />
         </>
     );
 }
