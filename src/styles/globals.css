@@ -4,6 +4,89 @@
 @tailwind components;
 @tailwind utilities;
 
+.brush {
+    background-image: url("../../public//images/highlight.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+}
+
+@media (max-width: 360px) {
+    .brush {
+        background-image: none;
+    }
+}
+
+.flashing:hover {
+    opacity: 1;
+    -webkit-animation: flash 1.5s;
+    animation: flash 1.5s;
+}
+@-webkit-keyframes flash {
+    0% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes flash {
+    0% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.zoom {
+    transition: transform 0.2s;
+}
+
+.zoom:hover {
+    transform: scale(1.02);
+    z-index: 9;
+}
+
+.popup-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+
+.popup-image span {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 50px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.popup-image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid white;
+    border-radius: 5px;
+    width: 65vw;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .popup-image img {
+        width: 85vw;
+    }
+}
+
 @layer base {
     nav,
     button {
