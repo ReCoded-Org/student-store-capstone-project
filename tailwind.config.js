@@ -6,6 +6,7 @@ module.exports = {
     theme: {
         screens: {
             xxs: "180px",
+            xs: "350px",
             sm: "640px",
             md: "768px",
             lg: "1024px",
@@ -31,7 +32,7 @@ module.exports = {
                 darkpurple: "#32314D",
                 pumpkin: "#FF8A57",
                 cyanaqua: "#90EEE1",
-                iceblue: "#565584",
+                iceblue: "#F1F6FA",
             },
         },
     },
