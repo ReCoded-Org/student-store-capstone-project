@@ -5,7 +5,8 @@
 @tailwind utilities;
 
 @layer base {
-    nav {
+    nav,
+    button {
         @apply font-Poppins;
     }
 }
@@ -38,7 +39,50 @@
 
 .activeLink {
     background-image: url("../../public/images/highlight.png");
+}
+/*for donation page*/
+.donationbrush {
+    background-image: url("../../public/images/brushh.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+@media screen and (max-width: 768px) {
+    .donationCard {
+        height: 288px;
+    }
+    .ptexttab {
+        padding: 36px;
+        font-size: medium;
+    }
+    .flexing {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+@media screen and (max-width: 375px) {
+    .donationCardPhone {
+        width: 210px;
+        height: 225px;
+    }
+    .htext {
+        font-size: large;
+        text-align: center;
+    }
+    .brushphone {
+        width: 250px;
+        height: 40px;
+    }
+}
+/* for footer responsiveness */
+@media screen and (max-width: 768px) {
+    .logosizingtab {
+        width: 280px;
+        margin-left: 4px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .logosizingphone {
+        width: 270px;
+    }
 }
