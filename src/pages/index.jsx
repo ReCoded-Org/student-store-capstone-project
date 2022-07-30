@@ -3,6 +3,7 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import * as React from "react";
 
+import TestInput from "@/components/layout/input/testInput";
 import Layout from "@/components/layout/Layout";
 
 export default function HomePage() {
@@ -22,6 +23,7 @@ export default function HomePage() {
                     <a>Turkish</a>
                 </Link>
             </div>
+            <TestInput />
         </Layout>
     );
 }
