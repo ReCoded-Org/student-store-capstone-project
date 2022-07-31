@@ -1,8 +1,8 @@
 import renderer from "react-test-renderer";
 
-import Carousel from "../Carousel";
+import Map from "../Map";
 
 it("renders correctly", () => {
-    const tree = renderer.create(<Carousel />).toJSON();
+    const tree = renderer.create(<Map />).toJSON();
     expect(tree).toMatchSnapshot();
 });
