@@ -19,6 +19,7 @@ module.exports = {
             },
             // The project custom colors
             colors: {
+                hadrisblue: "#21567E",
                 white: "#FFFFFF",
                 clay: "#F1F6FA",
                 cyan: "#90EEE1",
