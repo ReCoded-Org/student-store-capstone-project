@@ -27,13 +27,13 @@ function Header() {
                                 href='#'
                                 className=' align-center  mr-2 rounded-[20px] p-2 px-4 text-darkPurple hover:bg-purple hover:text-white md:inline-block md:flex-grow'
                             >
-                                About Us
+                                Our Mission
                             </a>
                             <a
                                 href='#'
                                 className=' text-md mr-2 rounded-[20px] p-2 px-4 text-darkPurple hover:bg-purple hover:text-white md:flex md:flex-grow'
                             >
-                                Our Team
+                                About Us
                             </a>
                         </div>
 

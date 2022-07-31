@@ -5,13 +5,13 @@ exports[`renders correctly 1`] = `
   className="items-center justify-center bg-darkpurple font-Poppins"
 >
   <div
-    className="m-auto flex max-w-screen-2xl flex-wrap justify-around gap-5 pt-14 pb-14 text-white"
+    className="m-auto flex max-w-screen-2xl flex-wrap justify-around gap-5 pt-8 text-white"
   >
     <div
-      className="logo logosizingphone logosizingtab mb-5 flex w-96 flex-col text-2xl"
+      className="logo logosizingphone logosizingtab flex w-96 flex-col text-2xl"
     >
       <div
-        className=" mb-3 ml-5 flex flex-row items-center"
+        className="ml-0 flex scale-75 flex-row items-center"
       >
         <span
           style={
@@ -247,7 +247,7 @@ exports[`renders correctly 1`] = `
         </span>
       </div>
       <div
-        className="mt-3 mr-10 flex flex-row items-center justify-around"
+        className="mt-2 mr-10 flex scale-[60%] flex-row items-center justify-around"
       >
         <a
           href="/"
@@ -618,10 +618,10 @@ exports[`renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="ml-20 mb-5 flex w-96 flex-col"
+      className="ml-20 flex w-96 flex-col"
     >
       <a
-        className="mb-8 text-xl font-bold"
+        className="mb-4 text-sm font-bold"
         href="/"
         onClick={[Function]}
         onMouseEnter={[Function]}
@@ -629,7 +629,7 @@ exports[`renders correctly 1`] = `
         About Us
       </a>
       <a
-        className="mb-8 text-xl font-bold"
+        className="mb-4 text-sm font-bold"
         href="/"
         onClick={[Function]}
         onMouseEnter={[Function]}
@@ -637,31 +637,31 @@ exports[`renders correctly 1`] = `
         Get Help
       </a>
       <p
-        className="text-xl font-bold "
+        className="text-sm font-bold "
       >
         Contact Us:
       </p>
       <p
-        className="text-lg "
+        className="text-xs "
       >
         Phone: 000 111 22 33
       </p>
       <p
-        className="text-lg "
+        className="text-xs"
       >
         e-mail: contact@studentstore.com
       </p>
       <p
-        className="text-lg "
+        className="text-xs"
       >
         Adress: X Street, Number 1, Türkiye
       </p>
     </div>
     <div
-      className="ml-20 mb-5 flex w-96 flex-col"
+      className="ml-20 mb-5 flex w-96 flex-col gap-y-4"
     >
       <a
-        className="mb-8 text-xl font-bold "
+        className="text-sm font-bold "
         href="/"
         onClick={[Function]}
         onMouseEnter={[Function]}
@@ -669,7 +669,7 @@ exports[`renders correctly 1`] = `
         Shop Now !
       </a>
       <a
-        className="mb-8 text-xl font-bold "
+        className="text-sm font-bold "
         href="/"
         onClick={[Function]}
         onMouseEnter={[Function]}
@@ -677,7 +677,7 @@ exports[`renders correctly 1`] = `
         Register For Free
       </a>
       <a
-        className="mb-8 text-xl font-bold "
+        className="text-sm font-bold "
         href="/"
         onClick={[Function]}
         onMouseEnter={[Function]}
@@ -685,7 +685,7 @@ exports[`renders correctly 1`] = `
         Delivery Fee and Policies
       </a>
       <a
-        className="mb-8 text-xl font-bold "
+        className="text-sm font-bold"
         href="/"
         onClick={[Function]}
         onMouseEnter={[Function]}
@@ -756,6 +756,7 @@ exports[`renders correctly 1`] = `
           </span>
           <img
             alt="GooglePlay"
+            className="scale-75"
             data-nimg="intrinsic"
             decoding="async"
             onError={[Function]}
@@ -787,6 +788,7 @@ exports[`renders correctly 1`] = `
           <noscript>
             <img
               alt="GooglePlay"
+              className="scale-75"
               data-nimg="intrinsic"
               decoding="async"
               loading="lazy"
@@ -878,6 +880,7 @@ exports[`renders correctly 1`] = `
           </span>
           <img
             alt="AppStore"
+            className="scale-75"
             data-nimg="intrinsic"
             decoding="async"
             onError={[Function]}
@@ -909,6 +912,7 @@ exports[`renders correctly 1`] = `
           <noscript>
             <img
               alt="AppStore"
+              className="scale-75"
               data-nimg="intrinsic"
               decoding="async"
               loading="lazy"
