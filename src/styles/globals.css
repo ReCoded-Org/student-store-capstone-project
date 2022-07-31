@@ -4,6 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.custom-bold {
+    font-weight: 800;
+}
 .brush {
     background-image: url("../../public/images/highlight.png");
     background-repeat: no-repeat;

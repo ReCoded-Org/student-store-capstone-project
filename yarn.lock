@@ -1118,11 +1118,15 @@
   "version" "1.6.3"
 
 "@googlemaps/js-api-loader@1.14.3":
+  "integrity" "sha512-6iIb+qpGgQpgIHmIFO44WhE1rDUxPVHuezNFL30wRJnkvhwFm94tD291UvNg9L05hLDSoL16jd0lbqqmdy4C5g=="
+  "resolved" "https://registry.npmjs.org/@googlemaps/js-api-loader/-/js-api-loader-1.14.3.tgz"
   "version" "1.14.3"
   dependencies:
     "fast-deep-equal" "^3.1.3"
 
 "@googlemaps/markerclusterer@2.0.8":
+  "integrity" "sha512-l/Z3nxTE55iaWDB8NL/HpFdYht2x0khPaJI9pD7KDbfHeZaZyG8yT6xi2cZ0Lb2VvgKFb3OtNKRMpAuS4xm2rg=="
+  "resolved" "https://registry.npmjs.org/@googlemaps/markerclusterer/-/markerclusterer-2.0.8.tgz"
   "version" "2.0.8"
   dependencies:
     "fast-deep-equal" "^3.1.3"
@@ -1412,9 +1416,7 @@
   dependencies:
     "glob" "7.1.7"
 
-"@next/swc-darwin-x64@12.2.2":
-  "integrity" "sha512-dztDtvfkhUqiqpXvrWVccfGhLe44yQ5tQ7B4tBfnsOR6vxzI9DNPHTlEOgRN9qDqTAcFyPxvg86mn4l8bB9Jcw=="
-  "resolved" "https://registry.npmjs.org/@next/swc-darwin-x64/-/swc-darwin-x64-12.2.2.tgz"
+"@next/swc-win32-x64-msvc@12.2.2":
   "version" "12.2.2"
 
 "@nodelib/fs.scandir@2.1.5":
@@ -1439,6 +1441,8 @@
     "fastq" "^1.6.0"
 
 "@react-google-maps/api@^2.12.1":
+  "integrity" "sha512-XvZWUkRa0JSvtkyV8UgDkuccPuhvjr/E6WQZK/662H2MAiZ6qFDPc0g7E87GJmEftr9Q5SKLsDzlaZ6jx65RVg=="
+  "resolved" "https://registry.npmjs.org/@react-google-maps/api/-/api-2.12.1.tgz"
   "version" "2.12.1"
   dependencies:
     "@googlemaps/js-api-loader" "1.14.3"
@@ -1449,9 +1453,13 @@
     "invariant" "2.2.4"
 
 "@react-google-maps/infobox@2.11.8":
+  "integrity" "sha512-15y3dniys1Op5HREyLwiJI2pAdeeHRJT5b4WPrS+vyL5KF6iXK1P3y/9bXtnxHiKe2v6iPreaEhR3VgvfRA50Q=="
+  "resolved" "https://registry.npmjs.org/@react-google-maps/infobox/-/infobox-2.11.8.tgz"
   "version" "2.11.8"
 
 "@react-google-maps/marker-clusterer@2.11.8":
+  "integrity" "sha512-OEcdbTXEgPwdpGvVuSrhIhjcZPhlzPz2TvaKCBLraf1PKiDyLOPhlTVRlbIziLiu0xN89pJcill1w9UVIVFF+Q=="
+  "resolved" "https://registry.npmjs.org/@react-google-maps/marker-clusterer/-/marker-clusterer-2.11.8.tgz"
   "version" "2.11.8"
 
 "@rushstack/eslint-patch@^1.1.3":
@@ -1696,6 +1704,8 @@
   "version" "0.0.51"
 
 "@types/google.maps@3.49.2":
+  "integrity" "sha512-ZO1qWciukqED9qcUNW7OaPXWnTlT+tO3WcYkmudZyQW2BqD7TlMFRrdqSCoqfwKhERCwBA5A/YZt/g5A3BqgLQ=="
+  "resolved" "https://registry.npmjs.org/@types/google.maps/-/google.maps-3.49.2.tgz"
   "version" "3.49.2"
 
 "@types/graceful-fs@^4.1.2":
@@ -3492,9 +3502,7 @@
     "requireindex" "^1.2.0"
 
 "eslint-plugin-jest@^26.6.0":
-  "integrity" "sha512-f8n46/97ZFdU4KqeQYqO8AEVGIhHWvkpgNBWHH3jrM28/y8llnbf3IjfIKv6p2pZIMinK1PCqbbROxs9Eud02Q=="
-  "resolved" "https://registry.npmjs.org/eslint-plugin-jest/-/eslint-plugin-jest-26.6.0.tgz"
-  "version" "26.6.0"
+  "version" "26.7.0"
   dependencies:
     "@typescript-eslint/utils" "^5.10.0"
 
@@ -4370,6 +4378,8 @@
     "side-channel" "^1.0.4"
 
 "invariant@2.2.4":
+  "integrity" "sha512-phJfQVBuaJM5raOpJjSfkiD6BpbCE4Ns//LaXl6wGYtUBY83nWS6Rf9tXm2e8VaK60JEjYldbPif/A2B1C2gNA=="
+  "resolved" "https://registry.npmjs.org/invariant/-/invariant-2.2.4.tgz"
   "version" "2.2.4"
   dependencies:
     "loose-envify" "^1.0.0"
@@ -5172,6 +5182,8 @@
     "object.assign" "^4.1.2"
 
 "kdbush@^3.0.0":
+  "integrity" "sha512-hRkd6/XW4HTsA9vjVpY9tuXJYLSlelnkTmVFu4M9/7MIYQtFcHpbugAU7UbOfjOiVSVYl2fqgBuJ32JUmRo5Ew=="
+  "resolved" "https://registry.npmjs.org/kdbush/-/kdbush-3.0.0.tgz"
   "version" "3.0.0"
 
 "kind-of@^6.0.3":
@@ -5976,6 +5988,8 @@
     "find-up" "^4.0.0"
 
 "polyfill-library@^4.1.1":
+  "integrity" "sha512-z2E/8GmLV0Yc1qcwncoyA8RPuz3jcMchAYzFsMx+cYgURbKs+jlnfhCbJoVn4LUbWentBHYoKE25KXm+1J62LQ=="
+  "resolved" "https://registry.npmjs.org/polyfill-library/-/polyfill-library-4.2.0.tgz"
   "version" "4.2.0"
   dependencies:
     "@financial-times/polyfill-useragent-normaliser" "^2.0.0"
@@ -6278,6 +6292,8 @@
     "type-fest" "^0.6.0"
 
 "readable-stream@^2.0.0":
+  "integrity" "sha512-Ebho8K4jIbHAxnuxi7o42OrZgF/ZTNcsZj6nRKyUmkhLFq8CHItp/fy6hQZuZmP/n3yZ9VBUbp4zz/mX8hmYPw=="
+  "resolved" "https://registry.npmjs.org/readable-stream/-/readable-stream-2.3.7.tgz"
   "version" "2.3.7"
   dependencies:
     "core-util-is" "~1.0.0"
@@ -6896,6 +6912,8 @@
   "version" "5.0.2"
 
 "supercluster@^7.1.3":
+  "integrity" "sha512-EulshI3pGUM66o6ZdH3ReiFcvHpM3vAigyK+vcxdjpJyEbIIrtbmBdY23mGgnI24uXiGFvrGq9Gkum/8U7vJWg=="
+  "resolved" "https://registry.npmjs.org/supercluster/-/supercluster-7.1.5.tgz"
   "version" "7.1.5"
   dependencies:
     "kdbush" "^3.0.0"
