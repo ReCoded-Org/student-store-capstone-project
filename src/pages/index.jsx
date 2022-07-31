@@ -2,7 +2,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import * as React from "react";
 
 import Carousel from "@/components/carousel";
-import CategoryPriceFilter from "@/components/category-price-filter/CategoryPriceFilter";
+import CategoryPriceFilter from "@/components/categoryPriceFilter/CategoryPriceFilter";
 import Layout from "@/components/layout/Layout";
 import ListOfProducts from "@/components/ListOfProducts";
 
