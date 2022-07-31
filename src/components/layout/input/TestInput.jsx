@@ -32,9 +32,9 @@ export default function TestInput() {
                     I agree with the
                     <a
                         href='#'
-                        className='text-purple hover:underline dark:text-blue-500'
+                        className='ml-1 text-purple hover:underline dark:text-blue-500'
                     >
-                        terms and conditions
+                        Terms and Conditions
                     </a>
                     .
                 </label>
