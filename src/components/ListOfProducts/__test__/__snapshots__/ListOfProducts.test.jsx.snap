@@ -2,33 +2,32 @@
 
 exports[`U R THE Boss Well done 1`] = `
 <div
-  className="container mx-auto flex flex-wrap justify-center gap-x-6 lg:justify-start"
+  className="container mx-auto flex flex-wrap justify-center gap-x-4"
 >
   <div
-    className="my-4 w-full transform font-Poppins shadow-xl transition duration-500 hover:scale-105 sm:w-2/3 md:w-5/12 lg:mx-3 lg:w-1/4 xl:w-1/5 "
+    className="w-full transform font-Poppins shadow-xl transition duration-500 xxs:my-[-2rem] xxs:scale-75 xxs:hover:scale-[80%] sm:my-2 sm:w-2/4 sm:scale-90 sm:hover:scale-100 md:w-5/12 md:scale-95 lg:mx-3 lg:w-1/4 xl:w-1/5"
   >
     <div
       className="mb-1 overflow-hidden rounded-lg bg-white"
     >
       <img
         alt="image"
-        className="h-72 w-full cursor-pointer"
+        className="h-64 w-full cursor-pointer"
         src="https://productimages.hepsiburada.net/s/32/375/10354042765362.jpg"
       />
       <div
-        className="p-8 text-center sm:p-9 md:p-7 xl:p-9"
+        className="px-4 py-6 text-center"
       >
-        <h3 />
         <div
           className="flex justify-between "
         >
           <div
-            className=" text-body-color mb-2 text-xl leading-relaxed"
+            className=" text-body-color mb-2 text-lg leading-relaxed"
           >
             Apple iPad Pro 
           </div>
           <span
-            className="custom-bold text-2xl"
+            className="custom-bold text-xl"
           >
             ₺
             4000
@@ -53,30 +52,29 @@ exports[`U R THE Boss Well done 1`] = `
     </div>
   </div>
   <div
-    className="my-4 w-full transform font-Poppins shadow-xl transition duration-500 hover:scale-105 sm:w-2/3 md:w-5/12 lg:mx-3 lg:w-1/4 xl:w-1/5 "
+    className="w-full transform font-Poppins shadow-xl transition duration-500 xxs:my-[-2rem] xxs:scale-75 xxs:hover:scale-[80%] sm:my-2 sm:w-2/4 sm:scale-90 sm:hover:scale-100 md:w-5/12 md:scale-95 lg:mx-3 lg:w-1/4 xl:w-1/5"
   >
     <div
       className="mb-1 overflow-hidden rounded-lg bg-white"
     >
       <img
         alt="image"
-        className="h-72 w-full cursor-pointer"
+        className="h-64 w-full cursor-pointer"
         src="https://static01.nyt.com/images/2017/01/27/arts/27bookorwell/27bookorwell-superJumbo.jpg"
       />
       <div
-        className="p-8 text-center sm:p-9 md:p-7 xl:p-9"
+        className="px-4 py-6 text-center"
       >
-        <h3 />
         <div
           className="flex justify-between "
         >
           <div
-            className=" text-body-color mb-2 text-xl leading-relaxed"
+            className=" text-body-color mb-2 text-lg leading-relaxed"
           >
             1994
           </div>
           <span
-            className="custom-bold text-2xl"
+            className="custom-bold text-xl"
           >
             ₺
             250
@@ -101,30 +99,29 @@ exports[`U R THE Boss Well done 1`] = `
     </div>
   </div>
   <div
-    className="my-4 w-full transform font-Poppins shadow-xl transition duration-500 hover:scale-105 sm:w-2/3 md:w-5/12 lg:mx-3 lg:w-1/4 xl:w-1/5 "
+    className="w-full transform font-Poppins shadow-xl transition duration-500 xxs:my-[-2rem] xxs:scale-75 xxs:hover:scale-[80%] sm:my-2 sm:w-2/4 sm:scale-90 sm:hover:scale-100 md:w-5/12 md:scale-95 lg:mx-3 lg:w-1/4 xl:w-1/5"
   >
     <div
       className="mb-1 overflow-hidden rounded-lg bg-white"
     >
       <img
         alt="image"
-        className="h-72 w-full cursor-pointer"
+        className="h-64 w-full cursor-pointer"
         src="https://cdn.shopify.com/s/files/1/1126/3188/products/moto-leather-jacket-compressor_1024x1024.jpg?v=1567465461"
       />
       <div
-        className="p-8 text-center sm:p-9 md:p-7 xl:p-9"
+        className="px-4 py-6 text-center"
       >
-        <h3 />
         <div
           className="flex justify-between "
         >
           <div
-            className=" text-body-color mb-2 text-xl leading-relaxed"
+            className=" text-body-color mb-2 text-lg leading-relaxed"
           >
             leather jacket
           </div>
           <span
-            className="custom-bold text-2xl"
+            className="custom-bold text-xl"
           >
             ₺
             570
@@ -149,30 +146,29 @@ exports[`U R THE Boss Well done 1`] = `
     </div>
   </div>
   <div
-    className="my-4 w-full transform font-Poppins shadow-xl transition duration-500 hover:scale-105 sm:w-2/3 md:w-5/12 lg:mx-3 lg:w-1/4 xl:w-1/5 "
+    className="w-full transform font-Poppins shadow-xl transition duration-500 xxs:my-[-2rem] xxs:scale-75 xxs:hover:scale-[80%] sm:my-2 sm:w-2/4 sm:scale-90 sm:hover:scale-100 md:w-5/12 md:scale-95 lg:mx-3 lg:w-1/4 xl:w-1/5"
   >
     <div
       className="mb-1 overflow-hidden rounded-lg bg-white"
     >
       <img
         alt="image"
-        className="h-72 w-full cursor-pointer"
+        className="h-64 w-full cursor-pointer"
         src="https://img.freepik.com/free-psd/white-t-shirt-with-silkscreen-mockup_125540-697.jpg?w=2000"
       />
       <div
-        className="p-8 text-center sm:p-9 md:p-7 xl:p-9"
+        className="px-4 py-6 text-center"
       >
-        <h3 />
         <div
           className="flex justify-between "
         >
           <div
-            className=" text-body-color mb-2 text-xl leading-relaxed"
+            className=" text-body-color mb-2 text-lg leading-relaxed"
           >
             Defacto-shirt
           </div>
           <span
-            className="custom-bold text-2xl"
+            className="custom-bold text-xl"
           >
             ₺
             110
@@ -197,30 +193,29 @@ exports[`U R THE Boss Well done 1`] = `
     </div>
   </div>
   <div
-    className="my-4 w-full transform font-Poppins shadow-xl transition duration-500 hover:scale-105 sm:w-2/3 md:w-5/12 lg:mx-3 lg:w-1/4 xl:w-1/5 "
+    className="w-full transform font-Poppins shadow-xl transition duration-500 xxs:my-[-2rem] xxs:scale-75 xxs:hover:scale-[80%] sm:my-2 sm:w-2/4 sm:scale-90 sm:hover:scale-100 md:w-5/12 md:scale-95 lg:mx-3 lg:w-1/4 xl:w-1/5"
   >
     <div
       className="mb-1 overflow-hidden rounded-lg bg-white"
     >
       <img
         alt="image"
-        className="h-72 w-full cursor-pointer"
+        className="h-64 w-full cursor-pointer"
         src="https://productimages.hepsiburada.net/s/32/375/10354042765362.jpg"
       />
       <div
-        className="p-8 text-center sm:p-9 md:p-7 xl:p-9"
+        className="px-4 py-6 text-center"
       >
-        <h3 />
         <div
           className="flex justify-between "
         >
           <div
-            className=" text-body-color mb-2 text-xl leading-relaxed"
+            className=" text-body-color mb-2 text-lg leading-relaxed"
           >
             The Secret
           </div>
           <span
-            className="custom-bold text-2xl"
+            className="custom-bold text-xl"
           >
             ₺
             220
@@ -245,30 +240,29 @@ exports[`U R THE Boss Well done 1`] = `
     </div>
   </div>
   <div
-    className="my-4 w-full transform font-Poppins shadow-xl transition duration-500 hover:scale-105 sm:w-2/3 md:w-5/12 lg:mx-3 lg:w-1/4 xl:w-1/5 "
+    className="w-full transform font-Poppins shadow-xl transition duration-500 xxs:my-[-2rem] xxs:scale-75 xxs:hover:scale-[80%] sm:my-2 sm:w-2/4 sm:scale-90 sm:hover:scale-100 md:w-5/12 md:scale-95 lg:mx-3 lg:w-1/4 xl:w-1/5"
   >
     <div
       className="mb-1 overflow-hidden rounded-lg bg-white"
     >
       <img
         alt="image"
-        className="h-72 w-full cursor-pointer"
+        className="h-64 w-full cursor-pointer"
         src="https://www.notebookcheck-tr.com/uploads/tx_nbc2/Apple_new-ipad-pro-apple-pencil-pro-display_03182020.jpg"
       />
       <div
-        className="p-8 text-center sm:p-9 md:p-7 xl:p-9"
+        className="px-4 py-6 text-center"
       >
-        <h3 />
         <div
           className="flex justify-between "
         >
           <div
-            className=" text-body-color mb-2 text-xl leading-relaxed"
+            className=" text-body-color mb-2 text-lg leading-relaxed"
           >
             Iphone 6 mini
           </div>
           <span
-            className="custom-bold text-2xl"
+            className="custom-bold text-xl"
           >
             ₺
             2400
