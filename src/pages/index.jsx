@@ -2,7 +2,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import * as React from "react";
 
 import Carousel from "@/components/carousel";
-import Category_price_filter from "@/components/category-price-filter/category_price_filter";
+import CategoryPriceFilter from "@/components/category-price-filter/CategoryPriceFilter";
 import Layout from "@/components/layout/Layout";
 import ListOfProducts from "@/components/ListOfProducts";
 
@@ -31,7 +31,7 @@ export default function HomePage() {
                     </Link>
                 </div> */}
                 <Carousel />
-                <Category_price_filter />
+                <CategoryPriceFilter />
                 <ListOfProducts />
             </Layout>
         </>

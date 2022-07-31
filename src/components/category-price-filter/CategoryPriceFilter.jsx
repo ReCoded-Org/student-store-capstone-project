@@ -6,7 +6,7 @@ import Filter from "../filter";
 import categories from "../filter/categories";
 import PriceFilter from "../price-filter";
 
-const Category_price_filter = () => {
+const CategoryPriceFilter = () => {
     return (
         <div className='px-[15px] py-5'>
             <div className='invisible mx-5 my-2 grid gap-5 text-xl font-bold text-purple lg:visible lg:grid-cols-3'>
@@ -36,4 +36,4 @@ const Category_price_filter = () => {
     );
 };
 
-export default Category_price_filter;
+export default CategoryPriceFilter;
