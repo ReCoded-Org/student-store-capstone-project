@@ -1,9 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<div>
+<div
+  className="xs:ml-0 xs:mr-0"
+>
   <div
-    className="flex h-20 w-20 items-center justify-center rounded-full xs:scale-[50%] sm:m-1 sm:scale-90 md:scale-90 lg:scale-100 undefined"
+    className="flashing flex h-20 w-20 items-center justify-center rounded-full hover:cursor-pointer xxs:scale-[50%] sm:scale-90 md:scale-90 lg:scale-100 undefined"
   >
     <svg
       className="h-12 w-12 shrink fill-white"
@@ -17,7 +19,7 @@ exports[`renders correctly 1`] = `
     </svg>
   </div>
   <h1
-    className="text-center text-extraDarkPurple xs:mt-[-18px] xs:scale-75 xs:pb-2 sm:mt-0 md:scale-90 md:pb-0"
+    className="text-center text-extraDarkPurple xxs:mt-[-18px] xxs:scale-75 xxs:pb-2 sm:mt-0 md:scale-90 md:pb-0"
   />
 </div>
 `;

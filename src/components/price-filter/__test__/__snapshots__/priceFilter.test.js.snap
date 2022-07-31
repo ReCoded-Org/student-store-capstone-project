@@ -5,10 +5,10 @@ exports[`renders correctly 1`] = `
   className="flex justify-center"
 >
   <div
-    className="xs:scale-[70%] sm:w-80 sm:scale-[80%] md:scale-100 xl:w-96"
+    className="xxs:scale-[70%] sm:w-80 sm:scale-[80%] md:scale-100 xl:w-96"
   >
     <div
-      className="input-group relative flex w-full flex-wrap items-stretch xs:pb-2 lg:pb-0"
+      className="input-group relative flex w-full flex-wrap items-stretch xxs:pb-2 lg:pb-0"
     >
       <input
         aria-describedby="button-addon2"

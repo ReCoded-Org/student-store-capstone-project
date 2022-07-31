@@ -1401,9 +1401,7 @@
   dependencies:
     "glob" "7.1.7"
 
-"@next/swc-darwin-x64@12.2.2":
-  "integrity" "sha512-dztDtvfkhUqiqpXvrWVccfGhLe44yQ5tQ7B4tBfnsOR6vxzI9DNPHTlEOgRN9qDqTAcFyPxvg86mn4l8bB9Jcw=="
-  "resolved" "https://registry.npmjs.org/@next/swc-darwin-x64/-/swc-darwin-x64-12.2.2.tgz"
+"@next/swc-win32-x64-msvc@12.2.2":
   "version" "12.2.2"
 
 "@nodelib/fs.scandir@2.1.5":

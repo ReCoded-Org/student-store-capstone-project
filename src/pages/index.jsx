@@ -3,7 +3,9 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import * as React from "react";
 
+import Category_price_filter from "@/components/category-price-filter/category_price_filter";
 import Layout from "@/components/layout/Layout";
+
 export default function HomePage() {
     const { t } = useTranslation("common");
 
@@ -28,6 +30,7 @@ export default function HomePage() {
                         <a>Turkish</a>
                     </Link>
                 </div>
+                <Category_price_filter />
             </Layout>
         </>
     );
