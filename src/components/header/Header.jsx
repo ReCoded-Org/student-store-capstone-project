@@ -69,7 +69,7 @@ function Header() {
                                         <line x1='6' y1='6' x2='18' y2='18' />
                                     </svg>
                                 </div>
-                                <ul className='MENU-OPEN mt-10 flex min-h-[250px] flex-col items-center justify-between'>
+                                <ul className='MENU-OPEN mt-10 flex min-h-[250px] flex-col items-center justify-between '>
                                     <li className='flex flex-row items-center justify-start'>
                                         <a href='#'>EN &nbsp;&nbsp;</a> |
                                         <a href='#'>&nbsp;&nbsp; TR</a>
@@ -137,10 +137,10 @@ function Header() {
 
                             <div
                                 className={`
-                                    focus:outline-none' absolute right-0 mt-2 flex w-16 rounded-md  
-                                                                       bg-white
-                                                                           shadow-md ring-1
-                                                                           ring-black ring-opacity-5
+                                    focus:outline-none' absolute right-0 z-10 mt-2 flex w-16  
+                                                                       rounded-md
+                                                                           bg-white shadow-md
+                                                                           ring-1 ring-black ring-opacity-5
                                                                             ${
                                                                                 isLanguageOpen
                                                                                     ? "showLanguage"
@@ -157,7 +157,7 @@ function Header() {
                                 >
                                     <a
                                         href='#'
-                                        className='block px-4 py-2 text-sm text-gray-700'
+                                        className='flashing block px-4 py-2 text-sm text-gray-700'
                                         role='menuitem'
                                         tabIndex='-1'
                                         id='menu-item-0'
@@ -166,7 +166,7 @@ function Header() {
                                     </a>
                                     <a
                                         href='#'
-                                        className='block px-4 py-2 text-sm text-gray-700'
+                                        className='flashing block px-4 py-2 text-sm text-gray-700'
                                         role='menuitem'
                                         tabIndex='-1'
                                         id='menu-item-1'
