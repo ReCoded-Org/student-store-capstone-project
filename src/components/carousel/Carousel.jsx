@@ -14,7 +14,7 @@ function Carousel() {
         autoplay: true,
         autoplaySpeed: 3000,
         draggable: true,
-        className: "mx-10 my-5",
+        className: "mx-10 pt-10 pb-2",
         dots: true,
     };
 

@@ -14,9 +14,9 @@ const Filter = ({ bgColor, svg, name }) => {
     }
 
     return (
-        <div className={`${firstElementStyle} ${lastElementStyle}`}>
+        <div className={`${firstElementStyle} ${lastElementStyle} scale-95`}>
             <div
-                className={`flashing flex h-20 w-20 items-center justify-center rounded-full hover:cursor-pointer xxs:scale-[50%] sm:scale-90 md:scale-90 lg:scale-100 ${bgColor}`}
+                className={`flashing flex h-20 w-20 items-center justify-center rounded-full hover:cursor-pointer xxs:scale-[48%] sm:scale-90 md:scale-90 lg:scale-100 ${bgColor}`}
             >
                 <svg
                     viewBox='0 0 24 24'
@@ -30,7 +30,7 @@ const Filter = ({ bgColor, svg, name }) => {
                     />
                 </svg>
             </div>
-            <h1 className='text-center text-extraDarkPurple xxs:mt-[-18px] xxs:scale-75 xxs:pb-2 sm:mt-0 md:scale-90 md:pb-0'>
+            <h1 className='text-center text-extraDarkPurple xxs:mt-[-18px] xxs:scale-75 xxs:pb-2 sm:mt-0 md:scale-90 md:pb-0 lg:pt-2'>
                 {name}
             </h1>
         </div>

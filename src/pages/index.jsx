@@ -30,9 +30,11 @@ export default function HomePage() {
                         <a>Turkish</a>
                     </Link>
                 </div> */}
-                <Carousel />
-                <CategoryPriceFilter />
-                <ListOfProducts />
+                <div className='bg-clay md:px-10 lg:px-16'>
+                    <Carousel />
+                    <CategoryPriceFilter />
+                    <ListOfProducts />
+                </div>
             </Layout>
         </>
     );

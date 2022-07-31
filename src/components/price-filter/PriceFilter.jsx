@@ -1,7 +1,7 @@
 const PriceFilter = () => {
     return (
         <div className='flex justify-center'>
-            <div className='xxs:scale-[70%] sm:w-80 sm:scale-[80%] md:scale-100 xl:w-96'>
+            <div className='px-2 xxs:scale-[70%] sm:w-80 sm:scale-[80%] md:scale-95 xl:w-96'>
                 <div className='input-group relative flex w-full flex-wrap items-stretch xxs:pb-2 lg:pb-0'>
                     <input
                         type='search'

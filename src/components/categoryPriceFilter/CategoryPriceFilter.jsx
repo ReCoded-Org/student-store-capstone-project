@@ -17,7 +17,7 @@ const CategoryPriceFilter = () => {
                     <h1 className={styles.brush}>Price</h1>
                 </div>
             </div>
-            <div className='grid overflow-hidden rounded-full bg-clay xxs:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3'>
+            <div className='grid overflow-hidden rounded-full bg-white xxs:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3'>
                 <div className='col-span-2 my-3 grid grid-flow-col justify-center overflow-x-auto scrollbar-hide xxs:gap-1 md:gap-8'>
                     {categories.map((catergory, i) => (
                         <Filter

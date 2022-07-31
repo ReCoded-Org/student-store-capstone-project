@@ -84,6 +84,19 @@
     }
 }
 
+.brush {
+    background-image: url("../../public//images/highlight.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+}
+
+@media (max-width: 360px) {
+    .brush {
+        background-image: none;
+    }
+}
+
 .flashing:hover {
     opacity: 1;
     -webkit-animation: flash 1.5s;

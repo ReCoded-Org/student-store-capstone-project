@@ -25,16 +25,16 @@ exports[`renders correctly 1`] = `
     </div>
   </div>
   <div
-    className="grid overflow-hidden rounded-full bg-clay xxs:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3"
+    className="grid overflow-hidden rounded-full bg-white xxs:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3"
   >
     <div
       className="col-span-2 my-3 grid grid-flow-col justify-center overflow-x-auto scrollbar-hide xxs:gap-1 md:gap-8"
     >
       <div
-        className="xxs:ml-[10rem] xs:ml-0 ml-[12rem] xs:mr-0"
+        className="xxs:ml-[10rem] xs:ml-0 ml-[12rem] xs:mr-0 scale-95"
       >
         <div
-          className="flashing flex h-20 w-20 items-center justify-center rounded-full hover:cursor-pointer xxs:scale-[50%] sm:scale-90 md:scale-90 lg:scale-100 bg-purple"
+          className="flashing flex h-20 w-20 items-center justify-center rounded-full hover:cursor-pointer xxs:scale-[48%] sm:scale-90 md:scale-90 lg:scale-100 bg-purple"
         >
           <svg
             className="h-12 w-12 shrink fill-white"
@@ -49,16 +49,16 @@ exports[`renders correctly 1`] = `
           </svg>
         </div>
         <h1
-          className="text-center text-extraDarkPurple xxs:mt-[-18px] xxs:scale-75 xxs:pb-2 sm:mt-0 md:scale-90 md:pb-0"
+          className="text-center text-extraDarkPurple xxs:mt-[-18px] xxs:scale-75 xxs:pb-2 sm:mt-0 md:scale-90 md:pb-0 lg:pt-2"
         >
           Books
         </h1>
       </div>
       <div
-        className="xs:ml-0 xs:mr-0"
+        className="xs:ml-0 xs:mr-0 scale-95"
       >
         <div
-          className="flashing flex h-20 w-20 items-center justify-center rounded-full hover:cursor-pointer xxs:scale-[50%] sm:scale-90 md:scale-90 lg:scale-100 bg-orange"
+          className="flashing flex h-20 w-20 items-center justify-center rounded-full hover:cursor-pointer xxs:scale-[48%] sm:scale-90 md:scale-90 lg:scale-100 bg-orange"
         >
           <svg
             className="h-12 w-12 shrink fill-white"
@@ -73,16 +73,16 @@ exports[`renders correctly 1`] = `
           </svg>
         </div>
         <h1
-          className="text-center text-extraDarkPurple xxs:mt-[-18px] xxs:scale-75 xxs:pb-2 sm:mt-0 md:scale-90 md:pb-0"
+          className="text-center text-extraDarkPurple xxs:mt-[-18px] xxs:scale-75 xxs:pb-2 sm:mt-0 md:scale-90 md:pb-0 lg:pt-2"
         >
           Furniture
         </h1>
       </div>
       <div
-        className="xs:ml-0 xs:mr-0"
+        className="xs:ml-0 xs:mr-0 scale-95"
       >
         <div
-          className="flashing flex h-20 w-20 items-center justify-center rounded-full hover:cursor-pointer xxs:scale-[50%] sm:scale-90 md:scale-90 lg:scale-100 bg-cyan"
+          className="flashing flex h-20 w-20 items-center justify-center rounded-full hover:cursor-pointer xxs:scale-[48%] sm:scale-90 md:scale-90 lg:scale-100 bg-cyan"
         >
           <svg
             className="h-12 w-12 shrink fill-white"
@@ -97,16 +97,16 @@ exports[`renders correctly 1`] = `
           </svg>
         </div>
         <h1
-          className="text-center text-extraDarkPurple xxs:mt-[-18px] xxs:scale-75 xxs:pb-2 sm:mt-0 md:scale-90 md:pb-0"
+          className="text-center text-extraDarkPurple xxs:mt-[-18px] xxs:scale-75 xxs:pb-2 sm:mt-0 md:scale-90 md:pb-0 lg:pt-2"
         >
           Electronics
         </h1>
       </div>
       <div
-        className="xs:ml-0 xxs:mr-[2rem] xs:mr-0"
+        className="xs:ml-0 xxs:mr-[2rem] xs:mr-0 scale-95"
       >
         <div
-          className="flashing flex h-20 w-20 items-center justify-center rounded-full hover:cursor-pointer xxs:scale-[50%] sm:scale-90 md:scale-90 lg:scale-100 bg-yellow"
+          className="flashing flex h-20 w-20 items-center justify-center rounded-full hover:cursor-pointer xxs:scale-[48%] sm:scale-90 md:scale-90 lg:scale-100 bg-yellow"
         >
           <svg
             className="h-12 w-12 shrink fill-white"
@@ -121,7 +121,7 @@ exports[`renders correctly 1`] = `
           </svg>
         </div>
         <h1
-          className="text-center text-extraDarkPurple xxs:mt-[-18px] xxs:scale-75 xxs:pb-2 sm:mt-0 md:scale-90 md:pb-0"
+          className="text-center text-extraDarkPurple xxs:mt-[-18px] xxs:scale-75 xxs:pb-2 sm:mt-0 md:scale-90 md:pb-0 lg:pt-2"
         >
           Two-wheeler
         </h1>
@@ -134,7 +134,7 @@ exports[`renders correctly 1`] = `
         className="flex justify-center"
       >
         <div
-          className="xxs:scale-[70%] sm:w-80 sm:scale-[80%] md:scale-100 xl:w-96"
+          className="px-2 xxs:scale-[70%] sm:w-80 sm:scale-[80%] md:scale-95 xl:w-96"
         >
           <div
             className="input-group relative flex w-full flex-wrap items-stretch xxs:pb-2 lg:pb-0"

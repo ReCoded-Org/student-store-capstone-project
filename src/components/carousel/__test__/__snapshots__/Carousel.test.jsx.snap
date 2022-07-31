@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="slick-slider mx-10 my-5 slick-initialized"
+  className="slick-slider mx-10 pt-10 pb-2 slick-initialized"
   dir="ltr"
 >
   <button
