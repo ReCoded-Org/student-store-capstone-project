@@ -20,10 +20,10 @@ function Carousel() {
 
     return (
         <Slider {...settings}>
-            <div className='carouselItem carouselItem1' />
-            <div className='carouselItem carouselItem2' />
-            <div className='carouselItem carouselItem3' />
-            <div className='carouselItem carouselItem4' />
+            <div className='carouselItem carouselItem1 rounded-lg' />
+            <div className='carouselItem carouselItem2 rounded-lg' />
+            <div className='carouselItem carouselItem3 rounded-lg' />
+            <div className='carouselItem carouselItem4 rounded-lg' />
         </Slider>
     );
 }

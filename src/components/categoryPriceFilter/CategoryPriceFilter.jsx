@@ -6,7 +6,7 @@ import PriceFilter from "../price-filter";
 
 const CategoryPriceFilter = () => {
     return (
-        <div className='px-[15px] py-5'>
+        <div className='px-[15px] pb-4 xxs:mt-[-3.5rem] md:pt-5 lg:mt-0'>
             <div className='invisible mx-5 my-2 grid gap-5 text-2xl font-bold text-purple lg:visible lg:grid-cols-3'>
                 <div className='col-span-2'>
                     <h1 className='brush w-fit'>Categories</h1>
