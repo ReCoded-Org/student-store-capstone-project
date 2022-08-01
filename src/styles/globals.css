@@ -8,7 +8,7 @@
     font-weight: 800;
 }
 .brush {
-    background-image: url("../../public//images/highlight.png");
+    background-image: url("../../public/images/highlight.png");
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
@@ -123,6 +123,9 @@
     font-weight: 800;
 }
 
+.activeLink {
+    background-image: url("../../public/images/highlight1.png");
+}
 /*for donation page*/
 .donationbrush {
     background-image: url("../../public/images/brushh.png");
