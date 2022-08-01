@@ -5,20 +5,20 @@ exports[`renders correctly 1`] = `
   className="px-[15px] py-5"
 >
   <div
-    className="invisible mx-5 my-2 grid gap-5 text-xl font-bold text-purple lg:visible lg:grid-cols-3"
+    className="invisible mx-5 my-2 grid gap-5 text-2xl font-bold text-purple lg:visible lg:grid-cols-3"
   >
     <div
       className="col-span-2"
     >
       <h1
-        className="brush"
+        className="brush w-fit"
       >
         Categories
       </h1>
     </div>
     <div>
       <h1
-        className="brush"
+        className="brush w-fit"
       >
         Price
       </h1>
