@@ -14,16 +14,16 @@ function Carousel() {
         autoplay: true,
         autoplaySpeed: 3000,
         draggable: true,
-        className: "mx-10 my-5",
+        className: "mx-10 pt-10 pb-2",
         dots: true,
     };
 
     return (
         <Slider {...settings}>
-            <div className='carouselItem carouselItem1' />
-            <div className='carouselItem carouselItem2' />
-            <div className='carouselItem carouselItem3' />
-            <div className='carouselItem carouselItem4' />
+            <div className='carouselItem carouselItem1 rounded-lg' />
+            <div className='carouselItem carouselItem2 rounded-lg' />
+            <div className='carouselItem carouselItem3 rounded-lg' />
+            <div className='carouselItem carouselItem4 rounded-lg' />
         </Slider>
     );
 }

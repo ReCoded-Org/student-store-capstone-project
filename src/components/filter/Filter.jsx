@@ -1,8 +1,22 @@
 const Filter = ({ bgColor, svg, name }) => {
+    let firstElementStyle = null;
+    let lastElementStyle = null;
+
+    if (name === "Books") {
+        firstElementStyle = "xxs:ml-[10rem] xs:ml-0 ml-[12rem]";
+    } else {
+        firstElementStyle = "xs:ml-0";
+    }
+    if (name === "Two-wheeler") {
+        lastElementStyle = "xxs:mr-[2rem] xs:mr-0";
+    } else {
+        lastElementStyle = "xs:mr-0";
+    }
+
     return (
-        <div>
+        <div className={`${firstElementStyle} ${lastElementStyle} scale-95`}>
             <div
-                className={`flex h-20 w-20 items-center justify-center rounded-full xs:scale-[50%] sm:m-1 sm:scale-90 md:scale-90 lg:scale-100 ${bgColor}`}
+                className={`flashing flex h-20 w-20 items-center justify-center rounded-full hover:cursor-pointer xxs:scale-[48%] sm:scale-90 md:scale-90 lg:scale-100 ${bgColor}`}
             >
                 <svg
                     viewBox='0 0 24 24'
@@ -16,7 +30,7 @@ const Filter = ({ bgColor, svg, name }) => {
                     />
                 </svg>
             </div>
-            <h1 className='text-center text-extraDarkPurple xs:mt-[-18px] xs:scale-75 xs:pb-2 sm:mt-0 md:scale-90 md:pb-0'>
+            <h1 className='text-center text-extraDarkPurple xxs:mt-[-18px] xxs:scale-75 xxs:pb-2 sm:mt-0 md:scale-90 md:pb-0 lg:pt-2'>
                 {name}
             </h1>
         </div>

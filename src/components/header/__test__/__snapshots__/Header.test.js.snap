@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <nav
-  className=" mb-2 flex max-w-[1440px] flex-row p-2 shadow-sm"
+  className="flex flex-row p-2 shadow-sm"
 >
   <div
     className=" flex flex-grow items-center justify-between md:flex md:flex-row md:items-center md:justify-items-stretch"
@@ -101,13 +101,13 @@ exports[`renders correctly 1`] = `
           className=" align-center mr-2 rounded-[20px] p-2 px-4 text-darkPurple hover:bg-purple hover:text-white md:inline-block md:flex-grow"
           href="#"
         >
-          About Us
+          Our Mission
         </a>
         <a
           className=" text-md mr-2 rounded-[20px] p-2 px-4 text-darkPurple hover:bg-purple hover:text-white md:flex md:flex-grow"
           href="#"
         >
-          Our Team
+          About Us
         </a>
       </div>
       <section
@@ -158,7 +158,7 @@ exports[`renders correctly 1`] = `
             </svg>
           </div>
           <ul
-            className="MENU-OPEN mt-10 flex min-h-[250px] flex-col items-center justify-between"
+            className="MENU-OPEN mt-10 flex min-h-[250px] flex-col items-center justify-between "
           >
             <li
               className="flex flex-row items-center justify-start"
@@ -340,10 +340,10 @@ exports[`renders correctly 1`] = `
           aria-labelledby="menu-button"
           aria-orientation="vertical"
           className="
-                                    focus:outline-none' absolute right-0 mt-2 flex w-16 rounded-md  
-                                                                       bg-white
-                                                                           shadow-md ring-1
-                                                                           ring-black ring-opacity-5
+                                    focus:outline-none' absolute right-0 z-10 mt-2 flex w-16  
+                                                                       rounded-md
+                                                                           bg-white shadow-md
+                                                                           ring-1 ring-black ring-opacity-5
                                                                             hideLanguage"
           role="menu"
           tabIndex="-1"
@@ -353,7 +353,7 @@ exports[`renders correctly 1`] = `
             role="none"
           >
             <a
-              className="block px-4 py-2 text-sm text-gray-700"
+              className="flashing block px-4 py-2 text-sm text-gray-700"
               href="#"
               id="menu-item-0"
               role="menuitem"
@@ -362,7 +362,7 @@ exports[`renders correctly 1`] = `
               English
             </a>
             <a
-              className="block px-4 py-2 text-sm text-gray-700"
+              className="flashing block px-4 py-2 text-sm text-gray-700"
               href="#"
               id="menu-item-1"
               role="menuitem"
