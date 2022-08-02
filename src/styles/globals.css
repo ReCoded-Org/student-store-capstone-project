@@ -8,7 +8,7 @@
     font-weight: 800;
 }
 .brush {
-    background-image: url("../../public/images/highlight.png");
+    background-image: url("../../public/images/highlight1.png");
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
@@ -92,7 +92,9 @@
 
 @layer base {
     nav,
-    button {
+    button,
+    input,
+    body {
         @apply font-Poppins;
     }
 }
