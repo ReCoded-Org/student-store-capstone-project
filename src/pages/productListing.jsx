@@ -75,18 +75,67 @@ const ProductListing = () => {
                         </div>
                     </div>
                     {/* Inputs */}
-                    <div className='grid grid-flow-row text-sm xxs:scale-90 xxs:px-0 md:px-4 lg:scale-100 lg:px-10'>
+                    <div className='grid grid-flow-row xxs:scale-90 xxs:px-0 md:px-4 lg:scale-95 lg:px-10'>
                         <div className='grid h-fit grid-flow-row'>
                             {/* Type, Category */}
-                            <div className='grid w-full xxs:grid-flow-row sm:grid-cols-2 sm:gap-4'>
+                            <div className='grid w-full text-hadrisblue xxs:grid-flow-row sm:grid-cols-2 sm:gap-4'>
                                 <div>
-                                    <Input
-                                        placeholder='Type(Product/Service)'
-                                        type='text'
-                                    />
+                                    <h2 className='text-lg'>Type</h2>
+                                    <select
+                                        className='my-3.5 block w-full rounded-lg border
+                                                 border-gray-300 bg-gray-50 p-2.5 text-center text-xl
+                                                 text-hadrisblue placeholder-hadrisblue focus:border-blue-500
+                                                 focus:ring-purple'
+                                        aria-label='Default select example'
+                                    >
+                                        <option
+                                            value='DEFAULT'
+                                            className='xxs:text-sm lg:text-lg'
+                                        >
+                                            Product
+                                        </option>
+                                        <option
+                                            value='1'
+                                            className='xxs:text-sm lg:text-lg'
+                                        >
+                                            Service
+                                        </option>
+                                    </select>
                                 </div>
                                 <div>
-                                    <Input placeholder='Category' type='text' />
+                                    <h2 className='text-lg'>Category</h2>
+                                    <select
+                                        className='my-3.5 block w-full rounded-lg border
+                                                 border-gray-300 bg-gray-50 p-2.5 text-center text-xl
+                                                 text-hadrisblue placeholder-hadrisblue focus:border-blue-500
+                                                 focus:ring-purple'
+                                        aria-label='Category'
+                                    >
+                                        <option
+                                            value='DEFAULT'
+                                            className='xxs:text-sm lg:text-lg'
+                                        >
+                                            Books
+                                        </option>
+                                        <option
+                                            value='1'
+                                            className='xxs:text-sm lg:text-lg'
+                                        >
+                                            Furniture
+                                        </option>
+                                        <option
+                                            value='2'
+                                            className='xxs:text-sm lg:text-lg'
+                                        >
+                                            Electronics
+                                        </option>
+                                        <option
+                                            value='3'
+                                            className='xxs:text-sm lg:text-lg'
+                                        >
+                                            Two-wheeler
+                                        </option>
+                                    </select>
                                 </div>
                             </div>
                             {/* Product name */}
@@ -94,8 +143,22 @@ const ProductListing = () => {
                                 <Input placeholder='Name' type='text' />
                             </div>
                             {/* Description */}
-                            <div className='grid h-40 items-stretch'>
-                                <Input placeholder='Description' type='text' />
+                            <div>
+                                <h2 className='text-lg text-hadrisblue'>
+                                    Description
+                                </h2>
+                                <div className='grid items-stretch'>
+                                    <textarea
+                                        id='description'
+                                        name='description'
+                                        rows='5'
+                                        cols='33'
+                                        defaultValue='...'
+                                        className='my-3.5 block min-h-[8rem] w-full
+                                                   rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-start text-xl
+                                                 text-hadrisblue placeholder-hadrisblue focus:border-blue-500 focus:ring-purple'
+                                    ></textarea>
+                                </div>
                             </div>
                             {/* Location, Price */}
                             <div className='grid w-full xxs:grid-flow-row sm:grid-cols-2 sm:gap-4'>
