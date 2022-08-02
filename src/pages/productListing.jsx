@@ -166,7 +166,17 @@ const ProductListing = () => {
                                     <Input placeholder='Location' type='text' />
                                 </div>
                                 <div>
-                                    <Input placeholder='Price' type='text' />
+                                    <input
+                                        className='my-3.5 block w-full rounded-lg border
+                                                 border-gray-300 bg-gray-50 p-2.5 text-center text-xl
+                                                 text-hadrisblue placeholder-hadrisblue focus:border-blue-500
+                                                focus:ring-purple'
+                                        id='price'
+                                        type='number'
+                                        placeholder='Price'
+                                        min={0}
+                                        required
+                                    />
                                 </div>
                             </div>
                             {/* List button */}
