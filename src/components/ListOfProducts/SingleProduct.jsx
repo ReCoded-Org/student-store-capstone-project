@@ -5,31 +5,29 @@ export default function SingleProduct({ product }) {
     return (
         <>
             <div
-                className='my-4 w-full transform font-Poppins shadow-xl  transition duration-500 hover:scale-105 
-         sm:w-2/3 md:w-5/12 lg:mx-3 lg:w-1/4 xl:w-1/5 '
+                className='w-full transform font-Poppins shadow-xl transition duration-500 xxs:my-[-2rem] xxs:scale-75 xxs:hover:scale-[80%]
+                            sm:my-2 sm:w-2/4 sm:scale-90 sm:hover:scale-100 md:w-5/12 md:scale-95 lg:mx-3 lg:w-1/4 xl:w-1/5'
             >
                 <div className='mb-1 overflow-hidden rounded-lg bg-white'>
                     <img
                         src={product.img}
                         alt='image'
-                        className='h-72 w-full cursor-pointer'
+                        className='h-64 w-full cursor-pointer'
                     />
-                    <div className='p-8 text-center sm:p-9 md:p-7 xl:p-9'>
-                        <h3></h3>
+                    <div className='px-4 py-6 text-center'>
                         <div className='flex justify-between '>
-                            <div className=' text-body-color mb-2 text-xl leading-relaxed'>
+                            <div className=' text-body-color mb-2 text-lg leading-relaxed'>
                                 {product.title}
                             </div>
-                            <span className='custom-bold text-2xl'>
+                            <span className='custom-bold text-xl'>
                                 ₺{product.price}
                             </span>
                         </div>
 
                         <div className='flex items-baseline justify-between'>
                             <span
-                                className='inline-block rounded-full bg-teal-200 px-2 
-                text-xs font-semibold 
-                 uppercase tracking-wide text-teal-800'
+                                className='inline-block rounded-full bg-teal-200 px-2 text-xs 
+                                           font-semibold uppercase tracking-wide text-teal-800'
                             >
                                 {product.category}
                             </span>

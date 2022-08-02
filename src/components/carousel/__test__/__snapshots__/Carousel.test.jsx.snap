@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="slick-slider mx-10 my-5 slick-initialized"
+  className="slick-slider mx-10 pt-10 pb-2 slick-initialized"
   dir="ltr"
 >
   <button
@@ -63,7 +63,7 @@ exports[`renders correctly 1`] = `
       >
         <div>
           <div
-            className="carouselItem carouselItem1"
+            className="carouselItem carouselItem1 rounded-lg"
             style={
               Object {
                 "display": "inline-block",
@@ -93,7 +93,7 @@ exports[`renders correctly 1`] = `
       >
         <div>
           <div
-            className="carouselItem carouselItem2"
+            className="carouselItem carouselItem2 rounded-lg"
             style={
               Object {
                 "display": "inline-block",
@@ -123,7 +123,7 @@ exports[`renders correctly 1`] = `
       >
         <div>
           <div
-            className="carouselItem carouselItem3"
+            className="carouselItem carouselItem3 rounded-lg"
             style={
               Object {
                 "display": "inline-block",
@@ -153,7 +153,7 @@ exports[`renders correctly 1`] = `
       >
         <div>
           <div
-            className="carouselItem carouselItem4"
+            className="carouselItem carouselItem4 rounded-lg"
             style={
               Object {
                 "display": "inline-block",
