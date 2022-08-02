@@ -125,6 +125,8 @@
 
 .activeLink {
     background-image: url("../../public/images/highlight1.png");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 /*for donation page*/
 .donationbrush {

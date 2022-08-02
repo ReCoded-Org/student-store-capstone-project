@@ -1,0 +1,58 @@
+const orderList = [
+    {
+        id: 1,
+        img: "https://productimages.hepsiburada.net/s/32/375/10354042765362.jpg",
+        title: "Apple iPad Pro ",
+        price: "4000",
+        category: "ELECTRONICS",
+        location: "Istanbul",
+        orderDate: "2022-04-01",
+    },
+    {
+        id: 2,
+        img: "https://pyxis.nymag.com/v1/imgs/86c/882/b47a32d8e72df7aeadf74490a82aaa9432.rsquare.w600.jpg",
+        title: "Apple iPad Pro ",
+        price: "4000",
+        category: "FURNITURE",
+        location: "Izmir",
+        orderDate: "2022-07-01",
+    },
+    {
+        id: 3,
+        img: "https://productimages.hepsiburada.net/s/32/375/10354042765362.jpg",
+        title: "Apple iPad Pro ",
+        price: "4000",
+        category: "ELECTRONICS",
+        location: "Istanbul",
+        orderDate: "2022-04-01",
+    },
+    {
+        id: 4,
+        img: "https://pyxis.nymag.com/v1/imgs/86c/882/b47a32d8e72df7aeadf74490a82aaa9432.rsquare.w600.jpg",
+        title: "Apple iPad Pro ",
+        price: "4000",
+        category: "FURNITURE",
+        location: "Izmir",
+        orderDate: "2022-07-01",
+    },
+    {
+        id: 5,
+        img: "https://productimages.hepsiburada.net/s/32/375/10354042765362.jpg",
+        title: "Apple iPad Pro ",
+        price: "4000",
+        category: "ELECTRONICS",
+        location: "Istanbul",
+        orderDate: "2022-04-01",
+    },
+    {
+        id: 6,
+        img: "https://pyxis.nymag.com/v1/imgs/86c/882/b47a32d8e72df7aeadf74490a82aaa9432.rsquare.w600.jpg",
+        title: "Apple iPad Pro ",
+        price: "4000",
+        category: "FURNITURE",
+        location: "Izmir",
+        orderDate: "2022-07-01",
+    },
+];
+
+export default orderList;
