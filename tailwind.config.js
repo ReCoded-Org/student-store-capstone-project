@@ -37,9 +37,6 @@ module.exports = {
                 cyanaqua: "#90EEE1",
                 iceblue: "#F1F6FA",
             },
-            backgroundImage: {
-                sunSky: "url('/public/images/sunSky.png')",
-            },
         },
     },
     plugins: [

@@ -10,7 +10,7 @@ function Header() {
 
     return (
         <>
-            <nav className=' mb-2 flex max-w-[1440px] flex-row p-2 shadow-sm'>
+            <nav className=' flex max-w-[1440px] flex-row p-2 shadow-sm'>
                 <div className=' flex flex-grow items-center justify-between md:flex md:flex-row md:items-center md:justify-items-stretch'>
                     <div className='flex w-full flex-row items-center justify-between md:w-auto  md:justify-start'>
                         <div className='py-1 md:mx-1 lg:mx-2'>

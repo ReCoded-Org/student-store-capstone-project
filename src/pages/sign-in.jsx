@@ -22,7 +22,7 @@ export default function SignInPage() {
                             Sign-in
                         </p>
 
-                        <div className=' flex w-5/6 max-w-sm flex-col items-center lg:max-w-md'>
+                        <div className=' flex w-11/12 max-w-sm flex-col items-center lg:max-w-md'>
                             <Input
                                 id='email'
                                 name='email'
@@ -107,7 +107,7 @@ export default function SignInPage() {
                                 layout='fill'
                             />
                         </div>
-                        <div className='absolute m-14 '>
+                        <div className='absolute ml-16 mt-20 p-2 '>
                             <Image
                                 src={logoOutline}
                                 alt='logoOutline'
@@ -154,7 +154,7 @@ export default function SignInPage() {
                             </button>
                         </div>
                         <div className='flex flex-col items-center'>
-                            <p className=' mb-4 bg-transparent text-xs text-darkpurple'>
+                            <p className=' text-md mb-4 bg-transparent text-darkpurple'>
                                 Don't have an account?
                             </p>
                             <Button
