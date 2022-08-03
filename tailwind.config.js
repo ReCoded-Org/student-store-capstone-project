@@ -16,6 +16,7 @@ module.exports = {
         extend: {
             fontFamily: {
                 Poppins: ['"Poppins"', "serif"],
+                Ubuntu: ["Ubuntu", "serif"],
             },
             // The project custom colors
             colors: {

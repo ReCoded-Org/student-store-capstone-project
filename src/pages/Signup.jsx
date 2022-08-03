@@ -7,12 +7,14 @@ import Layout from "@/components/layout/Layout";
 export default function Signup() {
     return (
         <Layout>
-            <div className='signup-container flex h-screen  justify-center  md:flex-row'>
-                <div className=' signup-imgs h-5/6 w-3/6 '></div>
+            <div className='signup-container flex   justify-center  md:flex-row'>
+                <div className=' signup-imgs my-5   w-3/6'></div>
 
                 <div className='inputs  container  w-3/6 items-center'>
                     <div className='container m-auto flex w-5/6 flex-col items-center'>
-                        <h1>Sign Up</h1>
+                        <h1 className='my-2 py-6 font-Ubuntu text-4xl text-darkPurple md:my-3 md:text-5xl'>
+                            Sign-Up
+                        </h1>
                         <form
                             action='submit'
                             className='container m-auto flex w-5/6 flex-col items-center'
