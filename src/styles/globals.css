@@ -8,7 +8,7 @@
     font-weight: 800;
 }
 .brush {
-    background-image: url("../../public/images/highlight1.png");
+    background-image: url("../../public/images/highlight.png");
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
@@ -92,9 +92,7 @@
 
 @layer base {
     nav,
-    button,
-    input,
-    body {
+    button {
         @apply font-Poppins;
     }
 }
@@ -126,7 +124,7 @@
 }
 
 .activeLink {
-    background-image: url("../../public/images/highlight.png");
+    background-image: url("../../public/images/highlight1.png");
 }
 /*for donation page*/
 .donationbrush {
