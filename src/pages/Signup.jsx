@@ -7,7 +7,7 @@ import Layout from "@/components/layout/Layout";
 export default function Signup() {
     return (
         <Layout>
-            <div className='-5 flex h-screen  justify-center bg-iceblue md:flex-row'>
+            <div className='signup-container flex h-screen  justify-center  md:flex-row'>
                 <div className=' signup-imgs h-5/6 w-3/6 '></div>
 
                 <div className='inputs  container  w-3/6 items-center'>

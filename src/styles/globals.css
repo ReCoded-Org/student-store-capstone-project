@@ -73,10 +73,14 @@
     z-index: 100;
 }
 /* for signup page */
+.signup-container {
+    background: url("../../public/images/signup-bg.png");
+    background-size: cover;
+}
 .signup-imgs {
-    opacity: 0.62;
-    background: url("../../public/images/hands.png"),
-        url("../../public/images/signup-bg.png");
+    opacity: 0.9;
+    background: url("../../public/images/hands.png");
+
     background-size: cover;
 }
 @media screen and (max-width: 820px) {
