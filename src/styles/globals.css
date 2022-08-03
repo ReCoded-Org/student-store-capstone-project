@@ -72,7 +72,31 @@
     cursor: pointer;
     z-index: 100;
 }
-
+/* for signup page */
+.signup-imgs {
+    opacity: 0.62;
+    background: url("../../public/images/hands.png"),
+        url("../../public/images/signup-bg.png");
+    background-size: cover;
+}
+@media screen and (max-width: 820px) {
+    .signup-imgs {
+        display: none;
+    }
+    .inputs {
+        width: 100%;
+        background: url("../../public/images/signup-bg.png");
+        background-size: cover;
+    }
+}
+.line {
+    margin: 4px 12px;
+    margin-top: 10px;
+    border: 1px solid rgb(142, 171, 224);
+    height: 1px;
+    width: 160px;
+}
+/* end for signup page */
 .popup-image img {
     position: absolute;
     top: 50%;
