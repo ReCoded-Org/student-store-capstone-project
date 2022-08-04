@@ -7,20 +7,27 @@ export default function Listing({ listing }) {
             <div
                 className='align-center listingCard relative mx-auto w-[300px] 
             cursor-pointer flex-col justify-center overflow-hidden rounded-lg bg-white
-            pb-2 font-Poppins shadow-xl transition duration-300 hover:scale-105 hover:shadow-hadrisblue'
+            pb-2 font-Poppins shadow-xl transition duration-500 hover:scale-105 hover:shadow-hadrisblue'
             >
                 <div
-                    className='absolute hidden h-full w-full bg-white p-5'
+                    className='absolute hidden h-full w-full bg-white p-6 text-center'
                     id='listingOverview'
                 >
-                    <h3 className='rounded-xl bg-cyanaqua p-2 font-semibold text-hadrisblue'>
+                    <h3 className='m-2 rounded-xl bg-hadrisblue text-lg font-semibold text-cyanaqua'>
                         Listing Details
                     </h3>
-                    <p className='inline-block p-2 text-sm text-hadrisblue'>
-                        Item Condition:
+                    <h3 className='text-md m-2 mt-6 rounded-xl bg-cyanaqua text-hadrisblue'>
+                        Item Condition
+                    </h3>
+                    <p className='text-md m-2 inline-block text-hadrisblue'>
+                        {listing.condition}
                     </p>
-                    <p>{listing.condition}</p>
-                    <p>{listing.description}</p>
+                    <h3 className='text-md m-2 rounded-xl bg-cyanaqua text-hadrisblue'>
+                        Listing Description
+                    </h3>
+                    <p className='text-md m-2 inline-block text-hadrisblue'>
+                        {listing.description}
+                    </p>
                 </div>
                 <div className='w-full overflow-hidden'>
                     <img src={listing.img} alt='image' className='object-fit' />
