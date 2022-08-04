@@ -31,7 +31,7 @@ function Sidebar() {
             <hr className='m-10 xs:hidden sm:hidden'></hr>
             <div className='flex flex-col justify-center'>
                 <div className='pb-9 xs:pb-2 sm:pb-4' id='editProfile'>
-                    <Link href='/edit-profile'>
+                    <Link href='/editprofile'>
                         <a className='sm:text-md m-2 font-bold text-purple hover:cursor-pointer xs:text-sm md:text-xl lg:text-2xl'>
                             Edit Profile
                         </a>
