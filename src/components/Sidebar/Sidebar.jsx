@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 import rifik from "../../../public/images/rifik.png";
@@ -30,19 +31,25 @@ function Sidebar() {
             <hr className='m-10 xs:hidden sm:hidden'></hr>
             <div className='flex flex-col justify-center'>
                 <div className='pb-9 xs:pb-2 sm:pb-4' id='editProfile'>
-                    <a className='sm:text-md m-2 font-bold text-purple hover:cursor-pointer xs:text-sm md:text-xl lg:text-2xl'>
-                        Edit Profile
-                    </a>
+                    <Link href='/edit-profile'>
+                        <a className='sm:text-md m-2 font-bold text-purple hover:cursor-pointer xs:text-sm md:text-xl lg:text-2xl'>
+                            Edit Profile
+                        </a>
+                    </Link>
                 </div>
                 <div className='pb-9 xs:pb-2 sm:pb-4' id='myListings'>
-                    <a className='sm:text-md m-2 font-bold text-purple hover:cursor-pointer xs:text-sm md:text-xl lg:text-2xl'>
-                        My Listings
-                    </a>
+                    <Link href='/listings'>
+                        <a className='sm:text-md m-2 font-bold text-purple hover:cursor-pointer xs:text-sm md:text-xl lg:text-2xl'>
+                            My Listings
+                        </a>
+                    </Link>
                 </div>
                 <div className='pb-9 xs:pb-2 sm:pb-4' id='myOrders'>
-                    <a className='sm:text-md m-2 font-bold text-purple hover:cursor-pointer xs:text-sm md:text-xl lg:text-2xl'>
-                        My Orders
-                    </a>
+                    <Link href='/orders'>
+                        <a className='sm:text-md m-2 font-bold text-purple hover:cursor-pointer xs:text-sm md:text-xl lg:text-2xl'>
+                            My Orders
+                        </a>
+                    </Link>
                 </div>
             </div>
         </aside>
