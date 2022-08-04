@@ -23,7 +23,7 @@ const listingList = [
         condition: "Used-Mint Condition",
     },
     {
-        id: 1,
+        id: 3,
         img: "https://productimages.hepsiburada.net/s/32/375/10354042765362.jpg",
         title: "Apple iPad Pro ",
         price: "4000",
@@ -35,7 +35,7 @@ const listingList = [
         condition: "Used-Good Condition",
     },
     {
-        id: 2,
+        id: 4,
         img: "https://pyxis.nymag.com/v1/imgs/86c/882/b47a32d8e72df7aeadf74490a82aaa9432.rsquare.w600.jpg",
         title: "Leather Couch",
         price: "1000",
@@ -46,7 +46,7 @@ const listingList = [
         condition: "Used-Mint Condition",
     },
     {
-        id: 1,
+        id: 5,
         img: "https://productimages.hepsiburada.net/s/32/375/10354042765362.jpg",
         title: "Apple iPad Pro ",
         price: "4000",
@@ -58,7 +58,7 @@ const listingList = [
         condition: "Used-Good Condition",
     },
     {
-        id: 2,
+        id: 6,
         img: "https://pyxis.nymag.com/v1/imgs/86c/882/b47a32d8e72df7aeadf74490a82aaa9432.rsquare.w600.jpg",
         title: "Leather Couch",
         price: "1000",
@@ -69,7 +69,7 @@ const listingList = [
         condition: "Used-Mint Condition",
     },
     {
-        id: 1,
+        id: 7,
         img: "https://productimages.hepsiburada.net/s/32/375/10354042765362.jpg",
         title: "Apple iPad Pro ",
         price: "4000",
@@ -81,7 +81,30 @@ const listingList = [
         condition: "Used-Good Condition",
     },
     {
-        id: 2,
+        id: 8,
+        img: "https://pyxis.nymag.com/v1/imgs/86c/882/b47a32d8e72df7aeadf74490a82aaa9432.rsquare.w600.jpg",
+        title: "Leather Couch",
+        price: "1000",
+        category: "FURNITURE",
+        location: "Izmir",
+        listingDate: "2022-07-01",
+        description: "Leather Couch - Brown, doesn't have stains",
+        condition: "Used-Mint Condition",
+    },
+    {
+        id: 9,
+        img: "https://productimages.hepsiburada.net/s/32/375/10354042765362.jpg",
+        title: "Apple iPad Pro ",
+        price: "4000",
+        category: "ELECTRONICS",
+        location: "Istanbul",
+        listingDate: "2022-04-01",
+        description:
+            "Apple iPad Pro - 12.9-inch - Wi-Fi - 64GB - Space Gray, minor scratches",
+        condition: "Used-Good Condition",
+    },
+    {
+        id: 10,
         img: "https://pyxis.nymag.com/v1/imgs/86c/882/b47a32d8e72df7aeadf74490a82aaa9432.rsquare.w600.jpg",
         title: "Leather Couch",
         price: "1000",
