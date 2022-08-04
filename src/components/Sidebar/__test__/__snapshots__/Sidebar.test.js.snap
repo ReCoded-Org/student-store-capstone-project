@@ -161,7 +161,8 @@ exports[`renders correctly 1`] = `
     className="flex flex-col justify-center"
   >
     <div
-      className="activeLink pb-9 xs:pb-2 sm:pb-4"
+      className="pb-9 xs:pb-2 sm:pb-4"
+      id="editProfile"
     >
       <a
         className="sm:text-md m-2 font-bold text-purple hover:cursor-pointer xs:text-sm md:text-xl lg:text-2xl"
@@ -171,6 +172,7 @@ exports[`renders correctly 1`] = `
     </div>
     <div
       className="pb-9 xs:pb-2 sm:pb-4"
+      id="myListings"
     >
       <a
         className="sm:text-md m-2 font-bold text-purple hover:cursor-pointer xs:text-sm md:text-xl lg:text-2xl"
@@ -180,6 +182,7 @@ exports[`renders correctly 1`] = `
     </div>
     <div
       className="pb-9 xs:pb-2 sm:pb-4"
+      id="myOrders"
     >
       <a
         className="sm:text-md m-2 font-bold text-purple hover:cursor-pointer xs:text-sm md:text-xl lg:text-2xl"

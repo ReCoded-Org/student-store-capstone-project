@@ -29,17 +29,17 @@ function Sidebar() {
             </div>
             <hr className='m-10 xs:hidden sm:hidden'></hr>
             <div className='flex flex-col justify-center'>
-                <div className='activeLink pb-9 xs:pb-2 sm:pb-4'>
+                <div className='pb-9 xs:pb-2 sm:pb-4' id='editProfile'>
                     <a className='sm:text-md m-2 font-bold text-purple hover:cursor-pointer xs:text-sm md:text-xl lg:text-2xl'>
                         Edit Profile
                     </a>
                 </div>
-                <div className='pb-9 xs:pb-2 sm:pb-4'>
+                <div className='pb-9 xs:pb-2 sm:pb-4' id='myListings'>
                     <a className='sm:text-md m-2 font-bold text-purple hover:cursor-pointer xs:text-sm md:text-xl lg:text-2xl'>
                         My Listings
                     </a>
                 </div>
-                <div className='pb-9 xs:pb-2 sm:pb-4'>
+                <div className='pb-9 xs:pb-2 sm:pb-4' id='myOrders'>
                     <a className='sm:text-md m-2 font-bold text-purple hover:cursor-pointer xs:text-sm md:text-xl lg:text-2xl'>
                         My Orders
                     </a>
