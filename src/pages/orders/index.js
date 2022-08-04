@@ -7,7 +7,7 @@ import Sidebar from "@/components/Sidebar/Sidebar";
 function OrdersPage() {
     return (
         <Layout>
-            <main className='flex xs:flex-col sm:flex-col lg:flex-row md:flex-row'>
+            <main className='flex xs:flex-col sm:flex-col md:flex-row lg:flex-row'>
                 <Sidebar />
                 <Orders />
             </main>

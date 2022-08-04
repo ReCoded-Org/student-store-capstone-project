@@ -5,7 +5,7 @@ import listingList from "./listingList";
 
 export default function Listings() {
     return (
-        <div className='flex w-full flex-wrap justify-start align-center gap-6 align-top bg-iceblue p-10'>
+        <div className='align-center flex w-full flex-wrap justify-start gap-6 bg-iceblue p-10 align-top'>
             {listingList.map((listing) => {
                 return <Listing listing={listing} key={listing.id} />;
             })}

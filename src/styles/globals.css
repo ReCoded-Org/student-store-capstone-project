@@ -209,3 +209,11 @@
         opacity: 1;
     }
 }
+
+.listingCard:hover #listingOverview {
+    display: block;
+}
+
+.orderCard:hover #orderOverview {
+    display: block;
+}
