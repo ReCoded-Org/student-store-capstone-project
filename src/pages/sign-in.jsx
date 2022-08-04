@@ -33,7 +33,7 @@ export default function SignInPage() {
                                 name='password'
                                 placeholder='password'
                             />
-                            <div className='mt-4 flex w-full flex-row justify-between'>
+                            <div className='my-4 flex w-full flex-row justify-between'>
                                 <Button
                                     buttonStyle='orangeSignIn'
                                     text='sign-in'
@@ -46,11 +46,13 @@ export default function SignInPage() {
                                 />
                             </div>
                             <div className='mb-2 flex flex-col items-center justify-center pt-4 md:flex md:flex-col'>
-                                <p className='text-md mb-4 bg-transparent p-2 text-darkpurple'>
-                                    or
-                                </p>
+                                <fieldset className=' mb-4 w-96 border-t border-[#585785] lg:w-[448px]'>
+                                    <legend className='text-md mx-auto px-4 text-[#585785]'>
+                                        or
+                                    </legend>
+                                </fieldset>
 
-                                <p className='text-md mx-4 mb-2 bg-transparent  text-darkpurple'>
+                                <p className='text-md mx-4 mb-2 bg-transparent  text-darkPurple'>
                                     sign-in with:
                                 </p>
                             </div>

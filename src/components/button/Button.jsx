@@ -1,10 +1,10 @@
 export default function Button({ buttonStyle, type, text, handleClick }) {
     const signInBtnSignInPage =
-        "h-10  w-40 p-1 px-4 rounded-lg border-1 bg-pumpkin  text-md font-normal text-white shadow-sm";
+        "h-10  w-40 lg:w-48 lg:px-5 p-1 px-4 rounded-lg border-1 bg-pumpkin  text-md font-normal text-white shadow-sm";
     const forgotPasswordBtn =
-        "h-10 w-40 p-1 rounded-lg border-2 border-pumpkin bg-transparent font-normal text-md text-pumpkin shadow-sm";
+        "h-10 w-40 lg:w-48 p-1 rounded-lg border-2 border-pumpkin bg-transparent font-normal text-md text-pumpkin shadow-sm";
     const signUpBtnSignInPage =
-        "h-10 w-36 mb-2 p-1 bg-pumpkin border-2 border-white font-normal text-white text-md rounded-lg ";
+        "h-10 w-36 mb-2 p-1 bg-pumpkin hover:border-2 hover:border-white font-normal text-white text-md rounded-lg ";
     const signInBtnSignUpPage =
         "h-9 w-36 m-1 p-1 rounded-lg border-2 bg-darkPurple font-light text-sm text-white shadow-sm";
     const signUpBtnSignUpPage =
