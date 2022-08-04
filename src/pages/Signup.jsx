@@ -12,7 +12,7 @@ export default function Signup() {
 
                 <div className='inputs  container  w-3/6 items-center'>
                     <div className='container m-auto flex w-5/6 flex-col items-center'>
-                        <h1 className='my-2 py-6 font-Ubuntu text-4xl text-darkPurple md:my-3 md:text-5xl'>
+                        <h1 className='my-2 py-6 font-Ubuntu text-4xl text-white md:my-3 md:text-5xl'>
                             Sign-Up
                         </h1>
                         <form
@@ -40,8 +40,10 @@ export default function Signup() {
                             <div>or</div>
                             <span className='line'></span>
                         </div>
-
-                        <div className='m-1 mb-16 flex flex-row  '>
+                        <div className='m-1 text-lg text-iceblue'>
+                            Sign up with
+                        </div>
+                        <div className='m-1 mb-8 flex flex-row  '>
                             <button className=' m-1 flex items-center rounded-3xl border border-[#F26F6F] p-1  text-[#F26F6F]'>
                                 <BsGoogle
                                     size={22}
@@ -58,14 +60,24 @@ export default function Signup() {
                                 />
                                 <p className='mx-2 text-sm md:mx-3'>Facebook</p>
                             </button>
-                            <button className=' m-1 flex justify-around rounded-3xl border border-cyan bg-transparent p-1 text-cyan'>
+                            <button className=' m-1 flex justify-around rounded-3xl border border-cyanaqua bg-transparent p-1 text-cyanaqua '>
                                 <BsTwitter
                                     size={22}
                                     style={{ padding: "1px" }}
-                                    color='cyan'
+                                    color='cyanaqua'
                                 />
                                 <p className='mx-2 text-sm md:mx-3'>Twitter</p>
                             </button>
+                        </div>
+                        <div className='mb-4 text-xl text-iceblue'>
+                            Already Have an account?
+                        </div>
+                        <div className='mb-8'>
+                            <Button
+                                buttonStyle='purpleSignUp'
+                                type='submit'
+                                text='Sign-in'
+                            />
                         </div>
                     </div>
                 </div>

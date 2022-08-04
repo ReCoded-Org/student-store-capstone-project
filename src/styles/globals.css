@@ -78,10 +78,12 @@
     background-size: cover;
 }
 .signup-imgs {
+    margin-top: 4rem;
+    margin-left: 1rem;
     opacity: 0.9;
     background: url("../../public/images/hands.png");
-
-    background-size: cover;
+    background-size: 700px;
+    background-repeat: no-repeat;
 }
 @media screen and (max-width: 820px) {
     .signup-imgs {
@@ -96,7 +98,7 @@
 .line {
     margin: 4px 12px;
     margin-top: 10px;
-    border: 1px solid rgb(142, 171, 224);
+    background: linear-gradient(45deg, #14212e, #aae7a2, #f00d99);
     height: 1px;
     width: 160px;
 }
