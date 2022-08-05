@@ -79,10 +79,10 @@
 }
 .signup-imgs {
     margin-top: 4rem;
-    margin-left: 1rem;
+    margin-left: 3rem;
     opacity: 0.9;
     background: url("../../public/images/hands.png");
-    background-size: 700px;
+    background-size: 600px;
     background-repeat: no-repeat;
 }
 @media screen and (max-width: 820px) {
