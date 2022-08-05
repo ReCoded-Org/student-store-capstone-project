@@ -92,7 +92,8 @@
 
 @layer base {
     nav,
-    button {
+    button,
+    body {
         @apply font-Poppins;
     }
 }

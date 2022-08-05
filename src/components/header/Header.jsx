@@ -10,7 +10,7 @@ function Header() {
 
     return (
         <>
-            <nav className='flex flex-row p-2 shadow-sm'>
+            <nav className='flex flex-row p-2 shadow-sm '>
                 <div className=' flex flex-grow items-center justify-between md:flex md:flex-row md:items-center md:justify-items-stretch'>
                     <div className='flex w-full flex-row items-center justify-between md:w-auto  md:justify-start'>
                         <div className='py-1 md:mx-1 lg:mx-2'>
@@ -25,13 +25,13 @@ function Header() {
                         <div className='text-md hidden w-full flex-grow md:flex md:w-auto  md:items-center '>
                             <a
                                 href='#'
-                                className=' align-center  mr-2 rounded-[20px] p-2 px-4 text-darkPurple hover:bg-purple hover:text-white md:inline-block md:flex-grow'
+                                className=' align-center  mr-2 rounded-[20px] p-2 px-3 text-darkPurple hover:bg-purple hover:text-white md:inline-block md:flex-grow lg:px-4'
                             >
                                 Our Mission
                             </a>
                             <a
                                 href='#'
-                                className=' text-md mr-2 rounded-[20px] p-2 px-4 text-darkPurple hover:bg-purple hover:text-white md:flex md:flex-grow'
+                                className=' text-md mr-2 rounded-[20px] p-2 px-3 text-darkPurple hover:bg-purple hover:text-white md:flex md:flex-grow lg:px-4'
                             >
                                 About Us
                             </a>
