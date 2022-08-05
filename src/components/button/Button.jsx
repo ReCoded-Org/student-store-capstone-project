@@ -12,7 +12,7 @@ export default function Button({ buttonStyle, type, text, handleClick }) {
     const listItemBtn =
         "h-12 w-72 md:h-14 md:w-80 lg:h-14 lg:w-96 m-1 p-1 rounded-lg border-2 bg-pumpkin font-md text-[17px] text-white shadow-sm";
     const saveChangesBtn =
-        "h-12 w-48 lg:h-14 lg:w-64 m-1 p-1 px-2 rounded-lg border-2 bg-pumpkin font-md text-[17px] text-white shadow-sm";
+        "h-12 w-48 lg:h-14 lg:w-64 m-1 p-1 px-2 hover:bg-purple hover:shadow-lg rounded-lg border-2 bg-pumpkin font-md text-[17px] text-white shadow-sm";
     const allButtons = {
         orangeSignIn: signInBtnSignInPage,
         forgotPassword: forgotPasswordBtn,
