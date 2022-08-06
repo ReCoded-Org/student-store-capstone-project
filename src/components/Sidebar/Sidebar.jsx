@@ -14,7 +14,7 @@ function Sidebar() {
             sm:h-[200px] sm:w-full sm:flex-row sm:justify-center sm:gap-10
             sm:align-middle md:h-screen md:w-1/3 md:flex-col md:justify-start lg:w-1/5'
         >
-            <div className='mb-5 flex w-[190px] self-center overflow-hidden rounded-full border-[5px] border-lightpurple bg-red-300 xs:hidden sm:flex sm:w-[130px] md:flex lg:flex'>
+            <div className='mb-5 flex w-[190px] self-center overflow-hidden rounded-full border-[5px] border-lightpurple bg-red-300 xs:w-[50px] sm:flex sm:w-[130px] md:flex lg:flex'>
                 <Image src={rifik} alt='rifik' layout='intrinsic' />
             </div>
             <div className='flex flex-col justify-evenly xs:mb-2 xs:text-left sm:mb-5 sm:text-center'>

@@ -92,7 +92,8 @@
 
 @layer base {
     nav,
-    button {
+    button,
+    body {
         @apply font-Poppins;
     }
 }
@@ -216,4 +217,23 @@
 
 .orderCard:hover #orderOverview {
     display: block;
+}
+
+/*edit profile phone styling*/
+@media screen and (max-width: 375px) {
+    .editphone {
+        width: auto;
+    }
+    .inputphonefont {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .edittab {
+        margin-bottom: 40px;
+    }
+    .inputtabfont {
+        font-size: 16px;
+    }
 }
