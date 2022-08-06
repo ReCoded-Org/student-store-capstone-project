@@ -1,16 +1,17 @@
-import Link from "next/link";
-import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import * as React from "react";
 
+import Carousel from "@/components/carousel";
+import CategoryPriceFilter from "@/components/categoryPriceFilter/CategoryPriceFilter";
 import Layout from "@/components/layout/Layout";
+import ListOfProducts from "@/components/ListOfProducts";
 export default function HomePage() {
-    const { t } = useTranslation("common");
+    // const { t } = useTranslation("common");
 
     return (
         <>
             <Layout>
-                <p>{t("test")}</p>
+                {/* <p>{t("test")}</p>
                 <div
                     style={{
                         display: "flex",
@@ -27,6 +28,11 @@ export default function HomePage() {
                     <Link href='/' locale='tr'>
                         <a>Turkish</a>
                     </Link>
+                </div> */}
+                <div className='bg-clay md:px-10 lg:px-16 2xl:px-20'>
+                    <Carousel />
+                    <CategoryPriceFilter />
+                    <ListOfProducts />
                 </div>
             </Layout>
         </>

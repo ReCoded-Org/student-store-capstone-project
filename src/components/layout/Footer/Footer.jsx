@@ -5,9 +5,9 @@ import * as React from "react";
 export default function Footer() {
     return (
         <div className='items-center justify-center bg-darkpurple font-Poppins'>
-            <div className='m-auto flex max-w-screen-2xl flex-wrap justify-around gap-5 pt-14 pb-14 text-white'>
-                <div className='logo logosizingphone logosizingtab mb-5 flex w-96 flex-col text-2xl'>
-                    <div className=' mb-3 ml-5 flex flex-row items-center'>
+            <div className='m-auto flex max-w-screen-2xl flex-wrap justify-around gap-5 pt-8 text-white'>
+                <div className='logo logosizingphone logosizingtab flex w-96 flex-col text-2xl'>
+                    <div className='ml-0 flex scale-75 flex-row items-center'>
                         <Image
                             src='/images/loggo.png'
                             alt='Logo'
@@ -21,7 +21,7 @@ export default function Footer() {
                             height='80px'
                         ></Image>
                     </div>
-                    <div className='mt-3 mr-10 flex flex-row items-center justify-around'>
+                    <div className='mt-2 mr-10 flex scale-[60%] flex-row items-center justify-around'>
                         <Link href='/'>
                             <a>
                                 <Image
@@ -55,38 +55,34 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className='ml-20 mb-5 flex w-96 flex-col'>
+                <div className='ml-20 flex w-96 flex-col'>
                     <Link href='/'>
-                        <a className='mb-8 text-xl font-bold'>About Us</a>
+                        <a className='mb-4 text-sm font-bold'>About Us</a>
                     </Link>
                     <Link href='/'>
-                        <a className='mb-8 text-xl font-bold'>Get Help</a>
+                        <a className='mb-4 text-sm font-bold'>Get Help</a>
                     </Link>
-                    <p className='text-xl font-bold	'>Contact Us:</p>
-                    <p className='text-lg	'>Phone: 000 111 22 33</p>
-                    <p className='text-lg	'>e-mail: contact@studentstore.com</p>
-                    <p className='text-lg	'>
+                    <p className='text-sm font-bold	'>Contact Us:</p>
+                    <p className='text-xs	'>Phone: 000 111 22 33</p>
+                    <p className='text-xs'>e-mail: contact@studentstore.com</p>
+                    <p className='text-xs'>
                         Adress: X Street, Number 1, Türkiye
                     </p>
                 </div>
-                <div className='ml-20 mb-5 flex w-96 flex-col'>
+                <div className='ml-20 mb-5 flex w-96 flex-col gap-y-4'>
                     <Link href='/'>
-                        <a className='mb-8 text-xl font-bold '>Shop Now !</a>
+                        <a className='text-sm font-bold '>Shop Now !</a>
                     </Link>
                     <Link href='/'>
-                        <a className='mb-8 text-xl font-bold '>
-                            Register For Free
-                        </a>
+                        <a className='text-sm font-bold '>Register For Free</a>
                     </Link>
                     <Link href='/'>
-                        <a className='mb-8 text-xl font-bold '>
+                        <a className='text-sm font-bold '>
                             Delivery Fee and Policies
                         </a>
                     </Link>
                     <Link href='/'>
-                        <a className='mb-8 text-xl font-bold '>
-                            Track Your Order
-                        </a>
+                        <a className='text-sm font-bold'>Track Your Order</a>
                     </Link>
                 </div>
                 <div className='mb-5 mr-5 flex flex-row flex-wrap items-center justify-center gap-3'>
@@ -97,6 +93,7 @@ export default function Footer() {
                                 alt='GooglePlay'
                                 width='185px'
                                 height='55px'
+                                className='scale-75'
                             ></Image>
                         </a>
                     </Link>
@@ -107,6 +104,7 @@ export default function Footer() {
                                 alt='AppStore'
                                 width='185px'
                                 height='45px'
+                                className='scale-75'
                             ></Image>
                         </a>
                     </Link>

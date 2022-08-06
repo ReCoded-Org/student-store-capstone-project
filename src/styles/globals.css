@@ -8,7 +8,7 @@
     font-weight: 800;
 }
 .brush {
-    background-image: url("../../public//images/highlight.png");
+    background-image: url("../../public/images/highlight.png");
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
@@ -122,7 +122,8 @@
 
 @layer base {
     nav,
-    button {
+    button,
+    body {
         @apply font-Poppins;
     }
 }
@@ -150,9 +151,12 @@
 }
 
 .custom-bold {
-    font-weight: 800;
+    font-weight: 700;
 }
 
+.activeLink {
+    background-image: url("../../public/images/highlight1.png");
+}
 /*for donation page*/
 .donationbrush {
     background-image: url("../../public/images/brushh.png");
@@ -197,5 +201,57 @@
 @media screen and (max-width: 375px) {
     .logosizingphone {
         width: 270px;
+    }
+}
+
+.brush {
+    background-image: url("../../public/images/highlight.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+}
+
+@media (max-width: 360px) {
+    .brush {
+        background-image: none;
+    }
+}
+
+.flashing:hover {
+    opacity: 1;
+    -webkit-animation: flash 1.5s;
+    animation: flash 1.5s;
+}
+@-webkit-keyframes flash {
+    0% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes flash {
+    0% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/*edit profile phone styling*/
+@media screen and (max-width: 375px) {
+    .editphone {
+        width: auto;
+    }
+    .inputphonefont {
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .edittab {
+        margin-bottom: 40px;
+    }
+    .inputtabfont {
+        font-size: 16px;
     }
 }

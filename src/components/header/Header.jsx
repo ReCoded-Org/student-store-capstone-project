@@ -10,7 +10,7 @@ function Header() {
 
     return (
         <>
-            <nav className=' mb-2 flex max-w-[1440px] flex-row p-2 shadow-sm'>
+            <nav className='flex flex-row p-2 shadow-sm '>
                 <div className=' flex flex-grow items-center justify-between md:flex md:flex-row md:items-center md:justify-items-stretch'>
                     <div className='flex w-full flex-row items-center justify-between md:w-auto  md:justify-start'>
                         <div className='py-1 md:mx-1 lg:mx-2'>
@@ -25,15 +25,15 @@ function Header() {
                         <div className='text-md hidden w-full flex-grow md:flex md:w-auto  md:items-center '>
                             <a
                                 href='#'
-                                className=' align-center  mr-2 rounded-[20px] p-2 px-4 text-darkPurple hover:bg-purple hover:text-white md:inline-block md:flex-grow'
+                                className=' align-center  mr-2 rounded-[20px] p-2 px-3 text-darkPurple hover:bg-purple hover:text-white md:inline-block md:flex-grow lg:px-4'
                             >
-                                About Us
+                                Our Mission
                             </a>
                             <a
                                 href='#'
-                                className=' text-md mr-2 rounded-[20px] p-2 px-4 text-darkPurple hover:bg-purple hover:text-white md:flex md:flex-grow'
+                                className=' text-md mr-2 rounded-[20px] p-2 px-3 text-darkPurple hover:bg-purple hover:text-white md:flex md:flex-grow lg:px-4'
                             >
-                                Our Team
+                                About Us
                             </a>
                         </div>
 
@@ -69,7 +69,7 @@ function Header() {
                                         <line x1='6' y1='6' x2='18' y2='18' />
                                     </svg>
                                 </div>
-                                <ul className='MENU-OPEN mt-10 flex min-h-[250px] flex-col items-center justify-between'>
+                                <ul className='MENU-OPEN mt-10 flex min-h-[250px] flex-col items-center justify-between '>
                                     <li className='flex flex-row items-center justify-start'>
                                         <a href='#'>EN &nbsp;&nbsp;</a> |
                                         <a href='#'>&nbsp;&nbsp; TR</a>
@@ -137,10 +137,10 @@ function Header() {
 
                             <div
                                 className={`
-                                    focus:outline-none' absolute right-0 mt-2 flex w-16 rounded-md  
-                                                                       bg-white
-                                                                           shadow-md ring-1
-                                                                           ring-black ring-opacity-5
+                                    focus:outline-none' absolute right-0 z-10 mt-2 flex w-16  
+                                                                       rounded-md
+                                                                           bg-white shadow-md
+                                                                           ring-1 ring-black ring-opacity-5
                                                                             ${
                                                                                 isLanguageOpen
                                                                                     ? "showLanguage"
@@ -157,7 +157,7 @@ function Header() {
                                 >
                                     <a
                                         href='#'
-                                        className='block px-4 py-2 text-sm text-gray-700'
+                                        className='flashing block px-4 py-2 text-sm text-gray-700'
                                         role='menuitem'
                                         tabIndex='-1'
                                         id='menu-item-0'
@@ -166,7 +166,7 @@ function Header() {
                                     </a>
                                     <a
                                         href='#'
-                                        className='block px-4 py-2 text-sm text-gray-700'
+                                        className='flashing block px-4 py-2 text-sm text-gray-700'
                                         role='menuitem'
                                         tabIndex='-1'
                                         id='menu-item-1'
