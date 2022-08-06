@@ -123,9 +123,7 @@
     font-weight: 700;
 }
 
-#editProfile:hover,
-#myListings:hover,
-#myOrders:hover {
+.activeLink {
     background-image: url("../../public/images/highlight1.png");
     background-repeat: no-repeat;
     background-position: center;

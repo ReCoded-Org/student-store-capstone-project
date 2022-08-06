@@ -5,6 +5,8 @@ import React from "react";
 import rifik from "../../../public/images/rifik.png";
 
 function Sidebar() {
+    let sidebarClasses = "pb-9 xs:pb-2 sm:pb-4";
+
     return (
         <aside
             className='flex h-screen flex-col justify-start bg-white p-6 text-center align-middle shadow-lg
@@ -20,7 +22,7 @@ function Sidebar() {
                     Rifik Haspolat
                 </p>
                 <p className='text-sm text-purple xs:text-sm'>
-                    <span className='font-semibold'>E-mail:</span>{" "}
+                    <span className='font-semibold'>E-mail: </span>
                     rifik@haspolat.com
                 </p>
                 <p className='text-sm text-purple'>
@@ -29,22 +31,22 @@ function Sidebar() {
                 </p>
             </div>
             <hr className='m-10 xs:hidden sm:hidden'></hr>
-            <div className='flex flex-col justify-center'>
-                <div className='pb-9 xs:pb-2 sm:pb-4' id='editProfile'>
+            <div className='flex flex-col justify-center' id='sidebarWrapper'>
+                <div className={sidebarClasses}>
                     <Link href='/editprofile'>
                         <a className='sm:text-md m-2 font-bold text-purple hover:cursor-pointer xs:text-sm md:text-xl lg:text-2xl'>
                             Edit Profile
                         </a>
                     </Link>
                 </div>
-                <div className='pb-9 xs:pb-2 sm:pb-4' id='myListings'>
+                <div className={sidebarClasses}>
                     <Link href='/listings'>
                         <a className='sm:text-md m-2 font-bold text-purple hover:cursor-pointer xs:text-sm md:text-xl lg:text-2xl'>
                             My Listings
                         </a>
                     </Link>
                 </div>
-                <div className='pb-9 xs:pb-2 sm:pb-4' id='myOrders'>
+                <div className={sidebarClasses}>
                     <Link href='/orders'>
                         <a className='sm:text-md m-2 font-bold text-purple hover:cursor-pointer xs:text-sm md:text-xl lg:text-2xl'>
                             My Orders

@@ -138,9 +138,8 @@ exports[`renders correctly 1`] = `
       <span
         className="font-semibold"
       >
-        E-mail:
+        E-mail: 
       </span>
-       
       rifik@haspolat.com
     </p>
     <p
@@ -159,33 +158,40 @@ exports[`renders correctly 1`] = `
   />
   <div
     className="flex flex-col justify-center"
+    id="sidebarWrapper"
   >
     <div
       className="pb-9 xs:pb-2 sm:pb-4"
-      id="editProfile"
     >
       <a
         className="sm:text-md m-2 font-bold text-purple hover:cursor-pointer xs:text-sm md:text-xl lg:text-2xl"
+        href="/editprofile"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
       >
         Edit Profile
       </a>
     </div>
     <div
       className="pb-9 xs:pb-2 sm:pb-4"
-      id="myListings"
     >
       <a
         className="sm:text-md m-2 font-bold text-purple hover:cursor-pointer xs:text-sm md:text-xl lg:text-2xl"
+        href="/listings"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
       >
         My Listings
       </a>
     </div>
     <div
       className="pb-9 xs:pb-2 sm:pb-4"
-      id="myOrders"
     >
       <a
         className="sm:text-md m-2 font-bold text-purple hover:cursor-pointer xs:text-sm md:text-xl lg:text-2xl"
+        href="/orders"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
       >
         My Orders
       </a>
