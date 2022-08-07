@@ -8,7 +8,7 @@ export default function EditProfilePage() {
     return (
         <Layout>
             <main className='flex justify-between bg-iceblue xs:flex-col sm:flex-col md:flex-row lg:flex-row'>
-                <Sidebar />
+                <Sidebar pageName='edit-profile' />
                 <div className='editphone edittab w-4/5'>
                     <EditProfile />
                 </div>
