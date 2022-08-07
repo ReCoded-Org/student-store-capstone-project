@@ -2,7 +2,7 @@ import Link from "next/link";
 import * as React from "react";
 
 import Button from "../button";
-import Input from "../layout/input";
+import Input from "../input";
 
 export default function EditProfile() {
     // const [info, setInfo] = React.useState()
