@@ -90,8 +90,8 @@ function Header() {
                                         </Link>
                                     </li>
                                     <li className='my-8 border-b border-pumpkin'>
-                                        <Link href='sign-up'>
-                                            <a>Sign Up</a>
+                                        <Link href='sign-in'>
+                                            <a>Sign in</a>
                                         </Link>
                                     </li>
                                     <li className='my-8 border-b border-pumpkin'>
@@ -192,12 +192,12 @@ function Header() {
                         </div>
 
                         <div className='text-md hidden md:flex md:w-auto md:items-center '>
-                            <Link href='/sign-up'>
+                            <Link href='/sign-in'>
                                 <a
                                     href='#'
                                     className='text-md mr-2 block rounded-[20px]  bg-darkPurple py-2 px-4 text-white hover:bg-purple'
                                 >
-                                    Sign Up
+                                    Sign in
                                 </a>
                             </Link>
                             <Link href='/product-listing'>

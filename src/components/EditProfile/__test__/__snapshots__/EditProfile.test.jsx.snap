@@ -57,12 +57,18 @@ exports[`renders correctly 1`] = `
   <div
     className=" flex w-1/2 justify-center"
   >
-    <button
-      className="h-12 w-48 lg:h-14 lg:w-64 m-1 p-1 px-2 hover:bg-purple hover:shadow-lg rounded-lg border-2 bg-pumpkin font-md text-[17px] text-white shadow-sm"
-      type="button"
+    <a
+      href="/"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
     >
-      Save Changes
-    </button>
+      <button
+        className="h-12 w-48 lg:h-14 lg:w-64 m-1 p-1 px-2 hover:bg-purple hover:shadow-lg rounded-lg border-2 bg-pumpkin font-md text-[17px] text-white shadow-sm"
+        type="button"
+      >
+        Save Changes
+      </button>
+    </a>
   </div>
 </div>
 `;

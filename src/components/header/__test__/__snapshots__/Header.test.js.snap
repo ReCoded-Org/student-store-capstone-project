@@ -213,11 +213,11 @@ exports[`renders correctly 1`] = `
               className="my-8 border-b border-pumpkin"
             >
               <a
-                href="/sign-up"
+                href="/sign-in"
                 onClick={[Function]}
                 onMouseEnter={[Function]}
               >
-                Sign Up
+                Sign in
               </a>
             </li>
             <li
@@ -404,7 +404,7 @@ exports[`renders correctly 1`] = `
           onClick={[Function]}
           onMouseEnter={[Function]}
         >
-          Sign Up
+          Sign in
         </a>
         <a
           className=" text-md mr-2 block rounded-[20px] bg-darkPurple py-2 px-4 text-white hover:bg-purple"

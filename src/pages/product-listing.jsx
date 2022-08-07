@@ -3,7 +3,7 @@
 import React from "react";
 
 import Button from "@/components/button";
-import Input from "@/components/layout/input";
+import Input from "@/components/input";
 import Layout from "@/components/layout/Layout";
 
 const ProductListing = () => {

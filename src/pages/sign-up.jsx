@@ -1,9 +1,11 @@
+import Link from "next/link";
 import React from "react";
 import { BsFacebook, BsGoogle, BsTwitter } from "react-icons/bs";
 
 import Button from "@/components/button";
 import Input from "@/components/input";
 import Layout from "@/components/layout/Layout";
+
 export default function Signup() {
     return (
         <Layout>
@@ -73,11 +75,15 @@ export default function Signup() {
                             Already Have an account?
                         </div>
                         <div className='mb-8'>
-                            <Button
-                                buttonStyle='purpleSignUp'
-                                type='submit'
-                                text='Sign-in'
-                            />
+                            <Link href='/sign-in'>
+                                <a>
+                                    <Button
+                                        buttonStyle='purpleSignUp'
+                                        type='submit'
+                                        text='Sign-in'
+                                    />
+                                </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
