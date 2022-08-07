@@ -126,6 +126,8 @@
 
 .activeLink {
     background-image: url("../../public/images/highlight1.png");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 /*for donation page*/
 .donationbrush {
@@ -208,6 +210,15 @@
         opacity: 1;
     }
 }
+
+.listingCard:hover #listingOverview {
+    display: block;
+}
+
+.orderCard:hover #orderOverview {
+    display: block;
+}
+
 /*edit profile phone styling*/
 @media screen and (max-width: 375px) {
     .editphone {
@@ -217,6 +228,7 @@
         font-size: 50px;
     }
 }
+
 @media screen and (max-width: 768px) {
     .edittab {
         margin-bottom: 40px;
