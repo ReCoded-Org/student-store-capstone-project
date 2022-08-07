@@ -5,7 +5,6 @@ import Carousel from "@/components/carousel";
 import CategoryPriceFilter from "@/components/categoryPriceFilter/CategoryPriceFilter";
 import Layout from "@/components/layout/Layout";
 import ListOfProducts from "@/components/ListOfProducts";
-
 export default function HomePage() {
     // const { t } = useTranslation("common");
 
