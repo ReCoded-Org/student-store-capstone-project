@@ -8,7 +8,7 @@ function ListingsPage() {
     return (
         <Layout>
             <main className='flex xs:flex-col sm:flex-col md:flex-row lg:flex-row'>
-                <Sidebar pageName="listings" />
+                <Sidebar pageName='listings' />
                 <Listings />
             </main>
         </Layout>

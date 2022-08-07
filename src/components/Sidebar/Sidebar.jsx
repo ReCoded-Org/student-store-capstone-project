@@ -4,7 +4,7 @@ import React from "react";
 
 import rifik from "../../../public/images/rifik.png";
 
-function Sidebar({pageName}) {
+function Sidebar({ pageName }) {
     let sidebarClasses = "pb-9 xs:pb-2 sm:pb-4";
 
     return (
@@ -77,4 +77,3 @@ function Sidebar({pageName}) {
 }
 
 export default Sidebar;
-
