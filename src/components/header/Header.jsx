@@ -15,7 +15,7 @@ function Header() {
                 <div className=' flex flex-grow items-center justify-between md:flex md:flex-row md:items-center md:justify-items-stretch'>
                     <div className='flex w-full flex-row items-center justify-between md:w-auto  md:justify-start'>
                         <div className='py-1 md:mx-1 lg:mx-2'>
-                            <Link href='./'>
+                            <Link href='/'>
                                 <a>
                                     <Image
                                         src='/images/logo.png'

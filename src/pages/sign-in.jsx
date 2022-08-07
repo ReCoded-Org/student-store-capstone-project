@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { BsFacebook, BsGoogle, BsTwitter } from "react-icons/bs";
 
 import Button from "@/components/button";
@@ -91,12 +92,16 @@ export default function SignInPage() {
                             </div>
                             <div className='hidden items-center md:hidden lg:mb-8 lg:flex lg:flex-col'>
                                 <p className=' text-md mb-3  bg-transparent text-darkpurple'>
-                                    Don't have an account?
+                                    Don&apos;t have an account?
                                 </p>
-                                <Button
-                                    buttonStyle='orangeSignUp'
-                                    text='sign up'
-                                />
+                                <Link href='/sign-up'>
+                                    <a>
+                                        <Button
+                                            buttonStyle='orangeSignUp'
+                                            text='sign up'
+                                        />
+                                    </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -157,7 +162,7 @@ export default function SignInPage() {
                         </div>
                         <div className='flex flex-col items-center'>
                             <p className=' text-md mb-4 bg-transparent text-darkpurple'>
-                                Don't have an account?
+                                Don&apos;t have an account?
                             </p>
                             <Button
                                 style={{
