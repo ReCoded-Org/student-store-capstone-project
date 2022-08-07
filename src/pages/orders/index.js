@@ -8,7 +8,7 @@ function OrdersPage() {
     return (
         <Layout>
             <main className='flex xs:flex-col sm:flex-col md:flex-row lg:flex-row'>
-                <Sidebar />
+                <Sidebar pageName="orders" />
                 <Orders />
             </main>
         </Layout>
