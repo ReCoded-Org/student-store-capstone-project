@@ -144,7 +144,7 @@ const Details = () => {
                     </div>
                 </div>
                 <div className='sm:visibl grid justify-center xxs:invisible'>
-                    <div className='rounded-3xl xxs:invisible xxs:scale-[80%] sm:visible sm:scale-[90%] lg:scale-95 lg:p-14'>
+                    <div className='rounded-3xl xxs:invisible xxs:scale-[80%] sm:visible sm:scale-[90%] lg:scale-95 lg:py-14'>
                         <Map />
                     </div>
                 </div>

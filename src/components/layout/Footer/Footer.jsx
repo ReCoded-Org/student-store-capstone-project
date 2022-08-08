@@ -4,10 +4,13 @@ import * as React from "react";
 
 export default function Footer() {
     return (
-        <div className='items-center justify-center bg-darkpurple font-Poppins'>
-            <div className='m-auto flex max-w-screen-2xl flex-wrap justify-around gap-5 pt-8 text-white'>
-                <div className='logo logosizingphone logosizingtab flex w-96 flex-col text-2xl'>
-                    <div className='ml-0 flex scale-75 flex-row items-center'>
+        <div className='items-center justify-center bg-darkpurple pb-4 font-Poppins'>
+            {/* <div className='m-auto flex max-w-screen-2xl flex-wrap justify-around gap-5 pt-8 text-white'> */}
+            <div className='m-auto flex max-w-screen-2xl flex-row  flex-wrap justify-around gap-5 pt-8 text-white'>
+                {/* Logo & socials */}
+                <div className='logo logosizingphone logosizingtab mt-[-2rem] flex w-96 flex-col justify-center text-2xl xxs:pt-6 sm:pt-0'>
+                    {/* Logo */}
+                    <div className='ml-0 flex scale-75 flex-row items-center justify-center'>
                         <Link href='/'>
                             <a>
                                 <Image
@@ -31,7 +34,8 @@ export default function Footer() {
                             </a>
                         </Link>
                     </div>
-                    <div className='mt-2 mr-10 flex scale-[60%] flex-row items-center justify-around'>
+                    {/* Socials */}
+                    <div className='mt-2 flex scale-[60%] flex-row items-center justify-around'>
                         <Link href='/'>
                             <a>
                                 <Image
@@ -64,8 +68,10 @@ export default function Footer() {
                         </Link>
                     </div>
                 </div>
-
-                <div className='ml-20 flex w-96 flex-col'>
+                <div className='flex w-96 flex-col gap-2 pb-6 xxs:text-center lg:text-left'>
+                    <Link href='/sign-up'>
+                        <a className='text-sm font-bold '>Register For Free</a>
+                    </Link>
                     <Link href='/about-us'>
                         <a className='mb-4 text-sm font-bold'>About Us</a>
                     </Link>
@@ -75,43 +81,6 @@ export default function Footer() {
                     <p className='text-xs'>
                         Adress: X Street, Number 1, Türkiye
                     </p>
-                </div>
-                <div className='ml-20 mb-5 flex w-96 flex-col gap-y-4'>
-                    <Link href='/'>
-                        <a className='text-sm font-bold '>Shop Now!</a>
-                    </Link>
-                    <Link href='/sign-up'>
-                        <a className='text-sm font-bold '>Register For Free</a>
-                    </Link>
-                    <Link href='/'>
-                        <a className='text-sm font-bold '>
-                            Delivery Fee and Policies
-                        </a>
-                    </Link>
-                </div>
-                <div className='mb-5 mr-5 flex flex-row flex-wrap items-center justify-center gap-3'>
-                    <Link href='/'>
-                        <a>
-                            <Image
-                                src='/images/getit1.png'
-                                alt='GooglePlay'
-                                width='185px'
-                                height='55px'
-                                className='scale-75'
-                            ></Image>
-                        </a>
-                    </Link>
-                    <Link href='/'>
-                        <a>
-                            <Image
-                                src='/images/getit2.png'
-                                alt='AppStore'
-                                width='185px'
-                                height='45px'
-                                className='scale-75'
-                            ></Image>
-                        </a>
-                    </Link>
                 </div>
             </div>
         </div>
