@@ -6,8 +6,8 @@ import Input from "../input";
 
 export default function EditProfile() {
     return (
-        <div className='mt-4 flex flex-wrap justify-center  '>
-            <div className=' w-3/4 '>
+        <div className='mt-4 flex flex-wrap justify-center self-center'>
+            <div className='w-3/4'>
                 <Input type='text' placeholder='Name' />
                 <Input type='text' placeholder='Surname' />
                 <Input
