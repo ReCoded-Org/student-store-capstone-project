@@ -8,7 +8,7 @@ export default function Donation() {
     return (
         <Layout>
             <div className='grid-flow-col-1 grid items-center justify-around bg-iceblue font-Poppins'>
-                <div className='p-7'>
+                <div className='p-10'>
                     <Image
                         src='/images/donation.png'
                         alt='donation image'
@@ -17,10 +17,10 @@ export default function Donation() {
                         className='rounded-lg'
                     ></Image>
                 </div>
-                <div className='htext donationbrush text-center text-4xl font-bold text-purple'>
+                <div className='htext donationbrush text-center font-bold text-purple xxs:text-xl xs:text-3xl sm:text-4xl'>
                     <h2>Make a Difference by Donating!</h2>
                 </div>
-                <div className='flexing flex flex-row flex-wrap items-center justify-around gap-12 p-10'>
+                <div className='flex items-center justify-around xxs:scale-90 xxs:flex-col xxs:gap-4 xxs:p-0 sm:scale-100 sm:p-10 lg:flex-row lg:gap-12'>
                     <div className=' donationCard donationCardPhone mt-8 flex h-64 w-72 flex-col justify-center rounded-lg bg-white text-darkpurple shadow-lg '>
                         <div className='flex flex-col items-center p-10 '>
                             <span className='text-xl font-semibold'>Help</span>
@@ -74,8 +74,8 @@ export default function Donation() {
                         </div>
                     </div>
                 </div>
-                <div className='mb-36 flex max-w-4xl flex-col items-center gap-12 justify-self-center text-center'>
-                    <div className='donationbrush brushphone htext h-12  w-72 text-4xl font-bold  text-purple'>
+                <div className='mb-28 flex max-w-4xl flex-col items-center justify-self-center text-center xxs:gap-0 sm:gap-4'>
+                    <div className='donationbrush brushphone htext h-12 w-72 font-bold text-purple xxs:text-xl xs:text-3xl sm:text-4xl'>
                         <h2>Why Donate?</h2>
                     </div>
                     <p className='ptexttab p-3 text-2xl leading-loose text-darkpurple'>
