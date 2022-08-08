@@ -30,7 +30,7 @@ const Filter = ({ bgColor, svg, name }) => {
                     />
                 </svg>
             </div>
-            <h1 className='text-center text-extraDarkPurple xxs:mt-[-18px] xxs:scale-75 xxs:pb-2 sm:mt-0 md:scale-90 md:pb-0 lg:pt-2'>
+            <h1 className='text-center font-sans text-extraDarkPurple xxs:mt-[-18px] xxs:scale-75 xxs:pb-2 sm:mt-0 md:scale-90 md:pb-0 lg:pt-2'>
                 {name}
             </h1>
         </div>
