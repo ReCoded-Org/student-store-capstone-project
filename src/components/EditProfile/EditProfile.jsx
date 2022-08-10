@@ -5,13 +5,9 @@ import Button from "../button";
 import Input from "../input";
 
 export default function EditProfile() {
-    // const [info, setInfo] = React.useState()
-    //function handleInfo(){
-    //alert("clicked")
-    //}
     return (
-        <div className='mt-4 flex flex-wrap justify-center  '>
-            <div className=' w-3/4 '>
+        <div className='mt-4 flex flex-wrap justify-center self-center'>
+            <div className='w-3/4'>
                 <Input type='text' placeholder='Name' />
                 <Input type='text' placeholder='Surname' />
                 <Input
@@ -26,11 +22,13 @@ export default function EditProfile() {
             </div>
             <div className=' flex w-1/2 justify-center'>
                 <Link href='/'>
-                    <Button
-                        buttonStyle='saveChanges'
-                        type='button'
-                        text='Save Changes'
-                    />
+                    <a>
+                        <Button
+                            buttonStyle='saveChanges'
+                            type='button'
+                            text='Save Changes'
+                        />
+                    </a>
                 </Link>
             </div>
         </div>

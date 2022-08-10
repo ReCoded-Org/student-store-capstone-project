@@ -39,7 +39,7 @@ function Sidebar({ pageName }) {
                             : sidebarClasses
                     }
                 >
-                    <Link href='/editprofile'>
+                    <Link href='/edit-profile'>
                         <a className='sm:text-md m-2 font-bold text-purple hover:cursor-pointer xs:text-sm md:text-xl lg:text-2xl'>
                             Edit Profile
                         </a>

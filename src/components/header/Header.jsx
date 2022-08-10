@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import { BiSearchAlt } from "react-icons/bi";
 import { MdShoppingCart } from "react-icons/md";
@@ -14,27 +15,30 @@ function Header() {
                 <div className=' flex flex-grow items-center justify-between md:flex md:flex-row md:items-center md:justify-items-stretch'>
                     <div className='flex w-full flex-row items-center justify-between md:w-auto  md:justify-start'>
                         <div className='py-1 md:mx-1 lg:mx-2'>
-                            <Image
-                                src='/images/logo.png'
-                                alt='logo'
-                                layout='fixed'
-                                height={60}
-                                width={150}
-                            />
+                            <Link href='/'>
+                                <a>
+                                    <Image
+                                        src='/images/logo.png'
+                                        alt='logo'
+                                        layout='fixed'
+                                        height={60}
+                                        width={150}
+                                        className='hover:cursor-pointer'
+                                    />
+                                </a>
+                            </Link>
                         </div>
                         <div className='text-md hidden w-full flex-grow md:flex md:w-auto  md:items-center '>
-                            <a
-                                href='#'
-                                className=' align-center  mr-2 rounded-[20px] p-2 px-3 text-darkPurple hover:bg-purple hover:text-white md:inline-block md:flex-grow lg:px-4'
-                            >
-                                Our Mission
-                            </a>
-                            <a
-                                href='#'
-                                className=' text-md mr-2 rounded-[20px] p-2 px-3 text-darkPurple hover:bg-purple hover:text-white md:flex md:flex-grow lg:px-4'
-                            >
-                                About Us
-                            </a>
+                            <Link href='/donation'>
+                                <a className=' align-center  mr-2 rounded-[20px] p-2 px-3 text-darkPurple hover:bg-purple hover:text-white md:inline-block md:flex-grow lg:px-4'>
+                                    Donate
+                                </a>
+                            </Link>
+                            <Link href='/about-us'>
+                                <a className=' text-md mr-2 rounded-[20px] p-2 px-3 text-darkPurple hover:bg-purple hover:text-white md:flex md:flex-grow lg:px-4'>
+                                    About Us
+                                </a>
+                            </Link>
                         </div>
 
                         <section className='flex md:hidden'>
@@ -76,19 +80,29 @@ function Header() {
                                     </li>
 
                                     <li className='my-8 border-b border-pumpkin'>
-                                        <a href='#'>About Us</a>
+                                        <Link href='/donation'>
+                                            <a>Donate</a>
+                                        </Link>
                                     </li>
                                     <li className='my-8 border-b border-pumpkin'>
-                                        <a href='#'>Our Team</a>
+                                        <Link href='/about-us'>
+                                            <a>About Us</a>
+                                        </Link>
                                     </li>
                                     <li className='my-8 border-b border-pumpkin'>
-                                        <a href='#'>Sign Up</a>
+                                        <Link href='sign-in'>
+                                            <a>Sign in</a>
+                                        </Link>
                                     </li>
                                     <li className='my-8 border-b border-pumpkin'>
-                                        <a href='#'>Sell Items</a>
+                                        <Link href='/product-listing'>
+                                            <a>Sell Items</a>
+                                        </Link>
                                     </li>
                                     <li className='my-8 border-b border-pumpkin'>
-                                        <a href='#'>Cart</a>
+                                        <Link href='/cart'>
+                                            <a>Cart</a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </div>
@@ -178,21 +192,24 @@ function Header() {
                         </div>
 
                         <div className='text-md hidden md:flex md:w-auto md:items-center '>
-                            <a
-                                href='#'
-                                className='text-md mr-2 block rounded-[20px]  bg-darkPurple py-2 px-4 text-white hover:bg-purple '
-                            >
-                                Sign Up
-                            </a>
-                            <a
-                                href='#'
-                                className=' text-md mr-2 block rounded-[20px]  bg-darkPurple py-2 px-4 text-white hover:bg-purple'
-                            >
-                                Sell Items
-                            </a>
-                            <a href='#' className='m-2 pt-2'>
-                                <MdShoppingCart size={28} color='#FF8A57' />
-                            </a>
+                            <Link href='/sign-in'>
+                                <a
+                                    href='#'
+                                    className='text-md mr-2 block rounded-[20px]  bg-darkPurple py-2 px-4 text-white hover:bg-purple'
+                                >
+                                    Sign in
+                                </a>
+                            </Link>
+                            <Link href='/product-listing'>
+                                <a className=' text-md mr-2 block rounded-[20px]  bg-darkPurple py-2 px-4 text-white hover:bg-purple'>
+                                    Sell Items
+                                </a>
+                            </Link>
+                            <Link href='/cart'>
+                                <a className='m-2 pt-2'>
+                                    <MdShoppingCart size={28} color='#FF8A57' />
+                                </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

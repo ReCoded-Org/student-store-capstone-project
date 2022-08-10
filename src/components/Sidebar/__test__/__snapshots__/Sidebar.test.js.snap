@@ -165,7 +165,7 @@ exports[`renders correctly 1`] = `
     >
       <a
         className="sm:text-md m-2 font-bold text-purple hover:cursor-pointer xs:text-sm md:text-xl lg:text-2xl"
-        href="/editprofile"
+        href="/edit-profile"
         onClick={[Function]}
         onMouseEnter={[Function]}
       >

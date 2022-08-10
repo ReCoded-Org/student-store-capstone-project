@@ -1,8 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 import { BsFacebook, BsGoogle, BsTwitter } from "react-icons/bs";
 
 import Button from "@/components/button";
-import Input from "@/components/layout/input";
+import Input from "@/components/input";
 import Layout from "@/components/layout/Layout";
 
 import logoOutline from "/public/images/logoOutline.png";
@@ -93,10 +94,14 @@ export default function SignInPage() {
                                 <p className=' text-md mb-3  bg-transparent text-darkpurple'>
                                     Don&apos;t have an account?
                                 </p>
-                                <Button
-                                    buttonStyle='orangeSignUp'
-                                    text='sign up'
-                                />
+                                <Link href='/sign-up'>
+                                    <a>
+                                        <Button
+                                            buttonStyle='orangeSignUp'
+                                            text='sign up'
+                                        />
+                                    </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -159,14 +164,18 @@ export default function SignInPage() {
                             <p className=' text-md mb-4 bg-transparent text-darkpurple'>
                                 Don&apos;t have an account?
                             </p>
-                            <Button
-                                style={{
-                                    backgroundColor: "transparent",
-                                    textColor: "darkPurple",
-                                }}
-                                buttonStyle='orangeSignUp'
-                                text='sign up'
-                            />
+                            <Link href='/sign-up'>
+                                <a>
+                                    <Button
+                                        style={{
+                                            backgroundColor: "transparent",
+                                            textColor: "darkPurple",
+                                        }}
+                                        buttonStyle='orangeSignUp'
+                                        text='sign up'
+                                    />
+                                </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
