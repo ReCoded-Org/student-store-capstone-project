@@ -1,0 +1,17 @@
+{
+  "list-an-Item/Service": "Einen Produkt/Dienstleistung auflisten",
+  "type": "Typ",
+  "product": "Produkt",
+  "service": "Dienstleistung",
+  "category": "Kategorie",
+  "Books": "Bücher",
+  "Furniture": "Möbel",
+  "Electronics": "Elektronik",
+  "Two-wheeler": "Zweiräder",
+  "Clothes": "Kleidung",
+  "name": "Name",
+  "description": "Beschreibung",
+  "price": "Preis",
+  "list": "Auflisten",
+  "location": "Standort"
+}
