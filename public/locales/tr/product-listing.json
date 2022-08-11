@@ -1,0 +1,17 @@
+{
+  "list-an-Item/Service": "List an Item/Service",
+  "type": "Type",
+  "product": "Product",
+  "service": "Service",
+  "category": "Category",
+  "Books": "Books",
+  "Furniture": "Furniture",
+  "Electronics": "Electronics",
+  "Two-wheeler": "Two-wheeler",
+  "Clothes": "Clothes",
+  "name": "Name",
+  "description": "Description",
+  "price": "Price",
+  "list": "List",
+  "location": "Location"
+}

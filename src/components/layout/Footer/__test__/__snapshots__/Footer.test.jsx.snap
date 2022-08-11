@@ -642,7 +642,7 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
         onMouseEnter={[Function]}
       >
-        Register For Free
+        register-for-free
       </a>
       <a
         className="mb-4 text-sm font-bold"
@@ -650,17 +650,19 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
         onMouseEnter={[Function]}
       >
-        About Us
+        about-us
       </a>
       <p
         className="text-sm font-bold "
       >
-        Contact Us:
+        contact-us
+        :
       </p>
       <p
         className="text-xs "
       >
-        Phone: 000 111 22 33
+        phone
+        : 000 111 22 33
       </p>
       <p
         className="text-xs"
@@ -670,7 +672,8 @@ exports[`renders correctly 1`] = `
       <p
         className="text-xs"
       >
-        Adress: X Street, Number 1, Türkiye
+        address
+        : X Street, Number 1, Türkiye
       </p>
     </div>
   </div>
