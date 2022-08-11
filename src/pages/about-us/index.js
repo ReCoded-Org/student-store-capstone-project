@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 import Layout from "@/components/layout/Layout";
 
-function ListingsPage() {
+function AboutUsPage() {
     return (
         <Layout>
             <div className='flex h-[550px] w-full justify-between bg-gradient-to-r from-darkpurple to-purple p-10 align-middle lg:pr-0'>
@@ -42,7 +42,7 @@ function ListingsPage() {
                     Our Team
                 </h2>
                 {/* Salah's Card */}
-                <div className='m-auto mb-10 flex w-[200px] flex-col bg-[#585785] p-6 text-center align-middle'>
+                <div className='m-auto mb-10 flex w-[200px] flex-col rounded-xl bg-[#585785] p-6 text-center align-middle duration-500 hover:shadow-xl hover:shadow-cyanaqua'>
                     <img
                         className='h-full w-full rounded-full border-4 border-cyanaqua'
                         src='https://avatars.githubusercontent.com/u/4890766?v=4'
@@ -69,7 +69,7 @@ function ListingsPage() {
                 </div>
                 <div className='flex w-full flex-wrap justify-around gap-10 align-top'>
                     {/* Nouh's Card */}
-                    <div className='flex w-[200px] flex-col bg-[#585785] p-6 text-center align-middle'>
+                    <div className='flex w-[200px] flex-col rounded-xl bg-[#585785] p-6 text-center align-middle duration-500 hover:shadow-xl hover:shadow-cyanaqua'>
                         <img
                             className='h-full w-full rounded-full border-4 border-cyanaqua'
                             src='https://media-exp1.licdn.com/dms/image/C5603AQG7dsmBEvTG4w/profile-displayphoto-shrink_800_800/0/1581879286166?e=1665619200&v=beta&t=F69BFpyAuCMweyDVeZZfPByME_lJ6jlKoUDOf9eW_Zo'
@@ -97,7 +97,7 @@ function ListingsPage() {
                         </div>
                     </div>
                     {/* Gizem's Card */}
-                    <div className='flex w-[200px] flex-col bg-[#585785] p-6 text-center align-middle'>
+                    <div className='flex w-[200px] flex-col rounded-xl bg-[#585785] p-6 text-center align-middle duration-500 hover:shadow-xl hover:shadow-cyanaqua'>
                         <img
                             className='h-full w-full rounded-full border-4 border-cyanaqua'
                             src='https://media-exp1.licdn.com/dms/image/C5603AQEW2FlGcGHerA/profile-displayphoto-shrink_800_800/0/1637622044999?e=1665619200&v=beta&t=A0UInMMejCSIiPiHFJXIUBPDfDOzOaaBEqMX9ej1NUQ'
@@ -125,7 +125,7 @@ function ListingsPage() {
                         </div>
                     </div>
                     {/* Selin's Card */}
-                    <div className='flex w-[200px] flex-col bg-[#585785] p-6 text-center align-middle'>
+                    <div className='flex w-[200px] flex-col rounded-xl bg-[#585785] p-6 text-center align-middle duration-500 hover:shadow-xl hover:shadow-cyanaqua'>
                         <img
                             className='h-full w-full rounded-full border-4 border-cyanaqua'
                             src='https://avatars.githubusercontent.com/u/100427748?v=4'
@@ -156,7 +156,7 @@ function ListingsPage() {
                         </div>
                     </div>
                     {/* Beyza's Card */}
-                    <div className='flex w-[200px] flex-col bg-[#585785] p-6 text-center align-middle'>
+                    <div className='flex w-[200px] flex-col rounded-xl bg-[#585785] p-6 text-center align-middle duration-500 hover:shadow-xl hover:shadow-cyanaqua'>
                         <img
                             className='h-full w-full rounded-full border-4 border-cyanaqua'
                             src='https://media-exp1.licdn.com/dms/image/C5603AQEHRu0d7HQf2g/profile-displayphoto-shrink_800_800/0/1655375124272?e=1665619200&v=beta&t=i8orfruyIDSMmZGe9XXPZWVKpjYDK9r7Mjh-PU3oIjs'
@@ -184,7 +184,7 @@ function ListingsPage() {
                         </div>
                     </div>
                     {/* Hadri's Card */}
-                    <div className='flex w-[200px] flex-col bg-[#585785] p-6 text-center align-middle'>
+                    <div className='flex w-[200px] flex-col rounded-xl bg-[#585785] p-6 text-center align-middle duration-500 hover:shadow-xl hover:shadow-cyanaqua'>
                         <img
                             className='h-full w-full rounded-full border-4 border-cyanaqua'
                             src='https://avatars.githubusercontent.com/u/68324184?v=4'
@@ -217,4 +217,4 @@ function ListingsPage() {
     );
 }
 
-export default ListingsPage;
+export default AboutUsPage;
