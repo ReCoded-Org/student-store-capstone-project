@@ -49,6 +49,8 @@ export async function getStaticProps({ locale }) {
                 "common",
                 "header",
                 "footer",
+                "category-price-filter",
+                "categories",
             ])),
             // Will be passed to the page component as props
         },
