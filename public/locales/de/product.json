@@ -1,12 +1,12 @@
 {
-  "category": "Kategorie",
-  "condition": "Zustand",
-  "used": "Gebraucht",
-  "new": "Neu",
-  "description": "Beschreibung",
-  "books": "Bücher",
-  "furniture": "Möbel",
-  "electronics": "Elektronik",
-  "two-wheeler": "Zweiräder",
-  "clothes": "Kleidung"
+    "category": "Kategorie",
+    "condition": "Zustand",
+    "used": "Gebraucht",
+    "new": "Neu",
+    "description": "Beschreibung",
+    "books": "Bücher",
+    "furniture": "Möbel",
+    "electronics": "Elektronik",
+    "two-wheeler": "Zweiräder",
+    "clothes": "Kleidung"
 }
