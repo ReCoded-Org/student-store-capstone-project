@@ -1,0 +1,19 @@
+{
+    "edit-Profile": "Profil bearbeiten",
+    "my-listings": "Meine Auflistungen",
+    "my-orders": "Meine Bestellungen",
+    "name": "Name",
+    "surname": "Nachname",
+    "password": "Passwort",
+    "confirm-new-password": "Neues Passwort bestätigen",
+    "address": "Adresse",
+    "save-changes": "Änderungen speichern",
+    "order-details": "Bestelldetails",
+    "item-description": "Beschreibung",
+    "delivery-address": "Lieferadresse",
+    "order-date": "Bestelldatum",
+    "listing-details": "Auflistung Details",
+    "condition": "Zustand",
+    "listing-description": "Auflistungsbeschreibung",
+    "listing-date": "Auflistungsdatum"
+}

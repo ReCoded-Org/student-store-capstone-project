@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { BsFacebook, BsGoogle, BsTwitter } from "react-icons/bs";
 
 import Button from "@/components/button";
@@ -11,6 +13,7 @@ import sunSkyLg from "/public/images/sunSkyLg.png";
 import sunSkyOrg from "/public/images/sunSkyOrg.png";
 
 export default function SignInPage() {
+    const { t } = useTranslation("sign");
     return (
         <>
             <Layout>
@@ -20,41 +23,41 @@ export default function SignInPage() {
                  '
                     >
                         <p className='my-2 py-6 text-4xl text-pumpkin md:my-3 md:text-5xl '>
-                            Sign-in
+                            {t("sign-in")}
                         </p>
 
                         <div className=' flex w-11/12 max-w-sm flex-col items-center lg:max-w-md'>
                             <Input
                                 id='email'
                                 name='email'
-                                placeholder='e-mail address'
+                                placeholder='e-mail'
                             />
                             <Input
                                 id='password'
                                 name='password'
-                                placeholder='password'
+                                placeholder={t("password")}
                             />
                             <div className='my-4 flex w-full flex-row justify-between'>
                                 <Button
                                     buttonStyle='orangeSignIn'
-                                    text='sign-in'
+                                    text={t("sign-in")}
                                     type='submit'
                                 />
                                 <Button
                                     buttonStyle='forgotPassword'
-                                    text='forgot password?'
+                                    text={t("forgot-password") + "?"}
                                     type='submit'
                                 />
                             </div>
                             <div className='mb-2 flex flex-col items-center justify-center pt-4 md:flex md:flex-col'>
                                 <fieldset className=' mb-4 w-96 border-t border-[#585785] lg:w-[448px]'>
                                     <legend className='text-md mx-auto px-4 text-[#585785]'>
-                                        or
+                                        {t("or")}
                                     </legend>
                                 </fieldset>
 
                                 <p className='text-md mx-4 mb-2 bg-transparent  text-darkPurple'>
-                                    sign-in with:
+                                    {t("sign-in-with")}
                                 </p>
                             </div>
 
@@ -92,13 +95,13 @@ export default function SignInPage() {
                             </div>
                             <div className='hidden items-center md:hidden lg:mb-8 lg:flex lg:flex-col'>
                                 <p className=' text-md mb-3  bg-transparent text-darkpurple'>
-                                    Don&apos;t have an account?
+                                    {t("don't-have-an-account")}?
                                 </p>
                                 <Link href='/sign-up'>
                                     <a>
                                         <Button
                                             buttonStyle='orangeSignUp'
-                                            text='sign up'
+                                            text={t("sign-up")}
                                         />
                                     </a>
                                 </Link>
@@ -172,7 +175,7 @@ export default function SignInPage() {
                                             textColor: "darkPurple",
                                         }}
                                         buttonStyle='orangeSignUp'
-                                        text='sign up'
+                                        text={t("sign-up")}
                                     />
                                 </a>
                             </Link>
@@ -182,4 +185,18 @@ export default function SignInPage() {
             </Layout>
         </>
     );
+}
+
+export async function getStaticProps({ locale }) {
+    return {
+        props: {
+            ...(await serverSideTranslations(locale, [
+                "common",
+                "header",
+                "footer",
+                "sign",
+            ])),
+            // Will be passed to the page component as props
+        },
+    };
 }

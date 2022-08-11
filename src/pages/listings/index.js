@@ -1,3 +1,4 @@
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import React from "react";
 
 import Layout from "@/components/layout/Layout";
@@ -13,6 +14,20 @@ function ListingsPage() {
             </main>
         </Layout>
     );
+}
+
+export async function getStaticProps({ locale }) {
+    return {
+        props: {
+            ...(await serverSideTranslations(locale, [
+                "common",
+                "header",
+                "footer",
+                "profile",
+            ])),
+            // Will be passed to the page component as props
+        },
+    };
 }
 
 export default ListingsPage;

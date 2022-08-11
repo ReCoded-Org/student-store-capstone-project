@@ -13,14 +13,14 @@ exports[`renders correctly 1`] = `
       <h1
         className="brush w-fit"
       >
-        Categories
+        categories
       </h1>
     </div>
     <div>
       <h1
         className="brush w-fit"
       >
-        Price
+        price
       </h1>
     </div>
   </div>
@@ -143,14 +143,14 @@ exports[`renders correctly 1`] = `
               aria-describedby="button-addon2"
               aria-label="Search"
               className=" block w-[50%] min-w-0 flex-auto rounded-2xl border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-1.5 pr-2 text-base font-normal text-gray-700 transition ease-in-out focus:border-purple focus:bg-white focus:text-gray-700 focus:outline-none"
-              placeholder="Min price"
+              placeholder="Min TL"
               type="search"
             />
             <input
               aria-describedby="button-addon2"
               aria-label="Search"
               className=" m-0 block w-[50%] min-w-0 flex-auto rounded-2xl border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-1.5 text-base font-normal text-gray-700 transition ease-in-out focus:border-purple focus:bg-white focus:text-gray-700 focus:outline-none"
-              placeholder="Max price"
+              placeholder="Max TL"
               type="search"
             />
           </div>

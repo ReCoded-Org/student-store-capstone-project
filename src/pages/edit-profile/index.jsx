@@ -1,3 +1,4 @@
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import React from "react";
 
 import EditProfile from "@/components/EditProfile/EditProfile";
@@ -15,4 +16,18 @@ export default function EditProfilePage() {
             </main>
         </Layout>
     );
+}
+
+export async function getStaticProps({ locale }) {
+    return {
+        props: {
+            ...(await serverSideTranslations(locale, [
+                "common",
+                "header",
+                "footer",
+                "profile",
+            ])),
+            // Will be passed to the page component as props
+        },
+    };
 }

@@ -6,14 +6,14 @@ const PriceFilter = () => {
                     <input
                         type='search'
                         className=' block w-[50%] min-w-0 flex-auto rounded-2xl border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-1.5 pr-2 text-base font-normal text-gray-700 transition ease-in-out focus:border-purple focus:bg-white focus:text-gray-700 focus:outline-none'
-                        placeholder='Min price'
+                        placeholder='Min TL'
                         aria-label='Search'
                         aria-describedby='button-addon2'
                     />
                     <input
                         type='search'
                         className=' m-0 block w-[50%] min-w-0 flex-auto rounded-2xl border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-1.5 text-base font-normal text-gray-700 transition ease-in-out focus:border-purple focus:bg-white focus:text-gray-700 focus:outline-none'
-                        placeholder='Max price'
+                        placeholder='Max TL'
                         aria-label='Search'
                         aria-describedby='button-addon2'
                     />

@@ -1,0 +1,18 @@
+{
+    "edit-Profile": "Profili Düzenle",
+    "my-listings": "İlanlarım",
+    "my-orders": "Siparişlerim",
+    "name": "ilk adı",
+    "surname": "Soyadı",
+    "password": "Şifre",
+    "confirm-new-password": "Yeni şifreyi onayla",
+    "address": "Adres",
+    "save-changes": "Değişiklikleri Kaydet",
+    "order-details": "Sipariş detayları",
+    "item-description": "Ürün Açıklaması",
+    "delivery-address": "Teslimat adresi",
+    "order-date": "Sipariş tarihi",
+    "listing-details": "Liste ayrıntıları",
+    "condition": "durum",
+    "listing-description": "İlan Açıklaması"
+}

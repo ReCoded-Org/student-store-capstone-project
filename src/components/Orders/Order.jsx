@@ -1,7 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
+import { useTranslation } from "next-i18next";
 import React from "react";
 
 export default function Order({ order }) {
+    const { t } = useTranslation("profile");
     return (
         <>
             <div
@@ -14,16 +16,16 @@ export default function Order({ order }) {
                     id='orderOverview'
                 >
                     <h3 className='m-2 rounded-xl bg-hadrisblue text-lg font-semibold text-cyanaqua'>
-                        Order Details
+                        {t("order-details")}
                     </h3>
                     <h3 className='text-md m-2 mt-4 rounded-xl bg-cyanaqua text-hadrisblue'>
-                        Item Description
+                        {t("item-description")}
                     </h3>
                     <p className='text-md m-2 inline-block text-hadrisblue'>
                         {order.description}
                     </p>
                     <h3 className='text-md m-2 rounded-xl bg-cyanaqua text-hadrisblue'>
-                        Delivery Address
+                        {t("delivery-address")}
                     </h3>
                     <p className='text-md m-2 inline-block text-hadrisblue'>
                         {order.deliveryAddress}
@@ -40,7 +42,7 @@ export default function Order({ order }) {
                 </div>
                 <hr></hr>
                 <div className='align-center mb-2 flex justify-between px-3'>
-                    <h3>Order Date:</h3>
+                    <h3>{t("order-date")}:</h3>
                     <span className='custom-bold text-md text-center'>
                         {order.orderDate}
                     </span>

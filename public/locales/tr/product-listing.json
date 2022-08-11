@@ -1,0 +1,17 @@
+{
+    "list-an-Item/Service": "Bir Öğe/Hizmet Listeleme",
+    "type": "Tip",
+    "product": "Ürün",
+    "service": "Hizmet",
+    "category": "sınıf",
+    "Books": "kitablar",
+    "Furniture": "Mobilya",
+    "Electronics": "Elektronik",
+    "Two-wheeler": "İki tekerlekli",
+    "Clothes": "elbise",
+    "name": "İsim",
+    "description": "Tanım",
+    "price": "Fiyat",
+    "list": "Liste",
+    "location": "yer"
+}
