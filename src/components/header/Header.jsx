@@ -1,11 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslation } from "next-i18next";
 import { useState } from "react";
 import { BiSearchAlt } from "react-icons/bi";
 import { MdShoppingCart } from "react-icons/md";
 import { TbWorld } from "react-icons/tb";
 
 function Header() {
+    const { t } = useTranslation("header");
     const [isNavOpen, setIsNavOpen] = useState(false);
     const [isLanguageOpen, setIsLanguageOpen] = useState(false);
 
@@ -31,12 +33,12 @@ function Header() {
                         <div className='text-md hidden w-full flex-grow md:flex md:w-auto  md:items-center '>
                             <Link href='/donation'>
                                 <a className=' align-center  mr-2 rounded-[20px] p-2 px-3 text-darkPurple hover:bg-purple hover:text-white md:inline-block md:flex-grow lg:px-4'>
-                                    Donate
+                                    {t("donate")}
                                 </a>
                             </Link>
                             <Link href='/about-us'>
                                 <a className=' text-md mr-2 rounded-[20px] p-2 px-3 text-darkPurple hover:bg-purple hover:text-white md:flex md:flex-grow lg:px-4'>
-                                    About Us
+                                    {t("about-us")}
                                 </a>
                             </Link>
                         </div>
@@ -75,33 +77,42 @@ function Header() {
                                 </div>
                                 <ul className='MENU-OPEN mt-10 flex min-h-[250px] flex-col items-center justify-between '>
                                     <li className='flex flex-row items-center justify-start'>
-                                        <a href='#'>EN &nbsp;&nbsp;</a> |
-                                        <a href='#'>&nbsp;&nbsp; TR</a>
+                                        <Link href='/' locale='en'>
+                                            <a>EN&nbsp;&nbsp;</a>
+                                        </Link>
+                                        |
+                                        <Link href='/' locale='tr'>
+                                            <a>&nbsp;&nbsp;TR&nbsp;&nbsp;</a>
+                                        </Link>
+                                        |
+                                        <Link href='/' locale='de'>
+                                            <a>&nbsp;&nbsp;DE</a>
+                                        </Link>
                                     </li>
 
                                     <li className='my-8 border-b border-pumpkin'>
                                         <Link href='/donation'>
-                                            <a>Donate</a>
+                                            <a>{t("donate")}</a>
                                         </Link>
                                     </li>
                                     <li className='my-8 border-b border-pumpkin'>
                                         <Link href='/about-us'>
-                                            <a>About Us</a>
+                                            <a>{t("about-us")}</a>
                                         </Link>
                                     </li>
                                     <li className='my-8 border-b border-pumpkin'>
                                         <Link href='sign-in'>
-                                            <a>Sign in</a>
+                                            <a>{t("sign-in")}</a>
                                         </Link>
                                     </li>
                                     <li className='my-8 border-b border-pumpkin'>
                                         <Link href='/product-listing'>
-                                            <a>Sell Items</a>
+                                            <a>{t("sell-items")}</a>
                                         </Link>
                                     </li>
                                     <li className='my-8 border-b border-pumpkin'>
                                         <Link href='/cart'>
-                                            <a>Cart</a>
+                                            <a>{t("cart")}</a>
                                         </Link>
                                     </li>
                                 </ul>
@@ -113,7 +124,7 @@ function Header() {
                             className=' h-10 grow rounded-[20px] border-2 border-gray-300 bg-white pl-2 pr-8 text-sm focus:outline-none '
                             type='search'
                             name='search'
-                            placeholder='Search'
+                            placeholder={t("search")}
                         />
                         <button type='submit'>
                             <BiSearchAlt className='-m-7 h-10 w-10 pt-4 pr-5' />
@@ -169,24 +180,41 @@ function Header() {
                                     className='flex flex-col items-center py-1'
                                     role='none'
                                 >
-                                    <a
-                                        href='#'
-                                        className='flashing block px-4 py-2 text-sm text-gray-700'
-                                        role='menuitem'
-                                        tabIndex='-1'
-                                        id='menu-item-0'
-                                    >
-                                        English
-                                    </a>
-                                    <a
-                                        href='#'
-                                        className='flashing block px-4 py-2 text-sm text-gray-700'
-                                        role='menuitem'
-                                        tabIndex='-1'
-                                        id='menu-item-1'
-                                    >
-                                        Turkish
-                                    </a>
+                                    <Link href='/' locale='en'>
+                                        <a
+                                            href='#'
+                                            className='flashing block px-4 py-2 text-sm text-gray-700'
+                                            role='menuitem'
+                                            tabIndex='-1'
+                                            id='menu-item-0'
+                                        >
+                                            English
+                                        </a>
+                                    </Link>
+
+                                    <Link href='/' locale='tr'>
+                                        <a
+                                            href='#'
+                                            className='flashing block px-4 py-2 text-sm text-gray-700'
+                                            role='menuitem'
+                                            tabIndex='-1'
+                                            id='menu-item-1'
+                                        >
+                                            Türkçe
+                                        </a>
+                                    </Link>
+
+                                    <Link href='/' locale='de'>
+                                        <a
+                                            href='#'
+                                            className='flashing block px-4 py-2 text-sm text-gray-700'
+                                            role='menuitem'
+                                            tabIndex='-1'
+                                            id='menu-item-1'
+                                        >
+                                            Deutsch
+                                        </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -197,12 +225,12 @@ function Header() {
                                     href='#'
                                     className='text-md mr-2 block rounded-[20px]  bg-darkPurple py-2 px-4 text-white hover:bg-purple'
                                 >
-                                    Sign in
+                                    {t("sign-in")}
                                 </a>
                             </Link>
                             <Link href='/product-listing'>
                                 <a className=' text-md mr-2 block rounded-[20px]  bg-darkPurple py-2 px-4 text-white hover:bg-purple'>
-                                    Sell Items
+                                    {t("sell-items")}
                                 </a>
                             </Link>
                             <Link href='/cart'>

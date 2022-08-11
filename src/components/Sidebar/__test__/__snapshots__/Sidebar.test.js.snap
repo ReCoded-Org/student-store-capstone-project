@@ -169,7 +169,7 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
         onMouseEnter={[Function]}
       >
-        Edit Profile
+        edit-Profile
       </a>
     </div>
     <div
@@ -181,7 +181,7 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
         onMouseEnter={[Function]}
       >
-        My Listings
+        my-listings
       </a>
     </div>
     <div
@@ -193,7 +193,7 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
         onMouseEnter={[Function]}
       >
-        My Orders
+        my-orders
       </a>
     </div>
   </div>

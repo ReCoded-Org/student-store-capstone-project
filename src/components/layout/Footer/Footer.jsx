@@ -1,11 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslation } from "next-i18next";
 import * as React from "react";
 
 export default function Footer() {
+    const { t } = useTranslation("footer");
+
     return (
         <div className='items-center justify-center bg-darkpurple pb-4 font-Poppins'>
-            {/* <div className='m-auto flex max-w-screen-2xl flex-wrap justify-around gap-5 pt-8 text-white'> */}
             <div className='m-auto flex max-w-screen-2xl flex-row  flex-wrap justify-around gap-5 pt-8 text-white'>
                 {/* Logo & socials */}
                 <div className='logo logosizingphone logosizingtab mt-[-2rem] flex w-96 flex-col justify-center text-2xl xxs:pt-6 sm:pt-0'>
@@ -70,16 +72,20 @@ export default function Footer() {
                 </div>
                 <div className='flex w-96 flex-col gap-2 pb-6 xxs:text-center lg:text-left'>
                     <Link href='/sign-up'>
-                        <a className='text-sm font-bold '>Register For Free</a>
+                        <a className='text-sm font-bold '>
+                            {t("register-for-free")}
+                        </a>
                     </Link>
                     <Link href='/about-us'>
-                        <a className='mb-4 text-sm font-bold'>About Us</a>
+                        <a className='mb-4 text-sm font-bold'>
+                            {t("about-us")}
+                        </a>
                     </Link>
-                    <p className='text-sm font-bold	'>Contact Us:</p>
-                    <p className='text-xs	'>Phone: 000 111 22 33</p>
+                    <p className='text-sm font-bold	'>{t("contact-us")}:</p>
+                    <p className='text-xs	'>{t("phone")}: 000 111 22 33</p>
                     <p className='text-xs'>e-mail: contact@studentstore.com</p>
                     <p className='text-xs'>
-                        Adress: X Street, Number 1, Türkiye
+                        {t("address")}: X Street, Number 1, Türkiye
                     </p>
                 </div>
             </div>

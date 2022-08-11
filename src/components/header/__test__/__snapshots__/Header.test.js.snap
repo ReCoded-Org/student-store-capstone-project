@@ -111,7 +111,7 @@ exports[`renders correctly 1`] = `
           onClick={[Function]}
           onMouseEnter={[Function]}
         >
-          Donate
+          donate
         </a>
         <a
           className=" text-md mr-2 rounded-[20px] p-2 px-3 text-darkPurple hover:bg-purple hover:text-white md:flex md:flex-grow lg:px-4"
@@ -119,7 +119,7 @@ exports[`renders correctly 1`] = `
           onClick={[Function]}
           onMouseEnter={[Function]}
         >
-          About Us
+          about-us
         </a>
       </div>
       <section
@@ -176,15 +176,27 @@ exports[`renders correctly 1`] = `
               className="flex flex-row items-center justify-start"
             >
               <a
-                href="#"
+                href="/"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
               >
-                EN   
+                EN  
               </a>
-               |
+              |
               <a
-                href="#"
+                href="/"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
               >
-                   TR
+                  TR  
+              </a>
+              |
+              <a
+                href="/"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+              >
+                  DE
               </a>
             </li>
             <li
@@ -195,7 +207,7 @@ exports[`renders correctly 1`] = `
                 onClick={[Function]}
                 onMouseEnter={[Function]}
               >
-                Donate
+                donate
               </a>
             </li>
             <li
@@ -206,7 +218,7 @@ exports[`renders correctly 1`] = `
                 onClick={[Function]}
                 onMouseEnter={[Function]}
               >
-                About Us
+                about-us
               </a>
             </li>
             <li
@@ -217,7 +229,7 @@ exports[`renders correctly 1`] = `
                 onClick={[Function]}
                 onMouseEnter={[Function]}
               >
-                Sign in
+                sign-in
               </a>
             </li>
             <li
@@ -228,7 +240,7 @@ exports[`renders correctly 1`] = `
                 onClick={[Function]}
                 onMouseEnter={[Function]}
               >
-                Sell Items
+                sell-items
               </a>
             </li>
             <li
@@ -239,7 +251,7 @@ exports[`renders correctly 1`] = `
                 onClick={[Function]}
                 onMouseEnter={[Function]}
               >
-                Cart
+                cart
               </a>
             </li>
           </ul>
@@ -252,7 +264,7 @@ exports[`renders correctly 1`] = `
       <input
         className=" h-10 grow rounded-[20px] border-2 border-gray-300 bg-white pl-2 pr-8 text-sm focus:outline-none "
         name="search"
-        placeholder="Search"
+        placeholder="search"
         type="search"
       />
       <button
@@ -378,6 +390,8 @@ exports[`renders correctly 1`] = `
               className="flashing block px-4 py-2 text-sm text-gray-700"
               href="#"
               id="menu-item-0"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
               role="menuitem"
               tabIndex="-1"
             >
@@ -387,10 +401,23 @@ exports[`renders correctly 1`] = `
               className="flashing block px-4 py-2 text-sm text-gray-700"
               href="#"
               id="menu-item-1"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
               role="menuitem"
               tabIndex="-1"
             >
-              Turkish
+              Türkçe
+            </a>
+            <a
+              className="flashing block px-4 py-2 text-sm text-gray-700"
+              href="#"
+              id="menu-item-1"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="menuitem"
+              tabIndex="-1"
+            >
+              Deutsch
             </a>
           </div>
         </div>
@@ -404,7 +431,7 @@ exports[`renders correctly 1`] = `
           onClick={[Function]}
           onMouseEnter={[Function]}
         >
-          Sign in
+          sign-in
         </a>
         <a
           className=" text-md mr-2 block rounded-[20px] bg-darkPurple py-2 px-4 text-white hover:bg-purple"
@@ -412,7 +439,7 @@ exports[`renders correctly 1`] = `
           onClick={[Function]}
           onMouseEnter={[Function]}
         >
-          Sell Items
+          sell-items
         </a>
         <a
           className="m-2 pt-2"

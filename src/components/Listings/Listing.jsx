@@ -1,7 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
+import { useTranslation } from "next-i18next";
 import React from "react";
 
 export default function Listing({ listing }) {
+    const { t } = useTranslation("profile");
     return (
         <>
             <div
@@ -14,16 +16,16 @@ export default function Listing({ listing }) {
                     id='listingOverview'
                 >
                     <h3 className='m-2 rounded-xl bg-hadrisblue text-lg font-semibold text-cyanaqua'>
-                        Listing Details
+                        {t("listing-details")}
                     </h3>
                     <h3 className='text-md m-2 mt-6 rounded-xl bg-cyanaqua text-hadrisblue'>
-                        Item Condition
+                        {t("condition")}
                     </h3>
                     <p className='text-md m-2 inline-block text-hadrisblue'>
                         {listing.condition}
                     </p>
                     <h3 className='text-md m-2 rounded-xl bg-cyanaqua text-hadrisblue'>
-                        Listing Description
+                        {t("listing-description")}
                     </h3>
                     <p className='text-md m-2 inline-block text-hadrisblue'>
                         {listing.description}
@@ -42,7 +44,7 @@ export default function Listing({ listing }) {
                 </div>
                 <hr></hr>
                 <div className='align-center mb-2 flex justify-between px-3'>
-                    <h3>Listing Date:</h3>
+                    <h3>{t("listing-date")}:</h3>
                     <span className='custom-bold text-md text-center'>
                         {listing.listingDate}
                     </span>
