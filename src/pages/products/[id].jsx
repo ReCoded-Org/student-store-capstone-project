@@ -1,11 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
 
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import React from "react";
 
 import Layout from "@/components/layout/Layout";
 import Map from "@/components/map";
 
 const Details = () => {
+    const { t } = useTranslation(["product", "categories"]);
     function popupImage(event) {
         document.querySelector(".popup-image").style.display = "block";
         document.querySelector(".popup-image img").src =
@@ -82,10 +85,10 @@ const Details = () => {
                                         Two Seat Sofa
                                     </h1>
                                     <h2 className='text-darkPurple'>
-                                        <b>Category:</b> Furniture
+                                        <b>{t("category")}:</b> {t("furniture")}
                                     </h2>
                                     <h2 className='pb-2 text-darkPurple'>
-                                        <b>Condition:</b> Used
+                                        <b>{t("condition")}:</b> {t("used")}
                                     </h2>
                                 </div>
                                 <div className='grid h-fit rounded-full '>
@@ -99,7 +102,7 @@ const Details = () => {
                                 <div className='grid-row-2 grid content-start justify-start gap-3'>
                                     <div className='border-b-2 border-purple'>
                                         <h2 className='text-2xl text-darkPurple'>
-                                            Details:
+                                            {t("description")}:
                                         </h2>
                                     </div>
                                     <div>
@@ -152,5 +155,20 @@ const Details = () => {
         </Layout>
     );
 };
+
+export async function getServerSideProps({ locale }) {
+    return {
+        props: {
+            ...(await serverSideTranslations(locale, [
+                "common",
+                "header",
+                "footer",
+                "product",
+                "categories",
+            ])),
+            // Will be passed to the page component as props
+        },
+    };
+}
 
 export default Details;
