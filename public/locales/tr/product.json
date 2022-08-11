@@ -1,12 +1,12 @@
 {
-    "category": "sınıf",
-    "condition": "durum",
+    "category": "Kategori",
+    "condition": "Durum",
     "used": "Kullanılmış",
     "new": "Yeni",
-    "description": "Tanım",
+    "description": "Açıklama",
     "books": "Kitaplar",
     "furniture": "Mobilya",
     "electronics": "Elektronik",
     "two-wheeler": "İki tekerlekli",
-    "clothes": "elbise"
+    "clothes": "Kıyafet"
 }

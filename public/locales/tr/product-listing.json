@@ -3,15 +3,15 @@
     "type": "Tip",
     "product": "Ürün",
     "service": "Hizmet",
-    "category": "sınıf",
-    "Books": "kitablar",
+    "category": "Kategori",
+    "Books": "Kitaplar",
     "Furniture": "Mobilya",
     "Electronics": "Elektronik",
     "Two-wheeler": "İki tekerlekli",
-    "Clothes": "elbise",
+    "Clothes": "Kıyafet",
     "name": "İsim",
-    "description": "Tanım",
+    "description": "Açıklama",
     "price": "Fiyat",
     "list": "Liste",
-    "location": "yer"
+    "location": "Konum"
 }
