@@ -7,13 +7,13 @@ import Layout from "@/components/layout/Layout";
 export default function NotFoundPage() {
     return (
         <Layout>
-            <main className='m-0 flex h-[600px] w-full overflow-clip bg-iceblue p-0 align-middle'>
-                <div className='flex w-[70%] flex-col justify-center align-middle text-darkpurple'>
-                    <div className='ml-10 text-left'>
-                        <h2 className=' m-2 text-left text-4xl font-bold text-darkpurple'>
+            <main className='m-0 flex h-[600px] w-full flex-row overflow-clip bg-iceblue p-0 align-middle'>
+                <div className='flex flex-col justify-center align-middle text-darkpurple xs:w-full sm:w-full md:w-full lg:w-[70%]'>
+                    <div className='xxs:text-center xs:text-center sm:text-center md:text-center lg:ml-10 lg:text-left'>
+                        <h2 className=' m-2  text-4xl font-bold text-darkpurple'>
                             oops
                         </h2>
-                        <h2 className='m-2 text-left font-Poppins text-8xl font-bold text-orange'>
+                        <h2 className='m-2  font-Poppins text-8xl font-bold text-orange'>
                             404
                         </h2>
                         <p className='m-2 font-Poppins text-4xl font-bold'>
@@ -30,7 +30,7 @@ export default function NotFoundPage() {
                         </Link>
                     </div>
                 </div>
-                <div className='flex overflow-hidden '>
+                <div className='overflow-hidden xxs:hidden xs:hidden sm:hidden md:hidden lg:flex '>
                     <img
                         className='object-cover'
                         src='https://68.media.tumblr.com/a366e8e94b3f3839134b7b22a403abe4/tumblr_oqts02PFVa1wn1p99o2_1280.gif'
