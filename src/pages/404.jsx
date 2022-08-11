@@ -7,7 +7,7 @@ import Layout from "@/components/layout/Layout";
 export default function NotFoundPage() {
     return (
         <Layout>
-            <main className='m-0 flex h-[600px] w-full flex-row overflow-clip bg-iceblue p-0 align-middle'>
+            <main className='m-0 flex w-full overflow-clip bg-iceblue p-0 align-middle xxs:flex-col xs:flex-col sm:flex-col md:flex-col lg:h-[600px] lg:flex-row'>
                 <div className='flex flex-col justify-center align-middle text-darkpurple xs:w-full sm:w-full md:w-full lg:w-[70%]'>
                     <div className='xxs:text-center xs:text-center sm:text-center md:text-center lg:ml-10 lg:text-left'>
                         <h2 className=' m-2  text-4xl font-bold text-darkpurple'>
@@ -37,6 +37,11 @@ export default function NotFoundPage() {
                         alt='404'
                     />
                 </div>
+                <img
+                    src='https://ichef.bbci.co.uk/news/976/cpsprodpb/F1F2/production/_118283916_b19c5a1f-162b-410b-8169-f58f0d153752.jpg'
+                    alt='girl watching the house burn'
+                    className='h-[300px] w-full object-cover xs:block  sm:block md:block lg:hidden'
+                />
             </main>
         </Layout>
     );
