@@ -11,7 +11,7 @@ export default function SingleProduct({ product }) {
             >
                 <div className='mb-1 overflow-hidden rounded-lg bg-white'>
                     <img
-                        src={product.img}
+                        src={product.coverImage}
                         alt='image'
                         className='h-64 w-full cursor-pointer'
                     />
