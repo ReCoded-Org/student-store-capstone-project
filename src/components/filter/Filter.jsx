@@ -1,6 +1,15 @@
 import { useTranslation } from "next-i18next";
 
-const Filter = ({ bgColor, svg, name, id, categoriesFilter }) => {
+const Filter = ({
+    bgColor,
+    svg,
+    name,
+    id,
+    categoriesFilter,
+    // eslint-disable-next-line unused-imports/no-unused-vars
+    currentCategory,
+    setCurrentCategory,
+}) => {
     const { t } = useTranslation("categories");
     let firstElementStyle = null;
     let lastElementStyle = null;
@@ -20,6 +29,7 @@ const Filter = ({ bgColor, svg, name, id, categoriesFilter }) => {
         <div
             className={`${firstElementStyle} ${lastElementStyle} scale-90 xxs:scale-90 lg:scale-75 xl:scale-90`}
             onClick={() => {
+                setCurrentCategory(name);
                 categoriesFilter(name);
             }}
         >

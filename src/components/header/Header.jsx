@@ -1,3 +1,4 @@
+/* eslint-disable unused-imports/no-unused-vars */
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
@@ -9,11 +10,16 @@ import { TbWorld } from "react-icons/tb";
 
 function Header({
     products,
-    // eslint-disable-next-line unused-imports/no-unused-vars
     filteredProducts,
     setfilteredProducts,
     productName,
     setProductName,
+    maxPrice,
+    setMaxPrice,
+    minPrice,
+    setMinPrice,
+    currentCategory,
+    setCurrentCategory,
 }) {
     const { t } = useTranslation("header");
     const [isNavOpen, setIsNavOpen] = useState(false);
@@ -45,6 +51,9 @@ function Header({
                                         onClick={() => {
                                             setfilteredProducts(products);
                                             setProductName("");
+                                            setMaxPrice("");
+                                            setMinPrice("");
+                                            setCurrentCategory("");
                                         }}
                                     />
                                 </a>

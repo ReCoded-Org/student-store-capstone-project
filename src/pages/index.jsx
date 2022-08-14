@@ -14,6 +14,10 @@ export default function HomePage() {
     const [products, setProducts] = React.useState(PRODUCTS);
     const [filteredProducts, setfilteredProducts] = React.useState(products);
     const [productName, setProductName] = React.useState("");
+    const [maxPrice, setMaxPrice] = React.useState(0);
+    const [minPrice, setMinPrice] = React.useState("");
+    const [currentCategory, setCurrentCategory] = React.useState("");
+
     return (
         <>
             <Layout
@@ -22,6 +26,12 @@ export default function HomePage() {
                 setfilteredProducts={setfilteredProducts}
                 productName={productName}
                 setProductName={setProductName}
+                maxPrice={maxPrice}
+                setMaxPrice={setMaxPrice}
+                minPrice={minPrice}
+                setMinPrice={setMinPrice}
+                currentCategory={currentCategory}
+                setCurrentCategory={setCurrentCategory}
             >
                 <div className='bg-clay md:px-10 lg:px-16 2xl:px-20'>
                     <Carousel />
@@ -29,6 +39,14 @@ export default function HomePage() {
                         products={products}
                         filteredProducts={filteredProducts}
                         setfilteredProducts={setfilteredProducts}
+                        maxPrice={maxPrice}
+                        setMaxPrice={setMaxPrice}
+                        minPrice={minPrice}
+                        setMinPrice={setMinPrice}
+                        currentCategory={currentCategory}
+                        setCurrentCategory={setCurrentCategory}
+                        productName={productName}
+                        setProductName={setProductName}
                     />
                     <ListOfProducts filteredProducts={filteredProducts} />
                 </div>
