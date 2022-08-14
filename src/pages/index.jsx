@@ -14,7 +14,7 @@ export default function HomePage() {
     const [products, setProducts] = React.useState(PRODUCTS);
     const [filteredProducts, setfilteredProducts] = React.useState(products);
     const [productName, setProductName] = React.useState("");
-    const [maxPrice, setMaxPrice] = React.useState(0);
+    const [maxPrice, setMaxPrice] = React.useState("");
     const [minPrice, setMinPrice] = React.useState("");
     const [currentCategory, setCurrentCategory] = React.useState("");
 

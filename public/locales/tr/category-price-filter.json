@@ -1,4 +1,6 @@
 {
     "categories": "Categories",
-    "price": "Price"
+    "price": "Price",
+    "filter": "Filtre",
+    "reset": "Sıfırla"
 }

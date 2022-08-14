@@ -48,13 +48,13 @@ function Header({
                                         height={60}
                                         width={150}
                                         className='hover:cursor-pointer'
-                                        onClick={() => {
-                                            setfilteredProducts(products);
-                                            setProductName("");
-                                            setMaxPrice("");
-                                            setMinPrice("");
-                                            setCurrentCategory("");
-                                        }}
+                                        // onClick={() => {
+                                        //     setfilteredProducts(products);
+                                        //     setProductName("");
+                                        //     setMaxPrice("");
+                                        //     setMinPrice("");
+                                        //     setCurrentCategory("");
+                                        // }}
                                     />
                                 </a>
                             </Link>

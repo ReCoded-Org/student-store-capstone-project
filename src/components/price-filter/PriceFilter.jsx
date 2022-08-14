@@ -1,3 +1,4 @@
+import { useTranslation } from "next-i18next";
 import * as React from "react";
 
 const PriceFilter = ({
@@ -12,14 +13,8 @@ const PriceFilter = ({
     currentCategory,
     setCurrentCategory,
 }) => {
-    // const maxPriceFilter = () => {
-    //     if (maxPrice > 0) {
-    //         const filterByMaxPrice = filteredProducts.filter(
-    //             (filteredProduct) => filteredProduct.price <= maxPrice
-    //         );
-    //         setfilteredProducts(filterByMaxPrice);
-    //     }
-    // };
+    const { t } = useTranslation("category-price-filter");
+
     const filter = () => {
         if (maxPrice > 0 || minPrice >= 0) {
             if (currentCategory === "") {
@@ -77,20 +72,20 @@ const PriceFilter = ({
                 </div>
                 <div className='grid scale-90 grid-flow-col items-center justify-center gap-4 pt-4'>
                     <button
-                        className='font-md m-1 rounded-lg border-2 bg-extraDarkPurple py-1 px-5 text-[17px] text-white shadow-sm'
+                        className='font-md flashing m-1 rounded-lg border-2 bg-extraDarkPurple py-1 px-5 text-[17px] text-white shadow-sm'
                         onClick={() => {
                             filter();
                         }}
                     >
-                        Filter
+                        {t("filter")}
                     </button>
                     <button
-                        className='font-md m-1 rounded-lg border-2 bg-extraDarkPurple py-1 px-5 text-[17px] text-white shadow-sm'
+                        className='font-md flashing m-1 rounded-lg border-2 bg-extraDarkPurple py-1 px-5 text-[17px] text-white shadow-sm'
                         onClick={() => {
                             reset();
                         }}
                     >
-                        Reset
+                        {t("reset")}
                     </button>
                 </div>
             </div>

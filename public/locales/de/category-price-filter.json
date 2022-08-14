@@ -1,4 +1,6 @@
 {
     "categories": "Kategorien",
-    "price": "Preis"
+    "price": "Preis",
+    "filter": "Filter",
+    "reset": "Zurücksetzen"
 }
