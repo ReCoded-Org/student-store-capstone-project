@@ -1,16 +1,31 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
+import * as React from "react";
 import { useState } from "react";
 import { BiSearchAlt } from "react-icons/bi";
 import { MdShoppingCart } from "react-icons/md";
 import { TbWorld } from "react-icons/tb";
 
-// eslint-disable-next-line unused-imports/no-unused-vars
-function Header({ products, filteredProducts, setfilteredProducts }) {
+function Header({
+    products,
+    // eslint-disable-next-line unused-imports/no-unused-vars
+    filteredProducts,
+    setfilteredProducts,
+    productName,
+    setProductName,
+}) {
     const { t } = useTranslation("header");
     const [isNavOpen, setIsNavOpen] = useState(false);
     const [isLanguageOpen, setIsLanguageOpen] = useState(false);
+
+    function searchByName() {
+        setfilteredProducts(
+            products.filter((product) =>
+                product.title.toLowerCase().includes(productName.toLowerCase())
+            )
+        );
+    }
 
     return (
         <>
@@ -29,6 +44,7 @@ function Header({ products, filteredProducts, setfilteredProducts }) {
                                         className='hover:cursor-pointer'
                                         onClick={() => {
                                             setfilteredProducts(products);
+                                            setProductName("");
                                         }}
                                     />
                                 </a>
@@ -128,7 +144,12 @@ function Header({ products, filteredProducts, setfilteredProducts }) {
                             className=' h-10 grow rounded-[20px] border-2 border-gray-300 bg-white pl-2 pr-8 text-sm focus:outline-none '
                             type='search'
                             name='search'
+                            value={productName}
                             placeholder={t("search")}
+                            onChange={(e) => {
+                                setProductName(e.target.value);
+                                searchByName();
+                            }}
                         />
                         <button type='submit'>
                             <BiSearchAlt className='-m-7 h-10 w-10 pt-4 pr-5' />

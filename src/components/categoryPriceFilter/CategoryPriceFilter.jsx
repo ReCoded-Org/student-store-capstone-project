@@ -42,7 +42,11 @@ const CategoryPriceFilter = ({
                     ))}
                 </div>
                 <div className='my-3 flex items-center justify-center'>
-                    <PriceFilter />
+                    <PriceFilter
+                        products={products}
+                        filteredProducts={filteredProducts}
+                        setfilteredProducts={setfilteredProducts}
+                    />
                 </div>
             </div>
         </div>

@@ -8,6 +8,8 @@ export default function Layout({
     products,
     filteredProducts,
     setfilteredProducts,
+    productName,
+    setProductName,
 }) {
     return (
         <>
@@ -15,6 +17,8 @@ export default function Layout({
                 products={products}
                 filteredProducts={filteredProducts}
                 setfilteredProducts={setfilteredProducts}
+                productName={productName}
+                setProductName={setProductName}
             />{" "}
             {children} <Footer />
         </>

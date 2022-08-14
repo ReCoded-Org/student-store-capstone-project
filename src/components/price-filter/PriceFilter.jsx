@@ -1,4 +1,41 @@
+import * as React from "react";
+
+// const PriceFilter = ({ products, filteredProducts, setfilteredProducts }) => {
 const PriceFilter = () => {
+    // const [maxPrice, setMaxPrice] = React.useState(0);
+    // const [minPrice, setMinPrice] = React.useState(0);
+
+    // React.useEffect(() => {
+    //     if (maxPrice > 0 && minPrice >= 0) {
+    //         setfilteredProducts(
+    //             filteredProducts.filter(
+    //                 (filteredProduct) =>
+    //                     filteredProduct < filteredProduct.price < maxPrice
+    //             )
+    //         );
+    //     }
+    // }, [maxPrice, minPrice]);
+
+    // const priceFilter = (minPrice, maxPrice) => {
+    //     if (maxPrice > 0 && minPrice >= 0) {
+    //         setfilteredProducts(
+    //             filteredProducts.filter(
+    //                 (product) =>
+    //                     product.price < maxPrice && product.price > minPrice
+    //             )
+    //         );
+    //     }
+    // };
+    // const maxPriceFilter = (maxPrice) => {
+    //     if (maxPrice > 0) {
+    //         const filterByMaxPrice = filteredProducts.filter(
+    //             (product) => product.price < maxPrice
+    //         );
+    //         console.log("fer: ", filterByMaxPrice);
+    //         setfilteredProducts(filterByMaxPrice);
+    //     }
+    // };
+
     return (
         <div className='flex justify-center'>
             <div className='px-2 xxs:scale-[70%] sm:w-80 sm:scale-[80%] md:scale-95 xl:w-96'>
@@ -9,6 +46,9 @@ const PriceFilter = () => {
                         placeholder='Min TL'
                         aria-label='Search'
                         aria-describedby='button-addon2'
+                        // onChange={(e) => {
+                        //     setMinPrice(e.target.value);
+                        // }}
                     />
                     <input
                         type='search'
@@ -16,8 +56,20 @@ const PriceFilter = () => {
                         placeholder='Max TL'
                         aria-label='Search'
                         aria-describedby='button-addon2'
+                        // onChange={(e) => {
+                        //     setMaxPrice(e.target.value);
+                        //     maxPriceFilter(maxPrice);
+                        // }}
                     />
                 </div>
+                {/* <div
+                    className='grid scale-75 justify-center pt-4'
+                    onClick={() => {
+                        priceFilter(minPrice, maxPrice);
+                    }}
+                >
+                    <Button text='search' buttonStyle='orangeSignIn' />
+                </div> */}
             </div>
         </div>
     );

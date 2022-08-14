@@ -13,12 +13,15 @@ export default function HomePage() {
     // eslint-disable-next-line unused-imports/no-unused-vars
     const [products, setProducts] = React.useState(PRODUCTS);
     const [filteredProducts, setfilteredProducts] = React.useState(products);
+    const [productName, setProductName] = React.useState("");
     return (
         <>
             <Layout
                 products={products}
                 filteredProducts={filteredProducts}
                 setfilteredProducts={setfilteredProducts}
+                productName={productName}
+                setProductName={setProductName}
             >
                 <div className='bg-clay md:px-10 lg:px-16 2xl:px-20'>
                     <Carousel />
