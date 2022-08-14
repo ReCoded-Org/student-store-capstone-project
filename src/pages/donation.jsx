@@ -10,7 +10,10 @@ export default function Donation() {
     return (
         <Layout>
             <div className='grid-flow-col-1 grid items-center justify-around bg-iceblue font-Poppins'>
-                <div className='p-10'>
+                <div className='relative p-10'>
+                    <div className='top-20 z-10 px-4 py-2  opacity-70 sm:text-2xl  md:absolute  md:left-24  md:w-full xl:left-64'>
+                        <h1 className=''>Be the reason someone smiles today</h1>
+                    </div>
                     <Image
                         src='/images/donation.png'
                         alt='donation image'

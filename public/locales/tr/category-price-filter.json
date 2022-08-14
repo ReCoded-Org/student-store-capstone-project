@@ -1,4 +1,8 @@
 {
+
     "categories": "Kategoriler",
-    "price": "Fiyat"
+    "price": "Fiyat",
+    "filter": "Filtre",
+    "reset": "Sıfırla"
+
 }

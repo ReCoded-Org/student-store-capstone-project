@@ -1,8 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
+import { useTranslation } from "next-i18next";
 import React from "react";
 
 export default function SingleProduct({ product }) {
+    const { t } = useTranslation("categories");
     return (
         <Link href={`products/${product.id}`}>
             <div
@@ -11,7 +13,7 @@ export default function SingleProduct({ product }) {
             >
                 <div className='mb-1 overflow-hidden rounded-lg bg-white'>
                     <img
-                        src={product.img}
+                        src={product.coverImage}
                         alt='image'
                         className='h-64 w-full cursor-pointer'
                     />
@@ -30,7 +32,7 @@ export default function SingleProduct({ product }) {
                                 className='inline-block rounded-full bg-teal-200 px-2 text-xs 
                                            font-semibold uppercase tracking-wide text-teal-800'
                             >
-                                {product.category}
+                                {t(`${product.category}`)}
                             </span>
 
                             <span className='text-xs'>

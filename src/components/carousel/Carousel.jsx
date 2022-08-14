@@ -20,7 +20,10 @@ function Carousel() {
 
     return (
         <Slider {...settings}>
-            <div className='carouselItem carouselItem1 rounded-lg' />
+            <div className='carouselItem carouselItem1 rounded-lg'>
+                {" "}
+                <p className='text-2xl'>New Books Just arrived!</p>
+            </div>
             <div className='carouselItem carouselItem2 rounded-lg' />
             <div className='carouselItem carouselItem3 rounded-lg' />
             <div className='carouselItem carouselItem4 rounded-lg' />
