@@ -13,8 +13,10 @@ const PRODUCTS = [
         condition: "New",
         seller: "DerSeller",
         buyer: "DerBuyer",
-        lat: 41.085562,
-        lng: 28.985118,
+        geo: {
+            lat: 41.085562,
+            lng: 28.985118,
+        },
     },
 
     {
@@ -31,8 +33,10 @@ const PRODUCTS = [
         condition: "New",
         seller: "DerSeller",
         buyer: "DerBuyer",
-        lat: 41.01203,
-        lng: 28.955573,
+        geo: {
+            lat: 41.01203,
+            lng: 28.955573,
+        },
     },
 
     {
@@ -49,8 +53,10 @@ const PRODUCTS = [
         condition: "New",
         seller: "DerSeller",
         buyer: "DerBuyer",
-        lat: 41.085562,
-        lng: 28.985118,
+        geo: {
+            lat: 41.085562,
+            lng: 28.985118,
+        },
     },
 
     {
@@ -67,8 +73,10 @@ const PRODUCTS = [
         condition: "New",
         seller: "DerSeller",
         buyer: "DerBuyer",
-        lat: 40.362242,
-        lng: 28.888175,
+        geo: {
+            lat: 40.362242,
+            lng: 28.888175,
+        },
     },
 
     {
@@ -85,8 +93,10 @@ const PRODUCTS = [
         condition: "New",
         seller: "DerSeller",
         buyer: "DerBuyer",
-        lat: 41.085562,
-        lng: 28.985118,
+        geo: {
+            lat: 41.085562,
+            lng: 28.985118,
+        },
     },
 
     {
@@ -103,8 +113,10 @@ const PRODUCTS = [
         condition: "Used",
         seller: "DerSeller",
         buyer: "DerBuyer",
-        lat: 40.98871,
-        lng: 29.097114,
+        geo: {
+            lat: 40.98871,
+            lng: 29.097114,
+        },
     },
 
     {
@@ -121,8 +133,10 @@ const PRODUCTS = [
         condition: "New",
         seller: "DerSeller",
         buyer: "DerBuyer",
-        lat: 36.275556,
-        lng: 36.188218,
+        geo: {
+            lat: 36.275556,
+            lng: 36.188218,
+        },
     },
 
     {
@@ -139,8 +153,10 @@ const PRODUCTS = [
         condition: "New",
         seller: "DerSeller",
         buyer: "DerBuyer",
-        lat: 40.88341,
-        lng: 29.231715,
+        geo: {
+            lat: 40.88341,
+            lng: 29.231715,
+        },
     },
 
     {
@@ -157,8 +173,10 @@ const PRODUCTS = [
         condition: "Used",
         seller: "DerSeller",
         buyer: "DerBuyer",
-        lat: 41.019283,
-        lng: 28.853814,
+        geo: {
+            lat: 41.019283,
+            lng: 28.853814,
+        },
     },
 
     {
@@ -175,8 +193,10 @@ const PRODUCTS = [
         condition: "New",
         seller: "DerSeller",
         buyer: "DerBuyer",
-        lat: 41.019283,
-        lng: 28.853814,
+        geo: {
+            lat: 41.019283,
+            lng: 28.853814,
+        },
     },
 
     {
@@ -193,8 +213,10 @@ const PRODUCTS = [
         condition: "Used",
         seller: "DerSeller",
         buyer: "DerBuyer",
-        lat: 41.026535,
-        lng: 28.668298,
+        geo: {
+            lat: 41.026535,
+            lng: 28.668298,
+        },
     },
 
     {
@@ -211,8 +233,10 @@ const PRODUCTS = [
         condition: "New",
         seller: "DerSeller",
         buyer: "DerBuyer",
-        lat: 40.978861,
-        lng: 28.643563,
+        geo: {
+            lat: 40.978861,
+            lng: 28.643563,
+        },
     },
 ];
 
