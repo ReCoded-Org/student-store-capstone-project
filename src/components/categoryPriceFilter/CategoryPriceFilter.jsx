@@ -5,7 +5,18 @@ import Filter from "../filter";
 import categories from "../filter/categories";
 import PriceFilter from "../price-filter";
 
-const CategoryPriceFilter = () => {
+const CategoryPriceFilter = ({
+    products,
+    // eslint-disable-next-line unused-imports/no-unused-vars
+    filteredProducts,
+    setfilteredProducts,
+}) => {
+    function categoriesFilter(category) {
+        setfilteredProducts(
+            products.filter((product) => product.category === category)
+        );
+    }
+
     const { t } = useTranslation("category-price-filter");
     return (
         <div className='px-[15px] pb-4 xxs:mt-[-3.5rem] md:pt-5 lg:mt-0'>
@@ -26,6 +37,7 @@ const CategoryPriceFilter = () => {
                             svg={catergory[i].svg}
                             name={catergory[i].name}
                             id={catergory[i].id}
+                            categoriesFilter={categoriesFilter}
                         />
                     ))}
                 </div>

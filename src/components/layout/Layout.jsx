@@ -3,11 +3,20 @@ import * as React from "react";
 import Footer from "./Footer/Footer";
 import Header from "../header/Header";
 
-export default function Layout({ children }) {
-    // Put Header or Footer around the children element
+export default function Layout({
+    children,
+    products,
+    filteredProducts,
+    setfilteredProducts,
+}) {
     return (
         <>
-            <Header /> {children} <Footer />
+            <Header
+                products={products}
+                filteredProducts={filteredProducts}
+                setfilteredProducts={setfilteredProducts}
+            />{" "}
+            {children} <Footer />
         </>
     );
 }

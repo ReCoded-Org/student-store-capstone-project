@@ -1,6 +1,6 @@
 import { useTranslation } from "next-i18next";
 
-const Filter = ({ bgColor, svg, name, id }) => {
+const Filter = ({ bgColor, svg, name, id, categoriesFilter }) => {
     const { t } = useTranslation("categories");
     let firstElementStyle = null;
     let lastElementStyle = null;
@@ -19,6 +19,9 @@ const Filter = ({ bgColor, svg, name, id }) => {
     return (
         <div
             className={`${firstElementStyle} ${lastElementStyle} scale-90 xxs:scale-90 lg:scale-75 xl:scale-90`}
+            onClick={() => {
+                categoriesFilter(name);
+            }}
         >
             <div
                 className={`flashing flex h-20 w-20 items-center justify-center rounded-full hover:cursor-pointer xxs:scale-[50%] sm:scale-90 md:scale-90 lg:scale-100 ${bgColor}`}

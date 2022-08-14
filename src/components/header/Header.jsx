@@ -6,7 +6,8 @@ import { BiSearchAlt } from "react-icons/bi";
 import { MdShoppingCart } from "react-icons/md";
 import { TbWorld } from "react-icons/tb";
 
-function Header() {
+// eslint-disable-next-line unused-imports/no-unused-vars
+function Header({ products, filteredProducts, setfilteredProducts }) {
     const { t } = useTranslation("header");
     const [isNavOpen, setIsNavOpen] = useState(false);
     const [isLanguageOpen, setIsLanguageOpen] = useState(false);
@@ -26,6 +27,9 @@ function Header() {
                                         height={60}
                                         width={150}
                                         className='hover:cursor-pointer'
+                                        onClick={() => {
+                                            setfilteredProducts(products);
+                                        }}
                                     />
                                 </a>
                             </Link>
