@@ -152,7 +152,7 @@ const Details = () => {
                                                     showEmail();
                                                 }}
                                             >
-                                                (show)
+                                                ({t("show")})
                                             </span>
                                         </span>
                                         <span
@@ -166,7 +166,7 @@ const Details = () => {
                                                     hideEmail();
                                                 }}
                                             >
-                                                (hide)
+                                                ({t("hide")})
                                             </span>
                                         </span>
                                     </h2>
