@@ -14,6 +14,14 @@ const Details = () => {
         document.querySelector(".popup-image img").src =
             event.target.getAttribute("src");
     }
+    function showEmail() {
+        document.getElementById("hidden_email").style.display = "none";
+        document.getElementById("visible_email").style.display = "block";
+    }
+    function hideEmail() {
+        document.getElementById("hidden_email").style.display = "block";
+        document.getElementById("visible_email").style.display = "none";
+    }
 
     return (
         <Layout>
@@ -136,7 +144,31 @@ const Details = () => {
                                         Mr. nice cat
                                     </h2>
                                     <h2 className='xxs:text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl'>
-                                        mrNiceCat@fake.com
+                                        <span id='hidden_email'>
+                                            ****@****.edu.tr{" "}
+                                            <span
+                                                className='hover:text-extraDarkPurple'
+                                                onClick={() => {
+                                                    showEmail();
+                                                }}
+                                            >
+                                                (show)
+                                            </span>
+                                        </span>
+                                        <span
+                                            id='visible_email'
+                                            style={{ display: "none" }}
+                                        >
+                                            mrNiceCat@fake.com{" "}
+                                            <span
+                                                className='hover:text-extraDarkPurple'
+                                                onClick={() => {
+                                                    hideEmail();
+                                                }}
+                                            >
+                                                (hide)
+                                            </span>
+                                        </span>
                                     </h2>
                                     <h2 className='xxs:text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl'>
                                         Istanbul/Turkeky
