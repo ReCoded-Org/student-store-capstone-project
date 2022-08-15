@@ -2,7 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { BsFacebook, BsGoogle, BsTwitter } from "react-icons/bs";
+import { useState } from "react";
+import { BsGoogle } from "react-icons/bs";
 
 import Button from "@/components/button";
 import Input from "@/components/input";
@@ -14,6 +15,36 @@ import sunSkyOrg from "/public/images/sunSkyOrg.png";
 
 export default function SignInPage() {
     const { t } = useTranslation("sign");
+
+    const [email, setEmail] = useState();
+    const [password, setPassword] = useState();
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        const response = await fetch(
+            "http://students-store.herokuapp.com/api/auth/signin",
+            {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Access-Control-Allow-Origin": "*",
+                },
+                body: JSON.stringify({
+                    email: email,
+                    password: password,
+                }),
+            }
+        );
+        const data = await response.json();
+        console.log(data);
+    };
+
+    //the fetch works here:
+    // const getDogs = async (e) => {
+    //     e.preventDefault();
+    //     const response = await fetch("https://dog.ceo/api/breeds/list/all");
+    //     const data = await response.json();
+    //     console.log(data);
+    // };
     return (
         <>
             <Layout>
@@ -27,85 +58,71 @@ export default function SignInPage() {
                         </p>
 
                         <div className=' flex w-11/12 max-w-sm flex-col items-center lg:max-w-md'>
-                            <Input
-                                id='email'
-                                name='email'
-                                placeholder='e-mail'
-                            />
-                            <Input
-                                id='password'
-                                name='password'
-                                placeholder={t("password")}
-                            />
-                            <div className='my-4 flex w-full flex-row justify-between'>
-                                <Button
-                                    buttonStyle='orangeSignIn'
-                                    text={t("sign-in")}
-                                    type='submit'
+                            <form onSubmit={handleSubmit}>
+                                <Input
+                                    id='email'
+                                    name='email'
+                                    onChange={(e) => setEmail(e.target.value)}
+                                    placeholder='e-mail'
                                 />
-                                <Button
-                                    buttonStyle='forgotPassword'
-                                    text={t("forgot-password") + "?"}
-                                    type='submit'
+                                <Input
+                                    id='password'
+                                    name='password'
+                                    onChange={(e) =>
+                                        setPassword(e.target.value)
+                                    }
+                                    placeholder={t("password")}
                                 />
-                            </div>
-                            <div className='mb-2 flex flex-col items-center justify-center pt-4 md:flex md:flex-col'>
-                                <fieldset className=' mb-4 w-96 border-t border-[#585785] lg:w-[448px]'>
-                                    <legend className='text-md mx-auto px-4 text-[#585785]'>
-                                        {t("or")}
-                                    </legend>
-                                </fieldset>
+                                <div className='my-4 flex w-full flex-row justify-between'>
+                                    <Button
+                                        buttonStyle='orangeSignIn'
+                                        text={t("sign-in")}
+                                        type='submit'
+                                    />
+                                    <Button
+                                        buttonStyle='forgotPassword'
+                                        text={t("forgot-password") + "?"}
+                                        type='submit'
+                                    />
+                                </div>
+                                <div className='mb-2 flex flex-col items-center justify-center pt-4 md:flex md:flex-col'>
+                                    <fieldset className=' mb-4 w-96 border-t border-[#585785] lg:w-[448px]'>
+                                        <legend className='text-md mx-auto px-4 text-[#585785]'>
+                                            {t("or")}
+                                        </legend>
+                                    </fieldset>
 
-                                <p className='text-md mx-4 mb-2 bg-transparent  text-darkPurple'>
-                                    {t("sign-in-with")}
-                                </p>
-                            </div>
+                                    <p className='text-md mx-4 mb-2 bg-transparent  text-darkPurple'>
+                                        {t("sign-in-with")}
+                                    </p>
+                                </div>
 
-                            <div className='m-1  mb-1 hidden  md:hidden md:flex-row lg:mb-12 lg:flex lg:flex-row '>
-                                <button className=' m-1 flex items-center rounded-3xl border border-[#F26F6F] p-1  text-[#F26F6F]'>
-                                    <BsGoogle
-                                        size={22}
-                                        style={{ padding: "1px" }}
-                                        color='#F26F6F'
-                                    />
-                                    <p className='mx-2 text-sm md:mx-3'>
-                                        Google
-                                    </p>
-                                </button>
-                                <button className='color-darkPurple m-1  flex items-center rounded-3xl border border-darkPurple p-1 text-darkPurple'>
-                                    <BsFacebook
-                                        size={22}
-                                        style={{ padding: "1px" }}
-                                        color='#585785'
-                                    />
-                                    <p className='mx-2 text-sm md:mx-3'>
-                                        Facebook
-                                    </p>
-                                </button>
-                                <button className=' m-1 flex justify-around rounded-3xl border border-[#1DA1F2] bg-transparent p-1 text-[#1DA1F2]'>
-                                    <BsTwitter
-                                        size={22}
-                                        style={{ padding: "1px" }}
-                                        color='#1DA1F2'
-                                    />
-                                    <p className='mx-2 text-sm md:mx-3'>
-                                        Twitter
-                                    </p>
-                                </button>
-                            </div>
-                            <div className='hidden items-center md:hidden lg:mb-8 lg:flex lg:flex-col'>
-                                <p className=' text-md mb-3  bg-transparent text-darkpurple'>
-                                    {t("don't-have-an-account")}?
-                                </p>
-                                <Link href='/sign-up'>
-                                    <a>
-                                        <Button
-                                            buttonStyle='orangeSignUp'
-                                            text={t("sign-up")}
+                                <div className='m-1  mb-1 hidden  md:hidden md:flex-row lg:mb-12 lg:flex lg:flex-row '>
+                                    <button className=' m-1 flex items-center rounded-3xl border border-[#F26F6F] p-1  text-[#F26F6F]'>
+                                        <BsGoogle
+                                            size={22}
+                                            style={{ padding: "1px" }}
+                                            color='#F26F6F'
                                         />
-                                    </a>
-                                </Link>
-                            </div>
+                                        <p className='mx-2 text-sm md:mx-3'>
+                                            Google
+                                        </p>
+                                    </button>
+                                </div>
+                                <div className='hidden items-center md:hidden lg:mb-8 lg:flex lg:flex-col'>
+                                    <p className=' text-md mb-3  bg-transparent text-darkpurple'>
+                                        {t("don't-have-an-account")}?
+                                    </p>
+                                    <Link href='/sign-up'>
+                                        <a>
+                                            <Button
+                                                buttonStyle='orangeSignUp'
+                                                text={t("sign-up")}
+                                            />
+                                        </a>
+                                    </Link>
+                                </div>
+                            </form>
                         </div>
                     </div>
 
@@ -145,22 +162,6 @@ export default function SignInPage() {
                                     color='#F26F6F'
                                 />
                                 <p className='mx-2 text-sm md:mx-3'>Google</p>
-                            </button>
-                            <button className='color-darkPurple m-1  flex items-center rounded-3xl border border-darkPurple p-1 text-darkPurple'>
-                                <BsFacebook
-                                    size={22}
-                                    style={{ padding: "1px" }}
-                                    color='#585785'
-                                />
-                                <p className='mx-2 text-sm md:mx-3'>Facebook</p>
-                            </button>
-                            <button className=' m-1 flex justify-around rounded-3xl border border-[#1DA1F2] bg-transparent p-1 text-[#1DA1F2]'>
-                                <BsTwitter
-                                    size={22}
-                                    style={{ padding: "1px" }}
-                                    color='#1DA1F2'
-                                />
-                                <p className='mx-2 text-sm md:mx-3'>Twitter</p>
                             </button>
                         </div>
                         <div className='flex flex-col items-center'>
