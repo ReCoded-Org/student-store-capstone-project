@@ -71,7 +71,14 @@ exports[`renders correctly 1`] = `
               }
             }
             tabIndex={-1}
-          />
+          >
+             
+            <p
+              className="text-2xl"
+            >
+              New Books Just arrived!
+            </p>
+          </div>
         </div>
       </div>
       <div

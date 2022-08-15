@@ -1,13 +1,13 @@
 {
-    "category": "Category",
-    "condition": "Condition",
-    "used": "Used",
-    "new": "New",
-    "description": "Description",
-    "books": "Books",
-    "furniture": "Furniture",
-    "electronics": "Electronics",
-    "two-wheeler": "Two-wheeler",
-    "clothes": "Clothes",
+    "category": "Kategori",
+    "condition": "Durum",
+    "used": "Kullanılmış",
+    "new": "Yeni",
+    "description": "Açıklama",
+    "books": "Kitaplar",
+    "furniture": "Mobilya",
+    "electronics": "Elektronik",
+    "two-wheeler": "İki tekerlekli",
+    "clothes": "Kıyafet",
     "Food": "Yemek"
 }

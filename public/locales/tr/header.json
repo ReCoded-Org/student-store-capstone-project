@@ -1,8 +1,8 @@
 {
-    "donate": "Donate",
-    "about-us": "About us",
-    "search": "Search",
-    "sign-in": "Sign in",
-    "sell-items": "Sell",
-    "cart": "Cart"
+    "donate": "bağış",
+    "about-us": "hakkımızda",
+    "search": "arama yap",
+    "sign-in": "giriş",
+    "sell-items": "sat",
+    "cart": "sepetim"
 }
