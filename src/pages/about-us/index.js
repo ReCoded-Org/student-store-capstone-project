@@ -1,25 +1,25 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 import Layout from "@/components/layout/Layout";
 
 function AboutUsPage() {
+    const { t } = useTranslation("about");
     return (
         <Layout>
             <div className='flex h-[550px] w-full justify-between bg-gradient-to-r from-darkpurple to-purple p-10 align-middle lg:pr-0'>
                 <div className='m-auto flex-col sm:w-full lg:w-[40%]'>
                     <h1 className='m-auto text-4xl font-bold text-cyanaqua xs:text-center sm:text-center md:text-left lg:text-left'>
-                        <span className='font-Popppins'>Our</span>{" "}
-                        <span> Mission</span>
+                        <span className='font-Popppins'>
+                            {t("our-mission")}
+                        </span>
                     </h1>
                     <p className=' mission mt-4 text-sm leading-8 text-white xxs:text-center xs:text-center  sm:text-center md:text-left lg:text-left'>
-                        Student Store is a website that brings together students
-                        from all around Turkey and helps them easily buy and
-                        sell things locally. The aim of the website is to make
-                        second-handing easy and fun for students and help them
-                        access their needs easily.
+                        {t("mission-paragraph")}
                     </p>
                 </div>
                 <div className='self-middle p m-0 h-[500px] justify-center  overflow-hidden p-0 xxs:hidden xs:hidden sm:hidden md:hidden lg:flex '>
@@ -39,7 +39,7 @@ function AboutUsPage() {
             </div>
             <div className='flex h-auto w-full flex-col justify-start border-b-2 border-purple bg-darkpurple p-10 align-middle'>
                 <h2 className='m-auto mb-5 text-center font-Poppins text-4xl font-semibold text-cyanaqua'>
-                    Our Team
+                    {t("our-team")}
                 </h2>
                 {/* Salah's Card */}
                 <div className='m-auto mb-10 flex w-[200px] flex-col rounded-xl bg-[#585785] p-6 text-center align-middle duration-500 hover:shadow-xl hover:shadow-cyanaqua'>
@@ -215,6 +215,19 @@ function AboutUsPage() {
             </div>
         </Layout>
     );
+}
+export async function getStaticProps({ locale }) {
+    return {
+        props: {
+            ...(await serverSideTranslations(locale, [
+                "common",
+                "header",
+                "footer",
+                "about",
+            ])),
+            // Will be passed to the page component as props
+        },
+    };
 }
 
 export default AboutUsPage;
