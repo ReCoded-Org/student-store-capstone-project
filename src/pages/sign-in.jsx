@@ -3,7 +3,13 @@ import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useState } from "react";
-import { BsGoogle } from "react-icons/bs";
+import {
+    BsEye,
+    BsEyeSlash,
+    BsFacebook,
+    BsGoogle,
+    BsTwitter,
+} from "react-icons/bs";
 
 import Button from "@/components/button";
 import Input from "@/components/input";
@@ -16,8 +22,15 @@ import sunSkyOrg from "/public/images/sunSkyOrg.png";
 export default function SignInPage() {
     const { t } = useTranslation("sign");
 
-    const [email, setEmail] = useState();
-    const [password, setPassword] = useState();
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+
+    const [showPassword, setShowPassword] = useState(false);
+
+    const togglePassword = () => {
+        setShowPassword(!showPassword);
+    };
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         const response = await fetch(
@@ -35,7 +48,7 @@ export default function SignInPage() {
             }
         );
         const data = await response.json();
-        console.log(data);
+        // console.log(data);
     };
 
     //the fetch works here:
@@ -65,14 +78,34 @@ export default function SignInPage() {
                                     onChange={(e) => setEmail(e.target.value)}
                                     placeholder='e-mail'
                                 />
-                                <Input
-                                    id='password'
-                                    name='password'
-                                    onChange={(e) =>
-                                        setPassword(e.target.value)
-                                    }
-                                    placeholder={t("password")}
-                                />
+
+                                <div className='relative h-auto'>
+                                    <Input
+                                        className='z-0'
+                                        type={
+                                            showPassword ? "text" : "password"
+                                        }
+                                        id='password'
+                                        name='password'
+                                        onChange={(e) =>
+                                            setPassword(e.target.value)
+                                        }
+                                        placeholder={t("password")}
+                                    />
+                                    <div className='absolute top-2.5 right-4 '>
+                                        <button
+                                            type='button'
+                                            className='color-pumpkin h-8'
+                                            onClick={togglePassword}
+                                        >
+                                            {showPassword ? (
+                                                <BsEyeSlash className='text-pumpkin' />
+                                            ) : (
+                                                <BsEye className='text-pumpkin' />
+                                            )}
+                                        </button>
+                                    </div>
+                                </div>
                                 <div className='my-4 flex w-full flex-row justify-between'>
                                     <Button
                                         buttonStyle='orangeSignIn'
@@ -96,8 +129,7 @@ export default function SignInPage() {
                                         {t("sign-in-with")}
                                     </p>
                                 </div>
-
-                                <div className='m-1  mb-1 hidden  md:hidden md:flex-row lg:mb-12 lg:flex lg:flex-row '>
+                                <div className='m-1  mb-1 hidden  md:hidden  lg:mb-12 lg:flex lg:flex-row lg:justify-around'>
                                     <button className=' m-1 flex items-center rounded-3xl border border-[#F26F6F] p-1  text-[#F26F6F]'>
                                         <BsGoogle
                                             size={22}
@@ -106,6 +138,26 @@ export default function SignInPage() {
                                         />
                                         <p className='mx-2 text-sm md:mx-3'>
                                             Google
+                                        </p>
+                                    </button>
+                                    <button className='color-darkPurple m-1  flex items-center rounded-3xl border border-darkPurple p-1 text-darkPurple'>
+                                        <BsFacebook
+                                            size={22}
+                                            style={{ padding: "1px" }}
+                                            color='#585785'
+                                        />
+                                        <p className='mx-2 text-sm md:mx-3'>
+                                            Facebook
+                                        </p>
+                                    </button>
+                                    <button className=' m-1 flex justify-around rounded-3xl border border-[#1DA1F2] bg-transparent p-1 text-[#1DA1F2]'>
+                                        <BsTwitter
+                                            size={22}
+                                            style={{ padding: "1px" }}
+                                            color='#1DA1F2'
+                                        />
+                                        <p className='mx-2 text-sm md:mx-3'>
+                                            Twitter
                                         </p>
                                     </button>
                                 </div>
@@ -162,6 +214,22 @@ export default function SignInPage() {
                                     color='#F26F6F'
                                 />
                                 <p className='mx-2 text-sm md:mx-3'>Google</p>
+                            </button>
+                            <button className='color-darkPurple m-1  flex items-center rounded-3xl border border-darkPurple p-1 text-darkPurple'>
+                                <BsFacebook
+                                    size={22}
+                                    style={{ padding: "1px" }}
+                                    color='#585785'
+                                />
+                                <p className='mx-2 text-sm md:mx-3'>Facebook</p>
+                            </button>
+                            <button className=' m-1 flex justify-around rounded-3xl border border-[#1DA1F2] bg-transparent p-1 text-[#1DA1F2]'>
+                                <BsTwitter
+                                    size={22}
+                                    style={{ padding: "1px" }}
+                                    color='#1DA1F2'
+                                />
+                                <p className='mx-2 text-sm md:mx-3'>Twitter</p>
                             </button>
                         </div>
                         <div className='flex flex-col items-center'>
