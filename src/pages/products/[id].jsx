@@ -194,32 +194,6 @@ const Details = () => {
                                     handleClick={popupWindow}
                                 />
                             </div>
-                            {/* popup window */}
-                            {/* <div className='popup-window grid items-center rounded-lg'>
-                                <div className='p-4'>
-                                    <h2 className='text-center text-white'>
-                                        Are you sure you want to delist?
-                                    </h2>
-                                </div>
-                                <div className='grid grid-flow-col justify-center gap-5'>
-                                    <div>
-                                        <Button
-                                            buttonStyle='orangeSignUp'
-                                            type='button'
-                                            text={t("Yes")}
-                                            handleClick={closePopupWindow}
-                                        />
-                                    </div>
-                                    <div>
-                                        <Button
-                                            buttonStyle='orangeSignUp'
-                                            type='button'
-                                            text={t("Cancel")}
-                                            handleClick={closePopupWindow}
-                                        />
-                                    </div>
-                                </div>
-                            </div> */}
                         </div>
                     </div>
                 </div>
@@ -229,11 +203,12 @@ const Details = () => {
                     </div>
                 </div>
             </div>
+            {/* popup window */}
             <div className='popup-window'>
-                <div className='fixed top-0 bottom-0 right-0 left-0 m-auto h-fit w-fit rounded-lg bg-clay px-6 py-4 xxs:scale-[60%] xs:scale-75 md:scale-90 lg:scale-100'>
+                <div className='popup fixed top-0 bottom-0 right-0 left-0 m-auto h-fit w-fit rounded-lg bg-clay px-6 py-4 xxs:scale-[60%] xs:scale-75 sm:scale-90 lg:scale-100'>
                     <div className='pb-4'>
                         <h2 className='text-center text-extraDarkPurple'>
-                            Are you sure you want to delist?
+                            {t("delisting-confirm")}?
                         </h2>
                     </div>
                     <div className='grid grid-flow-col justify-center gap-5'>
@@ -241,15 +216,14 @@ const Details = () => {
                             <Button
                                 buttonStyle='orangeSignUp'
                                 type='button'
-                                text={t("Yes")}
-                                handleClick={closePopupWindow}
+                                text={t("yes")}
                             />
                         </div>
                         <div>
                             <Button
                                 buttonStyle='orangeSignUp'
                                 type='button'
-                                text={t("Cancel")}
+                                text={t("cancel")}
                                 handleClick={closePopupWindow}
                             />
                         </div>

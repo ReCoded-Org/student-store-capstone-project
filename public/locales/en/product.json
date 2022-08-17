@@ -12,5 +12,8 @@
     "Food": "Food",
     "show": "show",
     "hide": "hide",
-    "delist": "Delist"
+    "delist": "Delist",
+    "yes": "Yes",
+    "cancel": "Cancel",
+    "delisting-confirm": "Are you sure you want to delist"
 }

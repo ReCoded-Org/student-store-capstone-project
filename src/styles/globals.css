@@ -62,6 +62,17 @@
     display: none;
 }
 
+.popup-image span {
+    position: fixed;
+    top: 0;
+    right: 10px;
+    font-size: 50px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+    z-index: 100;
+}
+
 .popup-window {
     position: fixed;
     top: 0;
@@ -73,15 +84,17 @@
     display: none;
 }
 
-.popup-image span {
-    position: fixed;
-    top: 0;
-    right: 10px;
-    font-size: 50px;
-    font-weight: bolder;
-    color: white;
-    cursor: pointer;
-    z-index: 100;
+.popup {
+    animation: popup 0.7s;
+}
+
+@keyframes popup {
+    0% {
+        transform: scale(0.2);
+    }
+    100% {
+        transform: scale();
+    }
 }
 
 /* for signup page */

@@ -12,5 +12,8 @@
     "Food": "Yemek",
     "show": "göster",
     "hide": "gizle",
-    "delist": "Kaldır"
+    "delist": "Kaldır",
+    "yes": "Evet",
+    "cancel": "İptal et",
+    "delisting-confirm": "Kaldırmak istediğinizden emin misiniz"
 }

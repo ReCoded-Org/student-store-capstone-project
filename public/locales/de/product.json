@@ -12,5 +12,8 @@
     "Food": "Lebensmittel",
     "show": "anzeigen",
     "hide": "verstecken",
-    "delist": "Auslisten"
+    "delist": "Auslisten",
+    "yes": "Ja",
+    "cancel": "Absagen",
+    "delisting-confirm": "Sind Sie sicher, dass Sie auslisten wollen"
 }
