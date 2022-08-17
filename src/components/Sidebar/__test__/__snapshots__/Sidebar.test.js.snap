@@ -165,11 +165,11 @@ exports[`renders correctly 1`] = `
     >
       <a
         className="sm:text-md m-2 font-bold text-purple hover:cursor-pointer xs:text-sm md:text-xl lg:text-2xl"
-        href="/editprofile"
+        href="/edit-profile"
         onClick={[Function]}
         onMouseEnter={[Function]}
       >
-        Edit Profile
+        edit-Profile
       </a>
     </div>
     <div
@@ -181,19 +181,7 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
         onMouseEnter={[Function]}
       >
-        My Listings
-      </a>
-    </div>
-    <div
-      className="pb-9 xs:pb-2 sm:pb-4"
-    >
-      <a
-        className="sm:text-md m-2 font-bold text-purple hover:cursor-pointer xs:text-sm md:text-xl lg:text-2xl"
-        href="/orders"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-      >
-        My Orders
+        my-listings
       </a>
     </div>
   </div>

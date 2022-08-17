@@ -1,12 +1,37 @@
+/* eslint-disable unused-imports/no-unused-vars */
 import Image from "next/image";
+import Link from "next/link";
+import { useTranslation } from "next-i18next";
+import * as React from "react";
 import { useState } from "react";
 import { BiSearchAlt } from "react-icons/bi";
 import { MdShoppingCart } from "react-icons/md";
 import { TbWorld } from "react-icons/tb";
 
-function Header() {
+function Header({
+    products,
+    filteredProducts,
+    setfilteredProducts,
+    productName,
+    setProductName,
+    maxPrice,
+    setMaxPrice,
+    minPrice,
+    setMinPrice,
+    currentCategory,
+    setCurrentCategory,
+}) {
+    const { t } = useTranslation("header");
     const [isNavOpen, setIsNavOpen] = useState(false);
     const [isLanguageOpen, setIsLanguageOpen] = useState(false);
+
+    function searchByName() {
+        setfilteredProducts(
+            products.filter((product) =>
+                product.title.toLowerCase().includes(productName.toLowerCase())
+            )
+        );
+    }
 
     return (
         <>
@@ -14,27 +39,37 @@ function Header() {
                 <div className=' flex flex-grow items-center justify-between md:flex md:flex-row md:items-center md:justify-items-stretch'>
                     <div className='flex w-full flex-row items-center justify-between md:w-auto  md:justify-start'>
                         <div className='py-1 md:mx-1 lg:mx-2'>
-                            <Image
-                                src='/images/logo.png'
-                                alt='logo'
-                                layout='fixed'
-                                height={60}
-                                width={150}
-                            />
+                            <Link href='/'>
+                                <a>
+                                    <Image
+                                        src='/images/logo.png'
+                                        alt='logo'
+                                        layout='fixed'
+                                        height={60}
+                                        width={150}
+                                        className='hover:cursor-pointer'
+                                        // onClick={() => {
+                                        //     setfilteredProducts(products);
+                                        //     setProductName("");
+                                        //     setMaxPrice("");
+                                        //     setMinPrice("");
+                                        //     setCurrentCategory("");
+                                        // }}
+                                    />
+                                </a>
+                            </Link>
                         </div>
                         <div className='text-md hidden w-full flex-grow md:flex md:w-auto  md:items-center '>
-                            <a
-                                href='#'
-                                className=' align-center  mr-2 rounded-[20px] p-2 px-3 text-darkPurple hover:bg-purple hover:text-white md:inline-block md:flex-grow lg:px-4'
-                            >
-                                Our Mission
-                            </a>
-                            <a
-                                href='#'
-                                className=' text-md mr-2 rounded-[20px] p-2 px-3 text-darkPurple hover:bg-purple hover:text-white md:flex md:flex-grow lg:px-4'
-                            >
-                                About Us
-                            </a>
+                            <Link href='/donation'>
+                                <a className=' align-center  mr-2 rounded-[20px] p-2 px-3 text-darkPurple hover:bg-purple hover:text-white md:inline-block md:flex-grow lg:px-4'>
+                                    {t("donate")}
+                                </a>
+                            </Link>
+                            <Link href='/about-us'>
+                                <a className=' text-md mr-2 rounded-[20px] p-2 px-3 text-darkPurple hover:bg-purple hover:text-white md:flex md:flex-grow lg:px-4'>
+                                    {t("about-us")}
+                                </a>
+                            </Link>
                         </div>
 
                         <section className='flex md:hidden'>
@@ -71,24 +106,43 @@ function Header() {
                                 </div>
                                 <ul className='MENU-OPEN mt-10 flex min-h-[250px] flex-col items-center justify-between '>
                                     <li className='flex flex-row items-center justify-start'>
-                                        <a href='#'>EN &nbsp;&nbsp;</a> |
-                                        <a href='#'>&nbsp;&nbsp; TR</a>
+                                        <Link href='/' locale='en'>
+                                            <a>EN&nbsp;&nbsp;</a>
+                                        </Link>
+                                        |
+                                        <Link href='/' locale='tr'>
+                                            <a>&nbsp;&nbsp;TR&nbsp;&nbsp;</a>
+                                        </Link>
+                                        |
+                                        <Link href='/' locale='de'>
+                                            <a>&nbsp;&nbsp;DE</a>
+                                        </Link>
                                     </li>
 
                                     <li className='my-8 border-b border-pumpkin'>
-                                        <a href='#'>About Us</a>
+                                        <Link href='/donation'>
+                                            <a>{t("donate")}</a>
+                                        </Link>
                                     </li>
                                     <li className='my-8 border-b border-pumpkin'>
-                                        <a href='#'>Our Team</a>
+                                        <Link href='/about-us'>
+                                            <a>{t("about-us")}</a>
+                                        </Link>
                                     </li>
                                     <li className='my-8 border-b border-pumpkin'>
-                                        <a href='#'>Sign Up</a>
+                                        <Link href='sign-in'>
+                                            <a>{t("sign-in")}</a>
+                                        </Link>
                                     </li>
                                     <li className='my-8 border-b border-pumpkin'>
-                                        <a href='#'>Sell Items</a>
+                                        <Link href='/product-listing'>
+                                            <a>{t("sell-items")}</a>
+                                        </Link>
                                     </li>
                                     <li className='my-8 border-b border-pumpkin'>
-                                        <a href='#'>Cart</a>
+                                        <Link href='/cart'>
+                                            <a>{t("cart")}</a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </div>
@@ -99,7 +153,12 @@ function Header() {
                             className=' h-10 grow rounded-[20px] border-2 border-gray-300 bg-white pl-2 pr-8 text-sm focus:outline-none '
                             type='search'
                             name='search'
-                            placeholder='Search'
+                            value={productName}
+                            placeholder={t("search")}
+                            onChange={(e) => {
+                                setProductName(e.target.value);
+                                searchByName();
+                            }}
                         />
                         <button type='submit'>
                             <BiSearchAlt className='-m-7 h-10 w-10 pt-4 pr-5' />
@@ -155,44 +214,64 @@ function Header() {
                                     className='flex flex-col items-center py-1'
                                     role='none'
                                 >
-                                    <a
-                                        href='#'
-                                        className='flashing block px-4 py-2 text-sm text-gray-700'
-                                        role='menuitem'
-                                        tabIndex='-1'
-                                        id='menu-item-0'
-                                    >
-                                        English
-                                    </a>
-                                    <a
-                                        href='#'
-                                        className='flashing block px-4 py-2 text-sm text-gray-700'
-                                        role='menuitem'
-                                        tabIndex='-1'
-                                        id='menu-item-1'
-                                    >
-                                        Turkish
-                                    </a>
+                                    <Link href='/' locale='en'>
+                                        <a
+                                            href='#'
+                                            className='flashing block px-4 py-2 text-sm text-gray-700'
+                                            role='menuitem'
+                                            tabIndex='-1'
+                                            id='menu-item-0'
+                                        >
+                                            English
+                                        </a>
+                                    </Link>
+
+                                    <Link href='/' locale='tr'>
+                                        <a
+                                            href='#'
+                                            className='flashing block px-4 py-2 text-sm text-gray-700'
+                                            role='menuitem'
+                                            tabIndex='-1'
+                                            id='menu-item-1'
+                                        >
+                                            Türkçe
+                                        </a>
+                                    </Link>
+
+                                    <Link href='/' locale='de'>
+                                        <a
+                                            href='#'
+                                            className='flashing block px-4 py-2 text-sm text-gray-700'
+                                            role='menuitem'
+                                            tabIndex='-1'
+                                            id='menu-item-1'
+                                        >
+                                            Deutsch
+                                        </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
 
                         <div className='text-md hidden md:flex md:w-auto md:items-center '>
-                            <a
-                                href='#'
-                                className='text-md mr-2 block rounded-[20px]  bg-darkPurple py-2 px-4 text-white hover:bg-purple '
-                            >
-                                Sign Up
-                            </a>
-                            <a
-                                href='#'
-                                className=' text-md mr-2 block rounded-[20px]  bg-darkPurple py-2 px-4 text-white hover:bg-purple'
-                            >
-                                Sell Items
-                            </a>
-                            <a href='#' className='m-2 pt-2'>
-                                <MdShoppingCart size={28} color='#FF8A57' />
-                            </a>
+                            <Link href='/sign-in'>
+                                <a
+                                    href='#'
+                                    className='text-md mr-2 block rounded-[20px]  bg-darkPurple py-2 px-4 text-white hover:bg-purple'
+                                >
+                                    {t("sign-in")}
+                                </a>
+                            </Link>
+                            <Link href='/product-listing'>
+                                <a className=' text-md mr-2 block rounded-[20px]  bg-darkPurple py-2 px-4 text-white hover:bg-purple'>
+                                    {t("sell-items")}
+                                </a>
+                            </Link>
+                            <Link href='/cart'>
+                                <a className='m-2 pt-2'>
+                                    <MdShoppingCart size={28} color='#FF8A57' />
+                                </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

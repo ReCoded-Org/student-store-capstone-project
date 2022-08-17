@@ -1,16 +1,19 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from "next/link";
+import { useTranslation } from "next-i18next";
 import React from "react";
 
 export default function SingleProduct({ product }) {
+    const { t } = useTranslation("categories");
     return (
-        <>
+        <Link href={`products/${product.id}`}>
             <div
                 className='w-full transform font-Poppins shadow-xl transition duration-500 xxs:my-[-2rem] xxs:scale-75 xxs:hover:scale-[80%]
                             sm:my-2 sm:w-2/4 sm:scale-90 sm:hover:scale-100 md:w-5/12 md:scale-95 lg:mx-3 lg:w-1/4 xl:w-1/5'
             >
                 <div className='mb-1 overflow-hidden rounded-lg bg-white'>
                     <img
-                        src={product.img}
+                        src={product.coverImage}
                         alt='image'
                         className='h-64 w-full cursor-pointer'
                     />
@@ -29,7 +32,7 @@ export default function SingleProduct({ product }) {
                                 className='inline-block rounded-full bg-teal-200 px-2 text-xs 
                                            font-semibold uppercase tracking-wide text-teal-800'
                             >
-                                {product.category}
+                                {t(`${product.category}`)}
                             </span>
 
                             <span className='text-xs'>
@@ -39,6 +42,6 @@ export default function SingleProduct({ product }) {
                     </div>
                 </div>
             </div>
-        </>
+        </Link>
     );
 }

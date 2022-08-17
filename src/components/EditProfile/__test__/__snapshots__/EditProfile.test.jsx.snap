@@ -2,43 +2,43 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="mt-4 flex flex-wrap justify-center "
+  className="mt-4 flex flex-wrap justify-center self-center"
 >
   <div
-    className=" w-3/4 "
+    className="w-3/4"
   >
     <input
       className=" inputtabfont my-3.5 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-center text-xl text-hadrisblue placeholder-hadrisblue focus:border-blue-500 focus:ring-purple"
       id="text"
-      placeholder="Name"
+      placeholder="name"
       required={true}
       type="text"
     />
     <input
       className=" inputtabfont my-3.5 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-center text-xl text-hadrisblue placeholder-hadrisblue focus:border-blue-500 focus:ring-purple"
       id="text"
-      placeholder="Surname"
+      placeholder="surname"
       required={true}
       type="text"
     />
     <input
       className=" inputtabfont my-3.5 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-center text-xl text-hadrisblue placeholder-hadrisblue focus:border-blue-500 focus:ring-purple"
       id="email"
-      placeholder="Your Collage or University email"
+      placeholder="email"
       required={true}
       type="email"
     />
     <input
       className=" inputtabfont my-3.5 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-center text-xl text-hadrisblue placeholder-hadrisblue focus:border-blue-500 focus:ring-purple"
       id="password"
-      placeholder="Password"
+      placeholder="password"
       required={true}
       type="password"
     />
     <input
       className=" inputtabfont my-3.5 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-center text-xl text-hadrisblue placeholder-hadrisblue focus:border-blue-500 focus:ring-purple"
       id="password"
-      placeholder="Confirm New Password"
+      placeholder="confirm-new-password"
       required={true}
       type="password"
     />
@@ -48,7 +48,7 @@ exports[`renders correctly 1`] = `
       <input
         className=" inputtabfont my-3.5 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-center text-xl text-hadrisblue placeholder-hadrisblue focus:border-blue-500 focus:ring-purple"
         id="text"
-        placeholder="Address"
+        placeholder="address"
         required={true}
         type="text"
       />
@@ -57,13 +57,15 @@ exports[`renders correctly 1`] = `
   <div
     className=" flex w-1/2 justify-center"
   >
-    <button
-      className="h-12 w-48 lg:h-14 lg:w-64 m-1 p-1 px-2 hover:bg-purple hover:shadow-lg rounded-lg border-2 bg-pumpkin font-md text-[17px] text-white shadow-sm"
-      onClick={[Function]}
-      type="button"
-    >
-      Save Changes
-    </button>
+    <a>
+      <button
+        className="h-12 w-56 lg:h-14 lg:w-64 m-1 p-1 px-2 hover:bg-purple hover:shadow-lg rounded-lg border-2 bg-pumpkin font-md text-[17px] text-white shadow-sm"
+        onClick={[Function]}
+        type="button"
+      >
+        save-changes
+      </button>
+    </a>
     <div
       className="Toastify"
     />

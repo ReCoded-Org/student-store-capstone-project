@@ -1,7 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
+import { useTranslation } from "next-i18next";
 import React from "react";
 
 export default function Listing({ listing }) {
+    const { t } = useTranslation("profile");
     return (
         <>
             <div
@@ -14,16 +16,16 @@ export default function Listing({ listing }) {
                     id='listingOverview'
                 >
                     <h3 className='m-2 rounded-xl bg-hadrisblue text-lg font-semibold text-cyanaqua'>
-                        Listing Details
+                        {t("listing-details")}
                     </h3>
                     <h3 className='text-md m-2 mt-6 rounded-xl bg-cyanaqua text-hadrisblue'>
-                        Item Condition
+                        {t("condition")}
                     </h3>
                     <p className='text-md m-2 inline-block text-hadrisblue'>
                         {listing.condition}
                     </p>
                     <h3 className='text-md m-2 rounded-xl bg-cyanaqua text-hadrisblue'>
-                        Listing Description
+                        {t("listing-description")}
                     </h3>
                     <p className='text-md m-2 inline-block text-hadrisblue'>
                         {listing.description}
@@ -36,21 +38,19 @@ export default function Listing({ listing }) {
                     <div className=' text-body-color text-md mb-2 leading-relaxed'>
                         {listing.title}
                     </div>
-                    <span className='custom-bold text-lg'>
-                        ₺{listing.price}
-                    </span>
+                    <p className='custom-bold text-lg'>₺{listing.price}</p>
                 </div>
                 <hr></hr>
                 <div className='align-center mb-2 flex justify-between px-3'>
-                    <h3>Listing Date:</h3>
-                    <span className='custom-bold text-md text-center'>
+                    <h3>{t("listing-date")}:</h3>
+                    <p className='custom-bold text-md text-center'>
                         {listing.listingDate}
-                    </span>
+                    </p>
                 </div>
                 <div className='mb-2 flex  justify-center p-2'>
-                    <span className=' rounded-full bg-teal-200 px-3 text-sm font-semibold uppercase tracking-wide text-teal-800'>
+                    <p className=' rounded-full bg-teal-200 px-3 text-sm font-semibold uppercase tracking-wide text-teal-800'>
                         {listing.category}
-                    </span>
+                    </p>
                 </div>
             </div>
         </>

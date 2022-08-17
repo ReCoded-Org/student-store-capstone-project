@@ -1,10 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslation } from "next-i18next";
 import React from "react";
 
 import rifik from "../../../public/images/rifik.png";
 
 function Sidebar({ pageName }) {
+    const { t } = useTranslation("profile");
     let sidebarClasses = "pb-9 xs:pb-2 sm:pb-4";
 
     return (
@@ -39,9 +41,9 @@ function Sidebar({ pageName }) {
                             : sidebarClasses
                     }
                 >
-                    <Link href='/editprofile'>
+                    <Link href='/edit-profile'>
                         <a className='sm:text-md m-2 font-bold text-purple hover:cursor-pointer xs:text-sm md:text-xl lg:text-2xl'>
-                            Edit Profile
+                            {t("edit-Profile")}
                         </a>
                     </Link>
                 </div>
@@ -54,11 +56,11 @@ function Sidebar({ pageName }) {
                 >
                     <Link href='/listings'>
                         <a className='sm:text-md m-2 font-bold text-purple hover:cursor-pointer xs:text-sm md:text-xl lg:text-2xl'>
-                            My Listings
+                            {t("my-listings")}
                         </a>
                     </Link>
                 </div>
-                <div
+                {/* <div
                     className={
                         pageName == "orders"
                             ? sidebarClasses + " activeLink"
@@ -67,10 +69,10 @@ function Sidebar({ pageName }) {
                 >
                     <Link href='/orders'>
                         <a className='sm:text-md m-2 font-bold text-purple hover:cursor-pointer xs:text-sm md:text-xl lg:text-2xl'>
-                            My Orders
+                            {t("my-orders")}
                         </a>
                     </Link>
-                </div>
+                </div> */}
             </div>
         </aside>
     );

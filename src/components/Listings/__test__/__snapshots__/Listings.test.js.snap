@@ -14,12 +14,12 @@ exports[`renders correctly 1`] = `
       <h3
         className="m-2 rounded-xl bg-hadrisblue text-lg font-semibold text-cyanaqua"
       >
-        Listing Details
+        listing-details
       </h3>
       <h3
         className="text-md m-2 mt-6 rounded-xl bg-cyanaqua text-hadrisblue"
       >
-        Item Condition
+        condition
       </h3>
       <p
         className="text-md m-2 inline-block text-hadrisblue"
@@ -29,7 +29,7 @@ exports[`renders correctly 1`] = `
       <h3
         className="text-md m-2 rounded-xl bg-cyanaqua text-hadrisblue"
       >
-        Listing Description
+        listing-description
       </h3>
       <p
         className="text-md m-2 inline-block text-hadrisblue"
@@ -54,34 +54,35 @@ exports[`renders correctly 1`] = `
       >
         Apple iPad Pro 
       </div>
-      <span
+      <p
         className="custom-bold text-lg"
       >
         ₺
         4000
-      </span>
+      </p>
     </div>
     <hr />
     <div
       className="align-center mb-2 flex justify-between px-3"
     >
       <h3>
-        Listing Date:
+        listing-date
+        :
       </h3>
-      <span
+      <p
         className="custom-bold text-md text-center"
       >
         2022-04-01
-      </span>
+      </p>
     </div>
     <div
       className="mb-2 flex justify-center p-2"
     >
-      <span
+      <p
         className=" rounded-full bg-teal-200 px-3 text-sm font-semibold uppercase tracking-wide text-teal-800"
       >
         ELECTRONICS
-      </span>
+      </p>
     </div>
   </div>
   <div
@@ -94,12 +95,12 @@ exports[`renders correctly 1`] = `
       <h3
         className="m-2 rounded-xl bg-hadrisblue text-lg font-semibold text-cyanaqua"
       >
-        Listing Details
+        listing-details
       </h3>
       <h3
         className="text-md m-2 mt-6 rounded-xl bg-cyanaqua text-hadrisblue"
       >
-        Item Condition
+        condition
       </h3>
       <p
         className="text-md m-2 inline-block text-hadrisblue"
@@ -109,7 +110,7 @@ exports[`renders correctly 1`] = `
       <h3
         className="text-md m-2 rounded-xl bg-cyanaqua text-hadrisblue"
       >
-        Listing Description
+        listing-description
       </h3>
       <p
         className="text-md m-2 inline-block text-hadrisblue"
@@ -134,34 +135,35 @@ exports[`renders correctly 1`] = `
       >
         Leather Couch
       </div>
-      <span
+      <p
         className="custom-bold text-lg"
       >
         ₺
         1000
-      </span>
+      </p>
     </div>
     <hr />
     <div
       className="align-center mb-2 flex justify-between px-3"
     >
       <h3>
-        Listing Date:
+        listing-date
+        :
       </h3>
-      <span
+      <p
         className="custom-bold text-md text-center"
       >
         2022-07-01
-      </span>
+      </p>
     </div>
     <div
       className="mb-2 flex justify-center p-2"
     >
-      <span
+      <p
         className=" rounded-full bg-teal-200 px-3 text-sm font-semibold uppercase tracking-wide text-teal-800"
       >
         FURNITURE
-      </span>
+      </p>
     </div>
   </div>
   <div
@@ -174,12 +176,12 @@ exports[`renders correctly 1`] = `
       <h3
         className="m-2 rounded-xl bg-hadrisblue text-lg font-semibold text-cyanaqua"
       >
-        Listing Details
+        listing-details
       </h3>
       <h3
         className="text-md m-2 mt-6 rounded-xl bg-cyanaqua text-hadrisblue"
       >
-        Item Condition
+        condition
       </h3>
       <p
         className="text-md m-2 inline-block text-hadrisblue"
@@ -189,7 +191,7 @@ exports[`renders correctly 1`] = `
       <h3
         className="text-md m-2 rounded-xl bg-cyanaqua text-hadrisblue"
       >
-        Listing Description
+        listing-description
       </h3>
       <p
         className="text-md m-2 inline-block text-hadrisblue"
@@ -214,34 +216,35 @@ exports[`renders correctly 1`] = `
       >
         Apple iPad Pro 
       </div>
-      <span
+      <p
         className="custom-bold text-lg"
       >
         ₺
         4000
-      </span>
+      </p>
     </div>
     <hr />
     <div
       className="align-center mb-2 flex justify-between px-3"
     >
       <h3>
-        Listing Date:
+        listing-date
+        :
       </h3>
-      <span
+      <p
         className="custom-bold text-md text-center"
       >
         2022-04-01
-      </span>
+      </p>
     </div>
     <div
       className="mb-2 flex justify-center p-2"
     >
-      <span
+      <p
         className=" rounded-full bg-teal-200 px-3 text-sm font-semibold uppercase tracking-wide text-teal-800"
       >
         ELECTRONICS
-      </span>
+      </p>
     </div>
   </div>
   <div
@@ -254,12 +257,12 @@ exports[`renders correctly 1`] = `
       <h3
         className="m-2 rounded-xl bg-hadrisblue text-lg font-semibold text-cyanaqua"
       >
-        Listing Details
+        listing-details
       </h3>
       <h3
         className="text-md m-2 mt-6 rounded-xl bg-cyanaqua text-hadrisblue"
       >
-        Item Condition
+        condition
       </h3>
       <p
         className="text-md m-2 inline-block text-hadrisblue"
@@ -269,7 +272,7 @@ exports[`renders correctly 1`] = `
       <h3
         className="text-md m-2 rounded-xl bg-cyanaqua text-hadrisblue"
       >
-        Listing Description
+        listing-description
       </h3>
       <p
         className="text-md m-2 inline-block text-hadrisblue"
@@ -294,34 +297,35 @@ exports[`renders correctly 1`] = `
       >
         Leather Couch
       </div>
-      <span
+      <p
         className="custom-bold text-lg"
       >
         ₺
         1000
-      </span>
+      </p>
     </div>
     <hr />
     <div
       className="align-center mb-2 flex justify-between px-3"
     >
       <h3>
-        Listing Date:
+        listing-date
+        :
       </h3>
-      <span
+      <p
         className="custom-bold text-md text-center"
       >
         2022-07-01
-      </span>
+      </p>
     </div>
     <div
       className="mb-2 flex justify-center p-2"
     >
-      <span
+      <p
         className=" rounded-full bg-teal-200 px-3 text-sm font-semibold uppercase tracking-wide text-teal-800"
       >
         FURNITURE
-      </span>
+      </p>
     </div>
   </div>
   <div
@@ -334,12 +338,12 @@ exports[`renders correctly 1`] = `
       <h3
         className="m-2 rounded-xl bg-hadrisblue text-lg font-semibold text-cyanaqua"
       >
-        Listing Details
+        listing-details
       </h3>
       <h3
         className="text-md m-2 mt-6 rounded-xl bg-cyanaqua text-hadrisblue"
       >
-        Item Condition
+        condition
       </h3>
       <p
         className="text-md m-2 inline-block text-hadrisblue"
@@ -349,7 +353,7 @@ exports[`renders correctly 1`] = `
       <h3
         className="text-md m-2 rounded-xl bg-cyanaqua text-hadrisblue"
       >
-        Listing Description
+        listing-description
       </h3>
       <p
         className="text-md m-2 inline-block text-hadrisblue"
@@ -374,34 +378,35 @@ exports[`renders correctly 1`] = `
       >
         Apple iPad Pro 
       </div>
-      <span
+      <p
         className="custom-bold text-lg"
       >
         ₺
         4000
-      </span>
+      </p>
     </div>
     <hr />
     <div
       className="align-center mb-2 flex justify-between px-3"
     >
       <h3>
-        Listing Date:
+        listing-date
+        :
       </h3>
-      <span
+      <p
         className="custom-bold text-md text-center"
       >
         2022-04-01
-      </span>
+      </p>
     </div>
     <div
       className="mb-2 flex justify-center p-2"
     >
-      <span
+      <p
         className=" rounded-full bg-teal-200 px-3 text-sm font-semibold uppercase tracking-wide text-teal-800"
       >
         ELECTRONICS
-      </span>
+      </p>
     </div>
   </div>
   <div
@@ -414,12 +419,12 @@ exports[`renders correctly 1`] = `
       <h3
         className="m-2 rounded-xl bg-hadrisblue text-lg font-semibold text-cyanaqua"
       >
-        Listing Details
+        listing-details
       </h3>
       <h3
         className="text-md m-2 mt-6 rounded-xl bg-cyanaqua text-hadrisblue"
       >
-        Item Condition
+        condition
       </h3>
       <p
         className="text-md m-2 inline-block text-hadrisblue"
@@ -429,7 +434,7 @@ exports[`renders correctly 1`] = `
       <h3
         className="text-md m-2 rounded-xl bg-cyanaqua text-hadrisblue"
       >
-        Listing Description
+        listing-description
       </h3>
       <p
         className="text-md m-2 inline-block text-hadrisblue"
@@ -454,34 +459,35 @@ exports[`renders correctly 1`] = `
       >
         Leather Couch
       </div>
-      <span
+      <p
         className="custom-bold text-lg"
       >
         ₺
         1000
-      </span>
+      </p>
     </div>
     <hr />
     <div
       className="align-center mb-2 flex justify-between px-3"
     >
       <h3>
-        Listing Date:
+        listing-date
+        :
       </h3>
-      <span
+      <p
         className="custom-bold text-md text-center"
       >
         2022-07-01
-      </span>
+      </p>
     </div>
     <div
       className="mb-2 flex justify-center p-2"
     >
-      <span
+      <p
         className=" rounded-full bg-teal-200 px-3 text-sm font-semibold uppercase tracking-wide text-teal-800"
       >
         FURNITURE
-      </span>
+      </p>
     </div>
   </div>
   <div
@@ -494,12 +500,12 @@ exports[`renders correctly 1`] = `
       <h3
         className="m-2 rounded-xl bg-hadrisblue text-lg font-semibold text-cyanaqua"
       >
-        Listing Details
+        listing-details
       </h3>
       <h3
         className="text-md m-2 mt-6 rounded-xl bg-cyanaqua text-hadrisblue"
       >
-        Item Condition
+        condition
       </h3>
       <p
         className="text-md m-2 inline-block text-hadrisblue"
@@ -509,7 +515,7 @@ exports[`renders correctly 1`] = `
       <h3
         className="text-md m-2 rounded-xl bg-cyanaqua text-hadrisblue"
       >
-        Listing Description
+        listing-description
       </h3>
       <p
         className="text-md m-2 inline-block text-hadrisblue"
@@ -534,34 +540,35 @@ exports[`renders correctly 1`] = `
       >
         Apple iPad Pro 
       </div>
-      <span
+      <p
         className="custom-bold text-lg"
       >
         ₺
         4000
-      </span>
+      </p>
     </div>
     <hr />
     <div
       className="align-center mb-2 flex justify-between px-3"
     >
       <h3>
-        Listing Date:
+        listing-date
+        :
       </h3>
-      <span
+      <p
         className="custom-bold text-md text-center"
       >
         2022-04-01
-      </span>
+      </p>
     </div>
     <div
       className="mb-2 flex justify-center p-2"
     >
-      <span
+      <p
         className=" rounded-full bg-teal-200 px-3 text-sm font-semibold uppercase tracking-wide text-teal-800"
       >
         ELECTRONICS
-      </span>
+      </p>
     </div>
   </div>
   <div
@@ -574,12 +581,12 @@ exports[`renders correctly 1`] = `
       <h3
         className="m-2 rounded-xl bg-hadrisblue text-lg font-semibold text-cyanaqua"
       >
-        Listing Details
+        listing-details
       </h3>
       <h3
         className="text-md m-2 mt-6 rounded-xl bg-cyanaqua text-hadrisblue"
       >
-        Item Condition
+        condition
       </h3>
       <p
         className="text-md m-2 inline-block text-hadrisblue"
@@ -589,7 +596,7 @@ exports[`renders correctly 1`] = `
       <h3
         className="text-md m-2 rounded-xl bg-cyanaqua text-hadrisblue"
       >
-        Listing Description
+        listing-description
       </h3>
       <p
         className="text-md m-2 inline-block text-hadrisblue"
@@ -614,34 +621,35 @@ exports[`renders correctly 1`] = `
       >
         Leather Couch
       </div>
-      <span
+      <p
         className="custom-bold text-lg"
       >
         ₺
         1000
-      </span>
+      </p>
     </div>
     <hr />
     <div
       className="align-center mb-2 flex justify-between px-3"
     >
       <h3>
-        Listing Date:
+        listing-date
+        :
       </h3>
-      <span
+      <p
         className="custom-bold text-md text-center"
       >
         2022-07-01
-      </span>
+      </p>
     </div>
     <div
       className="mb-2 flex justify-center p-2"
     >
-      <span
+      <p
         className=" rounded-full bg-teal-200 px-3 text-sm font-semibold uppercase tracking-wide text-teal-800"
       >
         FURNITURE
-      </span>
+      </p>
     </div>
   </div>
   <div
@@ -654,12 +662,12 @@ exports[`renders correctly 1`] = `
       <h3
         className="m-2 rounded-xl bg-hadrisblue text-lg font-semibold text-cyanaqua"
       >
-        Listing Details
+        listing-details
       </h3>
       <h3
         className="text-md m-2 mt-6 rounded-xl bg-cyanaqua text-hadrisblue"
       >
-        Item Condition
+        condition
       </h3>
       <p
         className="text-md m-2 inline-block text-hadrisblue"
@@ -669,7 +677,7 @@ exports[`renders correctly 1`] = `
       <h3
         className="text-md m-2 rounded-xl bg-cyanaqua text-hadrisblue"
       >
-        Listing Description
+        listing-description
       </h3>
       <p
         className="text-md m-2 inline-block text-hadrisblue"
@@ -694,34 +702,35 @@ exports[`renders correctly 1`] = `
       >
         Apple iPad Pro 
       </div>
-      <span
+      <p
         className="custom-bold text-lg"
       >
         ₺
         4000
-      </span>
+      </p>
     </div>
     <hr />
     <div
       className="align-center mb-2 flex justify-between px-3"
     >
       <h3>
-        Listing Date:
+        listing-date
+        :
       </h3>
-      <span
+      <p
         className="custom-bold text-md text-center"
       >
         2022-04-01
-      </span>
+      </p>
     </div>
     <div
       className="mb-2 flex justify-center p-2"
     >
-      <span
+      <p
         className=" rounded-full bg-teal-200 px-3 text-sm font-semibold uppercase tracking-wide text-teal-800"
       >
         ELECTRONICS
-      </span>
+      </p>
     </div>
   </div>
   <div
@@ -734,12 +743,12 @@ exports[`renders correctly 1`] = `
       <h3
         className="m-2 rounded-xl bg-hadrisblue text-lg font-semibold text-cyanaqua"
       >
-        Listing Details
+        listing-details
       </h3>
       <h3
         className="text-md m-2 mt-6 rounded-xl bg-cyanaqua text-hadrisblue"
       >
-        Item Condition
+        condition
       </h3>
       <p
         className="text-md m-2 inline-block text-hadrisblue"
@@ -749,7 +758,7 @@ exports[`renders correctly 1`] = `
       <h3
         className="text-md m-2 rounded-xl bg-cyanaqua text-hadrisblue"
       >
-        Listing Description
+        listing-description
       </h3>
       <p
         className="text-md m-2 inline-block text-hadrisblue"
@@ -774,34 +783,35 @@ exports[`renders correctly 1`] = `
       >
         Leather Couch
       </div>
-      <span
+      <p
         className="custom-bold text-lg"
       >
         ₺
         1000
-      </span>
+      </p>
     </div>
     <hr />
     <div
       className="align-center mb-2 flex justify-between px-3"
     >
       <h3>
-        Listing Date:
+        listing-date
+        :
       </h3>
-      <span
+      <p
         className="custom-bold text-md text-center"
       >
         2022-07-01
-      </span>
+      </p>
     </div>
     <div
       className="mb-2 flex justify-center p-2"
     >
-      <span
+      <p
         className=" rounded-full bg-teal-200 px-3 text-sm font-semibold uppercase tracking-wide text-teal-800"
       >
         FURNITURE
-      </span>
+      </p>
     </div>
   </div>
 </div>

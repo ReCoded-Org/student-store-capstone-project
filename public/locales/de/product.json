@@ -1,0 +1,19 @@
+{
+    "category": "Kategorie",
+    "condition": "Zustand",
+    "used": "Gebraucht",
+    "new": "Neu",
+    "description": "Beschreibung",
+    "books": "Bücher",
+    "furniture": "Möbel",
+    "electronics": "Elektronik",
+    "two-wheeler": "Zweiräder",
+    "clothes": "Kleidung",
+    "Food": "Lebensmittel",
+    "show": "anzeigen",
+    "hide": "verstecken",
+    "unlist": "Auslisten",
+    "yes": "Ja",
+    "cancel": "Absagen",
+    "unlisting-confirm": "Sind Sie sicher, dass Sie auslisten wollen"
+}

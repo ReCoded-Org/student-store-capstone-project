@@ -1,15 +1,37 @@
 /* eslint-disable @next/next/no-img-element */
 
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import React from "react";
 
+import Button from "@/components/button";
 import Layout from "@/components/layout/Layout";
 import Map from "@/components/map";
 
 const Details = () => {
+    const { t } = useTranslation(["product", "categories"]);
+
     function popupImage(event) {
         document.querySelector(".popup-image").style.display = "block";
         document.querySelector(".popup-image img").src =
             event.target.getAttribute("src");
+    }
+
+    function popupWindow() {
+        document.querySelector(".popup-window").style.display = "block";
+    }
+    function closePopupWindow() {
+        document.querySelector(".popup-window").style.display = "none";
+    }
+
+    function showEmail() {
+        document.getElementById("hidden_email").style.display = "none";
+        document.getElementById("visible_email").style.display = "block";
+    }
+
+    function hideEmail() {
+        document.getElementById("hidden_email").style.display = "block";
+        document.getElementById("visible_email").style.display = "none";
     }
 
     return (
@@ -82,10 +104,10 @@ const Details = () => {
                                         Two Seat Sofa
                                     </h1>
                                     <h2 className='text-darkPurple'>
-                                        <b>Category:</b> Furniture
+                                        <b>{t("category")}:</b> {t("furniture")}
                                     </h2>
                                     <h2 className='pb-2 text-darkPurple'>
-                                        <b>Condition:</b> Used
+                                        <b>{t("condition")}:</b> {t("used")}
                                     </h2>
                                 </div>
                                 <div className='grid h-fit rounded-full '>
@@ -99,7 +121,7 @@ const Details = () => {
                                 <div className='grid-row-2 grid content-start justify-start gap-3'>
                                     <div className='border-b-2 border-purple'>
                                         <h2 className='text-2xl text-darkPurple'>
-                                            Details:
+                                            {t("description")}:
                                         </h2>
                                     </div>
                                     <div>
@@ -133,24 +155,98 @@ const Details = () => {
                                         Mr. nice cat
                                     </h2>
                                     <h2 className='xxs:text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl'>
-                                        mrNiceCat@fake.com
+                                        <span id='hidden_email'>
+                                            ****@****.edu.tr{" "}
+                                            <span
+                                                className='hover:text-extraDarkPurple'
+                                                onClick={() => {
+                                                    showEmail();
+                                                }}
+                                            >
+                                                ({t("show")})
+                                            </span>
+                                        </span>
+                                        <span
+                                            id='visible_email'
+                                            style={{ display: "none" }}
+                                        >
+                                            mrNiceCat@fake.com{" "}
+                                            <span
+                                                className='hover:text-extraDarkPurple'
+                                                onClick={() => {
+                                                    hideEmail();
+                                                }}
+                                            >
+                                                ({t("hide")})
+                                            </span>
+                                        </span>
                                     </h2>
                                     <h2 className='xxs:text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl'>
                                         Istanbul/Turkeky
                                     </h2>
                                 </div>
                             </div>
+                            <div className='grid justify-center xxs:pt-4 lg:pt-2'>
+                                <Button
+                                    buttonStyle='orangeSignUp'
+                                    type='button'
+                                    text={t("unlist")}
+                                    handleClick={popupWindow}
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div className='sm:visibl grid justify-center xxs:invisible'>
-                    <div className='rounded-3xl xxs:invisible xxs:scale-[80%] sm:visible sm:scale-[90%] lg:scale-95 lg:p-14'>
+                    <div className='rounded-3xl xxs:invisible xxs:scale-[80%] sm:visible sm:scale-[90%] lg:scale-95 lg:py-14'>
                         <Map />
+                    </div>
+                </div>
+            </div>
+            {/* popup window */}
+            <div className='popup-window'>
+                <div className='popup fixed top-0 bottom-0 right-0 left-0 m-auto h-fit w-fit rounded-lg bg-clay px-6 py-4 xxs:scale-[60%] xs:scale-75 sm:scale-90 lg:scale-100'>
+                    <div className='pb-4'>
+                        <h2 className='text-center text-extraDarkPurple'>
+                            {t("unlisting-confirm")}?
+                        </h2>
+                    </div>
+                    <div className='grid grid-flow-col justify-center gap-5'>
+                        <div>
+                            <Button
+                                buttonStyle='orangeSignUp'
+                                type='button'
+                                text={t("yes")}
+                            />
+                        </div>
+                        <div>
+                            <Button
+                                buttonStyle='orangeSignUp'
+                                type='button'
+                                text={t("cancel")}
+                                handleClick={closePopupWindow}
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
         </Layout>
     );
 };
+
+export async function getServerSideProps({ locale }) {
+    return {
+        props: {
+            ...(await serverSideTranslations(locale, [
+                "common",
+                "header",
+                "footer",
+                "product",
+                "categories",
+            ])),
+            // Will be passed to the page component as props
+        },
+    };
+}
 
 export default Details;

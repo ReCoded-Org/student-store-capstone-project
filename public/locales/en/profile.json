@@ -1,0 +1,19 @@
+{
+    "edit-Profile": "Edit Profile",
+    "my-listings": "My Listings",
+    "my-orders": "My Orders",
+    "name": "Name",
+    "surname": "Surname",
+    "password": "Password",
+    "confirm-new-password": "Confirm new password",
+    "address": "Address",
+    "save-changes": "Save Changes",
+    "order-details": "Order details",
+    "item-description": "Item Description",
+    "delivery-address": "Delivery Address",
+    "order-date": "Order Date",
+    "listing-details": "Listing Details",
+    "condition": "Condition",
+    "listing-date": "Listing Date",
+    "listing-description": "Listing Description"
+}

@@ -1,3 +1,6 @@
 {
-    "test": "Hello"
+    "about_us": "About us",
+    "our_mission": "Our mission",
+    "sell_items_btn": "Sell Items",
+    "sign_in": "Sign in"
 }

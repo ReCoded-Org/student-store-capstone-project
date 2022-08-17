@@ -13,61 +13,36 @@ exports[`renders correctly 1`] = `
       <div
         className="py-1 md:mx-1 lg:mx-2"
       >
-        <span
-          style={
-            Object {
-              "background": "none",
-              "border": 0,
-              "boxSizing": "border-box",
-              "display": "inline-block",
-              "height": 60,
-              "margin": 0,
-              "opacity": 1,
-              "overflow": "hidden",
-              "padding": 0,
-              "position": "relative",
-              "width": 150,
-            }
-          }
+        <a
+          href="/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
         >
-          <img
-            alt="logo"
-            data-nimg="fixed"
-            decoding="async"
-            onError={[Function]}
-            onLoad={[Function]}
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          <span
             style={
               Object {
-                "border": "none",
-                "bottom": 0,
+                "background": "none",
+                "border": 0,
                 "boxSizing": "border-box",
-                "display": "block",
-                "height": 0,
-                "left": 0,
-                "margin": "auto",
-                "maxHeight": "100%",
-                "maxWidth": "100%",
-                "minHeight": "100%",
-                "minWidth": "100%",
-                "objectFit": undefined,
-                "objectPosition": undefined,
+                "display": "inline-block",
+                "height": 60,
+                "margin": 0,
+                "opacity": 1,
+                "overflow": "hidden",
                 "padding": 0,
-                "position": "absolute",
-                "right": 0,
-                "top": 0,
-                "width": 0,
+                "position": "relative",
+                "width": 150,
               }
             }
-          />
-          <noscript>
+          >
             <img
               alt="logo"
+              className="hover:cursor-pointer"
               data-nimg="fixed"
               decoding="async"
-              loading="lazy"
-              src="/_next/image?url=%2Fimages%2Flogo.png&w=384&q=75"
-              srcSet="/_next/image?url=%2Fimages%2Flogo.png&w=256&q=75 1x, /_next/image?url=%2Fimages%2Flogo.png&w=384&q=75 2x"
+              onError={[Function]}
+              onLoad={[Function]}
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
               style={
                 Object {
                   "border": "none",
@@ -91,23 +66,60 @@ exports[`renders correctly 1`] = `
                 }
               }
             />
-          </noscript>
-        </span>
+            <noscript>
+              <img
+                alt="logo"
+                className="hover:cursor-pointer"
+                data-nimg="fixed"
+                decoding="async"
+                loading="lazy"
+                src="/_next/image?url=%2Fimages%2Flogo.png&w=384&q=75"
+                srcSet="/_next/image?url=%2Fimages%2Flogo.png&w=256&q=75 1x, /_next/image?url=%2Fimages%2Flogo.png&w=384&q=75 2x"
+                style={
+                  Object {
+                    "border": "none",
+                    "bottom": 0,
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "height": 0,
+                    "left": 0,
+                    "margin": "auto",
+                    "maxHeight": "100%",
+                    "maxWidth": "100%",
+                    "minHeight": "100%",
+                    "minWidth": "100%",
+                    "objectFit": undefined,
+                    "objectPosition": undefined,
+                    "padding": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              />
+            </noscript>
+          </span>
+        </a>
       </div>
       <div
         className="text-md hidden w-full flex-grow md:flex md:w-auto md:items-center "
       >
         <a
           className=" align-center mr-2 rounded-[20px] p-2 px-3 text-darkPurple hover:bg-purple hover:text-white md:inline-block md:flex-grow lg:px-4"
-          href="#"
+          href="/donation"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
         >
-          Our Mission
+          donate
         </a>
         <a
           className=" text-md mr-2 rounded-[20px] p-2 px-3 text-darkPurple hover:bg-purple hover:text-white md:flex md:flex-grow lg:px-4"
-          href="#"
+          href="/about-us"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
         >
-          About Us
+          about-us
         </a>
       </div>
       <section
@@ -164,60 +176,82 @@ exports[`renders correctly 1`] = `
               className="flex flex-row items-center justify-start"
             >
               <a
-                href="#"
+                href="/"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
               >
-                EN   
+                EN  
               </a>
-               |
+              |
               <a
-                href="#"
+                href="/"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
               >
-                   TR
+                  TR  
               </a>
-            </li>
-            <li
-              className="my-8 border-b border-pumpkin"
-            >
+              |
               <a
-                href="#"
+                href="/"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
               >
-                About Us
-              </a>
-            </li>
-            <li
-              className="my-8 border-b border-pumpkin"
-            >
-              <a
-                href="#"
-              >
-                Our Team
+                  DE
               </a>
             </li>
             <li
               className="my-8 border-b border-pumpkin"
             >
               <a
-                href="#"
+                href="/donation"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
               >
-                Sign Up
+                donate
               </a>
             </li>
             <li
               className="my-8 border-b border-pumpkin"
             >
               <a
-                href="#"
+                href="/about-us"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
               >
-                Sell Items
+                about-us
               </a>
             </li>
             <li
               className="my-8 border-b border-pumpkin"
             >
               <a
-                href="#"
+                href="/sign-in"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
               >
-                Cart
+                sign-in
+              </a>
+            </li>
+            <li
+              className="my-8 border-b border-pumpkin"
+            >
+              <a
+                href="/product-listing"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+              >
+                sell-items
+              </a>
+            </li>
+            <li
+              className="my-8 border-b border-pumpkin"
+            >
+              <a
+                href="/cart"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+              >
+                cart
               </a>
             </li>
           </ul>
@@ -230,7 +264,8 @@ exports[`renders correctly 1`] = `
       <input
         className=" h-10 grow rounded-[20px] border-2 border-gray-300 bg-white pl-2 pr-8 text-sm focus:outline-none "
         name="search"
-        placeholder="Search"
+        onChange={[Function]}
+        placeholder="search"
         type="search"
       />
       <button
@@ -356,6 +391,8 @@ exports[`renders correctly 1`] = `
               className="flashing block px-4 py-2 text-sm text-gray-700"
               href="#"
               id="menu-item-0"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
               role="menuitem"
               tabIndex="-1"
             >
@@ -365,10 +402,23 @@ exports[`renders correctly 1`] = `
               className="flashing block px-4 py-2 text-sm text-gray-700"
               href="#"
               id="menu-item-1"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
               role="menuitem"
               tabIndex="-1"
             >
-              Turkish
+              Türkçe
+            </a>
+            <a
+              className="flashing block px-4 py-2 text-sm text-gray-700"
+              href="#"
+              id="menu-item-1"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="menuitem"
+              tabIndex="-1"
+            >
+              Deutsch
             </a>
           </div>
         </div>
@@ -377,20 +427,26 @@ exports[`renders correctly 1`] = `
         className="text-md hidden md:flex md:w-auto md:items-center "
       >
         <a
-          className="text-md mr-2 block rounded-[20px] bg-darkPurple py-2 px-4 text-white hover:bg-purple "
+          className="text-md mr-2 block rounded-[20px] bg-darkPurple py-2 px-4 text-white hover:bg-purple"
           href="#"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
         >
-          Sign Up
+          sign-in
         </a>
         <a
           className=" text-md mr-2 block rounded-[20px] bg-darkPurple py-2 px-4 text-white hover:bg-purple"
-          href="#"
+          href="/product-listing"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
         >
-          Sell Items
+          sell-items
         </a>
         <a
           className="m-2 pt-2"
-          href="#"
+          href="/cart"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
         >
           <svg
             color="#FF8A57"

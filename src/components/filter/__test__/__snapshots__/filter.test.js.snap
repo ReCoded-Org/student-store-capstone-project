@@ -2,10 +2,11 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="xs:ml-0 xs:mr-0 scale-95"
+  className="xs:ml-0 xs:mr-0 scale-90 xxs:scale-90 lg:scale-75 xl:scale-90"
+  onClick={[Function]}
 >
   <div
-    className="flashing flex h-20 w-20 items-center justify-center rounded-full hover:cursor-pointer xxs:scale-[48%] sm:scale-90 md:scale-90 lg:scale-100 undefined"
+    className="flashing flex h-20 w-20 items-center justify-center rounded-full hover:cursor-pointer xxs:scale-[50%] sm:scale-90 md:scale-90 lg:scale-100 undefined"
   >
     <svg
       className="h-12 w-12 shrink fill-white"
@@ -19,7 +20,9 @@ exports[`renders correctly 1`] = `
     </svg>
   </div>
   <h1
-    className="text-center text-extraDarkPurple xxs:mt-[-18px] xxs:scale-75 xxs:pb-2 sm:mt-0 md:scale-90 md:pb-0 lg:pt-2"
-  />
+    className="text-center font-sans text-extraDarkPurple xxs:mt-[-18px] xxs:scale-75 xxs:pb-2 sm:mt-0 md:scale-90 md:pb-0 lg:pt-2"
+  >
+    undefined
+  </h1>
 </div>
 `;

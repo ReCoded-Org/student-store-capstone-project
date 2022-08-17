@@ -2,34 +2,21 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="items-center justify-center bg-darkpurple font-Poppins"
+  className="items-center justify-center bg-darkpurple pb-4 font-Poppins"
 >
   <div
-    className="m-auto flex max-w-screen-2xl flex-wrap justify-around gap-5 pt-8 text-white"
+    className="m-auto flex max-w-screen-2xl flex-row flex-wrap justify-around gap-5 pt-8 text-white"
   >
     <div
-      className="logo logosizingphone logosizingtab flex w-96 flex-col text-2xl"
+      className="logo logosizingphone logosizingtab mt-[-2rem] flex w-96 flex-col justify-center text-2xl xxs:pt-6 sm:pt-0"
     >
       <div
-        className="ml-0 flex scale-75 flex-row items-center"
+        className="ml-0 flex scale-75 flex-row items-center justify-center"
       >
-        <span
-          style={
-            Object {
-              "background": "none",
-              "border": 0,
-              "boxSizing": "border-box",
-              "display": "inline-block",
-              "height": "initial",
-              "margin": 0,
-              "maxWidth": "100%",
-              "opacity": 1,
-              "overflow": "hidden",
-              "padding": 0,
-              "position": "relative",
-              "width": "initial",
-            }
-          }
+        <a
+          href="/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
         >
           <span
             style={
@@ -37,24 +24,24 @@ exports[`renders correctly 1`] = `
                 "background": "none",
                 "border": 0,
                 "boxSizing": "border-box",
-                "display": "block",
+                "display": "inline-block",
                 "height": "initial",
                 "margin": 0,
                 "maxWidth": "100%",
                 "opacity": 1,
+                "overflow": "hidden",
                 "padding": 0,
+                "position": "relative",
                 "width": "initial",
               }
             }
           >
-            <img
-              alt=""
-              aria-hidden={true}
-              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27130%27%20height=%27130%27/%3e"
+            <span
               style={
                 Object {
                   "background": "none",
                   "border": 0,
+                  "boxSizing": "border-box",
                   "display": "block",
                   "height": "initial",
                   "margin": 0,
@@ -64,46 +51,34 @@ exports[`renders correctly 1`] = `
                   "width": "initial",
                 }
               }
-            />
-          </span>
-          <img
-            alt="Logo"
-            data-nimg="intrinsic"
-            decoding="async"
-            onError={[Function]}
-            onLoad={[Function]}
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-            style={
-              Object {
-                "border": "none",
-                "bottom": 0,
-                "boxSizing": "border-box",
-                "display": "block",
-                "height": 0,
-                "left": 0,
-                "margin": "auto",
-                "maxHeight": "100%",
-                "maxWidth": "100%",
-                "minHeight": "100%",
-                "minWidth": "100%",
-                "objectFit": undefined,
-                "objectPosition": undefined,
-                "padding": 0,
-                "position": "absolute",
-                "right": 0,
-                "top": 0,
-                "width": 0,
-              }
-            }
-          />
-          <noscript>
+            >
+              <img
+                alt=""
+                aria-hidden={true}
+                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27130%27%20height=%27130%27/%3e"
+                style={
+                  Object {
+                    "background": "none",
+                    "border": 0,
+                    "display": "block",
+                    "height": "initial",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "opacity": 1,
+                    "padding": 0,
+                    "width": "initial",
+                  }
+                }
+              />
+            </span>
             <img
               alt="Logo"
+              className="hover:cursor-pointer"
               data-nimg="intrinsic"
               decoding="async"
-              loading="lazy"
-              src="/_next/image?url=%2Fimages%2Floggo.png&w=384&q=75"
-              srcSet="/_next/image?url=%2Fimages%2Floggo.png&w=256&q=75 1x, /_next/image?url=%2Fimages%2Floggo.png&w=384&q=75 2x"
+              onError={[Function]}
+              onLoad={[Function]}
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
               style={
                 Object {
                   "border": "none",
@@ -127,25 +102,45 @@ exports[`renders correctly 1`] = `
                 }
               }
             />
-          </noscript>
-        </span>
-        <span
-          style={
-            Object {
-              "background": "none",
-              "border": 0,
-              "boxSizing": "border-box",
-              "display": "inline-block",
-              "height": "initial",
-              "margin": 0,
-              "maxWidth": "100%",
-              "opacity": 1,
-              "overflow": "hidden",
-              "padding": 0,
-              "position": "relative",
-              "width": "initial",
-            }
-          }
+            <noscript>
+              <img
+                alt="Logo"
+                className="hover:cursor-pointer"
+                data-nimg="intrinsic"
+                decoding="async"
+                loading="lazy"
+                src="/_next/image?url=%2Fimages%2Floggo.png&w=384&q=75"
+                srcSet="/_next/image?url=%2Fimages%2Floggo.png&w=256&q=75 1x, /_next/image?url=%2Fimages%2Floggo.png&w=384&q=75 2x"
+                style={
+                  Object {
+                    "border": "none",
+                    "bottom": 0,
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "height": 0,
+                    "left": 0,
+                    "margin": "auto",
+                    "maxHeight": "100%",
+                    "maxWidth": "100%",
+                    "minHeight": "100%",
+                    "minWidth": "100%",
+                    "objectFit": undefined,
+                    "objectPosition": undefined,
+                    "padding": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              />
+            </noscript>
+          </span>
+        </a>
+        <a
+          href="/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
         >
           <span
             style={
@@ -153,24 +148,24 @@ exports[`renders correctly 1`] = `
                 "background": "none",
                 "border": 0,
                 "boxSizing": "border-box",
-                "display": "block",
+                "display": "inline-block",
                 "height": "initial",
                 "margin": 0,
                 "maxWidth": "100%",
                 "opacity": 1,
+                "overflow": "hidden",
                 "padding": 0,
+                "position": "relative",
                 "width": "initial",
               }
             }
           >
-            <img
-              alt=""
-              aria-hidden={true}
-              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27160%27%20height=%2780%27/%3e"
+            <span
               style={
                 Object {
                   "background": "none",
                   "border": 0,
+                  "boxSizing": "border-box",
                   "display": "block",
                   "height": "initial",
                   "margin": 0,
@@ -180,46 +175,34 @@ exports[`renders correctly 1`] = `
                   "width": "initial",
                 }
               }
-            />
-          </span>
-          <img
-            alt="StudentStore"
-            data-nimg="intrinsic"
-            decoding="async"
-            onError={[Function]}
-            onLoad={[Function]}
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-            style={
-              Object {
-                "border": "none",
-                "bottom": 0,
-                "boxSizing": "border-box",
-                "display": "block",
-                "height": 0,
-                "left": 0,
-                "margin": "auto",
-                "maxHeight": "100%",
-                "maxWidth": "100%",
-                "minHeight": "100%",
-                "minWidth": "100%",
-                "objectFit": undefined,
-                "objectPosition": undefined,
-                "padding": 0,
-                "position": "absolute",
-                "right": 0,
-                "top": 0,
-                "width": 0,
-              }
-            }
-          />
-          <noscript>
+            >
+              <img
+                alt=""
+                aria-hidden={true}
+                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27160%27%20height=%2780%27/%3e"
+                style={
+                  Object {
+                    "background": "none",
+                    "border": 0,
+                    "display": "block",
+                    "height": "initial",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "opacity": 1,
+                    "padding": 0,
+                    "width": "initial",
+                  }
+                }
+              />
+            </span>
             <img
               alt="StudentStore"
+              className="hover:cursor-pointer"
               data-nimg="intrinsic"
               decoding="async"
-              loading="lazy"
-              src="/_next/image?url=%2Fimages%2FLogoType.png&w=384&q=75"
-              srcSet="/_next/image?url=%2Fimages%2FLogoType.png&w=256&q=75 1x, /_next/image?url=%2Fimages%2FLogoType.png&w=384&q=75 2x"
+              onError={[Function]}
+              onLoad={[Function]}
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
               style={
                 Object {
                   "border": "none",
@@ -243,11 +226,44 @@ exports[`renders correctly 1`] = `
                 }
               }
             />
-          </noscript>
-        </span>
+            <noscript>
+              <img
+                alt="StudentStore"
+                className="hover:cursor-pointer"
+                data-nimg="intrinsic"
+                decoding="async"
+                loading="lazy"
+                src="/_next/image?url=%2Fimages%2FLogoType.png&w=384&q=75"
+                srcSet="/_next/image?url=%2Fimages%2FLogoType.png&w=256&q=75 1x, /_next/image?url=%2Fimages%2FLogoType.png&w=384&q=75 2x"
+                style={
+                  Object {
+                    "border": "none",
+                    "bottom": 0,
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "height": 0,
+                    "left": 0,
+                    "margin": "auto",
+                    "maxHeight": "100%",
+                    "maxWidth": "100%",
+                    "minHeight": "100%",
+                    "minWidth": "100%",
+                    "objectFit": undefined,
+                    "objectPosition": undefined,
+                    "padding": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              />
+            </noscript>
+          </span>
+        </a>
       </div>
       <div
-        className="mt-2 mr-10 flex scale-[60%] flex-row items-center justify-around"
+        className="mt-2 flex scale-[60%] flex-row items-center justify-around"
       >
         <a
           href="/"
@@ -618,33 +634,35 @@ exports[`renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="ml-20 flex w-96 flex-col"
+      className="flex w-96 flex-col gap-2 pb-6 xxs:text-center lg:text-left"
     >
       <a
-        className="mb-4 text-sm font-bold"
-        href="/"
+        className="text-sm font-bold "
+        href="/sign-up"
         onClick={[Function]}
         onMouseEnter={[Function]}
       >
-        About Us
+        register-for-free
       </a>
       <a
         className="mb-4 text-sm font-bold"
-        href="/"
+        href="/about-us"
         onClick={[Function]}
         onMouseEnter={[Function]}
       >
-        Get Help
+        about-us
       </a>
       <p
         className="text-sm font-bold "
       >
-        Contact Us:
+        contact-us
+        :
       </p>
       <p
         className="text-xs "
       >
-        Phone: 000 111 22 33
+        phone
+        : 000 111 22 33
       </p>
       <p
         className="text-xs"
@@ -654,296 +672,9 @@ exports[`renders correctly 1`] = `
       <p
         className="text-xs"
       >
-        Adress: X Street, Number 1, Türkiye
+        address
+        : X Street, Number 1, Türkiye
       </p>
-    </div>
-    <div
-      className="ml-20 mb-5 flex w-96 flex-col gap-y-4"
-    >
-      <a
-        className="text-sm font-bold "
-        href="/"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-      >
-        Shop Now !
-      </a>
-      <a
-        className="text-sm font-bold "
-        href="/"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-      >
-        Register For Free
-      </a>
-      <a
-        className="text-sm font-bold "
-        href="/"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-      >
-        Delivery Fee and Policies
-      </a>
-      <a
-        className="text-sm font-bold"
-        href="/"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-      >
-        Track Your Order
-      </a>
-    </div>
-    <div
-      className="mb-5 mr-5 flex flex-row flex-wrap items-center justify-center gap-3"
-    >
-      <a
-        href="/"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-      >
-        <span
-          style={
-            Object {
-              "background": "none",
-              "border": 0,
-              "boxSizing": "border-box",
-              "display": "inline-block",
-              "height": "initial",
-              "margin": 0,
-              "maxWidth": "100%",
-              "opacity": 1,
-              "overflow": "hidden",
-              "padding": 0,
-              "position": "relative",
-              "width": "initial",
-            }
-          }
-        >
-          <span
-            style={
-              Object {
-                "background": "none",
-                "border": 0,
-                "boxSizing": "border-box",
-                "display": "block",
-                "height": "initial",
-                "margin": 0,
-                "maxWidth": "100%",
-                "opacity": 1,
-                "padding": 0,
-                "width": "initial",
-              }
-            }
-          >
-            <img
-              alt=""
-              aria-hidden={true}
-              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27185%27%20height=%2755%27/%3e"
-              style={
-                Object {
-                  "background": "none",
-                  "border": 0,
-                  "display": "block",
-                  "height": "initial",
-                  "margin": 0,
-                  "maxWidth": "100%",
-                  "opacity": 1,
-                  "padding": 0,
-                  "width": "initial",
-                }
-              }
-            />
-          </span>
-          <img
-            alt="GooglePlay"
-            className="scale-75"
-            data-nimg="intrinsic"
-            decoding="async"
-            onError={[Function]}
-            onLoad={[Function]}
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-            style={
-              Object {
-                "border": "none",
-                "bottom": 0,
-                "boxSizing": "border-box",
-                "display": "block",
-                "height": 0,
-                "left": 0,
-                "margin": "auto",
-                "maxHeight": "100%",
-                "maxWidth": "100%",
-                "minHeight": "100%",
-                "minWidth": "100%",
-                "objectFit": undefined,
-                "objectPosition": undefined,
-                "padding": 0,
-                "position": "absolute",
-                "right": 0,
-                "top": 0,
-                "width": 0,
-              }
-            }
-          />
-          <noscript>
-            <img
-              alt="GooglePlay"
-              className="scale-75"
-              data-nimg="intrinsic"
-              decoding="async"
-              loading="lazy"
-              src="/_next/image?url=%2Fimages%2Fgetit1.png&w=384&q=75"
-              srcSet="/_next/image?url=%2Fimages%2Fgetit1.png&w=256&q=75 1x, /_next/image?url=%2Fimages%2Fgetit1.png&w=384&q=75 2x"
-              style={
-                Object {
-                  "border": "none",
-                  "bottom": 0,
-                  "boxSizing": "border-box",
-                  "display": "block",
-                  "height": 0,
-                  "left": 0,
-                  "margin": "auto",
-                  "maxHeight": "100%",
-                  "maxWidth": "100%",
-                  "minHeight": "100%",
-                  "minWidth": "100%",
-                  "objectFit": undefined,
-                  "objectPosition": undefined,
-                  "padding": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-          </noscript>
-        </span>
-      </a>
-      <a
-        href="/"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-      >
-        <span
-          style={
-            Object {
-              "background": "none",
-              "border": 0,
-              "boxSizing": "border-box",
-              "display": "inline-block",
-              "height": "initial",
-              "margin": 0,
-              "maxWidth": "100%",
-              "opacity": 1,
-              "overflow": "hidden",
-              "padding": 0,
-              "position": "relative",
-              "width": "initial",
-            }
-          }
-        >
-          <span
-            style={
-              Object {
-                "background": "none",
-                "border": 0,
-                "boxSizing": "border-box",
-                "display": "block",
-                "height": "initial",
-                "margin": 0,
-                "maxWidth": "100%",
-                "opacity": 1,
-                "padding": 0,
-                "width": "initial",
-              }
-            }
-          >
-            <img
-              alt=""
-              aria-hidden={true}
-              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27185%27%20height=%2745%27/%3e"
-              style={
-                Object {
-                  "background": "none",
-                  "border": 0,
-                  "display": "block",
-                  "height": "initial",
-                  "margin": 0,
-                  "maxWidth": "100%",
-                  "opacity": 1,
-                  "padding": 0,
-                  "width": "initial",
-                }
-              }
-            />
-          </span>
-          <img
-            alt="AppStore"
-            className="scale-75"
-            data-nimg="intrinsic"
-            decoding="async"
-            onError={[Function]}
-            onLoad={[Function]}
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-            style={
-              Object {
-                "border": "none",
-                "bottom": 0,
-                "boxSizing": "border-box",
-                "display": "block",
-                "height": 0,
-                "left": 0,
-                "margin": "auto",
-                "maxHeight": "100%",
-                "maxWidth": "100%",
-                "minHeight": "100%",
-                "minWidth": "100%",
-                "objectFit": undefined,
-                "objectPosition": undefined,
-                "padding": 0,
-                "position": "absolute",
-                "right": 0,
-                "top": 0,
-                "width": 0,
-              }
-            }
-          />
-          <noscript>
-            <img
-              alt="AppStore"
-              className="scale-75"
-              data-nimg="intrinsic"
-              decoding="async"
-              loading="lazy"
-              src="/_next/image?url=%2Fimages%2Fgetit2.png&w=384&q=75"
-              srcSet="/_next/image?url=%2Fimages%2Fgetit2.png&w=256&q=75 1x, /_next/image?url=%2Fimages%2Fgetit2.png&w=384&q=75 2x"
-              style={
-                Object {
-                  "border": "none",
-                  "bottom": 0,
-                  "boxSizing": "border-box",
-                  "display": "block",
-                  "height": 0,
-                  "left": 0,
-                  "margin": "auto",
-                  "maxHeight": "100%",
-                  "maxWidth": "100%",
-                  "minHeight": "100%",
-                  "minWidth": "100%",
-                  "objectFit": undefined,
-                  "objectPosition": undefined,
-                  "padding": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-          </noscript>
-        </span>
-      </a>
     </div>
   </div>
 </div>

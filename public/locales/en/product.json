@@ -1,0 +1,19 @@
+{
+    "category": "Category",
+    "condition": "Condition",
+    "used": "Used",
+    "new": "New",
+    "description": "Description",
+    "books": "Books",
+    "furniture": "Furniture",
+    "electronics": "Electronics",
+    "two-wheeler": "Two-wheeler",
+    "clothes": "Clothes",
+    "Food": "Food",
+    "show": "show",
+    "hide": "hide",
+    "unlist": "Unlist",
+    "yes": "Yes",
+    "cancel": "Cancel",
+    "unlisting-confirm": "Are you sure you want to unlist"
+}
