@@ -22,7 +22,9 @@ function Carousel() {
         <Slider {...settings}>
             <div className='carouselItem carouselItem1 rounded-lg'>
                 {" "}
-                <p className='text-2xl'>New Books Just arrived!</p>
+                <p className='text-font-Ubuntu relative top-32 z-10 bg-pumpkin p-2 text-center font-Ubuntu text-5xl text-white opacity-70'>
+                    what goes around might be needed back around!
+                </p>
             </div>
             <div className='carouselItem carouselItem2 rounded-lg' />
             <div className='carouselItem carouselItem3 rounded-lg' />
