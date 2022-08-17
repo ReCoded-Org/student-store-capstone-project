@@ -60,7 +60,7 @@ function Sidebar({ pageName }) {
                         </a>
                     </Link>
                 </div>
-                <div
+                {/* <div
                     className={
                         pageName == "orders"
                             ? sidebarClasses + " activeLink"
@@ -72,7 +72,7 @@ function Sidebar({ pageName }) {
                             {t("my-orders")}
                         </a>
                     </Link>
-                </div>
+                </div> */}
             </div>
         </aside>
     );

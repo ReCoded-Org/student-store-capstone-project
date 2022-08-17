@@ -184,18 +184,6 @@ exports[`renders correctly 1`] = `
         my-listings
       </a>
     </div>
-    <div
-      className="pb-9 xs:pb-2 sm:pb-4"
-    >
-      <a
-        className="sm:text-md m-2 font-bold text-purple hover:cursor-pointer xs:text-sm md:text-xl lg:text-2xl"
-        href="/orders"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-      >
-        my-orders
-      </a>
-    </div>
   </div>
 </aside>
 `;
