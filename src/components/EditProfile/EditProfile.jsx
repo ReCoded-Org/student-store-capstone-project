@@ -1,14 +1,19 @@
-import Link from "next/link";
 import * as React from "react";
+import { toast, ToastContainer } from "react-toastify";
+import { injectStyle } from "react-toastify/dist/inject-style";
 
+//import { useState } from "react";
 import Button from "../button";
 import Input from "../input";
+if (typeof window !== "undefined") {
+    injectStyle();
+}
 
 export default function EditProfile() {
-    // const [info, setInfo] = React.useState()
-    //function handleInfo(){
-    //alert("clicked")
-    //}
+    function notify() {
+        toast.dark("Changes saved succesfully!");
+    }
+
     return (
         <div className='mt-4 flex flex-wrap justify-center  '>
             <div className=' w-3/4 '>
@@ -25,13 +30,13 @@ export default function EditProfile() {
                 </div>
             </div>
             <div className=' flex w-1/2 justify-center'>
-                <Link href='/'>
-                    <Button
-                        buttonStyle='saveChanges'
-                        type='button'
-                        text='Save Changes'
-                    />
-                </Link>
+                <Button
+                    buttonStyle='saveChanges'
+                    type='button'
+                    text='Save Changes'
+                    handleClick={notify}
+                />
+                <ToastContainer />
             </div>
         </div>
     );

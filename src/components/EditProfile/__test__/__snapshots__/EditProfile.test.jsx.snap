@@ -59,10 +59,14 @@ exports[`renders correctly 1`] = `
   >
     <button
       className="h-12 w-48 lg:h-14 lg:w-64 m-1 p-1 px-2 hover:bg-purple hover:shadow-lg rounded-lg border-2 bg-pumpkin font-md text-[17px] text-white shadow-sm"
+      onClick={[Function]}
       type="button"
     >
       Save Changes
     </button>
+    <div
+      className="Toastify"
+    />
   </div>
 </div>
 `;
