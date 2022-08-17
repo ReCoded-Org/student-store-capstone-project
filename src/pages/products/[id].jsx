@@ -186,11 +186,11 @@ const Details = () => {
                                     </h2>
                                 </div>
                             </div>
-                            <div className='grid justify-center'>
+                            <div className='grid justify-center xxs:pt-4 lg:pt-2'>
                                 <Button
                                     buttonStyle='orangeSignUp'
                                     type='button'
-                                    text={t("delist")}
+                                    text={t("unlist")}
                                     handleClick={popupWindow}
                                 />
                             </div>
@@ -208,7 +208,7 @@ const Details = () => {
                 <div className='popup fixed top-0 bottom-0 right-0 left-0 m-auto h-fit w-fit rounded-lg bg-clay px-6 py-4 xxs:scale-[60%] xs:scale-75 sm:scale-90 lg:scale-100'>
                     <div className='pb-4'>
                         <h2 className='text-center text-extraDarkPurple'>
-                            {t("delisting-confirm")}?
+                            {t("unlisting-confirm")}?
                         </h2>
                     </div>
                     <div className='grid grid-flow-col justify-center gap-5'>
