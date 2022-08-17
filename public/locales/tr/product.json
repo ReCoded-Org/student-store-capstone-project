@@ -9,5 +9,11 @@
     "electronics": "Elektronik",
     "two-wheeler": "İki tekerlekli",
     "clothes": "Kıyafet",
-    "Food": "Yemek"
+    "Food": "Yemek",
+    "show": "göster",
+    "hide": "gizle",
+    "unlist": "İlanı Kaldır",
+    "yes": "Evet",
+    "cancel": "İptal et",
+    "unlisting-confirm": "İlanı kaldırmak istediğinize emin misiniz"
 }

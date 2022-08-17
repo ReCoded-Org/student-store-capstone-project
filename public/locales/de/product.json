@@ -9,5 +9,11 @@
     "electronics": "Elektronik",
     "two-wheeler": "Zweiräder",
     "clothes": "Kleidung",
-    "Food": "Lebensmittel"
+    "Food": "Lebensmittel",
+    "show": "anzeigen",
+    "hide": "verstecken",
+    "unlist": "Auslisten",
+    "yes": "Ja",
+    "cancel": "Absagen",
+    "unlisting-confirm": "Sind Sie sicher, dass Sie auslisten wollen"
 }
