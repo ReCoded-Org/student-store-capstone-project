@@ -11,11 +11,13 @@ export default function Donation() {
         <Layout>
             <div className='grid-flow-col-1 grid items-center justify-around bg-iceblue font-Poppins'>
                 <div className='relative p-10'>
-                    <div className='top-20 z-10 px-4 py-2  opacity-70 sm:text-2xl  md:absolute  md:left-24  md:w-full xl:left-64'>
-                        <h1 className=''>Be the reason someone smiles today</h1>
+                    <div className='relative z-10 text-center xs:top-8 xs:text-sm sm:top-14 sm:text-2xl lg:text-4xl'>
+                        <h2 className='px-4 py-2 text-white opacity-70'>
+                            Be the reason someone smiles today
+                        </h2>
                     </div>
                     <Image
-                        src='/images/donation.png'
+                        src='/images/donate-img1.png'
                         alt='donation image'
                         width='1024px'
                         height='512px'

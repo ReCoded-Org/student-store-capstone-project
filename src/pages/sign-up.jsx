@@ -44,9 +44,9 @@ export default function Signup() {
                             />
                         </form>
                         <div className='flex items-center'>
-                            <span className='line'></span>
+                            <div className='line'></div>
                             <div>{t("or")}</div>
-                            <span className='line'></span>
+                            <div className='line'></div>
                         </div>
                         <div className='m-1 text-lg text-iceblue'>
                             {t("Sign-up-with")}
