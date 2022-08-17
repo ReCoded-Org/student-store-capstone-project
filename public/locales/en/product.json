@@ -9,5 +9,7 @@
     "electronics": "Electronics",
     "two-wheeler": "Two-wheeler",
     "clothes": "Clothes",
-    "Food": "Food"
+    "Food": "Food",
+    "show": "show",
+    "hide": "hide"
 }
