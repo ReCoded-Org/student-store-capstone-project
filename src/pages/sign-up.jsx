@@ -1,8 +1,15 @@
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useState } from "react";
 import React from "react";
-import { BsFacebook, BsGoogle, BsTwitter } from "react-icons/bs";
+import {
+    BsEye,
+    BsEyeSlash,
+    BsFacebook,
+    BsGoogle,
+    BsTwitter,
+} from "react-icons/bs";
 
 import Button from "@/components/button";
 import Input from "@/components/input";
@@ -10,6 +17,49 @@ import Layout from "@/components/layout/Layout";
 
 export default function Signup() {
     const { t } = useTranslation("sign");
+    const [userSignUp, setUserSignUp] = useState({
+        email: "",
+        password: "",
+        confirmPassword: "",
+        firstName: "",
+        lastName: "",
+    });
+
+    const handleChange = (e) => {
+        setUserSignUp({
+            ...userSignUp,
+            [e.target.name]: e.target.value,
+        });
+    };
+
+    const [showPassword, setShowPassword] = useState(false);
+
+    const togglePassword = () => {
+        setShowPassword(!showPassword);
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        const response = await fetch(
+            "http://students-store.herokuapp.com/api/auth/signup",
+            {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Access-Control-Allow-Origin": "*",
+                },
+                body: JSON.stringify({
+                    firstName: userSignUp.firstName,
+                    lastName: userSignUp.lastName,
+                    email: userSignUp.email,
+                    schoolName: userSignUp.schoolName,
+                    password: userSignUp.password,
+                }),
+            }
+        );
+        const data = await response.json();
+        // console.log(data);
+    };
     return (
         <Layout>
             <div className='signup-container flex   justify-center  md:flex-row'>
@@ -20,22 +70,88 @@ export default function Signup() {
                         <h1 className='my-2 py-6 font-Ubuntu text-4xl text-white md:my-3 md:text-5xl'>
                             {t("sign-up")}
                         </h1>
+
                         <form
+                            onSubmit={handleSubmit}
                             action='submit'
-                            className='container m-auto flex w-5/6 flex-col items-center'
+                            className='container m-auto mb-6 flex w-5/6 flex-col items-center'
                         >
-                            <Input placeholder={t("name")} type='text' />
-                            <Input placeholder={t("surname")} type='text' />
-                            <Input placeholder='e-mail' type='email' />
-                            <Input placeholder={t("university")} type='text' />
                             <Input
-                                placeholder={t("password")}
-                                type='Password'
+                                placeholder={t("name")}
+                                type='text'
+                                id='Name'
+                                value={userSignUp.firstName}
+                                onChange={handleChange}
                             />
                             <Input
-                                placeholder={t("confirm-password")}
-                                type='Password'
+                                placeholder={t("surname")}
+                                type='text'
+                                id='Surname'
+                                value={userSignUp.lastName}
+                                onChange={handleChange}
                             />
+                            <Input
+                                placeholder='e-mail'
+                                type='email'
+                                id='email'
+                                value={userSignUp.email}
+                                onChange={handleChange}
+                            />
+                            <Input
+                                placeholder={t("university")}
+                                type='text'
+                                id='university'
+                                value={userSignUp.schoolName}
+                                onChange={handleChange}
+                            />
+                            <div className='relative h-auto w-full'>
+                                <Input
+                                    className='z-0'
+                                    type={showPassword ? "text" : "password"}
+                                    id='password'
+                                    name='password'
+                                    onChange={handleChange}
+                                    placeholder={t("password")}
+                                    value={userSignUp.password}
+                                />
+                                <div className='absolute top-6 right-4 '>
+                                    <button
+                                        type='button'
+                                        className='color-pumpkin h-8'
+                                        onClick={togglePassword}
+                                    >
+                                        {showPassword ? (
+                                            <BsEyeSlash className='text-darkPurple' />
+                                        ) : (
+                                            <BsEye className='text-darkPurple' />
+                                        )}
+                                    </button>
+                                </div>
+                            </div>
+                            <div className='relative h-auto w-full'>
+                                <Input
+                                    className='z-0'
+                                    type={showPassword ? "text" : "password"}
+                                    id='password'
+                                    name='password'
+                                    onChange={handleChange}
+                                    placeholder={t("password")}
+                                    value={userSignUp.password}
+                                />
+                                <div className='absolute top-6 right-4 '>
+                                    <button
+                                        type='button'
+                                        className='color-pumpkin h-8'
+                                        onClick={togglePassword}
+                                    >
+                                        {showPassword ? (
+                                            <BsEyeSlash className='text-darkPurple' />
+                                        ) : (
+                                            <BsEye className='text-darkPurple' />
+                                        )}
+                                    </button>
+                                </div>
+                            </div>
 
                             <Button
                                 buttonStyle='purpleSignUp'
@@ -43,12 +159,12 @@ export default function Signup() {
                                 text={t("sign-up")}
                             />
                         </form>
-                        <div className='flex items-center'>
+                        <div className='mb-2 flex items-center'>
                             <span className='line'></span>
                             <div>{t("or")}</div>
                             <span className='line'></span>
                         </div>
-                        <div className='m-1 text-lg text-iceblue'>
+                        <div className='text-md m-1 text-iceblue'>
                             {t("Sign-up-with")}
                         </div>
                         <div className='m-1 mb-8 flex flex-row  '>

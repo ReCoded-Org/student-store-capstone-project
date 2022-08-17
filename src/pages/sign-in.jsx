@@ -22,8 +22,17 @@ import sunSkyOrg from "/public/images/sunSkyOrg.png";
 export default function SignInPage() {
     const { t } = useTranslation("sign");
 
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
+    const [userSignIn, setUserSignIn] = useState({
+        email: "",
+        password: "",
+    });
+
+    const handleChange = (e) => {
+        setUserSignIn({
+            ...userSignIn,
+            [e.target.email]: e.target.value,
+        });
+    };
 
     const [showPassword, setShowPassword] = useState(false);
 
@@ -42,8 +51,8 @@ export default function SignInPage() {
                     "Access-Control-Allow-Origin": "*",
                 },
                 body: JSON.stringify({
-                    email: email,
-                    password: password,
+                    email: userSignIn.email,
+                    password: userSignIn.password,
                 }),
             }
         );
@@ -75,8 +84,9 @@ export default function SignInPage() {
                                 <Input
                                     id='email'
                                     name='email'
-                                    onChange={(e) => setEmail(e.target.value)}
+                                    onChange={handleChange}
                                     placeholder='e-mail'
+                                    value={userSignIn.email}
                                 />
 
                                 <div className='relative h-auto'>
@@ -87,10 +97,9 @@ export default function SignInPage() {
                                         }
                                         id='password'
                                         name='password'
-                                        onChange={(e) =>
-                                            setPassword(e.target.value)
-                                        }
+                                        onChange={handleChange}
                                         placeholder={t("password")}
+                                        value={userSignIn.password}
                                     />
                                     <div className='absolute top-2.5 right-4 '>
                                         <button
