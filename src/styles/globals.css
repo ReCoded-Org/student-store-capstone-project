@@ -62,8 +62,19 @@
     display: none;
 }
 
+.popup-window {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+
 .popup-image span {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 10px;
     font-size: 50px;
@@ -72,6 +83,7 @@
     cursor: pointer;
     z-index: 100;
 }
+
 /* for signup page */
 .signup-container {
     background: url("../../public/images/signup-bg.png");
