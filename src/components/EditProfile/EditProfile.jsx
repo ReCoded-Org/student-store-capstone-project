@@ -14,7 +14,7 @@ export default function EditProfile() {
     const { t } = useTranslation("profile");
 
     function notify() {
-        toast.dark("changes saved!");
+        toast.success(t("changes-saved") + "!");
     }
 
     return (
