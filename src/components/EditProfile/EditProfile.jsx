@@ -1,12 +1,22 @@
-import Link from "next/link";
+//import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import * as React from "react";
+import { toast, ToastContainer } from "react-toastify";
+import { injectStyle } from "react-toastify/dist/inject-style";
 
 import Button from "../button";
 import Input from "../input";
+if (typeof window !== "undefined") {
+    injectStyle();
+}
 
 export default function EditProfile() {
     const { t } = useTranslation("profile");
+
+    function notify() {
+        toast.success(t("changes-saved") + "!");
+    }
+
     return (
         <div className='mt-4 flex flex-wrap justify-center self-center'>
             <div className='w-3/4'>
@@ -23,15 +33,15 @@ export default function EditProfile() {
                 </div>
             </div>
             <div className=' flex w-1/2 justify-center'>
-                <Link href='/'>
-                    <a>
-                        <Button
-                            buttonStyle='saveChanges'
-                            type='button'
-                            text={t("save-changes")}
-                        />
-                    </a>
-                </Link>
+                <a>
+                    <Button
+                        buttonStyle='saveChanges'
+                        type='button'
+                        text={t("save-changes")}
+                        handleClick={notify}
+                    />
+                </a>
+                <ToastContainer />
             </div>
         </div>
     );

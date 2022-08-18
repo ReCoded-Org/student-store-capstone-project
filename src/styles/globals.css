@@ -288,6 +288,8 @@
 @media screen and (max-width: 768px) {
     .edittab {
         margin-bottom: 40px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .inputtabfont {
         font-size: 16px;
