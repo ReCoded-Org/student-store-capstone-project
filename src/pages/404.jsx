@@ -1,10 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import * as React from "react";
 
 import Layout from "@/components/layout/Layout";
 
 export default function NotFoundPage() {
+    const { t } = useTranslation("404");
     return (
         <Layout>
             <main className='m-0 flex w-full overflow-clip bg-iceblue p-0 align-middle xxs:flex-col xs:flex-col sm:flex-col md:flex-col lg:h-[600px] lg:flex-row'>
@@ -17,15 +20,14 @@ export default function NotFoundPage() {
                             404
                         </h2>
                         <p className='m-2 font-Poppins text-4xl font-bold'>
-                            this is embarassing but...
+                            {t("embarassing")}
                         </p>
                         <p className='m-2 font-Poppins text-2xl font-bold'>
-                            we couldn&apos;t find the page you&apos;re looking
-                            for
+                            {t("find")}
                         </p>
                         <Link href='/'>
                             <button className='m-2 mt-4 rounded-xl bg-purple py-2 px-4 text-lg font-bold text-white hover:bg-pumpkin'>
-                                go to the homepage
+                                {t("homepage")}
                             </button>
                         </Link>
                     </div>
@@ -45,4 +47,18 @@ export default function NotFoundPage() {
             </main>
         </Layout>
     );
+}
+
+export async function getStaticProps({ locale }) {
+    return {
+        props: {
+            ...(await serverSideTranslations(locale, [
+                "common",
+                "header",
+                "footer",
+                "404",
+            ])),
+            // Will be passed to the page component as props
+        },
+    };
 }
