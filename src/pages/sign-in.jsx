@@ -30,7 +30,7 @@ export default function SignInPage() {
     const handleChange = (e) => {
         setUserSignIn({
             ...userSignIn,
-            [e.target.email]: e.target.value,
+            [e.target.name]: e.target.value,
         });
     };
 
@@ -42,31 +42,23 @@ export default function SignInPage() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const response = await fetch(
-            "http://students-store.herokuapp.com/api/auth/signin",
-            {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                    "Access-Control-Allow-Origin": "*",
-                },
-                body: JSON.stringify({
-                    email: userSignIn.email,
-                    password: userSignIn.password,
-                }),
-            }
-        );
-        const data = await response.json();
-        // console.log(data);
+        // const response = await fetch(
+        //     "http://students-store.herokuapp.com/api/auth/signin",
+        //     {
+        //         method: "POST",
+        //         headers: {
+        //             "Content-Type": "application/json",
+        //             "Access-Control-Allow-Origin": "*",
+        //         },
+        //         body: JSON.stringify({
+        //             email: userSignIn.email,
+        //             password: userSignIn.password,
+        //         }),
+        //     }
+        // );
+        //const data = await response.json();
     };
 
-    //the fetch works here:
-    // const getDogs = async (e) => {
-    //     e.preventDefault();
-    //     const response = await fetch("https://dog.ceo/api/breeds/list/all");
-    //     const data = await response.json();
-    //     console.log(data);
-    // };
     return (
         <>
             <Layout>
@@ -80,7 +72,7 @@ export default function SignInPage() {
                         </p>
 
                         <div className=' flex w-11/12 max-w-sm flex-col items-center lg:max-w-md'>
-                            <form onSubmit={handleSubmit}>
+                            <form method='post' onSubmit={handleSubmit}>
                                 <Input
                                     id='email'
                                     name='email'

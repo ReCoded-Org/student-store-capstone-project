@@ -1,8 +1,7 @@
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useState } from "react";
-import React from "react";
+import React, { useState } from "react";
 import {
     BsEye,
     BsEyeSlash,
@@ -25,10 +24,10 @@ export default function Signup() {
         lastName: "",
     });
 
-    const handleChange = (e) => {
+    const handleChange = (event) => {
         setUserSignUp({
             ...userSignUp,
-            [e.target.name]: e.target.value,
+            [event.target.name]: event.target.value,
         });
     };
 
@@ -40,25 +39,24 @@ export default function Signup() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const response = await fetch(
-            "http://students-store.herokuapp.com/api/auth/signup",
-            {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                    "Access-Control-Allow-Origin": "*",
-                },
-                body: JSON.stringify({
-                    firstName: userSignUp.firstName,
-                    lastName: userSignUp.lastName,
-                    email: userSignUp.email,
-                    schoolName: userSignUp.schoolName,
-                    password: userSignUp.password,
-                }),
-            }
-        );
-        const data = await response.json();
-        // console.log(data);
+        // const response = await fetch(
+        //     "http://students-store.herokuapp.com/api/auth/signup",
+        //     {
+        //         method: "POST",
+        //         headers: {
+        //             "Content-Type": "application/json",
+        //             "Access-Control-Allow-Origin": "*",
+        //         },
+        //         body: JSON.stringify({
+        //             firstName: userSignUp.firstName,
+        //             lastName: userSignUp.lastName,
+        //             email: userSignUp.email,
+        //             schoolName: userSignUp.schoolName,
+        //             password: userSignUp.password,
+        //         }),
+        //     }
+        // );
+        // const data = await response.json();
     };
     return (
         <Layout>
@@ -72,13 +70,15 @@ export default function Signup() {
                         </h1>
 
                         <form
+                            method='post'
                             onSubmit={handleSubmit}
-                            action='submit'
+                            action='/api/form'
                             className='container m-auto mb-6 flex w-5/6 flex-col items-center'
                         >
                             <Input
                                 placeholder={t("name")}
                                 type='text'
+                                name='firstName'
                                 id='Name'
                                 value={userSignUp.firstName}
                                 onChange={handleChange}
@@ -87,6 +87,7 @@ export default function Signup() {
                                 placeholder={t("surname")}
                                 type='text'
                                 id='Surname'
+                                name='lastName'
                                 value={userSignUp.lastName}
                                 onChange={handleChange}
                             />
@@ -94,6 +95,7 @@ export default function Signup() {
                                 placeholder='e-mail'
                                 type='email'
                                 id='email'
+                                name='email'
                                 value={userSignUp.email}
                                 onChange={handleChange}
                             />
@@ -101,6 +103,7 @@ export default function Signup() {
                                 placeholder={t("university")}
                                 type='text'
                                 id='university'
+                                name='schoolName'
                                 value={userSignUp.schoolName}
                                 onChange={handleChange}
                             />
@@ -134,7 +137,6 @@ export default function Signup() {
                                     type={showPassword ? "text" : "password"}
                                     id='password'
                                     name='password'
-                                    onChange={handleChange}
                                     placeholder={t("password")}
                                     value={userSignUp.password}
                                 />
