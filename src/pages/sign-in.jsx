@@ -1,5 +1,7 @@
+import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
+import Router from "next/router";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useState } from "react";
@@ -40,24 +42,72 @@ export default function SignInPage() {
         setShowPassword(!showPassword);
     };
 
+    const baseURL = "http://students-store.herokuapp.com/api/auth/signin";
+    // const token = localStorage.getItem("token");
     const handleSubmit = async (e) => {
+        // const config = {
+        //     headers: { Authorization: `Bearer ${token}` },
+        // };
+
         e.preventDefault();
-        // const response = await fetch(
-        //     "http://students-store.herokuapp.com/api/auth/signin",
-        //     {
-        //         method: "POST",
-        //         headers: {
-        //             "Content-Type": "application/json",
-        //             "Access-Control-Allow-Origin": "*",
-        //         },
-        //         body: JSON.stringify({
-        //             email: userSignIn.email,
-        //             password: userSignIn.password,
-        //         }),
-        //     }
-        // );
-        //const data = await response.json();
+
+        axios
+            .post(
+                baseURL,
+                userSignIn,
+                {
+                    // withCredentials: true,
+                    headers: {
+                        "Access-Control-Allow-Origin": "*",
+                        "Content-Type": "application/json",
+                    },
+                }
+
+                // {
+                //     "Content-Type": "application/json",
+                //     Accept: "application/json",
+                //access control allow origin should not be a wildcard (*)
+                //     "Access-Control-Allow-Origin": "http://students-store.herokuapp.com",
+                // }
+            )
+            .then((res) => {
+                if (res.status === 200) {
+                    alert("Successfully signed in! Redirecting...");
+                    setTimeout(() => {
+                        Router.push("/");
+                    }, 1000);
+                    localStorage.setItem("token", res.headers["token"]);
+                    // localStorage.setItem("user", res.headers.user);
+                } else if (res.status === 401) {
+                    alert("Invalid credentials");
+                }
+            })
+            .catch((error) => {
+                console.log(error);
+            });
     };
+
+    if (!userSignIn) return null;
+
+    //regular fetch w/out axios
+    // const handleSubmit = async (e) => {
+    //     e.preventDefault();
+    //     const response = await fetch(
+    //         "http://students-store.herokuapp.com/api/auth/signin",
+    //         {
+    //             method: "POST",
+    //             headers: {
+    //                 "Content-Type": "application/json",
+    //                 "Access-Control-Allow-Origin": "*",
+    //             },
+    //             body: JSON.stringify({
+    //                 email: userSignIn.email,
+    //                 password: userSignIn.password,
+    //             }),
+    //         }
+    //     );
+    //     const data = await response.json();
+    // };
 
     return (
         <>

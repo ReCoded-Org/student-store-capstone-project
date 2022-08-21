@@ -1,4 +1,6 @@
+import axios from "axios";
 import Link from "next/link";
+import Router from "next/router";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import React, { useState } from "react";
@@ -37,27 +39,72 @@ export default function Signup() {
         setShowPassword(!showPassword);
     };
 
+    const baseURL = "http://students-store.herokuapp.com/api/auth/signup";
+    // const token = localStorage.getItem("token");
     const handleSubmit = async (e) => {
+        // const config = {
+        //     headers: { Authorization: `Bearer ${token}` },
+        // };
+
         e.preventDefault();
-        // const response = await fetch(
-        //     "http://students-store.herokuapp.com/api/auth/signup",
-        //     {
-        //         method: "POST",
-        //         headers: {
-        //             "Content-Type": "application/json",
-        //             "Access-Control-Allow-Origin": "*",
-        //         },
-        //         body: JSON.stringify({
-        //             firstName: userSignUp.firstName,
-        //             lastName: userSignUp.lastName,
-        //             email: userSignUp.email,
-        //             schoolName: userSignUp.schoolName,
-        //             password: userSignUp.password,
-        //         }),
-        //     }
-        // );
-        // const data = await response.json();
+
+        axios
+            .post(
+                baseURL,
+                userSignUp,
+                {
+                    // withCredentials: true,
+                    headers: {
+                        "Access-Control-Allow-Origin": "*",
+                        "Content-Type": "application/json",
+                    },
+                }
+
+                // {
+                //     "Content-Type": "application/json",
+                //     Accept: "application/json",
+                //access control allow origin should not be a wildcard (*)
+                //     "Access-Control-Allow-Origin": "http://students-store.herokuapp.com",
+                // }
+            )
+            .then((res) => {
+                if (res.status === 201) {
+                    alert("Your account has been created!");
+                    // localStorage.setItem("token", res.headers["token"]);
+                    // localStorage.setItem("user", res.headers.user);
+                    setTimeout(() => {
+                        Router.push("/sign-in");
+                    }, 1000);
+                } else if (res.status === 400) {
+                    alert("Invalid credentials");
+                }
+            })
+            .catch((error) => {
+                console.log(error);
+            });
     };
+
+    // const handleSubmit = async (e) => {
+    //     e.preventDefault();
+    //     const response = await fetch(
+    //         "http://students-store.herokuapp.com/api/auth/signup",
+    //         {
+    //             method: "POST",
+    //             headers: {
+    //                 "Content-Type": "application/json",
+    //                 "Access-Control-Allow-Origin": "*",
+    //             },
+    //             body: JSON.stringify({
+    //                 firstName: userSignUp.firstName,
+    //                 lastName: userSignUp.lastName,
+    //                 email: userSignUp.email,
+    //                 schoolName: userSignUp.schoolName,
+    //                 password: userSignUp.password,
+    //             }),
+    //         }
+    //     );
+    //     const data = await response.json();
+
     return (
         <Layout>
             <div className='signup-container flex   justify-center  md:flex-row'>
@@ -138,7 +185,8 @@ export default function Signup() {
                                     id='password'
                                     name='password'
                                     placeholder={t("password")}
-                                    value={userSignUp.password}
+                                    value={userSignUp.confirmPassword}
+                                    onChange={handleChange}
                                 />
                                 <div className='absolute top-6 right-4 '>
                                     <button
