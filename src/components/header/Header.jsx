@@ -5,8 +5,9 @@ import { useTranslation } from "next-i18next";
 import * as React from "react";
 import { useState } from "react";
 import { BiSearchAlt } from "react-icons/bi";
-import { MdShoppingCart } from "react-icons/md";
 import { TbWorld } from "react-icons/tb";
+
+import userIcon from "../../../public/images/userIcon.png";
 
 function Header({
     products,
@@ -24,6 +25,7 @@ function Header({
     const { t } = useTranslation("header");
     const [isNavOpen, setIsNavOpen] = useState(false);
     const [isLanguageOpen, setIsLanguageOpen] = useState(false);
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
 
     function searchByName() {
         setfilteredProducts(
@@ -79,7 +81,6 @@ function Header({
                             >
                                 <span className='block h-0.5 w-8 animate-pulse bg-pumpkin'></span>
                                 <span className='block h-0.5 w-8 animate-pulse bg-pumpkin'></span>
-                                <span className='block h-0.5 w-8 animate-pulse bg-pumpkin '></span>
                             </div>
 
                             <div
@@ -139,11 +140,6 @@ function Header({
                                             <a>{t("sell-items")}</a>
                                         </Link>
                                     </li>
-                                    <li className='my-8 border-b border-pumpkin'>
-                                        <Link href='/cart'>
-                                            <a>{t("cart")}</a>
-                                        </Link>
-                                    </li>
                                 </ul>
                             </div>
                         </section>
@@ -166,10 +162,10 @@ function Header({
                     </div>
                     <div className=' hidden w-auto items-center md:flex md:flex-row '>
                         <div className='relative inline-block text-left'>
-                            <div>
+                            <div className='mr-2'>
                                 <button
                                     type='button'
-                                    className='inline-flex w-full justify-center rounded-md bg-white p-2 text-sm font-medium text-pumpkin hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100 md:mr-4'
+                                    className='inline-flex w-full justify-center rounded-md bg-white p-1 text-sm font-medium text-pumpkin hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100 md:mr-2'
                                     id='menu-button'
                                     aria-expanded='true'
                                     aria-haspopup='true'
@@ -179,7 +175,7 @@ function Header({
                                 >
                                     <TbWorld size={24} />
                                     <svg
-                                        className=' ml-1 mt-1 mr-2 h-4 w-4'
+                                        className=' my-1 mt-1 h-4 w-4'
                                         xmlns='http://www.w3.org/2000/svg'
                                         viewBox='0 0 20 20'
                                         fill='currentColor'
@@ -254,22 +250,30 @@ function Header({
                         </div>
 
                         <div className='text-md hidden md:flex md:w-auto md:items-center '>
-                            <Link href='/sign-in'>
-                                <a
-                                    href='#'
-                                    className='text-md mr-2 block rounded-[20px]  bg-darkPurple py-2 px-4 text-white hover:bg-purple'
-                                >
-                                    {t("sign-in")}
-                                </a>
-                            </Link>
+                            {isLoggedIn ? (
+                                <div className=' m-2 mr-2 flex w-[32px] self-center overflow-hidden rounded-full border-[3px] border-lightpurple  md:flex lg:flex'>
+                                    <Image
+                                        width={32}
+                                        height={32}
+                                        src={userIcon}
+                                        alt='rifik'
+                                        layout='intrinsic'
+                                    />
+                                </div>
+                            ) : (
+                                <Link href='/sign-in'>
+                                    <a
+                                        href='#'
+                                        className='text-md mr-2 block rounded-[20px]  bg-darkPurple py-2 px-4 text-white hover:bg-purple'
+                                    >
+                                        {t("sign-in")}
+                                    </a>
+                                </Link>
+                            )}
+
                             <Link href='/product-listing'>
                                 <a className=' text-md mr-2 block rounded-[20px]  bg-darkPurple py-2 px-4 text-white hover:bg-purple'>
                                     {t("sell-items")}
-                                </a>
-                            </Link>
-                            <Link href='/cart'>
-                                <a className='m-2 pt-2'>
-                                    <MdShoppingCart size={28} color='#FF8A57' />
                                 </a>
                             </Link>
                         </div>
