@@ -1,6 +1,7 @@
 /* eslint-disable unused-imports/no-unused-vars */
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import * as React from "react";
 import { useState } from "react";
@@ -24,6 +25,7 @@ function Header({
     const { t } = useTranslation("header");
     const [isNavOpen, setIsNavOpen] = useState(false);
     const [isLanguageOpen, setIsLanguageOpen] = useState(false);
+    const router = useRouter();
 
     function searchByName() {
         setfilteredProducts(
@@ -106,15 +108,15 @@ function Header({
                                 </div>
                                 <ul className='MENU-OPEN mt-10 flex min-h-[250px] flex-col items-center justify-between '>
                                     <li className='flex flex-row items-center justify-start'>
-                                        <Link href='' locale='en'>
+                                        <Link href={router.asPath} locale='en'>
                                             <a>EN&nbsp;&nbsp;</a>
                                         </Link>
                                         |
-                                        <Link href='' locale='tr'>
+                                        <Link href={router.asPath} locale='tr'>
                                             <a>&nbsp;&nbsp;TR&nbsp;&nbsp;</a>
                                         </Link>
                                         |
-                                        <Link href='' locale='de'>
+                                        <Link href={router.asPath} locale='de'>
                                             <a>&nbsp;&nbsp;DE</a>
                                         </Link>
                                     </li>
@@ -214,9 +216,8 @@ function Header({
                                     className='flex flex-col items-center py-1'
                                     role='none'
                                 >
-                                    <Link href='' locale='en'>
+                                    <Link href={router.asPath} locale='en'>
                                         <a
-                                            href='#'
                                             className='flashing block px-4 py-2 text-sm text-gray-700'
                                             role='menuitem'
                                             tabIndex='-1'
@@ -226,9 +227,8 @@ function Header({
                                         </a>
                                     </Link>
 
-                                    <Link href='' locale='tr'>
+                                    <Link href={router.asPath} locale='tr'>
                                         <a
-                                            href='#'
                                             className='flashing block px-4 py-2 text-sm text-gray-700'
                                             role='menuitem'
                                             tabIndex='-1'
@@ -238,9 +238,8 @@ function Header({
                                         </a>
                                     </Link>
 
-                                    <Link href='' locale='de'>
+                                    <Link href={router.asPath} locale='de'>
                                         <a
-                                            href='#'
                                             className='flashing block px-4 py-2 text-sm text-gray-700'
                                             role='menuitem'
                                             tabIndex='-1'
