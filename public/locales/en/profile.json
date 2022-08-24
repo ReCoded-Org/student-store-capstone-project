@@ -14,5 +14,7 @@
     "order-date": "Order Date",
     "listing-details": "Listing Details",
     "condition": "Condition",
-    "listing-description": "Listing Description"
+    "listing-date": "Listing Date",
+    "listing-description": "Listing Description",
+    "changes-saved": "changes saved"
 }

@@ -209,10 +209,10 @@ export default function Signup() {
                                 text={t("sign-up")}
                             />
                         </form>
-                        <div className='mb-2 flex items-center'>
-                            <span className='line'></span>
+                        <div className='flex items-center'>
+                            <div className='line'></div>
                             <div>{t("or")}</div>
-                            <span className='line'></span>
+                            <div className='line'></div>
                         </div>
                         <div className='text-md m-1 text-iceblue'>
                             {t("Sign-up-with")}

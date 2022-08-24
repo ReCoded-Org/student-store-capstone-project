@@ -54,12 +54,12 @@ exports[`renders correctly 1`] = `
       >
         Apple iPad Pro 
       </div>
-      <span
+      <p
         className="custom-bold text-lg"
       >
         ₺
         4000
-      </span>
+      </p>
     </div>
     <hr />
     <div
@@ -69,20 +69,20 @@ exports[`renders correctly 1`] = `
         listing-date
         :
       </h3>
-      <span
+      <p
         className="custom-bold text-md text-center"
       >
         2022-04-01
-      </span>
+      </p>
     </div>
     <div
       className="mb-2 flex justify-center p-2"
     >
-      <span
+      <p
         className=" rounded-full bg-teal-200 px-3 text-sm font-semibold uppercase tracking-wide text-teal-800"
       >
         ELECTRONICS
-      </span>
+      </p>
     </div>
   </div>
   <div
@@ -135,12 +135,12 @@ exports[`renders correctly 1`] = `
       >
         Leather Couch
       </div>
-      <span
+      <p
         className="custom-bold text-lg"
       >
         ₺
         1000
-      </span>
+      </p>
     </div>
     <hr />
     <div
@@ -150,20 +150,20 @@ exports[`renders correctly 1`] = `
         listing-date
         :
       </h3>
-      <span
+      <p
         className="custom-bold text-md text-center"
       >
         2022-07-01
-      </span>
+      </p>
     </div>
     <div
       className="mb-2 flex justify-center p-2"
     >
-      <span
+      <p
         className=" rounded-full bg-teal-200 px-3 text-sm font-semibold uppercase tracking-wide text-teal-800"
       >
         FURNITURE
-      </span>
+      </p>
     </div>
   </div>
   <div
@@ -216,12 +216,12 @@ exports[`renders correctly 1`] = `
       >
         Apple iPad Pro 
       </div>
-      <span
+      <p
         className="custom-bold text-lg"
       >
         ₺
         4000
-      </span>
+      </p>
     </div>
     <hr />
     <div
@@ -231,20 +231,20 @@ exports[`renders correctly 1`] = `
         listing-date
         :
       </h3>
-      <span
+      <p
         className="custom-bold text-md text-center"
       >
         2022-04-01
-      </span>
+      </p>
     </div>
     <div
       className="mb-2 flex justify-center p-2"
     >
-      <span
+      <p
         className=" rounded-full bg-teal-200 px-3 text-sm font-semibold uppercase tracking-wide text-teal-800"
       >
         ELECTRONICS
-      </span>
+      </p>
     </div>
   </div>
   <div
@@ -297,12 +297,12 @@ exports[`renders correctly 1`] = `
       >
         Leather Couch
       </div>
-      <span
+      <p
         className="custom-bold text-lg"
       >
         ₺
         1000
-      </span>
+      </p>
     </div>
     <hr />
     <div
@@ -312,20 +312,20 @@ exports[`renders correctly 1`] = `
         listing-date
         :
       </h3>
-      <span
+      <p
         className="custom-bold text-md text-center"
       >
         2022-07-01
-      </span>
+      </p>
     </div>
     <div
       className="mb-2 flex justify-center p-2"
     >
-      <span
+      <p
         className=" rounded-full bg-teal-200 px-3 text-sm font-semibold uppercase tracking-wide text-teal-800"
       >
         FURNITURE
-      </span>
+      </p>
     </div>
   </div>
   <div
@@ -378,12 +378,12 @@ exports[`renders correctly 1`] = `
       >
         Apple iPad Pro 
       </div>
-      <span
+      <p
         className="custom-bold text-lg"
       >
         ₺
         4000
-      </span>
+      </p>
     </div>
     <hr />
     <div
@@ -393,20 +393,20 @@ exports[`renders correctly 1`] = `
         listing-date
         :
       </h3>
-      <span
+      <p
         className="custom-bold text-md text-center"
       >
         2022-04-01
-      </span>
+      </p>
     </div>
     <div
       className="mb-2 flex justify-center p-2"
     >
-      <span
+      <p
         className=" rounded-full bg-teal-200 px-3 text-sm font-semibold uppercase tracking-wide text-teal-800"
       >
         ELECTRONICS
-      </span>
+      </p>
     </div>
   </div>
   <div
@@ -459,12 +459,12 @@ exports[`renders correctly 1`] = `
       >
         Leather Couch
       </div>
-      <span
+      <p
         className="custom-bold text-lg"
       >
         ₺
         1000
-      </span>
+      </p>
     </div>
     <hr />
     <div
@@ -474,20 +474,20 @@ exports[`renders correctly 1`] = `
         listing-date
         :
       </h3>
-      <span
+      <p
         className="custom-bold text-md text-center"
       >
         2022-07-01
-      </span>
+      </p>
     </div>
     <div
       className="mb-2 flex justify-center p-2"
     >
-      <span
+      <p
         className=" rounded-full bg-teal-200 px-3 text-sm font-semibold uppercase tracking-wide text-teal-800"
       >
         FURNITURE
-      </span>
+      </p>
     </div>
   </div>
   <div
@@ -540,12 +540,12 @@ exports[`renders correctly 1`] = `
       >
         Apple iPad Pro 
       </div>
-      <span
+      <p
         className="custom-bold text-lg"
       >
         ₺
         4000
-      </span>
+      </p>
     </div>
     <hr />
     <div
@@ -555,20 +555,20 @@ exports[`renders correctly 1`] = `
         listing-date
         :
       </h3>
-      <span
+      <p
         className="custom-bold text-md text-center"
       >
         2022-04-01
-      </span>
+      </p>
     </div>
     <div
       className="mb-2 flex justify-center p-2"
     >
-      <span
+      <p
         className=" rounded-full bg-teal-200 px-3 text-sm font-semibold uppercase tracking-wide text-teal-800"
       >
         ELECTRONICS
-      </span>
+      </p>
     </div>
   </div>
   <div
@@ -621,12 +621,12 @@ exports[`renders correctly 1`] = `
       >
         Leather Couch
       </div>
-      <span
+      <p
         className="custom-bold text-lg"
       >
         ₺
         1000
-      </span>
+      </p>
     </div>
     <hr />
     <div
@@ -636,20 +636,20 @@ exports[`renders correctly 1`] = `
         listing-date
         :
       </h3>
-      <span
+      <p
         className="custom-bold text-md text-center"
       >
         2022-07-01
-      </span>
+      </p>
     </div>
     <div
       className="mb-2 flex justify-center p-2"
     >
-      <span
+      <p
         className=" rounded-full bg-teal-200 px-3 text-sm font-semibold uppercase tracking-wide text-teal-800"
       >
         FURNITURE
-      </span>
+      </p>
     </div>
   </div>
   <div
@@ -702,12 +702,12 @@ exports[`renders correctly 1`] = `
       >
         Apple iPad Pro 
       </div>
-      <span
+      <p
         className="custom-bold text-lg"
       >
         ₺
         4000
-      </span>
+      </p>
     </div>
     <hr />
     <div
@@ -717,20 +717,20 @@ exports[`renders correctly 1`] = `
         listing-date
         :
       </h3>
-      <span
+      <p
         className="custom-bold text-md text-center"
       >
         2022-04-01
-      </span>
+      </p>
     </div>
     <div
       className="mb-2 flex justify-center p-2"
     >
-      <span
+      <p
         className=" rounded-full bg-teal-200 px-3 text-sm font-semibold uppercase tracking-wide text-teal-800"
       >
         ELECTRONICS
-      </span>
+      </p>
     </div>
   </div>
   <div
@@ -783,12 +783,12 @@ exports[`renders correctly 1`] = `
       >
         Leather Couch
       </div>
-      <span
+      <p
         className="custom-bold text-lg"
       >
         ₺
         1000
-      </span>
+      </p>
     </div>
     <hr />
     <div
@@ -798,20 +798,20 @@ exports[`renders correctly 1`] = `
         listing-date
         :
       </h3>
-      <span
+      <p
         className="custom-bold text-md text-center"
       >
         2022-07-01
-      </span>
+      </p>
     </div>
     <div
       className="mb-2 flex justify-center p-2"
     >
-      <span
+      <p
         className=" rounded-full bg-teal-200 px-3 text-sm font-semibold uppercase tracking-wide text-teal-800"
       >
         FURNITURE
-      </span>
+      </p>
     </div>
   </div>
 </div>

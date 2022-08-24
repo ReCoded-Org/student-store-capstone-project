@@ -4,20 +4,31 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import React from "react";
 
+import Button from "@/components/button";
 import Layout from "@/components/layout/Layout";
 import Map from "@/components/map";
 
 const Details = () => {
     const { t } = useTranslation(["product", "categories"]);
+
     function popupImage(event) {
         document.querySelector(".popup-image").style.display = "block";
         document.querySelector(".popup-image img").src =
             event.target.getAttribute("src");
     }
+
+    function popupWindow() {
+        document.querySelector(".popup-window").style.display = "block";
+    }
+    function closePopupWindow() {
+        document.querySelector(".popup-window").style.display = "none";
+    }
+
     function showEmail() {
         document.getElementById("hidden_email").style.display = "none";
         document.getElementById("visible_email").style.display = "block";
     }
+
     function hideEmail() {
         document.getElementById("hidden_email").style.display = "block";
         document.getElementById("visible_email").style.display = "none";
@@ -175,12 +186,47 @@ const Details = () => {
                                     </h2>
                                 </div>
                             </div>
+                            <div className='grid justify-center xxs:pt-4 lg:pt-2'>
+                                <Button
+                                    buttonStyle='orangeSignUp'
+                                    type='button'
+                                    text={t("unlist")}
+                                    handleClick={popupWindow}
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div className='sm:visibl grid justify-center xxs:invisible'>
                     <div className='rounded-3xl xxs:invisible xxs:scale-[80%] sm:visible sm:scale-[90%] lg:scale-95 lg:py-14'>
                         <Map />
+                    </div>
+                </div>
+            </div>
+            {/* popup window */}
+            <div className='popup-window'>
+                <div className='popup fixed top-0 bottom-0 right-0 left-0 m-auto h-fit w-fit rounded-lg bg-clay px-6 py-4 xxs:scale-[60%] xs:scale-75 sm:scale-90 lg:scale-100'>
+                    <div className='pb-4'>
+                        <h2 className='text-center text-extraDarkPurple'>
+                            {t("unlisting-confirm")}?
+                        </h2>
+                    </div>
+                    <div className='grid grid-flow-col justify-center gap-5'>
+                        <div>
+                            <Button
+                                buttonStyle='orangeSignUp'
+                                type='button'
+                                text={t("yes")}
+                            />
+                        </div>
+                        <div>
+                            <Button
+                                buttonStyle='orangeSignUp'
+                                type='button'
+                                text={t("cancel")}
+                                handleClick={closePopupWindow}
+                            />
+                        </div>
                     </div>
                 </div>
             </div>

@@ -63,7 +63,7 @@
 }
 
 .popup-image span {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 10px;
     font-size: 50px;
@@ -72,6 +72,31 @@
     cursor: pointer;
     z-index: 100;
 }
+
+.popup-window {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+
+.popup {
+    animation: popup 0.7s;
+}
+
+@keyframes popup {
+    0% {
+        transform: scale(0.2);
+    }
+    100% {
+        transform: scale();
+    }
+}
+
 /* for signup page */
 .signup-container {
     background: url("../../public/images/signup-bg.png");
@@ -133,7 +158,8 @@
     height: 400px;
 }
 .carouselItem1 {
-    background-image: url("https://images.unsplash.com/photo-1463620910506-d0458143143e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80");
+    background-image: url("https://images.pexels.com/photos/6192127/pexels-photo-6192127.jpeg?auto=compress&cs=tinysrgb&w=1770&h=750&dpr=1");
+    opacity: 0.85;
 }
 .carouselItem2 {
     background-image: url("https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80");
@@ -262,6 +288,8 @@
 @media screen and (max-width: 768px) {
     .edittab {
         margin-bottom: 40px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .inputtabfont {
         font-size: 16px;
@@ -281,7 +309,6 @@ h1 {
     }
 }
 
-h1,
 .mission {
     transform: scale(0.94);
     animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
@@ -292,17 +319,17 @@ h1,
         transform: scale(1);
     }
 }
-span {
+.spanned {
     display: inline-block;
     opacity: 0;
     filter: blur(4px);
 }
 
-span:nth-child(1) {
+.spanned:nth-child(1) {
     animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-span:nth-child(2) {
+.spanned:nth-child(2) {
     animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 @keyframes fade-in {

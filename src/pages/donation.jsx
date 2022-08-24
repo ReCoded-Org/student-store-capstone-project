@@ -2,20 +2,36 @@ import Image from "next/image";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import * as React from "react";
+import { toast, ToastContainer } from "react-toastify";
+import { injectStyle } from "react-toastify/dist/inject-style";
 
 import Layout from "@/components/layout/Layout";
 
+if (typeof window !== "undefined") {
+    injectStyle();
+}
+
 export default function Donation() {
     const { t } = useTranslation("donation");
+    function notify() {
+        toast(
+            t(
+                "we-are-thrilled-to-have-your-support-thank-you-for-your-generous-gift"
+            ) + "!",
+            { position: toast.POSITION.TOP_CENTER }
+        );
+    }
     return (
         <Layout>
             <div className='grid-flow-col-1 grid items-center justify-around bg-iceblue font-Poppins'>
                 <div className='relative p-10'>
-                    <div className='top-20 z-10 px-4 py-2  opacity-70 sm:text-2xl  md:absolute  md:left-24  md:w-full xl:left-64'>
-                        <h1 className=''>Be the reason someone smiles today</h1>
+                    <div className='relative z-10 text-center xs:top-8 xs:text-sm sm:top-14 sm:text-2xl lg:text-4xl'>
+                        <h2 className='px-4 py-2 text-white opacity-70'>
+                            Be the reason someone smiles today
+                        </h2>
                     </div>
                     <Image
-                        src='/images/donation.png'
+                        src='/images/donate-img1.png'
                         alt='donation image'
                         width='1024px'
                         height='512px'
@@ -39,7 +55,10 @@ export default function Donation() {
                             </div>
                         </div>
                         <div className='justfy-center flex px-10 pb-10'>
-                            <button className='flex h-12 w-full items-center justify-center rounded-lg bg-pumpkin px-6 text-sm font-semibold uppercase text-white'>
+                            <button
+                                onClick={notify}
+                                className='flex h-12 w-full items-center justify-center rounded-lg bg-pumpkin px-6 text-sm font-semibold uppercase text-white'
+                            >
                                 {t("donate-now")}!
                             </button>
                         </div>
@@ -57,7 +76,10 @@ export default function Donation() {
                             </div>
                         </div>
                         <div className='justfy-center flex px-10 pb-10'>
-                            <button className='flex h-12 w-full items-center justify-center rounded-lg bg-pumpkin px-6 text-sm font-semibold uppercase text-white'>
+                            <button
+                                onClick={notify}
+                                className='flex h-12 w-full items-center justify-center rounded-lg bg-pumpkin px-6 text-sm font-semibold uppercase text-white'
+                            >
                                 {t("donate-now")}!
                             </button>
                         </div>
@@ -75,7 +97,10 @@ export default function Donation() {
                             </div>
                         </div>
                         <div className='justfy-center flex px-10 pb-10'>
-                            <button className='flex h-12 w-full items-center justify-center rounded-lg bg-pumpkin px-6 text-sm font-semibold uppercase text-white'>
+                            <button
+                                onClick={notify}
+                                className='flex h-12 w-full items-center justify-center rounded-lg bg-pumpkin px-6 text-sm font-semibold uppercase text-white'
+                            >
                                 {t("donate-now")}!
                             </button>
                         </div>
@@ -88,6 +113,7 @@ export default function Donation() {
                     <p className='ptexttab p-3 text-2xl leading-loose text-darkpurple'>
                         {t("motivation")}
                     </p>
+                    <ToastContainer />
                 </div>
             </div>
         </Layout>

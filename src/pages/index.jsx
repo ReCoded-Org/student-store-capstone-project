@@ -1,4 +1,3 @@
-// import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import * as React from "react";
 
@@ -11,7 +10,9 @@ import PRODUCTS from "../components/ListOfProducts/data";
 
 export default function HomePage() {
     // eslint-disable-next-line unused-imports/no-unused-vars
-    const [products, setProducts] = React.useState(PRODUCTS);
+    const [products, setProducts] = React.useState(
+        PRODUCTS.filter((activeProduct) => activeProduct.status === "Active")
+    );
     const [filteredProducts, setfilteredProducts] = React.useState(products);
     const [productName, setProductName] = React.useState("");
     const [maxPrice, setMaxPrice] = React.useState("");
