@@ -1,7 +1,6 @@
 import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
-import Router from "next/router";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useState } from "react";
@@ -56,10 +55,11 @@ export default function SignInPage() {
                 baseURL,
                 userSignIn,
                 {
-                    // withCredentials: true,
+                    withCredentials: true,
                     headers: {
-                        "Access-Control-Allow-Origin": "*",
+                        "Access-Control-Allow-Credentials": "true",
                         "Content-Type": "application/json",
+                        "Access-Control-Allow-Origin": "*",
                     },
                 }
 
@@ -73,10 +73,10 @@ export default function SignInPage() {
             .then((res) => {
                 if (res.status === 200) {
                     alert("Successfully signed in! Redirecting...");
-                    setTimeout(() => {
-                        Router.push("/");
-                    }, 1000);
-                    localStorage.setItem("token", res.headers["token"]);
+                    // setTimeout(() => {
+                    //     Router.push("/");
+                    // }, 1000);
+                    // localStorage.setItem("token", res.headers["token"]);
                     // localStorage.setItem("user", res.headers.user);
                 } else if (res.status === 401) {
                     alert("Invalid credentials");

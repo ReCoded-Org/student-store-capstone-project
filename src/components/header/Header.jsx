@@ -5,9 +5,9 @@ import { useTranslation } from "next-i18next";
 import * as React from "react";
 import { useState } from "react";
 import { BiSearchAlt } from "react-icons/bi";
+import { IoIosArrowDown } from "react-icons/io";
+import { RiUser3Line } from "react-icons/ri";
 import { TbWorld } from "react-icons/tb";
-
-import userIcon from "../../../public/images/userIcon.png";
 
 function Header({
     products,
@@ -162,10 +162,10 @@ function Header({
                     </div>
                     <div className=' hidden w-auto items-center md:flex md:flex-row '>
                         <div className='relative inline-block text-left'>
-                            <div className='mr-2'>
+                            <div className='mr-2 rounded-[20px] border-[3px] border-white hover:border-pumpkin'>
                                 <button
                                     type='button'
-                                    className='inline-flex w-full justify-center rounded-md bg-white p-1 text-sm font-medium text-pumpkin hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100 md:mr-2'
+                                    className='flex w-full items-center justify-center  rounded-full bg-white p-1 text-sm font-medium text-pumpkin hover:border-pumpkin'
                                     id='menu-button'
                                     aria-expanded='true'
                                     aria-haspopup='true'
@@ -174,28 +174,16 @@ function Header({
                                     }
                                 >
                                     <TbWorld size={24} />
-                                    <svg
-                                        className=' my-1 mt-1 h-4 w-4'
-                                        xmlns='http://www.w3.org/2000/svg'
-                                        viewBox='0 0 20 20'
-                                        fill='currentColor'
-                                        aria-hidden='true'
-                                    >
-                                        <path
-                                            fillRule='evenodd'
-                                            d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z'
-                                            clipRule='evenodd'
-                                        />
-                                    </svg>
+                                    <IoIosArrowDown size={18} className='m-1' />
                                 </button>
                             </div>
 
                             <div
                                 className={`
-                                    focus:outline-none' absolute right-0 z-10 mt-2 flex w-16  
-                                                                       rounded-md
-                                                                           bg-white shadow-md
-                                                                           ring-1 ring-black ring-opacity-5
+                                    absolute right-0 z-10 mt-2 flex rounded-md  
+                                                                       bg-white
+                                                                           shadow-md ring-1
+                                                                           ring-black ring-opacity-5 focus:outline-none
                                                                             ${
                                                                                 isLanguageOpen
                                                                                     ? "showLanguage"
@@ -212,7 +200,6 @@ function Header({
                                 >
                                     <Link href='/' locale='en'>
                                         <a
-                                            href='#'
                                             className='flashing block px-4 py-2 text-sm text-gray-700'
                                             role='menuitem'
                                             tabIndex='-1'
@@ -224,7 +211,6 @@ function Header({
 
                                     <Link href='/' locale='tr'>
                                         <a
-                                            href='#'
                                             className='flashing block px-4 py-2 text-sm text-gray-700'
                                             role='menuitem'
                                             tabIndex='-1'
@@ -236,7 +222,6 @@ function Header({
 
                                     <Link href='/' locale='de'>
                                         <a
-                                            href='#'
                                             className='flashing block px-4 py-2 text-sm text-gray-700'
                                             role='menuitem'
                                             tabIndex='-1'
@@ -251,13 +236,26 @@ function Header({
 
                         <div className='text-md hidden md:flex md:w-auto md:items-center '>
                             {isLoggedIn ? (
-                                <div className=' m-2 mr-2 flex w-[32px] self-center overflow-hidden rounded-full border-[3px] border-lightpurple  md:flex lg:flex'>
-                                    <Image
+                                <div className=' mr-2 flex w-auto items-center self-center overflow-hidden rounded-full border-[3px] border-white p-1 hover:border-purple  md:flex lg:flex'>
+                                    {/* write a function that checks if there is a user img, if not, falls back to this icon  */}
+
+                                    <RiUser3Line
+                                        size={24}
+                                        className='text-lightpurple'
+                                    />
+
+                                    {/* <Image
                                         width={32}
                                         height={32}
-                                        src={userIcon}
+                                        // src={userIcon}
+                                        src={rifik}
                                         alt='rifik'
                                         layout='intrinsic'
+                                        className='rounded-full'
+                                    /> */}
+                                    <IoIosArrowDown
+                                        size={18}
+                                        className='m-1 text-lightpurple'
                                     />
                                 </div>
                             ) : (
