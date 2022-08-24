@@ -6,12 +6,12 @@ import CategoryPriceFilter from "@/components/categoryPriceFilter/CategoryPriceF
 import Layout from "@/components/layout/Layout";
 import ListOfProducts from "@/components/ListOfProducts";
 
-import PRODUCTS from "../components/ListOfProducts/data";
-
-export default function HomePage() {
+export default function HomePage({ productsData }) {
     // eslint-disable-next-line unused-imports/no-unused-vars
     const [products, setProducts] = React.useState(
-        PRODUCTS.filter((activeProduct) => activeProduct.status === "Active")
+        productsData.filter(
+            (activeProduct) => activeProduct.status === "Active"
+        )
     );
     const [filteredProducts, setfilteredProducts] = React.useState(products);
     const [productName, setProductName] = React.useState("");
@@ -57,6 +57,8 @@ export default function HomePage() {
 }
 
 export async function getStaticProps({ locale }) {
+    const res = await fetch("http://localhost:3001/products");
+    const productsData = await res.json();
     return {
         props: {
             ...(await serverSideTranslations(locale, [
@@ -66,6 +68,7 @@ export async function getStaticProps({ locale }) {
                 "category-price-filter",
                 "categories",
             ])),
+            productsData,
             // Will be passed to the page component as props
         },
     };
