@@ -106,15 +106,15 @@ function Header({
                                 </div>
                                 <ul className='MENU-OPEN mt-10 flex min-h-[250px] flex-col items-center justify-between '>
                                     <li className='flex flex-row items-center justify-start'>
-                                        <Link href='/' locale='en'>
+                                        <Link href='' locale='en'>
                                             <a>EN&nbsp;&nbsp;</a>
                                         </Link>
                                         |
-                                        <Link href='/' locale='tr'>
+                                        <Link href='' locale='tr'>
                                             <a>&nbsp;&nbsp;TR&nbsp;&nbsp;</a>
                                         </Link>
                                         |
-                                        <Link href='/' locale='de'>
+                                        <Link href='' locale='de'>
                                             <a>&nbsp;&nbsp;DE</a>
                                         </Link>
                                     </li>
@@ -214,7 +214,7 @@ function Header({
                                     className='flex flex-col items-center py-1'
                                     role='none'
                                 >
-                                    <Link href='/' locale='en'>
+                                    <Link href='' locale='en'>
                                         <a
                                             href='#'
                                             className='flashing block px-4 py-2 text-sm text-gray-700'
@@ -226,7 +226,7 @@ function Header({
                                         </a>
                                     </Link>
 
-                                    <Link href='/' locale='tr'>
+                                    <Link href='' locale='tr'>
                                         <a
                                             href='#'
                                             className='flashing block px-4 py-2 text-sm text-gray-700'
@@ -238,7 +238,7 @@ function Header({
                                         </a>
                                     </Link>
 
-                                    <Link href='/' locale='de'>
+                                    <Link href='' locale='de'>
                                         <a
                                             href='#'
                                             className='flashing block px-4 py-2 text-sm text-gray-700'
