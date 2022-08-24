@@ -14,7 +14,7 @@ function AboutUsPage() {
             <div className='flex h-[550px] w-full justify-between bg-gradient-to-r from-darkpurple to-purple p-10 align-middle lg:pr-0'>
                 <div className='m-auto flex-col sm:w-full lg:w-[40%]'>
                     <h1 className='m-auto text-4xl font-bold text-cyanaqua xs:text-center sm:text-center md:text-left lg:text-left'>
-                        <span className='font-Popppins'>
+                        <span className='font-Popppins spanned'>
                             {t("our-mission")}
                         </span>
                     </h1>
@@ -44,7 +44,7 @@ function AboutUsPage() {
                 {/* Salah's Card */}
                 <div className='m-auto mb-10 flex w-[200px] flex-col rounded-xl bg-[#585785] p-6 text-center align-middle duration-500 hover:shadow-xl hover:shadow-cyanaqua'>
                     <img
-                        className='h-full w-full rounded-full border-4 border-cyanaqua'
+                        className='h-auto w-full rounded-full border-4 border-cyanaqua'
                         src='https://avatars.githubusercontent.com/u/4890766?v=4'
                         alt='Salah avatar'
                     ></img>
@@ -71,7 +71,7 @@ function AboutUsPage() {
                     {/* Nouh's Card */}
                     <div className='flex w-[200px] flex-col rounded-xl bg-[#585785] p-6 text-center align-middle duration-500 hover:shadow-xl hover:shadow-cyanaqua'>
                         <img
-                            className='h-full w-full rounded-full border-4 border-cyanaqua'
+                            className='h-auto w-full rounded-full border-4 border-cyanaqua'
                             src='https://media-exp1.licdn.com/dms/image/C5603AQG7dsmBEvTG4w/profile-displayphoto-shrink_800_800/0/1581879286166?e=1665619200&v=beta&t=F69BFpyAuCMweyDVeZZfPByME_lJ6jlKoUDOf9eW_Zo'
                             alt='Nouh avatar'
                         ></img>
@@ -99,7 +99,7 @@ function AboutUsPage() {
                     {/* Gizem's Card */}
                     <div className='flex w-[200px] flex-col rounded-xl bg-[#585785] p-6 text-center align-middle duration-500 hover:shadow-xl hover:shadow-cyanaqua'>
                         <img
-                            className='h-full w-full rounded-full border-4 border-cyanaqua'
+                            className='h-auto w-full rounded-full border-4 border-cyanaqua'
                             src='https://media-exp1.licdn.com/dms/image/C5603AQEW2FlGcGHerA/profile-displayphoto-shrink_800_800/0/1637622044999?e=1665619200&v=beta&t=A0UInMMejCSIiPiHFJXIUBPDfDOzOaaBEqMX9ej1NUQ'
                             alt='Gizem avatar'
                         ></img>
@@ -127,15 +127,12 @@ function AboutUsPage() {
                     {/* Selin's Card */}
                     <div className='flex w-[200px] flex-col rounded-xl bg-[#585785] p-6 text-center align-middle duration-500 hover:shadow-xl hover:shadow-cyanaqua'>
                         <img
-                            className='h-full w-full rounded-full border-4 border-cyanaqua'
+                            className='h-auto w-full rounded-full border-4 border-cyanaqua'
                             src='https://avatars.githubusercontent.com/u/100427748?v=4'
                             alt='Selin avatar'
                         ></img>
                         <h3 className='mt-1 text-lg font-semibold text-cyanaqua'>
-                            Selin Su
-                        </h3>
-                        <h3 className='mt-1 text-lg font-semibold text-cyanaqua'>
-                            Varol
+                            Selin Su Varol
                         </h3>
                         <h4 className='text-[12px] text-iceblue'>
                             Jr. Frontend Engineer
@@ -158,7 +155,7 @@ function AboutUsPage() {
                     {/* Beyza's Card */}
                     <div className='flex w-[200px] flex-col rounded-xl bg-[#585785] p-6 text-center align-middle duration-500 hover:shadow-xl hover:shadow-cyanaqua'>
                         <img
-                            className='h-full w-full rounded-full border-4 border-cyanaqua'
+                            className='h-auto w-full rounded-full border-4 border-cyanaqua'
                             src='https://media-exp1.licdn.com/dms/image/C5603AQEHRu0d7HQf2g/profile-displayphoto-shrink_800_800/0/1655375124272?e=1665619200&v=beta&t=i8orfruyIDSMmZGe9XXPZWVKpjYDK9r7Mjh-PU3oIjs'
                             alt='Beyza avatar'
                         ></img>
@@ -186,7 +183,7 @@ function AboutUsPage() {
                     {/* Hadri's Card */}
                     <div className='flex w-[200px] flex-col rounded-xl bg-[#585785] p-6 text-center align-middle duration-500 hover:shadow-xl hover:shadow-cyanaqua'>
                         <img
-                            className='h-full w-full rounded-full border-4 border-cyanaqua'
+                            className='h-auto w-full rounded-full border-4 border-cyanaqua'
                             src='https://avatars.githubusercontent.com/u/68324184?v=4'
                             alt='Hadri avatar'
                         ></img>
