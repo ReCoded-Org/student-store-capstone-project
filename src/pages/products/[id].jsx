@@ -1,14 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 
 import { useTranslation } from "next-i18next";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import React from "react";
 
 import Button from "@/components/button";
 import Layout from "@/components/layout/Layout";
 import Map from "@/components/map";
 
-const Details = () => {
+const Details = ({ singleProduct }) => {
     const { t } = useTranslation(["product", "categories"]);
 
     function popupImage(event) {
@@ -44,7 +43,7 @@ const Details = () => {
                         <div className='grid items-center justify-center'>
                             {/* main photo */}
                             <img
-                                src='https://images.eq3.com/image-service/084d1830-05e2-4319-98d8-88d1e3091fe1/green-velvet-sofa-with-marble-coffee-table_COMPRESSED.png'
+                                src={singleProduct.coverImage}
                                 alt='Sofa'
                                 className='zoom flashing w-[32rem] rounded-xl shadow-xl hover:cursor-pointer'
                                 onClick={popupImage}
@@ -101,18 +100,21 @@ const Details = () => {
                             <div className='grid grid-cols-3 pb-6'>
                                 <div className='col-span-2'>
                                     <h1 className='brush w-fit font-bold text-purple xxs:text-2xl sm:text-3xl'>
-                                        Two Seat Sofa
+                                        {singleProduct.title}
                                     </h1>
                                     <h2 className='text-darkPurple'>
-                                        <b>{t("category")}:</b> {t("furniture")}
+                                        {/* <b>{t("category")}:</b> {t("furniture")} */}
+                                        <b>{t("category")}:</b>{" "}
+                                        {t(`${singleProduct.category}`)}
                                     </h2>
                                     <h2 className='pb-2 text-darkPurple'>
-                                        <b>{t("condition")}:</b> {t("used")}
+                                        <b>{t("condition")}:</b>{" "}
+                                        {t(`${singleProduct.condition}`)}
                                     </h2>
                                 </div>
                                 <div className='grid h-fit rounded-full '>
                                     <h1 className='text-end font-bold text-orange xxs:text-2xl sm:text-3xl'>
-                                        $2793
+                                        {singleProduct.price}tl
                                     </h1>
                                 </div>
                             </div>
@@ -126,17 +128,7 @@ const Details = () => {
                                     </div>
                                     <div>
                                         <p className='pb-2 text-extraDarkPurple'>
-                                            Lorem ipsum dolor sit amet
-                                            consectetur adipisicing elit. Porro,
-                                            quo, atque eligendi et illum id, non
-                                            maiores perspiciatis expedita
-                                            quaerat assumenda iure cupiditate
-                                            architecto modi numquam doloremque
-                                            repellendus exercitationem
-                                            distinctio. Lorem: 5 letters, ipsum:
-                                            5 letters. doloremque repellendus
-                                            exercitationem distinctio. Lorem: 5
-                                            letters, ipsum: 5 letters.
+                                            {singleProduct.description}
                                         </p>
                                     </div>
                                 </div>
@@ -152,7 +144,7 @@ const Details = () => {
                                 {/* User info */}
                                 <div className='col-span-2 grid overflow-x-auto p-4 text-xl text-white scrollbar-hide'>
                                     <h2 className='font-bold xxs:text-lg sm:text-xl md:text-2xl lg:text-xl xl:text-2xl'>
-                                        Mr. nice cat
+                                        {singleProduct.seller}
                                     </h2>
                                     <h2 className='xxs:text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl'>
                                         <span id='hidden_email'>
@@ -182,7 +174,7 @@ const Details = () => {
                                         </span>
                                     </h2>
                                     <h2 className='xxs:text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl'>
-                                        Istanbul/Turkeky
+                                        {singleProduct.city}/Turkeky
                                     </h2>
                                 </div>
                             </div>
@@ -199,7 +191,7 @@ const Details = () => {
                 </div>
                 <div className='sm:visibl grid justify-center xxs:invisible'>
                     <div className='rounded-3xl xxs:invisible xxs:scale-[80%] sm:visible sm:scale-[90%] lg:scale-95 lg:py-14'>
-                        <Map />
+                        <Map geo={singleProduct.geo} />
                     </div>
                 </div>
             </div>
@@ -234,19 +226,49 @@ const Details = () => {
     );
 };
 
-export async function getServerSideProps({ locale }) {
+export async function getStaticProps(context) {
+    const id = context.params.id;
+    const res = await fetch(`http://localhost:3001/products/${id}`);
+    const singleProduct = await res.json();
+
     return {
         props: {
-            ...(await serverSideTranslations(locale, [
-                "common",
-                "header",
-                "footer",
-                "product",
-                "categories",
-            ])),
-            // Will be passed to the page component as props
+            singleProduct,
         },
     };
 }
+// export async function getStaticProps(context, { locale }) {
+//     const id = context.params.id;
+//     const res = await fetch(`http://localhost:3001/products/${id}`);
+//     const singleProduct = await res.json();
+//     return {
+//         props: {
+//             ...(await serverSideTranslations(locale, [
+//                 "common",
+//                 "header",
+//                 "footer",
+//                 "product",
+//                 "categories",
+//             ])),
+//             singleProduct,
+//         },
+//     };
+// }
+
+export const getStaticPaths = async () => {
+    const res = await fetch("http://localhost:3001/products");
+    const productsData = await res.json();
+
+    const paths = productsData.map((product) => {
+        return {
+            params: { id: product.id.toString() },
+        };
+    });
+
+    return {
+        paths,
+        fallback: false,
+    };
+};
 
 export default Details;

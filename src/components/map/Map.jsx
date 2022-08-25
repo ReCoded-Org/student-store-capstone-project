@@ -11,12 +11,17 @@ const containerStyle = {
     borderWidth: "2px",
 };
 
-const center = {
-    lat: 41.00824,
-    lng: 28.978359,
-};
-
-function Map() {
+function Map({
+    geo = {
+        lat: 41.085562,
+        lng: 28.985118,
+    },
+}) {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    const center = {
+        lat: geo.lat,
+        lng: geo.lng,
+    };
     const { isLoaded } = useJsApiLoader({
         id: "google-map-script",
         googleMapsApiKey: "AIzaSyAnHNX_kANW6oxjdcDoOs8VVwDAOsbA9ZY",
@@ -24,11 +29,14 @@ function Map() {
 
     const [map, setMap] = React.useState(null);
 
-    const onLoad = React.useCallback(function callback(map) {
-        const bounds = new window.google.maps.LatLngBounds(center);
-        map.fitBounds(bounds);
-        setMap(map);
-    }, []);
+    const onLoad = React.useCallback(
+        function callback(map) {
+            const bounds = new window.google.maps.LatLngBounds(center);
+            map.fitBounds(bounds);
+            setMap(map);
+        },
+        [center]
+    );
 
     const onUnmount = React.useCallback(function callback(map) {
         setMap(null);
