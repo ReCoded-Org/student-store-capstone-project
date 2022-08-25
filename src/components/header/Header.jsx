@@ -1,6 +1,7 @@
 /* eslint-disable unused-imports/no-unused-vars */
 import Image from "next/image";
 import Link from "next/link";
+import Router from "next/router";
 import { useTranslation } from "next-i18next";
 import * as React from "react";
 import { useEffect, useRef, useState } from "react";
@@ -25,7 +26,7 @@ function Header({
     const { t } = useTranslation("header");
     const [isNavOpen, setIsNavOpen] = useState(false);
     const [isLanguageOpen, setIsLanguageOpen] = useState(false);
-    const [isLoggedIn, setIsLoggedIn] = useState(true);
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [userIconClicked, setUserIconClicked] = useState(false);
 
     const languageRef = useRef(null);
@@ -342,10 +343,20 @@ function Header({
                                                 </a>
                                             </Link>
                                             <a
-                                                className='flashing block px-4 py-2 text-sm text-lightpurple'
+                                                className='flashing block px-4 py-2 text-sm text-lightpurple hover:cursor-pointer'
                                                 role='menuitem'
                                                 tabIndex='-1'
                                                 id='menu-item-1'
+                                                onClick={() => {
+                                                    setIsLoggedIn(false);
+                                                    // localStorage.removeItem(
+                                                    //     "token"
+                                                    // );
+                                                    alert(t("logout-success"));
+                                                    setTimeout(() => {
+                                                        Router.push("/");
+                                                    }, 2000);
+                                                }}
                                             >
                                                 {t("logout")}
                                             </a>

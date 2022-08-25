@@ -7,5 +7,6 @@
     "cart": "Cart",
     "edit-Profile": "Edit Profile",
     "my-listings": "My Listings",
-    "logout": "Logout"
+    "logout": "Logout",
+    "logout-success": "You have been logged out successfully"
 }

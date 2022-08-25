@@ -7,5 +7,6 @@
     "cart": "sepetim",
     "my-listings": "İlanlarım",
     "edit-Profile": "Profili Düzenle",
-    "logout": "Çıkış"
+    "logout": "Çıkış",
+    "logout-success": "Çıkış yapıldı"
 }

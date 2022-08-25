@@ -51,33 +51,21 @@ export default function SignInPage() {
         e.preventDefault();
 
         axios
-            .post(
-                baseURL,
-                userSignIn,
-                {
-                    withCredentials: true,
-                    headers: {
-                        "Access-Control-Allow-Credentials": "true",
-                        "Content-Type": "application/json",
-                        "Access-Control-Allow-Origin": "*",
-                    },
-                }
-
-                // {
-                //     "Content-Type": "application/json",
-                //     Accept: "application/json",
-                //access control allow origin should not be a wildcard (*)
-                //     "Access-Control-Allow-Origin": "http://students-store.herokuapp.com",
-                // }
-            )
+            .post(baseURL, userSignIn, {
+                withCredentials: true,
+                headers: {
+                    "Access-Control-Allow-Credentials": "true",
+                    "Content-Type": "application/json",
+                    // "Access-Control-Allow-Origin": "*",
+                },
+            })
             .then((res) => {
                 if (res.status === 200) {
                     alert("Successfully signed in! Redirecting...");
+
                     // setTimeout(() => {
                     //     Router.push("/");
                     // }, 1000);
-                    // localStorage.setItem("token", res.headers["token"]);
-                    // localStorage.setItem("user", res.headers.user);
                 } else if (res.status === 401) {
                     alert("Invalid credentials");
                 }
