@@ -49,7 +49,7 @@ const Details = ({ singleProduct }) => {
                             <img
                                 src={singleProduct.coverImage}
                                 alt={singleProduct.title}
-                                className='zoom flashing w-[32rem] rounded-xl shadow-xl hover:cursor-pointer'
+                                className='zoom flashing max-h-[25rem] w-[32rem] rounded-xl shadow-xl hover:cursor-pointer'
                                 onClick={popupImage}
                             />
                         </div>
@@ -66,20 +66,21 @@ const Details = ({ singleProduct }) => {
                             </span>
                             <div className='popup h-full w-full'>
                                 <img
-                                    src='https://images.eq3.com/image-service/084d1830-05e2-4319-98d8-88d1e3091fe1/green-velvet-sofa-with-marble-coffee-table_COMPRESSED.png'
-                                    alt='Sofa'
+                                    className='lg:max-h-[48rem]'
+                                    src={singleProduct.coverImage}
+                                    alt={singleProduct.title}
                                 />
                             </div>
                         </div>
                         <div className='grid justify-evenly xxs:mx-0 xxs:scale-90 xxs:grid-flow-col xxs:gap-4 md:mx-[6rem] md:scale-100 lg:mx-0 xl:px-[4rem]'>
                             {/* the other photos */}
-                            {singleProduct.otherImages.map((image, index) => {
+                            {singleProduct.otherImages?.map((image, index) => {
                                 return (
                                     <img
                                         key={index}
                                         src={image}
-                                        alt='Sofa'
-                                        className='zoom flashing w-[9rem] rounded-xl shadow-xl hover:cursor-pointer'
+                                        alt={singleProduct.title}
+                                        className='zoom flashing max-h-[7rem] w-[9rem] rounded-xl shadow-xl hover:cursor-pointer'
                                         onClick={popupImage}
                                     />
                                 );
@@ -92,11 +93,10 @@ const Details = ({ singleProduct }) => {
                             {/* Headers */}
                             <div className='grid grid-cols-3 pb-6'>
                                 <div className='col-span-2'>
-                                    <h1 className='brush w-fit font-bold text-purple xxs:text-2xl sm:text-3xl'>
+                                    <h1 className='brush w-fit text-left font-bold text-purple xxs:text-2xl sm:text-3xl'>
                                         {singleProduct.title}
                                     </h1>
                                     <h2 className='text-darkPurple'>
-                                        {/* <b>{t("category")}:</b> {t("furniture")} */}
                                         <b>{t("category")}:</b>{" "}
                                         {t(`${singleProduct.category}`)}
                                     </h2>
