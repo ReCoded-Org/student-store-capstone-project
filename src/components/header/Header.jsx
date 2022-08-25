@@ -1,11 +1,13 @@
 /* eslint-disable unused-imports/no-unused-vars */
 import Image from "next/image";
 import Link from "next/link";
+import Router from "next/router";
 import { useTranslation } from "next-i18next";
 import * as React from "react";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { BiSearchAlt } from "react-icons/bi";
-import { MdShoppingCart } from "react-icons/md";
+import { IoIosArrowDown } from "react-icons/io";
+import { RiUser3Line } from "react-icons/ri";
 import { TbWorld } from "react-icons/tb";
 
 function Header({
@@ -24,6 +26,26 @@ function Header({
     const { t } = useTranslation("header");
     const [isNavOpen, setIsNavOpen] = useState(false);
     const [isLanguageOpen, setIsLanguageOpen] = useState(false);
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+    const [userIconClicked, setUserIconClicked] = useState(false);
+
+    const languageRef = useRef(null);
+    const userIconRef = useRef(null);
+
+    const handleClickOutside = (e) => {
+        if (languageRef.current && !languageRef.current.contains(e.target)) {
+            setIsLanguageOpen(false);
+        }
+        if (userIconRef.current && !userIconRef.current.contains(e.target)) {
+            setUserIconClicked(false);
+        }
+    };
+    useEffect(() => {
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, []);
 
     function searchByName() {
         setfilteredProducts(
@@ -79,7 +101,6 @@ function Header({
                             >
                                 <span className='block h-0.5 w-8 animate-pulse bg-pumpkin'></span>
                                 <span className='block h-0.5 w-8 animate-pulse bg-pumpkin'></span>
-                                <span className='block h-0.5 w-8 animate-pulse bg-pumpkin '></span>
                             </div>
 
                             <div
@@ -155,11 +176,6 @@ function Header({
                                             <a>{t("sell-items")}</a>
                                         </Link>
                                     </li>
-                                    <li className='my-8 border-b border-pumpkin'>
-                                        <Link href='/cart'>
-                                            <a>{t("cart")}</a>
-                                        </Link>
-                                    </li>
                                 </ul>
                             </div>
                         </section>
@@ -182,10 +198,10 @@ function Header({
                     </div>
                     <div className=' hidden w-auto items-center md:flex md:flex-row '>
                         <div className='relative inline-block text-left'>
-                            <div>
+                            <div className='mr-2 rounded-[20px] border-[3px] border-white hover:border-pumpkin'>
                                 <button
                                     type='button'
-                                    className='inline-flex w-full justify-center rounded-md bg-white p-2 text-sm font-medium text-pumpkin hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100 md:mr-4'
+                                    className='flex w-full items-center justify-center  rounded-full bg-white p-1 text-sm font-medium text-pumpkin blur-none hover:border-pumpkin'
                                     id='menu-button'
                                     aria-expanded='true'
                                     aria-haspopup='true'
@@ -194,33 +210,22 @@ function Header({
                                     }
                                 >
                                     <TbWorld size={24} />
-                                    <svg
-                                        className=' ml-1 mt-1 mr-2 h-4 w-4'
-                                        xmlns='http://www.w3.org/2000/svg'
-                                        viewBox='0 0 20 20'
-                                        fill='currentColor'
-                                        aria-hidden='true'
-                                    >
-                                        <path
-                                            fillRule='evenodd'
-                                            d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z'
-                                            clipRule='evenodd'
-                                        />
-                                    </svg>
+                                    <IoIosArrowDown size={18} className='m-1' />
                                 </button>
                             </div>
 
                             <div
                                 className={`
-                                    focus:outline-none' absolute right-0 z-10 mt-2 flex w-16
-                                                                       rounded-md
-                                                                           bg-white shadow-md
-                                                                           ring-1 ring-black ring-opacity-5
+                                    absolute right-2 z-10 mt-2 flex rounded-md  
+                                                                       bg-white
+                                                                           shadow-md ring-1
+                                                                           ring-black ring-opacity-5 focus:outline-none
                                                                             ${
                                                                                 isLanguageOpen
                                                                                     ? "showLanguage"
                                                                                     : "hideLanguage"
                                                                             }`}
+                                ref={languageRef}
                                 role='menu'
                                 aria-orientation='vertical'
                                 aria-labelledby='menu-button'
@@ -232,7 +237,7 @@ function Header({
                                 >
                                     <Link href='/' locale='en'>
                                         <a
-                                            className='flashing block px-4 py-2 text-sm text-gray-700'
+                                            className='flashing block px-4 py-2 text-sm text-pumpkin'
                                             role='menuitem'
                                             tabIndex='-1'
                                             id='menu-item-0'
@@ -243,7 +248,7 @@ function Header({
 
                                     <Link href='/' locale='tr'>
                                         <a
-                                            className='flashing block px-4 py-2 text-sm text-gray-700'
+                                            className='flashing block px-4 py-2 text-sm text-pumpkin'
                                             role='menuitem'
                                             tabIndex='-1'
                                             id='menu-item-1'
@@ -254,7 +259,7 @@ function Header({
 
                                     <Link href='/' locale='de'>
                                         <a
-                                            className='flashing block px-4 py-2 text-sm text-gray-700'
+                                            className='flashing block px-4 py-2 text-sm text-pumpkin'
                                             role='menuitem'
                                             tabIndex='-1'
                                             id='menu-item-1'
@@ -266,26 +271,131 @@ function Header({
                             </div>
                         </div>
 
-                        <div className='text-md hidden md:flex md:w-auto md:items-center '>
-                            <Link href='/sign-in'>
-                                <a
-                                    href='#'
-                                    className='text-md mr-2 block rounded-[20px]  bg-darkPurple py-2 px-4 text-white hover:bg-purple'
-                                >
-                                    {t("sign-in")}
-                                </a>
-                            </Link>
-                            <Link href='/product-listing'>
-                                <a className=' text-md mr-2 block rounded-[20px]  bg-darkPurple py-2 px-4 text-white hover:bg-purple'>
-                                    {t("sell-items")}
-                                </a>
-                            </Link>
-                            <Link href='/cart'>
-                                <a className='m-2 pt-2'>
-                                    <MdShoppingCart size={28} color='#FF8A57' />
-                                </a>
-                            </Link>
+                        <div className=' hidden w-auto items-center md:flex md:flex-row '>
+                            {isLoggedIn ? (
+                                <div className='relative inline-block text-left'>
+                                    <div className='mr-2'>
+                                        <button
+                                            type='button'
+                                            className='mr-2 flex w-auto items-center self-center overflow-hidden rounded-full border-[3px] border-white p-1 hover:border-purple  md:flex lg:flex'
+                                            id='menu-button'
+                                            aria-expanded='true'
+                                            aria-haspopup='true'
+                                            onClick={() =>
+                                                setUserIconClicked(
+                                                    (prev) => !prev
+                                                )
+                                            }
+                                        >
+                                            <RiUser3Line
+                                                size={24}
+                                                className='text-lightpurple'
+                                            />
+
+                                            {/* <Image
+                                        width={32}
+                                        height={32}
+                                        // src={userIcon}
+                                        src={rifik}
+                                        alt='rifik'
+                                        layout='intrinsic'
+                                        className='rounded-full'
+                                    /> */}
+                                            <IoIosArrowDown
+                                                size={18}
+                                                className='m-1 text-lightpurple'
+                                            />
+                                        </button>
+                                    </div>
+
+                                    <div
+                                        className={`
+                                    absolute left-1 z-10 mt-2 flex rounded-md  
+                                                                       bg-white
+                                                                           shadow-md ring-2
+                                                                           ring-lightpurple ring-opacity-5
+                                                                            ${
+                                                                                userIconClicked
+                                                                                    ? "showUserMenu"
+                                                                                    : "hideUserMenu"
+                                                                            }`}
+                                        ref={userIconRef}
+                                        role='menu'
+                                        aria-orientation='vertical'
+                                        aria-labelledby='menu-button'
+                                        tabIndex='-1'
+                                    >
+                                        <div className='right-0 flex flex-col items-center py-1 '>
+                                            <Link href='/listings'>
+                                                <a
+                                                    className='flashing block px-4 py-2 text-sm text-lightpurple'
+                                                    role='menuitem'
+                                                    tabIndex='-1'
+                                                    id='menu-item-0'
+                                                >
+                                                    {t("my-listings")}
+                                                </a>
+                                            </Link>
+
+                                            <Link href='/edit-profile'>
+                                                <a
+                                                    className='flashing block px-4 py-2 text-sm text-lightpurple'
+                                                    role='menuitem'
+                                                    tabIndex='-1'
+                                                    id='menu-item-1'
+                                                >
+                                                    {t("edit-Profile")}
+                                                </a>
+                                            </Link>
+
+                                            <Link href='/donation'>
+                                                <a
+                                                    className='flashing block px-4 py-2 text-sm text-lightpurple'
+                                                    role='menuitem'
+                                                    tabIndex='-1'
+                                                    id='menu-item-1'
+                                                >
+                                                    {t("donate")}
+                                                </a>
+                                            </Link>
+                                            <a
+                                                className='flashing block px-4 py-2 text-sm text-lightpurple hover:cursor-pointer'
+                                                role='menuitem'
+                                                tabIndex='-1'
+                                                id='menu-item-1'
+                                                onClick={() => {
+                                                    setIsLoggedIn(false);
+                                                    // localStorage.removeItem(
+                                                    //     "token"
+                                                    // );
+                                                    alert(t("logout-success"));
+                                                    setTimeout(() => {
+                                                        Router.push("/");
+                                                    }, 2000);
+                                                }}
+                                            >
+                                                {t("logout")}
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            ) : (
+                                <Link href='/sign-in'>
+                                    <a
+                                        href='#'
+                                        className='text-md mr-2 block rounded-[20px]  bg-darkPurple py-2 px-4 text-white hover:bg-purple'
+                                    >
+                                        {t("sign-in")}
+                                    </a>
+                                </Link>
+                            )}
                         </div>
+
+                        <Link href='/product-listing'>
+                            <a className=' text-md mr-2 block rounded-[20px]  bg-darkPurple py-2 px-4 text-white hover:bg-purple'>
+                                {t("sell-items")}
+                            </a>
+                        </Link>
                     </div>
                 </div>
                 <style>{`
@@ -308,8 +418,20 @@ function Header({
       }
       .showLanguage {
         display: block;
+        width: 100%;
+        height: auto;
+        
         }
         .hideLanguage {
+            display: none;
+        }
+        .showUserMenu {
+            display: block;
+            width: 20vh;
+            height: auto;
+            text-align: start;
+        }
+        .hideUserMenu {
             display: none;
         }
       `}</style>
