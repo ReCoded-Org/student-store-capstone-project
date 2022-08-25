@@ -1,8 +1,11 @@
 {
-    "donate": "bağış",
+    "donate": "Bağış",
     "about-us": "hakkımızda",
     "search": "arama yap",
     "sign-in": "giriş",
     "sell-items": "sat",
-    "cart": "sepetim"
+    "cart": "sepetim",
+    "my-listings": "İlanlarım",
+    "edit-Profile": "Profili Düzenle",
+    "logout": "Çıkış"
 }

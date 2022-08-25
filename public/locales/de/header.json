@@ -4,5 +4,8 @@
     "search": "Suche",
     "sign-in": "Einloggen",
     "sell-items": "Verkaufen",
-    "cart": "Warenkorb"
+    "cart": "Warenkorb",
+    "my-listings": "Meine Anzeigen",
+    "edit-Profile": "Profil bearbeiten",
+    "logout": "Ausloggen"
 }
