@@ -186,7 +186,7 @@ exports[`renders correctly 1`] = `
                 type="submit"
               >
                 <svg
-                  className="-m-7 h-10 w-10 pt-4 pr-5"
+                  className="-m-7 h-10 w-10 pt-4 pb-2 pr-5"
                   fill="currentColor"
                   height="1em"
                   stroke="currentColor"

@@ -118,7 +118,7 @@ function Header({
                                             }}
                                         />
                                         <button type='submit'>
-                                            <BiSearchAlt className='-m-7 h-10 w-10 pt-4 pr-5' />
+                                            <BiSearchAlt className='-m-7 h-10 w-10 pt-4 pb-2 pr-5' />
                                         </button>
                                     </div>
                                     <li className='flex flex-row items-center justify-start'>
