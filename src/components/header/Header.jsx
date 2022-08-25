@@ -105,6 +105,22 @@ function Header({
                                     </svg>
                                 </div>
                                 <ul className='MENU-OPEN mt-10 flex min-h-[250px] flex-col items-center justify-between '>
+                                    <div className='pb-12'>
+                                        <input
+                                            className=' h-10 w-72  grow rounded-[20px] border-2 border-gray-300 bg-white pl-2 pr-8 text-sm focus:outline-none '
+                                            type='search'
+                                            name='search'
+                                            value={productName}
+                                            placeholder={t("search")}
+                                            onChange={(e) => {
+                                                setProductName(e.target.value);
+                                                searchByName();
+                                            }}
+                                        />
+                                        <button type='submit'>
+                                            <BiSearchAlt className='-m-7 h-10 w-10 pt-4 pb-2 pr-5' />
+                                        </button>
+                                    </div>
                                     <li className='flex flex-row items-center justify-start'>
                                         <Link href='/' locale='en'>
                                             <a>EN&nbsp;&nbsp;</a>
@@ -196,7 +212,7 @@ function Header({
 
                             <div
                                 className={`
-                                    focus:outline-none' absolute right-0 z-10 mt-2 flex w-16  
+                                    focus:outline-none' absolute right-0 z-10 mt-2 flex w-16
                                                                        rounded-md
                                                                            bg-white shadow-md
                                                                            ring-1 ring-black ring-opacity-5
