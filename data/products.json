@@ -4,7 +4,12 @@
             "id": 1,
             "title": "Apple iPad Pro",
             "description": "With the power of Apple Pencil, iPad Pro transforms into an immersive drawing canvas and the world's best note‑taking device.",
-            "coverImage": "https://productimages.hepsiburada.net/s/32/375/10354042765362.jpg",
+            "coverImage": "https://scontent.fist2-4.fna.fbcdn.net/v/t45.5328-4/279890261_5436365223110547_954052529167996794_n.jpg?stp=dst-jpg_s960x960&_nc_cat=109&ccb=1-7&_nc_sid=c48759&_nc_ohc=0sd1VeqW02IAX8A5Ac1&_nc_ht=scontent.fist2-4.fna&oh=00_AT-h-jQVp_1_JcifoK7L8db4BEOYn3f4pnCO6gPYxagTpQ&oe=630C0797",
+            "otherImages": [
+                "https://scontent.fist2-3.fna.fbcdn.net/v/t45.5328-4/284824987_5338950829484855_214780658760877871_n.jpg?stp=dst-jpg_s960x960&_nc_cat=104&ccb=1-7&_nc_sid=c48759&_nc_ohc=M-gQTAS1z7kAX-MVi4X&_nc_ht=scontent.fist2-3.fna&oh=00_AT94IYmDMO2vwJ_ObSw94xbw-VRjYp3yTVCgZx89ZfyorA&oe=630D7358",
+                "https://scontent.fist2-3.fna.fbcdn.net/v/t45.5328-4/285063090_5668607753171025_7732982259692423018_n.jpg?stp=dst-jpg_s960x960&_nc_cat=108&ccb=1-7&_nc_sid=c48759&_nc_ohc=2MPGM71oJYoAX8mn3Z6&_nc_ht=scontent.fist2-3.fna&oh=00_AT-4obxvIQLeNRiHBW8RW8co5vrDgRfC3xOTiIZwxhOOGQ&oe=630CE122",
+                "https://scontent.fist2-3.fna.fbcdn.net/v/t45.5328-4/280158561_5253591094724942_2525581837010045055_n.jpg?stp=dst-jpg_p720x720&_nc_cat=108&ccb=1-7&_nc_sid=c48759&_nc_ohc=Wk83ay4TvEMAX9L2yBd&_nc_ht=scontent.fist2-3.fna&oh=00_AT8lel8EnFeimYYTS5uKopJ5T2N0MnWNfHj6JyIYaUlYJw&oe=630BC934"
+            ],
             "price": 4000,
             "category": "Electronics",
             "city": "Izmir",
@@ -20,10 +25,15 @@
         },
         {
             "id": 2,
-            "title": "1994",
-            "description": "It's 1994, and the Republican Revolution is on its way. Democratic Party strategist, Melissa Carnes, a fierce, combative woman in the male-dominated world of high politics, heads to her home state of Ohio to resuscitate the floundering Senate campaign of Kyle Porter, a successful entrepreneur running for public office for the first time.",
-            "coverImage": "https://static01.nyt.com/images/2017/01/27/arts/27bookorwell/27bookorwell-superJumbo.jpg",
-            "price": 250,
+            "title": "1984",
+            "description": "It's 1984, and the Republican Revolution is on its way. Democratic Party strategist, Melissa Carnes, a fierce, combative woman in the male-dominated world of high politics, heads to her home state of Ohio to resuscitate the floundering Senate campaign of Kyle Porter, a successful entrepreneur running for public office for the first time.",
+            "coverImage": "https://static.nadirkitap.com/fotograf/1283843/22/Kitap_2021041515544112838436.jpg",
+            "otherImages": [
+                "https://static.nadirkitap.com/fotograf/1283843/22/Kitap-D_2021041515561812838434.jpg",
+                "https://static.nadirkitap.com/fotograf/1283843/22/Kitap-D_20210415155552128384312.jpg",
+                "https://static.nadirkitap.com/fotograf/1283843/22/Kitap-D_2021041515561812838434.jpg"
+            ],
+            "price": 40,
             "category": "Books",
             "city": "Istanbul",
             "type": "Product",
@@ -38,9 +48,37 @@
         },
         {
             "id": 3,
-            "title": "leather jacket",
-            "description": "Cumin spiced cheese that originates from the Leiden area in the Netherlands.",
-            "coverImage": "https://cdn.shopify.com/s/files/1/1126/3188/products/moto-leather-jacket-compressor_1024x1024.jpg?v=1567465461",
+            "title": "Fuji X-T30",
+            "description": "Fujifilm x-t30 / 18-55mm xf lens body 2 yıldan fazla garantisi mevcut kozmetik 10/9 lensin garantisi bitmiştir sorunsuz kozmetik 10/9 4k video çekimi yapabilen fotoğrafta hiç çekilmemiştir yedek kamera olarak kullanıldı",
+            "coverImage": "https://scontent.fist2-4.fna.fbcdn.net/v/t45.5328-4/278118786_4967787439982114_3590710493239008067_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c48759&_nc_ohc=gUl5qJRA-rkAX949rv3&tn=o1n-iYo_c7xaIWX5&_nc_ht=scontent.fist2-4.fna&oh=00_AT-f1CbJa3hrdKK0IhOLbD5qWOHnLivqz26pCyLXIEWC6Q&oe=630CDF7D",
+            "otherImages": [
+                "https://scontent.fist2-4.fna.fbcdn.net/v/t45.5328-4/278189843_5037567166298781_126037943000617044_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c48759&_nc_ohc=rdgSrkzDG6UAX-_PiVM&_nc_ht=scontent.fist2-4.fna&oh=00_AT_lKiRjceufbFr6TJ6DlXy7Y83ce3ME5-Mx9XSs9JqdgQ&oe=630CAAB4",
+                "https://scontent.fist2-3.fna.fbcdn.net/v/t45.5328-4/278119416_7682442125106984_8996397283153085214_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c48759&_nc_ohc=H4Hat36M3Y0AX_IX1Wg&_nc_ht=scontent.fist2-3.fna&oh=00_AT83-BQSFWpwyBnPQxLDhRb0KXWnlfEEQ09zFah8OC8hBA&oe=630C91E7",
+                "https://scontent.fist2-3.fna.fbcdn.net/v/t45.5328-4/278171645_8073548356004754_1859978912100125447_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c48759&_nc_ohc=ec8ZbuuGeU0AX96vMVI&_nc_ht=scontent.fist2-3.fna&oh=00_AT_wM4BWYeXYMZUTr7_yTBoweUOEjDeZX9FgEgNWA5GihA&oe=630CC9F2"
+            ],
+            "price": 9000,
+            "category": "Electronics",
+            "city": "Istanbul",
+            "type": "Product",
+            "status": "Active",
+            "condition": "Used",
+            "seller": "DerSeller",
+            "buyer": "DerBuyer",
+            "geo": {
+                "lat": 41.01203,
+                "lng": 28.955573
+            }
+        },
+        {
+            "id": 4,
+            "title": "Leather Jacket",
+            "description": "Zara Leather Jacket, bought it 2 years ago. It's in a very good condition. Size: M",
+            "coverImage": "https://images.gardrops.com/uploads/5085490/user_items/508549058-s4-1636232361521-6186ecaac2b91.jpeg",
+            "otherImages": [
+                "https://images.gardrops.com/uploads/5085490/user_items/508549058-s4-1636232360655-6186ecaa15319.jpeg",
+                "https://images.gardrops.com/uploads/5085490/user_items/508549058-s4-1636232362336-6186ecab7990c.jpeg",
+                "https://images.gardrops.com/uploads/5085490/user_items/508549058-s4-1636232363075-6186ecac50e64.jpeg"
+            ],
             "price": 570,
             "category": "Clothes",
             "city": "Ankra",
@@ -55,11 +93,16 @@
             }
         },
         {
-            "id": 4,
+            "id": 5,
             "title": "Defacto-shirt",
             "description": "Cumin spiced cheese that originates from the Leiden area in the Netherlands.",
-            "coverImage": "https://img.freepik.com/free-psd/white-t-shirt-with-silkscreen-mockup_125540-697.jpg?w=2000",
-            "price": 110,
+            "coverImage": "https://dfcdn.defacto.com.tr/7/Y8099AZ_22HS_YL226_09_01.jpg",
+            "otherImages": [
+                "https://dfcdn.defacto.com.tr/7/Y8099AZ_22HS_YL226_01_02.jpg",
+                "https://dfcdn.defacto.com.tr/7/Y8099AZ_22HS_YL226_07_01.jpg",
+                "https://dfcdn.defacto.com.tr/7/Y8099AZ_22HS_YL226_02_02.jpg"
+            ],
+            "price": 60,
             "category": "Clothes",
             "city": "Mersin",
             "type": "Product",
@@ -73,11 +116,16 @@
             }
         },
         {
-            "id": 5,
+            "id": 6,
             "title": "The Secret",
             "description": "The Secret is a 2006 self-help book by Rhonda Byrne, based on the earlier film of the same name. It is based on the belief of the pseudoscientific law of attraction, which claims that thoughts can change a person's life directly.",
             "coverImage": "https://www.thesecret.tv/wp-content/uploads/2015/05/Daily-Teaching-Book.png",
-            "price": 220,
+            "otherImages": [
+                "https://static.nadirkitap.com/fotograf/557156/27/Kitap_202206261749445571564.jpg",
+                "https://static.nadirkitap.com/fotograf/747067/28/Kitap_202206281401417470679.jpg",
+                "https://static.nadirkitap.com/fotograf/557156/28/Kitap_202208131653025571566.jpg"
+            ],
+            "price": 120,
             "category": "Books",
             "city": "Adana",
             "type": "Product",
@@ -91,10 +139,15 @@
             }
         },
         {
-            "id": 6,
-            "title": "Iphone 6 mini",
+            "id": 7,
+            "title": "Iphone 6S",
             "description": "Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-            "coverImage": "https://www.notebookcheck-tr.com/uploads/tx_nbc2/Apple_new-ipad-pro-apple-pencil-pro-display_03182020.jpg",
+            "coverImage": "https://scontent.fist2-4.fna.fbcdn.net/v/t45.5328-4/287586214_8033896030016601_1371150756753587373_n.jpg?stp=dst-jpg_s960x960&_nc_cat=109&ccb=1-7&_nc_sid=c48759&_nc_ohc=Ox3n40FXOE0AX9pcBXs&_nc_ht=scontent.fist2-4.fna&oh=00_AT9yHMtm3AQwK-acalUN3xcj7hjTjjL71SLRh9v-wfYi9g&oe=630D0AD2",
+            "otherImages": [
+                "https://scontent.fist2-4.fna.fbcdn.net/v/t45.5328-4/282332551_8222564451094539_6461239221990259792_n.jpg?stp=dst-jpg_s960x960&_nc_cat=107&ccb=1-7&_nc_sid=c48759&_nc_ohc=xe8Y7uXRq2sAX8jWhbS&_nc_oc=AQm_TImtqwvDdhxpm3_FL6365WE2eO7T1rsQbohMmHjZJ_arnPf32d4rgsv2DoZOMWk&_nc_ht=scontent.fist2-4.fna&oh=00_AT_1JIuGdTuLJ6eoYa3lbRY2kXrFCaL7DL-w7BP2KKqMpw&oe=630CD7C5",
+                "https://5.imimg.com/data5/SELLER/Default/2021/11/WA/AX/CS/13533677/32-500x500.jpg",
+                "https://scontent.fist2-3.fna.fbcdn.net/v/t45.5328-4/281763400_5712114215479346_7724858344702981516_n.jpg?stp=dst-jpg_s960x960&_nc_cat=101&ccb=1-7&_nc_sid=c48759&_nc_ohc=HxXG_YnNaksAX_pKDKM&_nc_ht=scontent.fist2-3.fna&oh=00_AT8PgCFptJ0UU1O7MEPuD2MdRl7yEuOt8_LZC6xBQweA-w&oe=630D4FA5"
+            ],
             "price": 2400,
             "category": "Electronics",
             "city": "Istanbul",
@@ -109,10 +162,15 @@
             }
         },
         {
-            "id": 7,
+            "id": 8,
             "title": "Leyden Cheese",
-            "description": "Cumin spiced cheese that originates from the Leiden area in the Netherlands.",
+            "description": "Cumin spiced cheese that originates from the Leiden area in the Netherlands. I bought it online but didn't like the taste after one bite.So I'm selling it to fellow cheese-lovers.",
             "coverImage": "https://cdn11.bigcommerce.com/s-n2v2dr/images/stencil/1280x1280/products/270/548/IMG_24191__24870.1643319583.JPG?c=2",
+            "otherImages": [
+                "https://thumbs.dreamstime.com/b/cream-cottage-cheese-bitten-black-background-cream-cottage-cheese-bitten-black-background-222318478.jpg",
+                "https://cms.groupeditors.com/img/acl20150715-122608-916.jpg",
+                "https://fingerthumb.typepad.com/.a/6a0120a6183221970c015433ffa6fa970c-pi"
+            ],
             "price": 200,
             "category": "Food",
             "city": "Hatay",
@@ -127,10 +185,15 @@
             }
         },
         {
-            "id": 8,
+            "id": 9,
             "title": "PS5",
-            "description": "Cumin spiced cheese that originates from the Leiden area in the Netherlands.",
-            "coverImage": "https://media.karousell.com/media/photos/products/2021/7/29/barely_used_ps5_digital_editio_1627530598_43aa2105_progressive",
+            "description": "Merhabalar cihazım ps5 sıfır cd sürüm modeli olup en son seri Olan 1116-a serisidir.cihaz İrlandadan alınmış olup faturası mevcuttur.1 yıl garantisi vardır Sony. Cihaz tek kol ile gelmektedir.isterseniz ekstradan ikinci kol aksesuar veya oyunlar alabilirsiniz.cihazı dükkanımıza gelip görüp deneyip alabilirsiniz.takas sadece Ps4 modelleri ve Xbox series s ile olur. Takas ve diğer sorularınız İçin bizimle iletişime geçebilirsiniz.",
+            "coverImage": "https://scontent.fist2-3.fna.fbcdn.net/v/t45.5328-4/270323703_4697050520409634_5109816706231578145_n.jpg?stp=dst-jpg_p180x540&_nc_cat=106&ccb=1-7&_nc_sid=c48759&_nc_ohc=V1H8nhemLzcAX-Cz21Q&_nc_ht=scontent.fist2-3.fna&oh=00_AT8QAywp0d2rFCwvPM1GvvhdlGCGbv8ExJ28yKUeDJdoLA&oe=630BD883",
+            "otherImages": [
+                "https://scontent.fist2-4.fna.fbcdn.net/v/t45.5328-4/279133456_5749902745130897_8424270164892740188_n.jpg?stp=dst-jpg_p720x720&_nc_cat=109&ccb=1-7&_nc_sid=c48759&_nc_ohc=bMQqCY6pVq0AX-lUL-Z&_nc_ht=scontent.fist2-4.fna&oh=00_AT_08-Blo1bKuu39aimnos5w7khOjVCb40WmPP3zxuynGw&oe=630C2D92",
+                "https://scontent.fist2-4.fna.fbcdn.net/v/t45.5328-4/300143038_4692930854143374_3086793362286115740_n.jpg?stp=dst-jpg_p180x540&_nc_cat=111&ccb=1-7&_nc_sid=c48759&_nc_ohc=IBx0Rz2pLAUAX9BmIdg&_nc_ht=scontent.fist2-4.fna&oh=00_AT9NcKEykTZ11mlWiupTn_7TtY0ibFjwdyJnYZ7CBz3OiA&oe=630C6952",
+                "https://scontent.fist2-3.fna.fbcdn.net/v/t45.5328-4/284979969_5314023665299855_2904224700535153419_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c48759&_nc_ohc=GdCGsb6RfikAX8Ht9q2&tn=o1n-iYo_c7xaIWX5&_nc_ht=scontent.fist2-3.fna&oh=00_AT-zjKN62EL2us8sBrRGfTOqfpfD9BB3LlFPjpI3EYJo-A&oe=630D00C2"
+            ],
             "price": 14000,
             "category": "Electronics",
             "city": "Istanbul",
@@ -145,10 +208,15 @@
             }
         },
         {
-            "id": 9,
-            "title": "Desk",
+            "id": 10,
+            "title": "Ikea Desk",
             "description": "Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-            "coverImage": "https://i.pinimg.com/736x/9e/44/2b/9e442b9ba70e94d710fcce6107058322--diy-office-desk-home-office.jpg",
+            "coverImage": "https://scontent.fist2-4.fna.fbcdn.net/v/t45.5328-4/277012745_4914597008630764_8265782411838054805_n.jpg?stp=dst-jpg_p960x960&_nc_cat=100&ccb=1-7&_nc_sid=c48759&_nc_ohc=Du8cdwmiQsUAX9a5iDS&_nc_oc=AQnfiN45Cy0CZ8ggn7oPc3ETdIE_ulNWv0P-wJAollyTEatNYuqjBR993ahFLROPxtM&_nc_ht=scontent.fist2-4.fna&oh=00_AT-QXzEhYzkttuW1hwnEd4aZu2nfct1vktZw7PrVWh64tw&oe=630D16F2",
+            "otherImages": [
+                "https://scontent.fist2-3.fna.fbcdn.net/v/t45.5328-4/276984252_5026350064090031_2728499070378499471_n.jpg?stp=dst-jpg_s960x960&_nc_cat=101&ccb=1-7&_nc_sid=c48759&_nc_ohc=nSWWwFtV_uMAX_utX_C&_nc_ht=scontent.fist2-3.fna&oh=00_AT-9iZMOONWvmo0Sx4_wOLI5hWwxqQW7CDUlhjAgzGXkUA&oe=630C95ED",
+                "https://scontent.fist2-4.fna.fbcdn.net/v/t45.5328-4/277361079_5229632163727076_5958317045279849172_n.jpg?stp=dst-jpg_s960x960&_nc_cat=105&ccb=1-7&_nc_sid=c48759&_nc_ohc=b2PxUvwTJ5cAX-71VmX&_nc_ht=scontent.fist2-4.fna&oh=00_AT97CXAqUF2VVUUWwJjNoFYWBoRCWAzi_2BnmQrF23T-ZA&oe=630C602C",
+                "https://scontent.fist2-4.fna.fbcdn.net/v/t45.5328-4/277404804_4839285899512432_5226951683259847381_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=c48759&_nc_ohc=w2SEe0h-5icAX9JkQ3z&_nc_oc=AQk-h-q56Km8eaim062lzd8V7L55hhi3acfR_xP7u--VRq0fgm_uUtqZF3lddHpMSWA&_nc_ht=scontent.fist2-4.fna&oh=00_AT__aucNPGxuRttOXnN6IzyTL8gBh4bSgF5_yK3-lKUuSg&oe=630C277B"
+            ],
             "price": 1200,
             "category": "Furniture",
             "city": "Istanbul",
@@ -163,11 +231,16 @@
             }
         },
         {
-            "id": 10,
-            "title": "Office chair",
-            "description": "Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-            "coverImage": "https://secure.img1-fg.wfcdn.com/im/96489692/resize-h600-w600%5Ecompr-r85/9470/94709448/Office+Chairs.jpg",
-            "price": 1250,
+            "id": 11,
+            "title": "Gaming Chair",
+            "description": "PROFESYONEL   OYUNCU KOLTUĞU,135 DERECE  BEŞİK YAYLANMA ÖZELLİĞİ, KOLLARI AŞAĞI YUKARI İNER, İLERİ GERİ HAREKET EDER, 180 DERECE KADEMELİ OLARAK YATAR, KOLLARI İSTEDİĞİNİZ KONUMDA KİLİTLEME ÖZELLİĞİ, ORTOPEDİK BOYUN DESTEĞİ, SIRT DESTEĞİ, METAL KROM AYAKLAR",
+            "coverImage": "https://hips.hearstapps.com/amv-prod-gp.s3.amazonaws.com/gearpatrol/wp-content/uploads/2020/05/Gaming-Chair-Gear-Patrol-Lead-Full.jpg?crop=0.6706185567010309xw:1xh;center,top&resize=640:*",
+            "otherImages": [
+                "https://www.powerplanetonline.com/cdnassets/silla_negra_sinreposapies_001_l.jpg",
+                "https://www.pcstudio.in/wp-content/uploads/2022/01/Ant-Esports-Carbon-Gaming-Chair-Black-5.jpg",
+                "https://i0.wp.com/streamfixer.com/wp-content/uploads/2022/05/mid-banner-min.png?fit=370%2C608&ssl=1"
+            ],
+            "price": 2250,
             "category": "Furniture",
             "city": "Istanbul",
             "type": "Product",
@@ -181,10 +254,15 @@
             }
         },
         {
-            "id": 11,
-            "title": "Scooter",
-            "description": "Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-            "coverImage": "https://i0.wp.com/rayhaber.com/wp-content/uploads/2020/06/seatin-elektrikli-scooteri-satisa-sunuldu.jpg?resize=678%2C381&ssl=1",
+            "id": 12,
+            "title": "Xiaomi Scooter",
+            "description": "2021 10. Ayda alındı. 300 km yi geçmemiştir. Garantisi halla 14 ay devam etmekte.  4 tane yedek lastiği var.Çok kullanışlıdır. Pratik tüm işlerinizi halledebilirsiniz",
+            "coverImage": "https://scontent.fist2-4.fna.fbcdn.net/v/t45.5328-4/298307120_5406192539461023_2928189103818592849_n.jpg?stp=dst-jpg_p720x720&_nc_cat=110&ccb=1-7&_nc_sid=c48759&_nc_ohc=3io1CfIYmn4AX_jEDCA&_nc_ht=scontent.fist2-4.fna&oh=00_AT8zab_g3MpZyZB3iivI0FSdRGrJ-UbqmQ0k-2IVYR5Shw&oe=630D4642",
+            "otherImages": [
+                "https://scontent.fist2-4.fna.fbcdn.net/v/t45.5328-4/289905670_5119866678140854_8815095366301653996_n.jpg?stp=dst-jpg_p720x720&_nc_cat=111&ccb=1-7&_nc_sid=c48759&_nc_ohc=wadHubahL5EAX9ZNx7C&_nc_ht=scontent.fist2-4.fna&oh=00_AT-RbLmfflL-OnnuAeXin8bAEKv-N2-B_RUWUJFH2NHStA&oe=630D1F10",
+                "https://scontent.fist2-3.fna.fbcdn.net/v/t45.5328-4/299064536_5141514929308235_2035379820143045043_n.jpg?stp=dst-jpg_p720x720&_nc_cat=101&ccb=1-7&_nc_sid=c48759&_nc_ohc=3ZPXDAy2qAQAX8PP2Yp&tn=o1n-iYo_c7xaIWX5&_nc_ht=scontent.fist2-3.fna&oh=00_AT92oiRpr2sIdiJOxhLupd5wXYNhM4oH94Vn_nSzcCvpFQ&oe=630BDE69",
+                "https://scontent.fist2-4.fna.fbcdn.net/v/t45.5328-4/296104304_5377838278928480_315049810410863422_n.jpg?stp=dst-jpg_p720x720&_nc_cat=110&ccb=1-7&_nc_sid=c48759&_nc_ohc=0A-0iLg12xgAX9C-cFV&_nc_ht=scontent.fist2-4.fna&oh=00_AT_yYxECFvuhEQBYvOa_y4BKabZ6I_Ml06XljWjXLZBpEQ&oe=630B8970"
+            ],
             "price": 1250,
             "category": "Two-wheeler",
             "city": "Istanbul",
@@ -199,12 +277,201 @@
             }
         },
         {
-            "id": 12,
-            "title": "Another Office chair",
+            "id": 13,
+            "title": "Corner Sofa",
             "description": "Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-            "coverImage": "https://i.pcmag.com/imagery/roundup-products/019VKPwoqCHKm8uIrSmRYsb..v1646338208.jpg",
-            "price": 1250,
+            "coverImage": "https://scontent.fist2-4.fna.fbcdn.net/v/t45.5328-4/287610111_5344994178929619_6950814968877988523_n.jpg?stp=dst-jpg_p720x720&_nc_cat=111&ccb=1-7&_nc_sid=c48759&_nc_ohc=FjGms00pzjgAX-1zgYn&_nc_ht=scontent.fist2-4.fna&oh=00_AT8GvQsRE6mBCYx-UCT-BXn65OAeHwZWhqpnXKkJfBexvQ&oe=630D29B4",
+            "otherImages": [
+                "https://scontent.fist2-3.fna.fbcdn.net/v/t45.5328-4/288277421_5467211756674555_3699558628239848453_n.jpg?stp=dst-jpg_p720x720&_nc_cat=108&ccb=1-7&_nc_sid=c48759&_nc_ohc=OIhJfmR7QFUAX_80vlx&tn=o1n-iYo_c7xaIWX5&_nc_ht=scontent.fist2-3.fna&oh=00_AT_o1NYd3GzMVT0dTihx3GQZ9vjV_jqrRH7euTL9NEilDg&oe=630C7D4A",
+                "https://scontent.fist2-4.fna.fbcdn.net/v/t45.5328-4/287248771_6140967442624239_638732090207029884_n.jpg?stp=dst-jpg_p720x720&_nc_cat=105&ccb=1-7&_nc_sid=c48759&_nc_ohc=sDZx23HPI78AX93mb9O&_nc_ht=scontent.fist2-4.fna&oh=00_AT_B2R_r8ETA216dSM5KOSRUXRKUIWkgznwCWllg1wUIww&oe=630C13D3",
+                "https://scontent.fist2-4.fna.fbcdn.net/v/t45.5328-4/287610111_5344994178929619_6950814968877988523_n.jpg?stp=dst-jpg_p720x720&_nc_cat=111&ccb=1-7&_nc_sid=c48759&_nc_ohc=FjGms00pzjgAX-1zgYn&_nc_ht=scontent.fist2-4.fna&oh=00_AT8GvQsRE6mBCYx-UCT-BXn65OAeHwZWhqpnXKkJfBexvQ&oe=630D29B4"
+            ],
+            "price": 890,
             "category": "Furniture",
+            "city": "Istanbul",
+            "type": "Product",
+            "status": "Active",
+            "condition": "New",
+            "seller": "Der Seller",
+            "buyer": "Der Buyer",
+            "geo": {
+                "lat": 40.978861,
+                "lng": 28.643563
+            }
+        },
+        {
+            "id": 14,
+            "title": "Finance Textbook",
+            "description": "For courses in financial management. Using Tools, Making Connections, and Studying for Success in Finance Financial Management: Core Concepts is the ideal source material for non-finance majors seeking to learn the key elements of financial operations. The text focuses on the students' ability to understand complex financial concepts by centering its material around three major learning skills: using tools, making connections, and studying for success.",
+            "coverImage": "https://m.media-amazon.com/images/I/41dOAMr5tcL._AC_SY1000_.jpg",
+            "otherImages": [
+                "https://static01.nyt.com/newsgraphics/2019/10/21/2019-10-textbooks/assets/images/16a-pearson-ca-749-2000.jpg",
+                "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iZc5mena7b0A/v0/1200x-1.jpg",
+                "https://static01.nyt.com/newsgraphics/2019/10/21/2019-10-textbooks/06374135f580d6e97886386ac4b0e67a9eae2a3d/pearson-tx-286-l.jpg"
+            ],
+            "price": 120,
+            "category": "Books",
+            "city": "Izmir",
+            "type": "Product",
+            "status": "Active",
+            "condition": "Used",
+            "seller": "Der Seller",
+            "buyer": "Der Buyer",
+            "geo": {
+                "lat": 38.423733,
+                "lng": 27.142826
+            }
+        },
+        {
+            "id": 15,
+            "title": "Book Set",
+            "description": "For courses in financial management. Using Tools, Making Connections, and Studying for Success in Finance Financial Management: Core Concepts is the ideal source material for non-finance majors seeking to learn the key elements of financial operations. The text focuses on the students' ability to understand complex financial concepts by centering its material around three major learning skills: using tools, making connections, and studying for success.",
+            "coverImage": "https://static.nadirkitap.com/fotograf/197491/21/Kitap_202101071415381974915.jpg",
+            "otherImages": [
+                "https://files.iskultur.com.tr/dosyalar/2018/09/monte-cristo-kontu-1.jpg",
+                "https://m.media-amazon.com/images/I/41iUXl3135L._AC_SY1000_.jpg",
+                "https://s3.cloud.ngn.com.tr/kitantik/images/2019-05-24/0z8kgltjvzwu32m1fi7.JPG"
+            ],
+            "price": 80,
+            "category": "Books",
+            "city": "Izmir",
+            "type": "Product",
+            "status": "Active",
+            "condition": "Used",
+            "seller": "Der Seller",
+            "buyer": "Der Buyer",
+            "geo": {
+                "lat": 38.423733,
+                "lng": 27.142826
+            }
+        },
+        {
+            "id": 16,
+            "title": "Vintage Bookshelf",
+            "description": "Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            "coverImage": "https://scontent.fist2-3.fna.fbcdn.net/v/t45.5328-4/295851616_5301564089897000_7710308082266557878_n.jpg?stp=dst-jpg_p720x720&_nc_cat=108&ccb=1-7&_nc_sid=c48759&_nc_ohc=vAAp24AR2VEAX99VKIb&tn=o1n-iYo_c7xaIWX5&_nc_ht=scontent.fist2-3.fna&oh=00_AT8yjoimmnHSJv84ilFh8QJC0sw9Sb5xxIR5LJgtFGHWJg&oe=630C8ECA",
+            "otherImages": [
+                "https://scontent.fist2-3.fna.fbcdn.net/v/t45.5328-4/295466287_5207455849304295_1684081750452773109_n.jpg?stp=dst-jpg_s960x960&_nc_cat=103&ccb=1-7&_nc_sid=c48759&_nc_ohc=Atn7pfaz6csAX_QZppe&_nc_ht=scontent.fist2-3.fna&oh=00_AT_OEuupJinZ5aZ3ny0bIVdyxLW6stCnYtfxO9sx2DM4wg&oe=630BC33C",
+                "https://scontent.fist2-3.fna.fbcdn.net/v/t45.5328-4/294399762_6358996720784308_3057233429934220545_n.jpg?stp=dst-jpg_s960x960&_nc_cat=101&ccb=1-7&_nc_sid=c48759&_nc_ohc=pMlW0r8dBVcAX8-weBO&_nc_ht=scontent.fist2-3.fna&oh=00_AT8matGl_uFm2p8l-cL6W98Pz4-Ep-lAJ4Nw5UmMvat4tA&oe=630CF9F5",
+                "https://scontent.fist2-4.fna.fbcdn.net/v/t45.5328-4/294731852_5345348122250450_440700157289410874_n.jpg?stp=dst-jpg_p960x960&_nc_cat=109&ccb=1-7&_nc_sid=c48759&_nc_ohc=rNQSMaGe1FQAX_8cANT&_nc_ht=scontent.fist2-4.fna&oh=00_AT9KvkqFMhrC0HR66FGLp5oj4X0gWhvgolub5In_82S-MQ&oe=630D47DB"
+            ],
+            "price": 190,
+            "category": "Furniture",
+            "city": "Istanbul",
+            "type": "Product",
+            "status": "Active",
+            "condition": "New",
+            "seller": "Der Seller",
+            "buyer": "Der Buyer",
+            "geo": {
+                "lat": 40.978861,
+                "lng": 28.643563
+            }
+        },
+        {
+            "id": 17,
+            "title": "Bike",
+            "description": "Got it as a gift, never got to use it. I'm willing to give it away for free. It's in a good condition.",
+            "coverImage": "https://scontent.fist2-4.fna.fbcdn.net/v/t45.5328-4/277149770_5357062651005776_8038858760568495623_n.jpg?stp=dst-jpg_p960x960&_nc_cat=100&ccb=1-7&_nc_sid=c48759&_nc_ohc=TG0anlyGUFEAX-CT3if&tn=o1n-iYo_c7xaIWX5&_nc_ht=scontent.fist2-4.fna&oh=00_AT9x10FdGuQVtfGgqhez52TW1sDjtfg6ZefQbMp1MXMvCA&oe=630D4003",
+            "otherImages": [
+                "https://scontent.fist2-3.fna.fbcdn.net/v/t45.5328-4/279532080_5840163916000945_8532685692404541865_n.jpg?stp=dst-jpg_p960x960&_nc_cat=102&ccb=1-7&_nc_sid=c48759&_nc_aid=0&_nc_ohc=ZP35H7aTnXMAX-ENvDU&_nc_ht=scontent.fist2-3.fna&oh=00_AT_0jOvzxFAlRgaIUk1M2XlVURna6g9BUNXDoqQlVRVrog&oe=630CF030",
+                "https://scontent.fist2-3.fna.fbcdn.net/v/t45.5328-4/279357407_5206652452711331_2232070650088748895_n.jpg?stp=dst-jpg_p960x960&_nc_cat=101&ccb=1-7&_nc_sid=c48759&_nc_ohc=yPbjwKl5aoEAX_d9mtt&_nc_ht=scontent.fist2-3.fna&oh=00_AT8W9mD8tG8lIcubkO3e-b3C2ym0NPI-dxYCkdPDCJ0mXA&oe=630BEB6C",
+                "https://scontent.fist2-4.fna.fbcdn.net/v/t45.5328-4/277149770_5357062651005776_8038858760568495623_n.jpg?stp=dst-jpg_p960x960&_nc_cat=100&ccb=1-7&_nc_sid=c48759&_nc_ohc=TG0anlyGUFEAX-CT3if&tn=o1n-iYo_c7xaIWX5&_nc_ht=scontent.fist2-4.fna&oh=00_AT9x10FdGuQVtfGgqhez52TW1sDjtfg6ZefQbMp1MXMvCA&oe=630D4003"
+            ],
+            "price": 0,
+            "category": "Two-wheeler",
+            "city": "Istanbul",
+            "type": "Product",
+            "status": "Active",
+            "condition": "New",
+            "seller": "Der Seller",
+            "buyer": "Der Buyer",
+            "geo": {
+                "lat": 40.978861,
+                "lng": 28.643563
+            }
+        },
+        {
+            "id": 18,
+            "title": "Longboard",
+            "description": "Got it as a gift, it's from Germany. It's in a good condition, didn't use it much.",
+            "coverImage": "https://images.gardrops.com/uploads/2457518/user_items/245751885-s4-file-62d06a9516316.jpeg",
+            "otherImages": [
+                "https://images.gardrops.com/uploads/2457518/user_items/245751885-s4-file-62d06a962e4e7.jpeg",
+                "https://images.gardrops.com/uploads/2457518/user_items/245751885-s4-file-62d06a9692795.jpeg",
+                "https://images.gardrops.com/uploads/2457518/user_items/245751885-s4-file-62d06a9754d98.jpeg"
+            ],
+            "price": 300,
+            "category": "Two-wheeler",
+            "city": "Istanbul",
+            "type": "Product",
+            "status": "Active",
+            "condition": "New",
+            "seller": "Der Seller",
+            "buyer": "Der Buyer",
+            "geo": {
+                "lat": 40.978861,
+                "lng": 28.643563
+            }
+        },
+        {
+            "id": 19,
+            "title": "Nike Dunk Low",
+            "description": "Got it as a gift, it's from Germany. It's in a good condition, didn't wear it much. Size 42.",
+            "coverImage": "https://images.gardrops.com/uploads/8141570/user_items/814157010-s4-file-62e45f46d0440.jpeg",
+            "otherImages": [
+                "https://images.gardrops.com/uploads/8141570/user_items/814157010-s4-file-62e45f47724f3.jpeg",
+                "https://images.gardrops.com/uploads/8141570/user_items/814157010-s4-file-62e45f47ad04e.jpeg",
+                "https://images.gardrops.com/uploads/8141570/user_items/814157010-s4-file-62e45f491d684.jpeg"
+            ],
+            "price": 800,
+            "category": "Clothes",
+            "city": "Istanbul",
+            "type": "Product",
+            "status": "Active",
+            "condition": "New",
+            "seller": "Der Seller",
+            "buyer": "Der Buyer",
+            "geo": {
+                "lat": 40.978861,
+                "lng": 28.643563
+            }
+        },
+        {
+            "id": 20,
+            "title": "Herschel Backpack",
+            "description": "25 litre hacminde, 15 inç bilgisayar konabilir. İçi çok geniştir. Boyutlarını fotoğraf olarak ekledim. Yeni etiketli orjinaldir.",
+            "coverImage": "https://images.gardrops.com/uploads/1079928/user_items/107992853-s4-file-62a4b2fb66893.jpeg",
+            "otherImages": [
+                "https://images.gardrops.com/uploads/1079928/user_items/107992853-s4-file-62a4b2fc65f4b.jpeg",
+                "https://images.gardrops.com/uploads/1079928/user_items/107992853-s4-file-62a4b2ff3b49e.jpeg",
+                "https://d3nt9em9l1urz8.cloudfront.net/media/catalog/product/cache/6/image/9df78eab33525d08d6e5fb8d27136e95/h/e/he10014-00006_thum1_208__47911.jpg"
+            ],
+            "price": 400,
+            "category": "Clothes",
+            "city": "Istanbul",
+            "type": "Product",
+            "status": "Active",
+            "condition": "New",
+            "seller": "Der Seller",
+            "buyer": "Der Buyer",
+            "geo": {
+                "lat": 40.978861,
+                "lng": 28.643563
+            }
+        },
+        {
+            "id": 21,
+            "title": "Foldable Bike",
+            "description": "20 AY GARANTİSİ DEVAM EDİYOR TAM DOLU AKÜ İLE 50 KM YOL GİDİYOR 35 KM HIZ YAPIYOR 20 İNÇ JANT İLE YETİŞKİNLER İÇİN UYGUNDUR TAKAS DÜŞÜNMÜYORUM ALİCİSİNA HAYİRLİ OLSUN",
+            "coverImage": "https://scontent.fist2-3.fna.fbcdn.net/v/t39.30808-6/300681616_180369751145336_614853087043685303_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=843cd7&_nc_ohc=_eR2Jcxi85MAX_UGTyY&_nc_ht=scontent.fist2-3.fna&oh=00_AT9iOeWVvs-PDR_BFDt1WcNgTXfitwXPJrzpIxvL40Ph2Q&oe=630BBEBF",
+            "otherImages": [
+                "https://scontent.fist2-3.fna.fbcdn.net/v/t39.30808-6/300855323_180370057811972_3532234012927148499_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=843cd7&_nc_ohc=n36D_Eg1R4oAX81kWxD&tn=o1n-iYo_c7xaIWX5&_nc_ht=scontent.fist2-3.fna&oh=00_AT9AXqmSX7dluskBm7T6EmoyZC43tRc-rGiPLBrYJpx4Wg&oe=630CDD31",
+                "https://scontent.fist2-4.fna.fbcdn.net/v/t39.30808-6/300387728_180370087811969_8536663198367119878_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=843cd7&_nc_ohc=kvaYNNomXWMAX8M0HZa&tn=o1n-iYo_c7xaIWX5&_nc_ht=scontent.fist2-4.fna&oh=00_AT--9w49Orm3kq79w_y3tEKjUxXeJbcU89rMjqjl5W_wDg&oe=630BAA1D",
+                "https://scontent.fist2-3.fna.fbcdn.net/v/t39.30808-6/300592377_180369064478738_3377704661137825581_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=843cd7&_nc_ohc=pOC1YohW7TYAX8YyvYq&tn=o1n-iYo_c7xaIWX5&_nc_ht=scontent.fist2-3.fna&oh=00_AT_hcr-fLpFWVyPh45oj4b5RbVljllV2fejfGd3xwoGK9A&oe=630D78FA"
+            ],
+            "price": 4400,
+            "category": "Two-wheeler",
             "city": "Istanbul",
             "type": "Product",
             "status": "Active",
