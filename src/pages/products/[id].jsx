@@ -71,32 +71,19 @@ const Details = ({ singleProduct }) => {
                                 />
                             </div>
                         </div>
-                        <div className='grid justify-center xxs:mx-0 xxs:scale-90 xxs:grid-cols-3 xxs:gap-4 md:mx-[6rem] md:scale-100 md:grid-cols-3 lg:mx-0 xl:px-[4rem]'>
-                            {/* the 3 photos */}
-                            <div className='grid justify-center'>
-                                <img
-                                    src='https://images.eq3.com/image-service/084d1830-05e2-4319-98d8-88d1e3091fe1/green-velvet-sofa-with-marble-coffee-table_COMPRESSED.png'
-                                    alt='Sofa'
-                                    className='zoom flashing w-[9rem] rounded-xl shadow-xl hover:cursor-pointer'
-                                    onClick={popupImage}
-                                />
-                            </div>
-                            <div className='grid justify-center'>
-                                <img
-                                    src='https://images.eq3.com/image-service/084d1830-05e2-4319-98d8-88d1e3091fe1/green-velvet-sofa-with-marble-coffee-table_COMPRESSED.png'
-                                    alt='Sofa'
-                                    className='zoom flashing w-[9rem] rounded-xl shadow-xl hover:cursor-pointer'
-                                    onClick={popupImage}
-                                />
-                            </div>
-                            <div className='grid justify-center'>
-                                <img
-                                    src='https://images.eq3.com/image-service/084d1830-05e2-4319-98d8-88d1e3091fe1/green-velvet-sofa-with-marble-coffee-table_COMPRESSED.png'
-                                    alt='Sofa'
-                                    className='zoom flashing w-[9rem] rounded-xl shadow-xl hover:cursor-pointer'
-                                    onClick={popupImage}
-                                />
-                            </div>
+                        <div className='grid justify-evenly xxs:mx-0 xxs:scale-90 xxs:grid-flow-col xxs:gap-4 md:mx-[6rem] md:scale-100 lg:mx-0 xl:px-[4rem]'>
+                            {/* the other photos */}
+                            {singleProduct.otherImages.map((image, index) => {
+                                return (
+                                    <img
+                                        key={index}
+                                        src={image}
+                                        alt='Sofa'
+                                        className='zoom flashing w-[9rem] rounded-xl shadow-xl hover:cursor-pointer'
+                                        onClick={popupImage}
+                                    />
+                                );
+                            })}
                         </div>
                     </div>
                     {/* Details */}
