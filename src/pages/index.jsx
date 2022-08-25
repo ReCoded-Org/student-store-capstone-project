@@ -56,8 +56,10 @@ export default function HomePage({ productsData }) {
     );
 }
 
+export const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://0.0.0.0:3001";
+
 export async function getStaticProps({ locale }) {
-    const res = await fetch("http://localhost:3001/products");
+    const res = await fetch(API_URL + "/products");
     const productsData = await res.json();
     return {
         props: {

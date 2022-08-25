@@ -8,14 +8,14 @@ export default function SingleProduct({ product }) {
     return (
         <Link href={`products/${product.id}`}>
             <div
-                className='w-full transform font-Poppins shadow-xl transition duration-500 xxs:my-[-2rem] xxs:scale-75 xxs:hover:scale-[80%]
-                            sm:my-2 sm:w-2/4 sm:scale-90 sm:hover:scale-100 md:w-5/12 md:scale-95 lg:mx-3 lg:w-1/4 xl:w-1/5'
+                className='w-full transform bg-white font-Poppins shadow-xl transition duration-500 xxs:my-[-2rem] xxs:scale-75
+                            xxs:hover:scale-[80%] sm:my-2 sm:w-2/4 sm:scale-90 sm:hover:scale-100 md:w-5/12 md:scale-95 lg:mx-3 lg:w-1/4 xl:w-1/5'
             >
                 <div className='mb-1 overflow-hidden rounded-lg bg-white'>
                     <img
                         src={product.coverImage}
                         alt='image'
-                        className='h-64 w-full cursor-pointer'
+                        className='h-64 w-full cursor-pointer object-cover'
                     />
                     <div className='px-4 py-6 text-center'>
                         <div className='flex justify-between '>
@@ -36,7 +36,7 @@ export default function SingleProduct({ product }) {
                             </span>
 
                             <span className='text-xs'>
-                                {product.location}/Turkey
+                                {product.city}/Turkey
                             </span>
                         </div>
                     </div>

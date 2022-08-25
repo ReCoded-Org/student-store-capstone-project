@@ -33,6 +33,10 @@ const Details = ({ singleProduct }) => {
         document.getElementById("visible_email").style.display = "none";
     }
 
+    function showOwner() {
+        document.getElementById("user_info").style.display = "grid";
+    }
+
     return (
         <Layout>
             <div className='bg-clay p-10'>
@@ -60,10 +64,12 @@ const Details = ({ singleProduct }) => {
                             >
                                 &times;
                             </span>
-                            <img
-                                src='https://images.eq3.com/image-service/084d1830-05e2-4319-98d8-88d1e3091fe1/green-velvet-sofa-with-marble-coffee-table_COMPRESSED.png'
-                                alt='Sofa'
-                            />
+                            <div className='popup h-full w-full'>
+                                <img
+                                    src='https://images.eq3.com/image-service/084d1830-05e2-4319-98d8-88d1e3091fe1/green-velvet-sofa-with-marble-coffee-table_COMPRESSED.png'
+                                    alt='Sofa'
+                                />
+                            </div>
                         </div>
                         <div className='grid justify-center xxs:mx-0 xxs:scale-90 xxs:grid-cols-3 xxs:gap-4 md:mx-[6rem] md:scale-100 md:grid-cols-3 lg:mx-0 xl:px-[4rem]'>
                             {/* the 3 photos */}
@@ -133,8 +139,23 @@ const Details = ({ singleProduct }) => {
                                     </div>
                                 </div>
                             </div>
+                            {/* Contact owner */}
+                            <div>
+                                <h2
+                                    onClick={() => {
+                                        showOwner();
+                                    }}
+                                    className='w-fit pt-1 font-bold text-extraDarkPurple underline hover:cursor-pointer'
+                                >
+                                    {t("contact-owner")}
+                                </h2>
+                            </div>
                             {/* User */}
-                            <div className='grid grid-cols-3 items-center justify-center gap-4 overflow-hidden rounded-l-full bg-darkPurple xxs:scale-[80%] sm:scale-[70%]'>
+                            <div
+                                id='user_info'
+                                style={{ display: "none" }}
+                                className='popup grid grid-cols-3 items-center justify-center gap-4 overflow-hidden rounded-l-full bg-darkPurple xxs:scale-[80%] sm:scale-[70%]'
+                            >
                                 {/* User photo */}
                                 <img
                                     src='https://149366112.v2.pressablecdn.com/wp-content/uploads/2014/07/m1lead.jpg'
@@ -150,7 +171,7 @@ const Details = ({ singleProduct }) => {
                                         <span id='hidden_email'>
                                             ****@****.edu.tr{" "}
                                             <span
-                                                className='hover:text-extraDarkPurple'
+                                                className='hover:cursor-pointer hover:text-extraDarkPurple'
                                                 onClick={() => {
                                                     showEmail();
                                                 }}
@@ -164,7 +185,7 @@ const Details = ({ singleProduct }) => {
                                         >
                                             mrNiceCat@fake.com{" "}
                                             <span
-                                                className='hover:text-extraDarkPurple'
+                                                className='hover:cursor-pointer hover:text-extraDarkPurple'
                                                 onClick={() => {
                                                     hideEmail();
                                                 }}
