@@ -48,7 +48,7 @@ const Details = ({ singleProduct }) => {
                             {/* main photo */}
                             <img
                                 src={singleProduct.coverImage}
-                                alt='Sofa'
+                                alt={singleProduct.title}
                                 className='zoom flashing w-[32rem] rounded-xl shadow-xl hover:cursor-pointer'
                                 onClick={popupImage}
                             />
