@@ -153,7 +153,7 @@ const Details = () => {
                                     onClick={() => {
                                         showOwner();
                                     }}
-                                    className='w-fit font-bold text-extraDarkPurple hover:cursor-pointer'
+                                    className='w-fit pt-1 font-bold text-extraDarkPurple underline hover:cursor-pointer'
                                 >
                                     {t("contact-owner")}
                                 </h2>
