@@ -232,7 +232,6 @@ function Header({
                                 >
                                     <Link href='/' locale='en'>
                                         <a
-                                            href='#'
                                             className='flashing block px-4 py-2 text-sm text-gray-700'
                                             role='menuitem'
                                             tabIndex='-1'
@@ -244,7 +243,6 @@ function Header({
 
                                     <Link href='/' locale='tr'>
                                         <a
-                                            href='#'
                                             className='flashing block px-4 py-2 text-sm text-gray-700'
                                             role='menuitem'
                                             tabIndex='-1'
@@ -256,7 +254,6 @@ function Header({
 
                                     <Link href='/' locale='de'>
                                         <a
-                                            href='#'
                                             className='flashing block px-4 py-2 text-sm text-gray-700'
                                             role='menuitem'
                                             tabIndex='-1'
