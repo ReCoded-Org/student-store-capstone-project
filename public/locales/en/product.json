@@ -16,5 +16,6 @@
     "yes": "Yes",
     "cancel": "Cancel",
     "unlisting-confirm": "Are you sure you want to unlist",
-    "contact-owner": "Contact owner"
+    "contact-owner": "Contact owner",
+    "listing-date": "Listing date"
 }

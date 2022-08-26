@@ -100,9 +100,15 @@ const Details = ({ singleProduct }) => {
                                         <b>{t("category")}:</b>{" "}
                                         {t(`${singleProduct.category}`)}
                                     </h2>
-                                    <h2 className='pb-2 text-darkPurple'>
+                                    <h2 className='text-darkPurple'>
                                         <b>{t("condition")}:</b>{" "}
                                         {t(`${singleProduct.condition}`)}
+                                    </h2>
+                                    <h2 className='pb-1 text-darkPurple'>
+                                        <b>{t("listing-date")}:</b>{" "}
+                                        {new Date(
+                                            singleProduct.createdAt
+                                        ).toLocaleDateString()}
                                     </h2>
                                 </div>
                                 <div className='grid h-fit rounded-full '>
@@ -201,8 +207,6 @@ const Details = ({ singleProduct }) => {
                         </div>
                     </div>
                 </div>
-                {/* <div className='grid justify-center xxs:invisible sm:visible'>
-                    <div className='rounded-3xl xxs:invisible xxs:scale-[80%] sm:visible sm:scale-[90%] lg:scale-95 lg:py-14'> */}
                 <div className='grid justify-center'>
                     <div className='rounded-3xl xxs:scale-[80%] sm:scale-[90%] lg:scale-95 lg:py-14'>
                         <Map geo={singleProduct.geo} />
@@ -253,23 +257,6 @@ export async function getStaticProps(context) {
         },
     };
 }
-// export async function getStaticProps(context, { locale }) {
-//     const id = context.params.id;
-//     const res = await fetch(`http://localhost:3001/products/${id}`);
-//     const singleProduct = await res.json();
-//     return {
-//         props: {
-//             ...(await serverSideTranslations(locale, [
-//                 "common",
-//                 "header",
-//                 "footer",
-//                 "product",
-//                 "categories",
-//             ])),
-//             singleProduct,
-//         },
-//     };
-// }
 
 export const getStaticPaths = async () => {
     const res = await fetch("http://localhost:3001/products");
