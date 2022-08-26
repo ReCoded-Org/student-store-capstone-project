@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 
 import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import React from "react";
 
 import Button from "@/components/button";
@@ -8,7 +9,7 @@ import Layout from "@/components/layout/Layout";
 import Map from "@/components/map";
 
 const Details = ({ singleProduct }) => {
-    const { t } = useTranslation(["product", "categories"]);
+    const { t } = useTranslation("product");
 
     function popupImage(event) {
         document.querySelector(".popup-image").style.display = "block";
@@ -250,27 +251,104 @@ export async function getStaticProps(context) {
         `http://localhost:3001/products/${id.substring(0, id.indexOf("-"))}`
     );
     const singleProduct = await res.json();
+    const locale = context.locale;
 
     return {
         props: {
+            ...(await serverSideTranslations(locale, [
+                "product",
+                "header",
+                "footer",
+                "categories",
+            ])),
             singleProduct,
         },
     };
 }
 
-export const getStaticPaths = async () => {
+// export async function getStaticProps(context) {
+//     const id = context.params.id;
+//     const res = await fetch(
+//         `http://localhost:3001/products/${id.substring(0, id.indexOf("-"))}`
+//     );
+//     const singleProduct = await res.json();
+
+//     return {
+//         props: {
+//             singleProduct,
+//         },
+//     };
+// }
+
+export const getStaticPaths = async ({ locales }) => {
     const res = await fetch("http://localhost:3001/products");
     const productsData = await res.json();
 
-    const paths = productsData.map((product) => {
-        return {
-            params: {
-                id:
-                    product.id.toString() +
-                    "-" +
-                    product.title.toLowerCase().replace(/\s/g, "-"),
-            },
-        };
+    // const paths = [];
+    // productsData.map((product) => {
+    //     return locales.map((locale) => {
+    //         return paths.push({
+    //             params: {
+    //                 id:
+    //                     product.id.toString() +
+    //                     "-" +
+    //                     product.title.toLowerCase().replace(/\s/g, "-"),
+    //             },
+    //             locale,
+    //         });
+    //     });
+    // });
+
+    // const paths = productsData.map((product) => {
+    //     return {
+    //         params: {
+    //             id:
+    //                 product.id.toString() +
+    //                 "-" +
+    //                 product.title.toLowerCase().replace(/\s/g, "-"),
+    //         },
+    //     };
+    const paths = productsData.flatMap((product) => {
+        return locales.map((locale) => {
+            return {
+                params: {
+                    id:
+                        product.id.toString() +
+                        "-" +
+                        product.title.toLowerCase().replace(/\s/g, "-"),
+                },
+                locale: locale,
+            };
+        });
+        // return [
+        //     {
+        //         params: {
+        //             id:
+        //                 product.id.toString() +
+        //                 "-" +
+        //                 product.title.toLowerCase().replace(/\s/g, "-"),
+        //         },
+        //         locale: "en",
+        //     },
+        //     {
+        //         params: {
+        //             id:
+        //                 product.id.toString() +
+        //                 "-" +
+        //                 product.title.toLowerCase().replace(/\s/g, "-"),
+        //             locale: "tr",
+        //         },
+        //     },
+        //     {
+        //         params: {
+        //             id:
+        //                 product.id.toString() +
+        //                 "-" +
+        //                 product.title.toLowerCase().replace(/\s/g, "-"),
+        //             locale: "de",
+        //         },
+        //     },
+        // ];
     });
 
     return {
