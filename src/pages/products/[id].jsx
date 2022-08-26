@@ -44,7 +44,7 @@ const Details = ({ singleProduct }) => {
                     {/* product photos & info */}
                     <div className='grid gap-3 xxs:mb-0 md:grid-flow-row lg:mb-0'>
                         {/* photos */}
-                        <div className='grid items-center justify-center'>
+                        <div className='grid items-center justify-center pb-2'>
                             {/* main photo */}
                             <img
                                 src={singleProduct.coverImage}
@@ -80,7 +80,7 @@ const Details = ({ singleProduct }) => {
                                         key={index}
                                         src={image}
                                         alt={singleProduct.title}
-                                        className='zoom flashing max-h-[7rem] w-[9rem] rounded-xl shadow-xl hover:cursor-pointer'
+                                        className='zoom flashing max-h-[7rem] w-[9rem] rounded-xl shadow-xl hover:cursor-pointer lg:h-[7rem]'
                                         onClick={popupImage}
                                     />
                                 );
@@ -197,8 +197,10 @@ const Details = ({ singleProduct }) => {
                         </div>
                     </div>
                 </div>
-                <div className='sm:visibl grid justify-center xxs:invisible'>
-                    <div className='rounded-3xl xxs:invisible xxs:scale-[80%] sm:visible sm:scale-[90%] lg:scale-95 lg:py-14'>
+                {/* <div className='grid justify-center xxs:invisible sm:visible'>
+                    <div className='rounded-3xl xxs:invisible xxs:scale-[80%] sm:visible sm:scale-[90%] lg:scale-95 lg:py-14'> */}
+                <div className='grid justify-center'>
+                    <div className='rounded-3xl xxs:scale-[80%] sm:scale-[90%] lg:scale-95 lg:py-14'>
                         <Map geo={singleProduct.geo} />
                     </div>
                 </div>
@@ -236,7 +238,9 @@ const Details = ({ singleProduct }) => {
 
 export async function getStaticProps(context) {
     const id = context.params.id;
-    const res = await fetch(`http://localhost:3001/products/${id}`);
+    const res = await fetch(
+        `http://localhost:3001/products/${id.substring(0, id.indexOf("-"))}`
+    );
     const singleProduct = await res.json();
 
     return {
@@ -269,7 +273,12 @@ export const getStaticPaths = async () => {
 
     const paths = productsData.map((product) => {
         return {
-            params: { id: product.id.toString() },
+            params: {
+                id:
+                    product.id.toString() +
+                    "-" +
+                    product.title.toLowerCase().replace(/\s/g, "-"),
+            },
         };
     });
 

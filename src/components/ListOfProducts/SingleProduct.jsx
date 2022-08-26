@@ -6,7 +6,11 @@ import React from "react";
 export default function SingleProduct({ product }) {
     const { t } = useTranslation("categories");
     return (
-        <Link href={`products/${product.id}`}>
+        <Link
+            href={`/products/${product.id.toString()}-${product.title
+                .toLowerCase()
+                .replace(/\s/g, "-")}`}
+        >
             <div
                 className='w-full transform bg-white font-Poppins shadow-xl transition duration-500 xxs:my-[-2rem] xxs:scale-75
                             xxs:hover:scale-[80%] sm:my-2 sm:w-2/4 sm:scale-90 sm:hover:scale-100 md:w-5/12 md:scale-95 lg:mx-3 lg:w-1/4 xl:w-1/5'
