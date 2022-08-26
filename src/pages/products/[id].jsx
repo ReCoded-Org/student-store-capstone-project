@@ -145,14 +145,18 @@ const Details = ({ singleProduct }) => {
                             >
                                 {/* User photo */}
                                 <img
-                                    src='https://149366112.v2.pressablecdn.com/wp-content/uploads/2014/07/m1lead.jpg'
+                                    src={
+                                        singleProduct.seller.image
+                                            ? singleProduct.seller.image
+                                            : "https://icon-library.com/images/no-user-image-icon/no-user-image-icon-27.jpg"
+                                    }
                                     alt='Cat user'
                                     className='h-full w-full border-r-4 border-white object-cover shadow-2xl'
                                 />
                                 {/* User info */}
                                 <div className='col-span-2 grid overflow-x-auto p-4 text-xl text-white scrollbar-hide'>
                                     <h2 className='font-bold xxs:text-lg sm:text-xl md:text-2xl lg:text-xl xl:text-2xl'>
-                                        {singleProduct.seller}
+                                        {singleProduct.seller.displayName}
                                     </h2>
                                     <h2 className='xxs:text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl'>
                                         <span id='hidden_email'>
@@ -170,7 +174,7 @@ const Details = ({ singleProduct }) => {
                                             id='visible_email'
                                             style={{ display: "none" }}
                                         >
-                                            mrNiceCat@fake.com{" "}
+                                            {singleProduct.seller.email}{" "}
                                             <span
                                                 className='hover:cursor-pointer hover:text-extraDarkPurple'
                                                 onClick={() => {
