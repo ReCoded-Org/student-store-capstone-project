@@ -1,6 +1,11 @@
 /* eslint-disable unused-imports/no-unused-vars */
 
-import { GoogleMap, Marker, useJsApiLoader } from "@react-google-maps/api";
+import {
+    Circle,
+    GoogleMap,
+    Marker,
+    useJsApiLoader,
+} from "@react-google-maps/api";
 import React from "react";
 
 const containerStyle = {
@@ -9,6 +14,20 @@ const containerStyle = {
     borderRadius: "15px",
     borderColor: "#7874F2",
     borderWidth: "2px",
+};
+
+const options = {
+    strokeColor: "#63c9c8",
+    strokeOpacity: 0.8,
+    strokeWeight: 2,
+    fillColor: "#63c9c8",
+    fillOpacity: 0.35,
+    clickable: false,
+    draggable: false,
+    editable: false,
+    visible: true,
+    radius: 8,
+    zIndex: 1,
 };
 
 function Map({
@@ -24,7 +43,7 @@ function Map({
     };
     const { isLoaded } = useJsApiLoader({
         id: "google-map-script",
-        googleMapsApiKey: "AIzaSyAnHNX_kANW6oxjdcDoOs8VVwDAOsbA9ZY",
+        googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAP_KEY,
     });
 
     const [map, setMap] = React.useState(null);
@@ -51,6 +70,7 @@ function Map({
             onUnmount={onUnmount}
         >
             <Marker position={center} />
+            <Circle center={center} options={options} />
         </GoogleMap>
     ) : (
         <></>
