@@ -1,9 +1,9 @@
 /* eslint-disable unused-imports/no-unused-vars */
 
 import {
-    Circle,
+    CircleF,
     GoogleMap,
-    Marker,
+    MarkerF,
     useJsApiLoader,
 } from "@react-google-maps/api";
 import React from "react";
@@ -69,8 +69,8 @@ function Map({
             onLoad={onLoad}
             onUnmount={onUnmount}
         >
-            <Marker position={center} />
-            <Circle center={center} options={options} />
+            <MarkerF position={center} />
+            <CircleF center={center} options={options} />
         </GoogleMap>
     ) : (
         <></>

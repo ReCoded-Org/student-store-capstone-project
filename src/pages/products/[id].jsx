@@ -266,48 +266,10 @@ export async function getStaticProps(context) {
     };
 }
 
-// export async function getStaticProps(context) {
-//     const id = context.params.id;
-//     const res = await fetch(
-//         `http://localhost:3001/products/${id.substring(0, id.indexOf("-"))}`
-//     );
-//     const singleProduct = await res.json();
-
-//     return {
-//         props: {
-//             singleProduct,
-//         },
-//     };
-// }
-
 export const getStaticPaths = async ({ locales }) => {
     const res = await fetch("http://localhost:3001/products");
     const productsData = await res.json();
 
-    // const paths = [];
-    // productsData.map((product) => {
-    //     return locales.map((locale) => {
-    //         return paths.push({
-    //             params: {
-    //                 id:
-    //                     product.id.toString() +
-    //                     "-" +
-    //                     product.title.toLowerCase().replace(/\s/g, "-"),
-    //             },
-    //             locale,
-    //         });
-    //     });
-    // });
-
-    // const paths = productsData.map((product) => {
-    //     return {
-    //         params: {
-    //             id:
-    //                 product.id.toString() +
-    //                 "-" +
-    //                 product.title.toLowerCase().replace(/\s/g, "-"),
-    //         },
-    //     };
     const paths = productsData.flatMap((product) => {
         return locales.map((locale) => {
             return {
@@ -320,35 +282,6 @@ export const getStaticPaths = async ({ locales }) => {
                 locale: locale,
             };
         });
-        // return [
-        //     {
-        //         params: {
-        //             id:
-        //                 product.id.toString() +
-        //                 "-" +
-        //                 product.title.toLowerCase().replace(/\s/g, "-"),
-        //         },
-        //         locale: "en",
-        //     },
-        //     {
-        //         params: {
-        //             id:
-        //                 product.id.toString() +
-        //                 "-" +
-        //                 product.title.toLowerCase().replace(/\s/g, "-"),
-        //             locale: "tr",
-        //         },
-        //     },
-        //     {
-        //         params: {
-        //             id:
-        //                 product.id.toString() +
-        //                 "-" +
-        //                 product.title.toLowerCase().replace(/\s/g, "-"),
-        //             locale: "de",
-        //         },
-        //     },
-        // ];
     });
 
     return {
