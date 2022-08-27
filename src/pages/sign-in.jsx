@@ -11,6 +11,8 @@ import {
     BsGoogle,
     BsTwitter,
 } from "react-icons/bs";
+import { toast, ToastContainer } from "react-toastify";
+import { injectStyle } from "react-toastify/dist/inject-style";
 
 import Button from "@/components/button";
 import Input from "@/components/input";
@@ -19,6 +21,10 @@ import Layout from "@/components/layout/Layout";
 import logoOutline from "/public/images/logoOutline.png";
 import sunSkyLg from "/public/images/sunSkyLg.png";
 import sunSkyOrg from "/public/images/sunSkyOrg.png";
+
+if (typeof window !== "undefined") {
+    injectStyle();
+}
 
 export default function SignInPage() {
     const { t } = useTranslation("sign");
@@ -61,17 +67,23 @@ export default function SignInPage() {
             })
             .then((res) => {
                 if (res.status === 200) {
-                    alert("Successfully signed in! Redirecting...");
+                    toast.success(t("successfully-signed-in-redirecting"), {
+                        position: toast.POSITION.TOP_CENTER,
+                    });
 
                     // setTimeout(() => {
                     //     Router.push("/");
                     // }, 1000);
                 } else if (res.status === 401) {
-                    alert("Invalid credentials");
+                    toast.error(t("invalid-credentials"), {
+                        position: toast.POSITION.TOP_CENTER,
+                    });
                 }
             })
-            .catch((error) => {
-                console.log(error);
+            .catch(() => {
+                toast.error(t("invalid-credentials"), {
+                    position: toast.POSITION.TOP_CENTER,
+                });
             });
     };
 
@@ -290,6 +302,7 @@ export default function SignInPage() {
                         </div>
                     </div>
                 </div>
+                <ToastContainer />
             </Layout>
         </>
     );

@@ -9,6 +9,12 @@ import { BiSearchAlt } from "react-icons/bi";
 import { IoIosArrowDown } from "react-icons/io";
 import { RiUser3Line } from "react-icons/ri";
 import { TbWorld } from "react-icons/tb";
+import { toast, ToastContainer } from "react-toastify";
+import { injectStyle } from "react-toastify/dist/inject-style";
+
+if (typeof window !== "undefined") {
+    injectStyle();
+}
 
 function Header({
     products,
@@ -216,7 +222,7 @@ function Header({
 
                             <div
                                 className={`
-                                    absolute right-2 z-10 mt-2 flex rounded-md  
+                                    absolute right-2 z-10 mt-2 flex rounded-md
                                                                        bg-white
                                                                            shadow-md ring-1
                                                                            ring-black ring-opacity-5 focus:outline-none
@@ -310,7 +316,7 @@ function Header({
 
                                     <div
                                         className={`
-                                    absolute left-1 z-10 mt-2 flex rounded-md  
+                                    absolute left-1 z-10 mt-2 flex rounded-md
                                                                        bg-white
                                                                            shadow-md ring-2
                                                                            ring-lightpurple ring-opacity-5
@@ -368,7 +374,14 @@ function Header({
                                                     // localStorage.removeItem(
                                                     //     "token"
                                                     // );
-                                                    alert(t("logout-success"));
+                                                    toast.success(
+                                                        t("logout-succes"),
+                                                        {
+                                                            position:
+                                                                toast.POSITION
+                                                                    .TOP_CENTER,
+                                                        }
+                                                    );
                                                     setTimeout(() => {
                                                         Router.push("/");
                                                     }, 2000);
@@ -420,7 +433,7 @@ function Header({
         display: block;
         width: 100%;
         height: auto;
-        
+
         }
         .hideLanguage {
             display: none;
@@ -435,6 +448,7 @@ function Header({
             display: none;
         }
       `}</style>
+                <ToastContainer />
             </nav>
         </>
     );
