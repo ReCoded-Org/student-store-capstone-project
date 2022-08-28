@@ -37,12 +37,11 @@ To learn more about the team members who designed and created this webpage, you 
 -   Homepage:
     ![screencapture-localhost-3000-2022-08-28-18_04_09](https://user-images.githubusercontent.com/91026643/187080830-8e7dcc36-f95b-47ce-bb74-9ab20a6fb70d.png)
 
-
 -   Sign in:
     ![screencapture-localhost-3000-sign-in-2022-08-28-16_38_52](https://user-images.githubusercontent.com/91026643/187077499-544e6100-8a01-40b8-b893-c16aaf6c0d73.png)
-  
+
 -   Single Product:
-![screencapture-localhost-3000-products-17-bike-2022-08-28-17_56_52](https://user-images.githubusercontent.com/91026643/187080558-e945610b-378e-4972-8d60-aa8a05db7351.png)
+    ![screencapture-localhost-3000-products-17-bike-2022-08-28-17_56_52](https://user-images.githubusercontent.com/91026643/187080558-e945610b-378e-4972-8d60-aa8a05db7351.png)
 
 -   Donation Page:
     ![screencapture-localhost-3000-donation-2022-08-28-16_36_22](https://user-images.githubusercontent.com/91026643/187077530-e6cd7f2d-2c86-40d9-97c3-9c5652f06c01.png)
