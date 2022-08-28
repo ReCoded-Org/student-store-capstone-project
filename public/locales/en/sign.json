@@ -12,5 +12,8 @@
     "university": "University",
     "confirm-password": "Confirm password",
     "Sign-up-with": "Sign up with",
-    "already-have-an-account": "Already Have an account"
+    "already-have-an-account": "Already Have an account",
+    "succesfully-signed-in-redirecting": "Successfully signed in! Redirecting...",
+    "invalid-credentials": "Invalid Credentials.",
+    "your-account-has-been-created": "Your account has been created!"
 }

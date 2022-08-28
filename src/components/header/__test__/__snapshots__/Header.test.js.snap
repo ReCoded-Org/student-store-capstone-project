@@ -406,7 +406,7 @@ exports[`renders correctly 1`] = `
           aria-labelledby="menu-button"
           aria-orientation="vertical"
           className="
-                                    absolute right-2 z-10 mt-2 flex rounded-md  
+                                    absolute right-2 z-10 mt-2 flex rounded-md
                                                                        bg-white
                                                                            shadow-md ring-1
                                                                            ring-black ring-opacity-5 focus:outline-none
@@ -499,7 +499,7 @@ exports[`renders correctly 1`] = `
         display: block;
         width: 100%;
         height: auto;
-        
+
         }
         .hideLanguage {
             display: none;
@@ -515,5 +515,8 @@ exports[`renders correctly 1`] = `
         }
       
   </style>
+  <div
+    className="Toastify"
+  />
 </nav>
 `;
