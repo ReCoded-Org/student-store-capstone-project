@@ -1,19 +1,33 @@
-# Capstone project information
+# Student Store
 
-## Project information
+Student store is a website that brings students in Turkey together to sell, buy or donate their old stuffs locally.
 
--   Project name: Student Store
--   Project description: A marketplace made for all students in Turkey. Any student could sell or buy or even borrow any type of products like electronics, games, study books, all products supposed to be cheap and used in most cases.
--   Technology used: Nextjs, TailwindCSS, i18next, Husky, Prettier, Eslint, Commitlinter (Conventional Commits)
--   Team members: Beyza, Gizem, Mohammed, Nouh, Selin
--   Team lead: Salah
--   Bootcamp: BPRM TR 2022
+The aim of the website is to provide a platform for easy second-handing among university students as their needs.
 
-## Development process
+The website is intended for university students in Turkey.
 
--   You can change the TailwindCSS configuration in the `tailwind.config.js` file to add new color codings according to your color palettes.
--   The translation process is done using the i18next library. There's an example in the index.js file of how this is done. Check this github project for more info on how to use the i18next library: [i18next](https://github.com/i18next/next-i18next)
--   When writing commits, commitlinter library is used to make sure that your commits are consistent with the conventional commits. To learn more about it refer to the guidelines in Canvas or the [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/#summary) site.
--   The `layout` folder contains the components that will be used in the layout of pages, so components like the header and footer will be placed there.
+On this website, you can find products; second hand or brand new, or you can provide services or benefit from them.
 
-Good luck and happy coding :D
+# Front-End Technologies Used:
+
+-   Nextjs, TailwindCSS, i18next, Axios, Husky, Prettier, Eslint, Commitlinter (Conventional Commits), Jest, Git/GitHub, JSON-Server.
+
+# Functionalities:
+
+On this website, users can sign up using their emails with .edu extensions, once authenticated, they can sign in using Google as well.
+
+The users can access the list of products on home page, can use price range filters, categories of products or the search bar to access the productst they need.
+
+Through their proile page, they can edit their information and see the items they listed for sale.
+
+On our donation page, the visitors of our website can choose to show their generosity towards the students in Turkey by donating.
+
+To learn more about the team members who designed and created this webpage, you can visit:
+
+# Team members:
+
+-   Beyza Bostancı, Gizem Haspolat, Mohammed Hadri, Nouh Rastanawi, Selin Su Varol
+-   Team lead: Salah Al-Dhaferi
+-   This is a capstone project for the Re:coded Front End Web Development Bootcamp Turkey, 2022.
+
+# Screenshots of Our Pages
