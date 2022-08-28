@@ -8,8 +8,8 @@ import Button from "@/components/button";
 import Layout from "@/components/layout/Layout";
 import Map from "@/components/map";
 
-const Details = () => {
-    const { t } = useTranslation(["product", "categories"]);
+const Details = ({ singleProduct }) => {
+    const { t } = useTranslation("product");
 
     function popupImage(event) {
         document.querySelector(".popup-image").style.display = "block";
@@ -45,12 +45,12 @@ const Details = () => {
                     {/* product photos & info */}
                     <div className='grid gap-3 xxs:mb-0 md:grid-flow-row lg:mb-0'>
                         {/* photos */}
-                        <div className='grid items-center justify-center'>
+                        <div className='grid items-center justify-center pb-2'>
                             {/* main photo */}
                             <img
-                                src='https://images.eq3.com/image-service/084d1830-05e2-4319-98d8-88d1e3091fe1/green-velvet-sofa-with-marble-coffee-table_COMPRESSED.png'
-                                alt='Sofa'
-                                className='zoom flashing w-[32rem] rounded-xl shadow-xl hover:cursor-pointer'
+                                src={singleProduct.coverImage}
+                                alt={singleProduct.title}
+                                className='zoom flashing max-h-[25rem] w-[32rem] rounded-xl shadow-xl hover:cursor-pointer'
                                 onClick={popupImage}
                             />
                         </div>
@@ -67,37 +67,25 @@ const Details = () => {
                             </span>
                             <div className='popup h-full w-full'>
                                 <img
-                                    src='https://images.eq3.com/image-service/084d1830-05e2-4319-98d8-88d1e3091fe1/green-velvet-sofa-with-marble-coffee-table_COMPRESSED.png'
-                                    alt='Sofa'
+                                    className='lg:max-h-[48rem]'
+                                    src={singleProduct.coverImage}
+                                    alt={singleProduct.title}
                                 />
                             </div>
                         </div>
-                        <div className='grid justify-center xxs:mx-0 xxs:scale-90 xxs:grid-cols-3 xxs:gap-4 md:mx-[6rem] md:scale-100 md:grid-cols-3 lg:mx-0 xl:px-[4rem]'>
-                            {/* the 3 photos */}
-                            <div className='grid justify-center'>
-                                <img
-                                    src='https://images.eq3.com/image-service/084d1830-05e2-4319-98d8-88d1e3091fe1/green-velvet-sofa-with-marble-coffee-table_COMPRESSED.png'
-                                    alt='Sofa'
-                                    className='zoom flashing w-[9rem] rounded-xl shadow-xl hover:cursor-pointer'
-                                    onClick={popupImage}
-                                />
-                            </div>
-                            <div className='grid justify-center'>
-                                <img
-                                    src='https://images.eq3.com/image-service/084d1830-05e2-4319-98d8-88d1e3091fe1/green-velvet-sofa-with-marble-coffee-table_COMPRESSED.png'
-                                    alt='Sofa'
-                                    className='zoom flashing w-[9rem] rounded-xl shadow-xl hover:cursor-pointer'
-                                    onClick={popupImage}
-                                />
-                            </div>
-                            <div className='grid justify-center'>
-                                <img
-                                    src='https://images.eq3.com/image-service/084d1830-05e2-4319-98d8-88d1e3091fe1/green-velvet-sofa-with-marble-coffee-table_COMPRESSED.png'
-                                    alt='Sofa'
-                                    className='zoom flashing w-[9rem] rounded-xl shadow-xl hover:cursor-pointer'
-                                    onClick={popupImage}
-                                />
-                            </div>
+                        <div className='grid justify-evenly xxs:mx-0 xxs:scale-90 xxs:grid-flow-col xxs:gap-4 md:mx-[6rem] md:scale-100 lg:mx-0 xl:px-[4rem]'>
+                            {/* the other photos */}
+                            {singleProduct.otherImages?.map((image, index) => {
+                                return (
+                                    <img
+                                        key={index}
+                                        src={image}
+                                        alt={singleProduct.title}
+                                        className='zoom flashing max-h-[7rem] w-[9rem] rounded-xl shadow-xl hover:cursor-pointer lg:h-[7rem]'
+                                        onClick={popupImage}
+                                    />
+                                );
+                            })}
                         </div>
                     </div>
                     {/* Details */}
@@ -106,19 +94,27 @@ const Details = () => {
                             {/* Headers */}
                             <div className='grid grid-cols-3 pb-6'>
                                 <div className='col-span-2'>
-                                    <h1 className='brush w-fit font-bold text-purple xxs:text-2xl sm:text-3xl'>
-                                        Two Seat Sofa
+                                    <h1 className='brush w-fit text-left font-bold text-purple xxs:text-2xl sm:text-3xl'>
+                                        {singleProduct.title}
                                     </h1>
                                     <h2 className='text-darkPurple'>
-                                        <b>{t("category")}:</b> {t("furniture")}
+                                        <b>{t("category")}:</b>{" "}
+                                        {t(`${singleProduct.category}`)}
                                     </h2>
-                                    <h2 className='pb-2 text-darkPurple'>
-                                        <b>{t("condition")}:</b> {t("used")}
+                                    <h2 className='text-darkPurple'>
+                                        <b>{t("condition")}:</b>{" "}
+                                        {t(`${singleProduct.condition}`)}
+                                    </h2>
+                                    <h2 className='pb-1 text-darkPurple'>
+                                        <b>{t("listing-date")}:</b>{" "}
+                                        {new Date(
+                                            singleProduct.createdAt
+                                        ).toLocaleDateString()}
                                     </h2>
                                 </div>
                                 <div className='grid h-fit rounded-full '>
                                     <h1 className='text-end font-bold text-orange xxs:text-2xl sm:text-3xl'>
-                                        $2793
+                                        {singleProduct.price}tl
                                     </h1>
                                 </div>
                             </div>
@@ -132,17 +128,7 @@ const Details = () => {
                                     </div>
                                     <div>
                                         <p className='pb-2 text-extraDarkPurple'>
-                                            Lorem ipsum dolor sit amet
-                                            consectetur adipisicing elit. Porro,
-                                            quo, atque eligendi et illum id, non
-                                            maiores perspiciatis expedita
-                                            quaerat assumenda iure cupiditate
-                                            architecto modi numquam doloremque
-                                            repellendus exercitationem
-                                            distinctio. Lorem: 5 letters, ipsum:
-                                            5 letters. doloremque repellendus
-                                            exercitationem distinctio. Lorem: 5
-                                            letters, ipsum: 5 letters.
+                                            {singleProduct.description}
                                         </p>
                                     </div>
                                 </div>
@@ -166,14 +152,18 @@ const Details = () => {
                             >
                                 {/* User photo */}
                                 <img
-                                    src='https://149366112.v2.pressablecdn.com/wp-content/uploads/2014/07/m1lead.jpg'
+                                    src={
+                                        singleProduct.seller.image
+                                            ? singleProduct.seller.image
+                                            : "https://icon-library.com/images/no-user-image-icon/no-user-image-icon-27.jpg"
+                                    }
                                     alt='Cat user'
                                     className='h-full w-full border-r-4 border-white object-cover shadow-2xl'
                                 />
                                 {/* User info */}
                                 <div className='col-span-2 grid overflow-x-auto p-4 text-xl text-white scrollbar-hide'>
                                     <h2 className='font-bold xxs:text-lg sm:text-xl md:text-2xl lg:text-xl xl:text-2xl'>
-                                        Mr. nice cat
+                                        {singleProduct.seller.displayName}
                                     </h2>
                                     <h2 className='xxs:text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl'>
                                         <span id='hidden_email'>
@@ -191,7 +181,7 @@ const Details = () => {
                                             id='visible_email'
                                             style={{ display: "none" }}
                                         >
-                                            mrNiceCat@fake.com{" "}
+                                            {singleProduct.seller.email}{" "}
                                             <span
                                                 className='hover:cursor-pointer hover:text-extraDarkPurple'
                                                 onClick={() => {
@@ -203,7 +193,7 @@ const Details = () => {
                                         </span>
                                     </h2>
                                     <h2 className='xxs:text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl'>
-                                        Istanbul/Turkeky
+                                        {singleProduct.city}/Turkeky
                                     </h2>
                                 </div>
                             </div>
@@ -218,9 +208,9 @@ const Details = () => {
                         </div>
                     </div>
                 </div>
-                <div className='sm:visibl grid justify-center xxs:invisible'>
-                    <div className='rounded-3xl xxs:invisible xxs:scale-[80%] sm:visible sm:scale-[90%] lg:scale-95 lg:py-14'>
-                        <Map />
+                <div className='grid justify-center'>
+                    <div className='rounded-3xl xxs:scale-[80%] sm:scale-[90%] lg:scale-95 lg:py-14'>
+                        <Map geo={singleProduct.geo} />
                     </div>
                 </div>
             </div>
@@ -255,19 +245,49 @@ const Details = () => {
     );
 };
 
-export async function getServerSideProps({ locale }) {
+export async function getStaticProps(context) {
+    const id = context.params.id;
+    const res = await fetch(
+        `http://localhost:3001/products/${id.substring(0, id.indexOf("-"))}`
+    );
+    const singleProduct = await res.json();
+    const locale = context.locale;
+
     return {
         props: {
             ...(await serverSideTranslations(locale, [
-                "common",
+                "product",
                 "header",
                 "footer",
-                "product",
                 "categories",
             ])),
-            // Will be passed to the page component as props
+            singleProduct,
         },
     };
 }
+
+export const getStaticPaths = async ({ locales }) => {
+    const res = await fetch("http://localhost:3001/products");
+    const productsData = await res.json();
+
+    const paths = productsData.flatMap((product) => {
+        return locales.map((locale) => {
+            return {
+                params: {
+                    id:
+                        product.id.toString() +
+                        "-" +
+                        product.title.toLowerCase().replace(/\s/g, "-"),
+                },
+                locale: locale,
+            };
+        });
+    });
+
+    return {
+        paths,
+        fallback: false,
+    };
+};
 
 export default Details;
