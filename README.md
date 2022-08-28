@@ -32,20 +32,17 @@ To learn more about the team members who designed and created this webpage, you 
 -   Team lead: Salah Al-Dhaferi
 -   This is a capstone project for the Re:coded Front End Web Development Bootcamp Turkey, 2022.
 
-# Screenshots of Our Pages
+# Screenshots of Some of Our Pages
 
 -   Homepage:
-    ![screencapture-localhost-3000-2022-08-28-16_44_57 2-min](https://user-images.githubusercontent.com/91026643/187077461-a0100023-8cce-4366-967f-833ddb4c0b06.png)
+    ![screencapture-localhost-3000-2022-08-28-18_04_09](https://user-images.githubusercontent.com/91026643/187080830-8e7dcc36-f95b-47ce-bb74-9ab20a6fb70d.png)
 
--   Sign in & Sign Up:
+
+-   Sign in:
     ![screencapture-localhost-3000-sign-in-2022-08-28-16_38_52](https://user-images.githubusercontent.com/91026643/187077499-544e6100-8a01-40b8-b893-c16aaf6c0d73.png)
-    ![screencapture-localhost-3000-sign-up-2022-08-28-16_39_05](https://user-images.githubusercontent.com/91026643/187077507-05988157-b821-4f7d-99d5-3b6bc1e75ba5.png)
-
--   Edit Profile:
-    ![screencapture-localhost-3000-edit-profile-2022-08-28-16_38_30](https://user-images.githubusercontent.com/91026643/187077560-40c49b28-8dbc-47be-9866-bf4fc1336470.png)
-
--   List An Item:
-    <img width="1479" alt="Screen Shot 2022-08-28 at 16 37 03 PM" src="https://user-images.githubusercontent.com/91026643/187077644-7865be4e-37a1-4274-beb2-b926a51d69e3.png">
+  
+-   Single Product:
+![screencapture-localhost-3000-products-17-bike-2022-08-28-17_56_52](https://user-images.githubusercontent.com/91026643/187080558-e945610b-378e-4972-8d60-aa8a05db7351.png)
 
 -   Donation Page:
     ![screencapture-localhost-3000-donation-2022-08-28-16_36_22](https://user-images.githubusercontent.com/91026643/187077530-e6cd7f2d-2c86-40d9-97c3-9c5652f06c01.png)
