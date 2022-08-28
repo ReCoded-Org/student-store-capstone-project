@@ -1,4 +1,5 @@
 /* eslint-disable unused-imports/no-unused-vars */
+import { useAuth } from "context/AuthContext";
 import Image from "next/image";
 import Link from "next/link";
 import Router from "next/router";
@@ -34,6 +35,7 @@ function Header({
     const [isLanguageOpen, setIsLanguageOpen] = useState(false);
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [userIconClicked, setUserIconClicked] = useState(false);
+    const { user, logout } = useAuth();
 
     const languageRef = useRef(null);
     const userIconRef = useRef(null);
@@ -76,13 +78,6 @@ function Header({
                                         height={60}
                                         width={150}
                                         className='hover:cursor-pointer'
-                                        // onClick={() => {
-                                        //     setfilteredProducts(products);
-                                        //     setProductName("");
-                                        //     setMaxPrice("");
-                                        //     setMinPrice("");
-                                        //     setCurrentCategory("");
-                                        // }}
                                     />
                                 </a>
                             </Link>
@@ -278,7 +273,7 @@ function Header({
                         </div>
 
                         <div className=' hidden w-auto items-center md:flex md:flex-row '>
-                            {isLoggedIn ? (
+                            {user ? (
                                 <div className='relative inline-block text-left'>
                                     <div className='mr-2'>
                                         <button
@@ -370,10 +365,7 @@ function Header({
                                                 tabIndex='-1'
                                                 id='menu-item-1'
                                                 onClick={() => {
-                                                    setIsLoggedIn(false);
-                                                    // localStorage.removeItem(
-                                                    //     "token"
-                                                    // );
+                                                    logout();
                                                     toast.success(
                                                         t("logout-succes"),
                                                         {
@@ -394,10 +386,7 @@ function Header({
                                 </div>
                             ) : (
                                 <Link href='/sign-in'>
-                                    <a
-                                        href='#'
-                                        className='text-md mr-2 block rounded-[20px]  bg-darkPurple py-2 px-4 text-white hover:bg-purple'
-                                    >
+                                    <a className='text-md mr-2 block rounded-[20px]  bg-darkPurple py-2 px-4 text-white hover:bg-purple'>
                                         {t("sign-in")}
                                     </a>
                                 </Link>

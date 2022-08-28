@@ -1,6 +1,6 @@
-import axios from "axios";
+/* eslint-disable unused-imports/no-unused-vars */
+import { useAuth } from "context/AuthContext";
 import Link from "next/link";
-import Router from "next/router";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import React, { useState } from "react";
@@ -11,7 +11,8 @@ import {
     BsGoogle,
     BsTwitter,
 } from "react-icons/bs";
-import { toast, ToastContainer } from "react-toastify";
+// import { toast, ToastContainer } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import { injectStyle } from "react-toastify/dist/inject-style";
 
 import Button from "@/components/button";
@@ -23,13 +24,29 @@ if (typeof window !== "undefined") {
 }
 
 export default function Signup() {
+    const { user, signup } = useAuth();
+    // console.log(user);
+    const [data, setData] = useState({
+        email: "",
+        password: "",
+    });
+    const handleSignup = async (e) => {
+        e.preventDefault();
+
+        try {
+            await signup(data.email, data.password);
+        } catch (err) {
+            // console.log(err);
+        }
+
+        // console.log(data);
+    };
     const { t } = useTranslation("sign");
     const [userSignUp, setUserSignUp] = useState({
         email: "",
         password: "",
         confirmPassword: "",
-        firstName: "",
-        lastName: "",
+        name: "",
     });
 
     const handleChange = (event) => {
@@ -45,78 +62,6 @@ export default function Signup() {
         setShowPassword(!showPassword);
     };
 
-    const baseURL = "http://students-store.herokuapp.com/api/auth/signup";
-    // const token = localStorage.getItem("token");
-    const handleSubmit = async (e) => {
-        // const config = {
-        //     headers: { Authorization: `Bearer ${token}` },
-        // };
-
-        e.preventDefault();
-
-        axios
-            .post(
-                baseURL,
-                userSignUp,
-                {
-                    // withCredentials: true,
-                    headers: {
-                        "Access-Control-Allow-Origin": "*",
-                        "Content-Type": "application/json",
-                    },
-                }
-
-                // {
-                //     "Content-Type": "application/json",
-                //     Accept: "application/json",
-                //access control allow origin should not be a wildcard (*)
-                //     "Access-Control-Allow-Origin": "http://students-store.herokuapp.com",
-                // }
-            )
-            .then((res) => {
-                if (res.status === 201) {
-                    toast.success(t("your-account-has-been-created"), {
-                        position: toast.POSITION.TOP_CENTER,
-                    });
-                    // localStorage.setItem("token", res.headers["token"]);
-                    // localStorage.setItem("user", res.headers.user);
-                    setTimeout(() => {
-                        Router.push("/sign-in");
-                    }, 1000);
-                } else if (res.status === 400) {
-                    toast.error(t("invalid-credentials"), {
-                        position: toast.POSITION.TOP_CENTER,
-                    });
-                }
-            })
-            .catch(() => {
-                toast.error(t("invalid-credentials"), {
-                    position: toast.POSITION.TOP_CENTER,
-                });
-            });
-    };
-
-    // const handleSubmit = async (e) => {
-    //     e.preventDefault();
-    //     const response = await fetch(
-    //         "http://students-store.herokuapp.com/api/auth/signup",
-    //         {
-    //             method: "POST",
-    //             headers: {
-    //                 "Content-Type": "application/json",
-    //                 "Access-Control-Allow-Origin": "*",
-    //             },
-    //             body: JSON.stringify({
-    //                 firstName: userSignUp.firstName,
-    //                 lastName: userSignUp.lastName,
-    //                 email: userSignUp.email,
-    //                 schoolName: userSignUp.schoolName,
-    //                 password: userSignUp.password,
-    //             }),
-    //         }
-    //     );
-    //     const data = await response.json();
-
     return (
         <Layout>
             <div className='signup-container flex   justify-center  md:flex-row'>
@@ -130,7 +75,7 @@ export default function Signup() {
 
                         <form
                             method='post'
-                            onSubmit={handleSubmit}
+                            onSubmit={handleSignup}
                             action='/api/form'
                             className='container m-auto mb-6 flex w-5/6 flex-col items-center'
                         >
@@ -139,15 +84,7 @@ export default function Signup() {
                                 type='text'
                                 name='firstName'
                                 id='Name'
-                                value={userSignUp.firstName}
-                                onChange={handleChange}
-                            />
-                            <Input
-                                placeholder={t("surname")}
-                                type='text'
-                                id='Surname'
-                                name='lastName'
-                                value={userSignUp.lastName}
+                                value={userSignUp.name}
                                 onChange={handleChange}
                             />
                             <Input
@@ -155,16 +92,13 @@ export default function Signup() {
                                 type='email'
                                 id='email'
                                 name='email'
-                                value={userSignUp.email}
-                                onChange={handleChange}
-                            />
-                            <Input
-                                placeholder={t("university")}
-                                type='text'
-                                id='university'
-                                name='schoolName'
-                                value={userSignUp.schoolName}
-                                onChange={handleChange}
+                                value={data.email}
+                                onChange={(e) =>
+                                    setData({
+                                        ...data,
+                                        email: e.target.value,
+                                    })
+                                }
                             />
                             <div className='relative h-auto w-full'>
                                 <Input
@@ -172,9 +106,14 @@ export default function Signup() {
                                     type={showPassword ? "text" : "password"}
                                     id='password'
                                     name='password'
-                                    onChange={handleChange}
+                                    value={data.password}
+                                    onChange={(e) =>
+                                        setData({
+                                            ...data,
+                                            password: e.target.value,
+                                        })
+                                    }
                                     placeholder={t("password")}
-                                    value={userSignUp.password}
                                 />
                                 <div className='absolute top-6 right-4 '>
                                     <button
