@@ -1,6 +1,7 @@
 import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
+import Router from "next/router";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useState } from "react";
@@ -71,9 +72,9 @@ export default function SignInPage() {
                         position: toast.POSITION.TOP_CENTER,
                     });
 
-                    // setTimeout(() => {
-                    //     Router.push("/");
-                    // }, 1000);
+                    setTimeout(() => {
+                        Router.push("/");
+                    }, 1000);
                 } else if (res.status === 401) {
                     toast.error(t("invalid-credentials"), {
                         position: toast.POSITION.TOP_CENTER,
