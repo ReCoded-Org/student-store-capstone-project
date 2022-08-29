@@ -45,7 +45,7 @@ function AboutUsPage() {
                 <div className='m-auto mb-10 flex w-[200px] flex-col rounded-xl bg-[#585785] p-6 text-center align-middle duration-500 hover:shadow-xl hover:shadow-cyanaqua'>
                     <img
                         className='h-auto w-full rounded-full border-4 border-cyanaqua'
-                        src='https://avatars.githubusercontent.com/u/4890766?v=4'
+                        src='/images/personal-pics/salah.png'
                         alt='Salah avatar'
                     ></img>
                     <h3 className='mt-1 text-lg font-semibold text-cyanaqua'>
@@ -72,7 +72,7 @@ function AboutUsPage() {
                     <div className='flex w-[200px] flex-col rounded-xl bg-[#585785] p-6 text-center align-middle duration-500 hover:shadow-xl hover:shadow-cyanaqua'>
                         <img
                             className='h-auto w-full rounded-full border-4 border-cyanaqua'
-                            src='https://media-exp1.licdn.com/dms/image/C5603AQG7dsmBEvTG4w/profile-displayphoto-shrink_800_800/0/1581879286166?e=1665619200&v=beta&t=F69BFpyAuCMweyDVeZZfPByME_lJ6jlKoUDOf9eW_Zo'
+                            src='images/personal-pics/nouh.png'
                             alt='Nouh avatar'
                         ></img>
                         <h3 className='mt-1 text-lg font-semibold text-cyanaqua'>
@@ -100,7 +100,7 @@ function AboutUsPage() {
                     <div className='flex w-[200px] flex-col rounded-xl bg-[#585785] p-6 text-center align-middle duration-500 hover:shadow-xl hover:shadow-cyanaqua'>
                         <img
                             className='h-auto w-full rounded-full border-4 border-cyanaqua'
-                            src='https://media-exp1.licdn.com/dms/image/C5603AQEW2FlGcGHerA/profile-displayphoto-shrink_800_800/0/1637622044999?e=1665619200&v=beta&t=A0UInMMejCSIiPiHFJXIUBPDfDOzOaaBEqMX9ej1NUQ'
+                            src='images/personal-pics/gizem.jpg'
                             alt='Gizem avatar'
                         ></img>
                         <h3 className='mt-1 text-lg font-semibold text-cyanaqua'>
@@ -128,7 +128,7 @@ function AboutUsPage() {
                     <div className='flex w-[200px] flex-col rounded-xl bg-[#585785] p-6 text-center align-middle duration-500 hover:shadow-xl hover:shadow-cyanaqua'>
                         <img
                             className='h-auto w-full rounded-full border-4 border-cyanaqua'
-                            src='https://avatars.githubusercontent.com/u/100427748?v=4'
+                            src='/images/personal-pics/selin.png'
                             alt='Selin avatar'
                         ></img>
                         <h3 className='mt-1 text-lg font-semibold text-cyanaqua'>
@@ -156,7 +156,7 @@ function AboutUsPage() {
                     <div className='flex w-[200px] flex-col rounded-xl bg-[#585785] p-6 text-center align-middle duration-500 hover:shadow-xl hover:shadow-cyanaqua'>
                         <img
                             className='h-auto w-full rounded-full border-4 border-cyanaqua'
-                            src='https://media-exp1.licdn.com/dms/image/C5603AQEHRu0d7HQf2g/profile-displayphoto-shrink_800_800/0/1655375124272?e=1665619200&v=beta&t=i8orfruyIDSMmZGe9XXPZWVKpjYDK9r7Mjh-PU3oIjs'
+                            src='/images/personal-pics/beyza.jpg'
                             alt='Beyza avatar'
                         ></img>
                         <h3 className='mt-1 text-lg font-semibold text-cyanaqua'>
@@ -183,8 +183,8 @@ function AboutUsPage() {
                     {/* Hadri's Card */}
                     <div className='flex w-[200px] flex-col rounded-xl bg-[#585785] p-6 text-center align-middle duration-500 hover:shadow-xl hover:shadow-cyanaqua'>
                         <img
-                            className='h-auto w-full rounded-full border-4 border-cyanaqua'
-                            src='https://avatars.githubusercontent.com/u/68324184?v=4'
+                            className='h-auto  w-full rounded-full border-4 border-cyanaqua '
+                            src='/images/personal-pics/momomo.jpeg'
                             alt='Hadri avatar'
                         ></img>
                         <h3 className='mt-1 text-lg font-semibold text-cyanaqua'>

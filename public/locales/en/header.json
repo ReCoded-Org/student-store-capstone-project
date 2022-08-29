@@ -4,5 +4,9 @@
     "search": "Search",
     "sign-in": "Sign in",
     "sell-items": "Sell Items",
-    "cart": "Cart"
+    "cart": "Cart",
+    "edit-Profile": "Edit Profile",
+    "my-listings": "My Listings",
+    "logout": "Logout",
+    "logout-success": "You have been logged out successfully"
 }

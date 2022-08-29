@@ -21,9 +21,11 @@
     },
     "dependencies": {
         "@react-google-maps/api": "^2.12.1",
+        "axios": "^0.27.2",
         "clsx": "^1.2.1",
         "i18next": "^21.8.14",
         "next": "^12.2.1",
+        "next-auth": "^4.10.3",
         "next-i18next": "^11.2.2",
         "next-images": "^1.8.4",
         "polyfill-library": "^4.1.1",

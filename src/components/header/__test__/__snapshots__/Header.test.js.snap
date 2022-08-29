@@ -135,9 +135,6 @@ exports[`renders correctly 1`] = `
           <span
             className="block h-0.5 w-8 animate-pulse bg-pumpkin"
           />
-          <span
-            className="block h-0.5 w-8 animate-pulse bg-pumpkin "
-          />
         </div>
         <div
           className="hideMenuNav"
@@ -280,17 +277,6 @@ exports[`renders correctly 1`] = `
                 sell-items
               </a>
             </li>
-            <li
-              className="my-8 border-b border-pumpkin"
-            >
-              <a
-                href="/cart"
-                onClick={[Function]}
-                onMouseEnter={[Function]}
-              >
-                cart
-              </a>
-            </li>
           </ul>
         </div>
       </section>
@@ -338,11 +324,13 @@ exports[`renders correctly 1`] = `
       <div
         className="relative inline-block text-left"
       >
-        <div>
+        <div
+          className="mr-2 rounded-[20px] border-[3px] border-white hover:border-pumpkin"
+        >
           <button
             aria-expanded="true"
             aria-haspopup="true"
-            className="inline-flex w-full justify-center rounded-md bg-white p-2 text-sm font-medium text-pumpkin hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100 md:mr-4"
+            className="flex w-full items-center justify-center rounded-full bg-white p-1 text-sm font-medium text-pumpkin blur-none hover:border-pumpkin"
             id="menu-button"
             onClick={[Function]}
             type="button"
@@ -394,16 +382,22 @@ exports[`renders correctly 1`] = `
               />
             </svg>
             <svg
-              aria-hidden="true"
-              className=" ml-1 mt-1 mr-2 h-4 w-4"
+              className="m-1"
               fill="currentColor"
-              viewBox="0 0 20 20"
+              height={18}
+              stroke="currentColor"
+              strokeWidth="0"
+              style={
+                Object {
+                  "color": undefined,
+                }
+              }
+              viewBox="0 0 512 512"
+              width={18}
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                clipRule="evenodd"
-                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                fillRule="evenodd"
+                d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"
               />
             </svg>
           </button>
@@ -412,10 +406,10 @@ exports[`renders correctly 1`] = `
           aria-labelledby="menu-button"
           aria-orientation="vertical"
           className="
-                                    focus:outline-none' absolute right-0 z-10 mt-2 flex w-16
-                                                                       rounded-md
-                                                                           bg-white shadow-md
-                                                                           ring-1 ring-black ring-opacity-5
+                                    absolute right-2 z-10 mt-2 flex rounded-md  
+                                                                       bg-white
+                                                                           shadow-md ring-1
+                                                                           ring-black ring-opacity-5 focus:outline-none
                                                                             hideLanguage"
           role="menu"
           tabIndex="-1"
@@ -425,7 +419,7 @@ exports[`renders correctly 1`] = `
             role="none"
           >
             <a
-              className="flashing block px-4 py-2 text-sm text-gray-700"
+              className="flashing block px-4 py-2 text-sm text-pumpkin"
               href="/"
               id="menu-item-0"
               onClick={[Function]}
@@ -436,7 +430,7 @@ exports[`renders correctly 1`] = `
               English
             </a>
             <a
-              className="flashing block px-4 py-2 text-sm text-gray-700"
+              className="flashing block px-4 py-2 text-sm text-pumpkin"
               href="/"
               id="menu-item-1"
               onClick={[Function]}
@@ -447,7 +441,7 @@ exports[`renders correctly 1`] = `
               Türkçe
             </a>
             <a
-              className="flashing block px-4 py-2 text-sm text-gray-700"
+              className="flashing block px-4 py-2 text-sm text-pumpkin"
               href="/"
               id="menu-item-1"
               onClick={[Function]}
@@ -461,7 +455,7 @@ exports[`renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="text-md hidden md:flex md:w-auto md:items-center "
+        className=" hidden w-auto items-center md:flex md:flex-row "
       >
         <a
           className="text-md mr-2 block rounded-[20px] bg-darkPurple py-2 px-4 text-white hover:bg-purple"
@@ -471,45 +465,15 @@ exports[`renders correctly 1`] = `
         >
           sign-in
         </a>
-        <a
-          className=" text-md mr-2 block rounded-[20px] bg-darkPurple py-2 px-4 text-white hover:bg-purple"
-          href="/product-listing"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-        >
-          sell-items
-        </a>
-        <a
-          className="m-2 pt-2"
-          href="/cart"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-        >
-          <svg
-            color="#FF8A57"
-            fill="currentColor"
-            height={28}
-            stroke="currentColor"
-            strokeWidth="0"
-            style={
-              Object {
-                "color": "#FF8A57",
-              }
-            }
-            viewBox="0 0 24 24"
-            width={28}
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1.003 1.003 0 0020 4H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"
-            />
-          </svg>
-        </a>
       </div>
+      <a
+        className=" text-md mr-2 block rounded-[20px] bg-darkPurple py-2 px-4 text-white hover:bg-purple"
+        href="/product-listing"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        sell-items
+      </a>
     </div>
   </div>
   <style>
@@ -533,8 +497,20 @@ exports[`renders correctly 1`] = `
       }
       .showLanguage {
         display: block;
+        width: 100%;
+        height: auto;
+        
         }
         .hideLanguage {
+            display: none;
+        }
+        .showUserMenu {
+            display: block;
+            width: 20vh;
+            height: auto;
+            text-align: start;
+        }
+        .hideUserMenu {
             display: none;
         }
       
