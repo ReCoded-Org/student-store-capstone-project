@@ -1,14 +1,14 @@
 {
     "category": "Kategorie",
     "condition": "Zustand",
-    "used": "Gebraucht",
-    "new": "Neu",
+    "Used": "Gebraucht",
+    "New": "Neu",
     "description": "Beschreibung",
-    "books": "Bücher",
-    "furniture": "Möbel",
-    "electronics": "Elektronik",
-    "two-wheeler": "Zweiräder",
-    "clothes": "Kleidung",
+    "Books": "Bücher",
+    "Furniture": "Möbel",
+    "Electronics": "Elektronik",
+    "Two-wheeler": "Zweiräder",
+    "Clothes": "Kleidung",
     "Food": "Lebensmittel",
     "show": "anzeigen",
     "hide": "verstecken",
@@ -16,5 +16,6 @@
     "yes": "Ja",
     "cancel": "Absagen",
     "unlisting-confirm": "Sind Sie sicher, dass Sie auslisten wollen",
-    "contact-owner": "Kontaktiere den Besitzer"
+    "contact-owner": "Kontaktiere den Besitzer",
+    "listing-date": "Auflistungsdatum"
 }

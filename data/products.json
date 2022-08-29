@@ -16,8 +16,14 @@
             "type": "Product",
             "status": "Active",
             "condition": "New",
-            "seller": "DerSeller",
-            "buyer": "DerBuyer",
+            "seller": {
+                "id": 88888888,
+                "displayName": "Yusuf Güneş",
+                "email": "YusufGüneş@stud.itu.edu.tr",
+                "image": "https://149366112.v2.pressablecdn.com/wp-content/uploads/2014/07/m1lead.jpg"
+            },
+            "requestedBuyers": [],
+            "createdAt": "2022-08-23T14:22:01.169Z",
             "geo": {
                 "lat": 41.085562,
                 "lng": 28.985118
@@ -39,8 +45,14 @@
             "type": "Product",
             "status": "Active",
             "condition": "New",
-            "seller": "DerSeller",
-            "buyer": "DerBuyer",
+            "seller": {
+                "id": 88888888,
+                "displayName": "Medine Ateş",
+                "email": "MedineAteşş@stud.itu.edu.tr",
+                "image": "https://thumbs.dreamstime.com/b/christmas-watercolor-alphabet-letter-m-watercolor-letter-monogram-m-watercolor-design-watercolor-letter-poinsettia-christmas-236380093.jpg"
+            },
+            "requestedBuyers": [],
+            "createdAt": "2022-08-20T14:22:01.169Z",
             "geo": {
                 "lat": 41.01203,
                 "lng": 28.955573
@@ -62,8 +74,14 @@
             "type": "Product",
             "status": "Active",
             "condition": "Used",
-            "seller": "DerSeller",
-            "buyer": "DerBuyer",
+            "seller": {
+                "id": 88888888,
+                "displayName": "Sinem Kaya",
+                "email": "SinemKaya@stud.tau.edu.tr",
+                "image": "https://www.random-name-generator.com/images/faces/female-white/42.jpg?ezimgfmt=rs:148x143/rscb1/ng:webp/ngcb1"
+            },
+            "requestedBuyers": [],
+            "createdAt": "2022-07-03T14:22:01.169Z",
             "geo": {
                 "lat": 41.01203,
                 "lng": 28.955573
@@ -85,8 +103,14 @@
             "type": "Product",
             "status": "Active",
             "condition": "New",
-            "seller": "Der Seller",
-            "buyer": "Der Buyer",
+            "seller": {
+                "id": 88888888,
+                "displayName": "Adem Çakir",
+                "email": "AdemÇakir@stud.ytu.edu.tr",
+                "image": "https://www.random-name-generator.com/images/faces/male-white/30.jpg?ezimgfmt=rs:148x143/rscb1/ng:webp/ngcb1"
+            },
+            "requestedBuyers": [],
+            "createdAt": "2022-08-25T14:22:01.169Z",
             "geo": {
                 "lat": 41.085562,
                 "lng": 28.985118
@@ -108,11 +132,17 @@
             "type": "Product",
             "status": "Active",
             "condition": "New",
-            "seller": "DerSeller",
-            "buyer": "Der Buyer",
+            "seller": {
+                "id": 88888888,
+                "displayName": "Hakan Kösea",
+                "email": "HakanKösea@stud.ytu.edu.tr",
+                "image": ""
+            },
+            "requestedBuyers": [],
+            "createdAt": "2022-08-23T14:22:01.169Z",
             "geo": {
-                "lat": 40.362242,
-                "lng": 28.888175
+                "lat": 36.794385,
+                "lng": 34.601735
             }
         },
         {
@@ -131,8 +161,14 @@
             "type": "Product",
             "status": "Active",
             "condition": "New",
-            "seller": "Der Seller",
-            "buyer": "Der Buyer",
+            "seller": {
+                "id": 88888888,
+                "displayName": "Emre Demir",
+                "email": "EmreDemir@stud.ytu.edu.tr",
+                "image": ""
+            },
+            "requestedBuyers": [],
+            "createdAt": "2022-08-21T14:22:01.169Z",
             "geo": {
                 "lat": 41.085562,
                 "lng": 28.985118
@@ -154,8 +190,14 @@
             "type": "Product",
             "status": "Active",
             "condition": "Used",
-            "seller": "Der Seller",
-            "buyer": "Der Buyer",
+            "seller": {
+                "id": 88888888,
+                "displayName": "Adem Çakir",
+                "email": "AdemÇakir@stud.ytu.edu.tr",
+                "image": "https://www.random-name-generator.com/images/faces/male-white/30.jpg?ezimgfmt=rs:148x143/rscb1/ng:webp/ngcb1"
+            },
+            "requestedBuyers": [],
+            "createdAt": "2022-08-18T14:22:01.169Z",
             "geo": {
                 "lat": 40.98871,
                 "lng": 29.097114
@@ -177,8 +219,14 @@
             "type": "Product",
             "status": "Active",
             "condition": "New",
-            "seller": "Derb Seller",
-            "buyer": "Der Buyer",
+            "seller": {
+                "id": 88888888,
+                "displayName": "Adem Çakir",
+                "email": "AdemÇakir@stud.ytu.edu.tr",
+                "image": "https://www.random-name-generator.com/images/faces/male-white/30.jpg?ezimgfmt=rs:148x143/rscb1/ng:webp/ngcb1"
+            },
+            "requestedBuyers": [],
+            "createdAt": "2022-08-23T14:22:01.169Z",
             "geo": {
                 "lat": 36.275556,
                 "lng": 36.188218
@@ -200,8 +248,14 @@
             "type": "Product",
             "status": "Active",
             "condition": "New",
-            "seller": "Der Seller",
-            "buyer": "Der Buyer",
+            "seller": {
+                "id": 88888888,
+                "displayName": "Gisela Haas",
+                "email": "GiselaHaas@stud.tau.edu.tr",
+                "image": "https://www.random-name-generator.com/images/faces/female-white/38.jpg?ezimgfmt=rs:148x143/rscb1/ng:webp/ngcb1"
+            },
+            "requestedBuyers": [],
+            "createdAt": "2022-08-25T14:22:01.169Z",
             "geo": {
                 "lat": 40.88341,
                 "lng": 29.231715
@@ -223,8 +277,14 @@
             "type": "Product",
             "status": "Active",
             "condition": "Used",
-            "seller": "Der Seller ",
-            "buyer": "Der Buyer ",
+            "seller": {
+                "id": 88888888,
+                "displayName": "Jonosch Schröde",
+                "email": "JonoschSchröde@stud.tau.edu.tr",
+                "image": "https://www.random-name-generator.com/images/faces/male-white/21.jpg?ezimgfmt=rs:148x143/rscb1/ng:webp/ngcb1"
+            },
+            "requestedBuyers": [],
+            "createdAt": "2022-08-22T14:22:01.169Z",
             "geo": {
                 "lat": 41.019283,
                 "lng": 28.853814
@@ -246,8 +306,14 @@
             "type": "Product",
             "status": "Active",
             "condition": "New",
-            "seller": "Der Seller ",
-            "buyer": "Der Buyer",
+            "seller": {
+                "id": 88888888,
+                "displayName": "Adem Çakir",
+                "email": "AdemÇakir@stud.ytu.edu.tr",
+                "image": "https://www.random-name-generator.com/images/faces/male-white/30.jpg?ezimgfmt=rs:148x143/rscb1/ng:webp/ngcb1"
+            },
+            "requestedBuyers": [],
+            "createdAt": "2022-08-20T14:22:01.169Z",
             "geo": {
                 "lat": 41.019283,
                 "lng": 28.853814
@@ -269,8 +335,14 @@
             "type": "Product",
             "status": "Active",
             "condition": "Used",
-            "seller": "Der Seller",
-            "buyer": "Der Buyer",
+            "seller": {
+                "id": 88888888,
+                "displayName": "Kemal Yılmaz",
+                "email": "KemalYılmaz@stud.ytu.edu.tr",
+                "image": "https://marketplace.canva.com/EAE6OJ2qP8U/1/0/1600w/canva-gamer-with-glasses-character-twitch-profile-picture-CVfgWIJGgRo.jpg"
+            },
+            "requestedBuyers": [],
+            "createdAt": "2022-08-23T14:22:01.169Z",
             "geo": {
                 "lat": 41.026535,
                 "lng": 28.668298
@@ -292,8 +364,14 @@
             "type": "Product",
             "status": "Active",
             "condition": "New",
-            "seller": "Der Seller",
-            "buyer": "Der Buyer",
+            "seller": {
+                "id": 88888888,
+                "displayName": "Kemal Yılmaz",
+                "email": "KemalYılmaz@stud.ytu.edu.tr",
+                "image": "https://marketplace.canva.com/EAE6OJ2qP8U/1/0/1600w/canva-gamer-with-glasses-character-twitch-profile-picture-CVfgWIJGgRo.jpg"
+            },
+            "requestedBuyers": [],
+            "createdAt": "2022-08-23T14:22:01.169Z",
             "geo": {
                 "lat": 40.978861,
                 "lng": 28.643563
@@ -315,8 +393,14 @@
             "type": "Product",
             "status": "Active",
             "condition": "Used",
-            "seller": "Der Seller",
-            "buyer": "Der Buyer",
+            "seller": {
+                "id": 88888888,
+                "displayName": "Umut Polat",
+                "email": "UmutPolat@stud.ytu.edu.tr",
+                "image": "https://www.random-name-generator.com/images/faces/male-white/37.jpg?ezimgfmt=rs:148x143/rscb1/ng:webp/ngcb1"
+            },
+            "requestedBuyers": [],
+            "createdAt": "2022-08-27T14:22:01.169Z",
             "geo": {
                 "lat": 38.423733,
                 "lng": 27.142826
@@ -338,8 +422,14 @@
             "type": "Product",
             "status": "Active",
             "condition": "Used",
-            "seller": "Der Seller",
-            "buyer": "Der Buyer",
+            "seller": {
+                "id": 88888888,
+                "displayName": "Oğuzhan Özer",
+                "email": "OğuzhanÖzer@stud.ytu.edu.tr",
+                "image": ""
+            },
+            "requestedBuyers": [],
+            "createdAt": "2022-08-23T14:22:01.169Z",
             "geo": {
                 "lat": 38.423733,
                 "lng": 27.142826
@@ -361,8 +451,14 @@
             "type": "Product",
             "status": "Active",
             "condition": "New",
-            "seller": "Der Seller",
-            "buyer": "Der Buyer",
+            "seller": {
+                "id": 88888888,
+                "displayName": "Adem Çakir",
+                "email": "AdemÇakir@stud.ytu.edu.tr",
+                "image": "https://vikingintelligence.com/wp-content/uploads/2021/09/nouser_0.jpg"
+            },
+            "requestedBuyers": [],
+            "createdAt": "2022-08-23T14:22:01.169Z",
             "geo": {
                 "lat": 40.978861,
                 "lng": 28.643563
@@ -384,8 +480,14 @@
             "type": "Product",
             "status": "Active",
             "condition": "New",
-            "seller": "Der Seller",
-            "buyer": "Der Buyer",
+            "seller": {
+                "id": 88888888,
+                "displayName": "Ahmet Yılmaz",
+                "email": "AhmetYılmaz@stud.ytu.edu.tr",
+                "image": "https://www.random-name-generator.com/images/faces/male-white/41.jpg?ezimgfmt=rs:148x143/rscb1/ng:webp/ngcb1"
+            },
+            "requestedBuyers": [],
+            "createdAt": "2022-08-23T14:22:01.169Z",
             "geo": {
                 "lat": 40.978861,
                 "lng": 28.643563
@@ -407,8 +509,14 @@
             "type": "Product",
             "status": "Active",
             "condition": "New",
-            "seller": "Der Seller",
-            "buyer": "Der Buyer",
+            "seller": {
+                "id": 88888888,
+                "displayName": "Songül Özcan ",
+                "email": "SongülÖzcan@stud.ytu.edu.tr",
+                "image": "https://www.random-name-generator.com/images/faces/female-white/21.jpg?ezimgfmt=rs:148x143/rscb1/ng:webp/ngcb1"
+            },
+            "requestedBuyers": [],
+            "createdAt": "2022-08-23T14:22:01.169Z",
             "geo": {
                 "lat": 40.978861,
                 "lng": 28.643563
@@ -430,8 +538,14 @@
             "type": "Product",
             "status": "Active",
             "condition": "New",
-            "seller": "Der Seller",
-            "buyer": "Der Buyer",
+            "seller": {
+                "id": 88888888,
+                "displayName": "Adem Çakir",
+                "email": "AdemÇakir@stud.ytu.edu.tr",
+                "image": "https://www.random-name-generator.com/images/faces/male-white/30.jpg?ezimgfmt=rs:148x143/rscb1/ng:webp/ngcb1"
+            },
+            "requestedBuyers": [],
+            "createdAt": "2022-08-23T14:22:01.169Z",
             "geo": {
                 "lat": 40.978861,
                 "lng": 28.643563
@@ -453,8 +567,14 @@
             "type": "Product",
             "status": "Active",
             "condition": "New",
-            "seller": "Der Seller",
-            "buyer": "Der Buyer",
+            "seller": {
+                "id": 88888888,
+                "displayName": "Emrah Işik",
+                "email": "EmrahIşik@stud.tau.edu.tr",
+                "image": "https://www.random-name-generator.com/images/faces/male-white/18.jpg?ezimgfmt=rs:148x143/rscb1/ng:webp/ngcb1"
+            },
+            "requestedBuyers": [],
+            "createdAt": "2022-08-20T14:22:01.169Z",
             "geo": {
                 "lat": 40.978861,
                 "lng": 28.643563
@@ -476,8 +596,14 @@
             "type": "Product",
             "status": "Active",
             "condition": "New",
-            "seller": "Der Seller",
-            "buyer": "Der Buyer",
+            "seller": {
+                "id": 88888888,
+                "displayName": "Umut Polat",
+                "email": "UmutPolat@stud.ytu.edu.tr",
+                "image": "https://www.random-name-generator.com/images/faces/male-white/37.jpg?ezimgfmt=rs:148x143/rscb1/ng:webp/ngcb1"
+            },
+            "requestedBuyers": [],
+            "createdAt": "2022-08-21T14:22:01.169Z",
             "geo": {
                 "lat": 40.978861,
                 "lng": 28.643563

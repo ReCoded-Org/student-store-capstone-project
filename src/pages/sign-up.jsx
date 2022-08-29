@@ -11,10 +11,16 @@ import {
     BsGoogle,
     BsTwitter,
 } from "react-icons/bs";
+import { toast, ToastContainer } from "react-toastify";
+import { injectStyle } from "react-toastify/dist/inject-style";
 
 import Button from "@/components/button";
 import Input from "@/components/input";
 import Layout from "@/components/layout/Layout";
+
+if (typeof window !== "undefined") {
+    injectStyle();
+}
 
 export default function Signup() {
     const { t } = useTranslation("sign");
@@ -69,18 +75,24 @@ export default function Signup() {
             )
             .then((res) => {
                 if (res.status === 201) {
-                    alert("Your account has been created!");
+                    toast.success(t("your-account-has-been-created"), {
+                        position: toast.POSITION.TOP_CENTER,
+                    });
                     // localStorage.setItem("token", res.headers["token"]);
                     // localStorage.setItem("user", res.headers.user);
                     setTimeout(() => {
                         Router.push("/sign-in");
                     }, 1000);
                 } else if (res.status === 400) {
-                    alert("Invalid credentials");
+                    toast.error(t("invalid-credentials"), {
+                        position: toast.POSITION.TOP_CENTER,
+                    });
                 }
             })
-            .catch((error) => {
-                console.log(error);
+            .catch(() => {
+                toast.error(t("invalid-credentials"), {
+                    position: toast.POSITION.TOP_CENTER,
+                });
             });
     };
 
@@ -260,6 +272,7 @@ export default function Signup() {
                     </div>
                 </div>
             </div>
+            <ToastContainer />
         </Layout>
     );
 }

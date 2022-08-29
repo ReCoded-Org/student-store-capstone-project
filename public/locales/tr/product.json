@@ -1,14 +1,14 @@
 {
     "category": "Kategori",
     "condition": "Durum",
-    "used": "Kullanılmış",
-    "new": "Yeni",
+    "Used": "Kullanılmış",
+    "New": "Yeni",
     "description": "Açıklama",
-    "books": "Kitaplar",
-    "furniture": "Mobilya",
-    "electronics": "Elektronik",
-    "two-wheeler": "İki tekerlekli",
-    "clothes": "Kıyafet",
+    "Books": "Kitaplar",
+    "Furniture": "Mobilya",
+    "Electronics": "Elektronik",
+    "Two-wheeler": "İki tekerlekli",
+    "Clothes": "Kıyafet",
     "Food": "Yemek",
     "show": "göster",
     "hide": "gizle",
@@ -16,5 +16,6 @@
     "yes": "Evet",
     "cancel": "İptal et",
     "unlisting-confirm": "İlanı kaldırmak istediğinize emin misiniz",
-    "contact-owner": "Satıcı ile iletişime geç"
+    "contact-owner": "Satıcı ile iletişime geç",
+    "listing-date": "ilan tarihi"
 }

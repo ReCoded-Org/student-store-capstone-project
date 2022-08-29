@@ -1,6 +1,11 @@
 /* eslint-disable unused-imports/no-unused-vars */
 
-import { GoogleMap, Marker, useJsApiLoader } from "@react-google-maps/api";
+import {
+    CircleF,
+    GoogleMap,
+    MarkerF,
+    useJsApiLoader,
+} from "@react-google-maps/api";
 import React from "react";
 
 const containerStyle = {
@@ -11,24 +16,46 @@ const containerStyle = {
     borderWidth: "2px",
 };
 
-const center = {
-    lat: 41.00824,
-    lng: 28.978359,
+const options = {
+    strokeColor: "#63c9c8",
+    strokeOpacity: 0.8,
+    strokeWeight: 2,
+    fillColor: "#63c9c8",
+    fillOpacity: 0.35,
+    clickable: false,
+    draggable: false,
+    editable: false,
+    visible: true,
+    radius: 8,
+    zIndex: 1,
 };
 
-function Map() {
+function Map({
+    geo = {
+        lat: 41.085562,
+        lng: 28.985118,
+    },
+}) {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    const center = {
+        lat: geo.lat,
+        lng: geo.lng,
+    };
     const { isLoaded } = useJsApiLoader({
         id: "google-map-script",
-        googleMapsApiKey: "AIzaSyAnHNX_kANW6oxjdcDoOs8VVwDAOsbA9ZY",
+        googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAP_KEY,
     });
 
     const [map, setMap] = React.useState(null);
 
-    const onLoad = React.useCallback(function callback(map) {
-        const bounds = new window.google.maps.LatLngBounds(center);
-        map.fitBounds(bounds);
-        setMap(map);
-    }, []);
+    const onLoad = React.useCallback(
+        function callback(map) {
+            const bounds = new window.google.maps.LatLngBounds(center);
+            map.fitBounds(bounds);
+            setMap(map);
+        },
+        [center]
+    );
 
     const onUnmount = React.useCallback(function callback(map) {
         setMap(null);
@@ -42,7 +69,8 @@ function Map() {
             onLoad={onLoad}
             onUnmount={onUnmount}
         >
-            <Marker position={center} />
+            <MarkerF position={center} />
+            <CircleF center={center} options={options} />
         </GoogleMap>
     ) : (
         <></>

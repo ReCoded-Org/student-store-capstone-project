@@ -12,5 +12,8 @@
     "university": "üniversite",
     "confirm-password": "şifreyi Onayla",
     "Sign-up-with": "ile kayıt olun",
-    "already-have-an-account": "zaten hesabınız var mı"
+    "already-have-an-account": "zaten hesabınız var mı",
+    "succesfully-signed-in-redirecting": "Başarıyla giriş yaptınız! Yönlendiriliyorsunuz...",
+    "invalid-credentials": "Geçersiz kimlik bilgileri.",
+    "your-account-has-been-created": "Hesabınız oluşturuldu!"
 }
