@@ -8,9 +8,7 @@ The website is intended for university students in Turkey.
 
 On this website, you can find products; second hand or brand new, or you can provide services or benefit from them.
 
-# Front-End Technologies Used:
-
--   Nextjs, TailwindCSS, i18next, Axios, Husky, Prettier, Eslint, Commitlinter (Conventional Commits), Jest, Git/GitHub, JSON-Server.
+<img width="999" alt="Screen Shot 2022-08-29 at 9 48 51 PM" src="https://user-images.githubusercontent.com/91026643/187276044-66de623c-844c-4cb8-8954-61c3ac2340b9.png">
 
 # Functionalities:
 
