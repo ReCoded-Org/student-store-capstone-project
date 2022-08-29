@@ -327,6 +327,8 @@ function Header({
                                         tabIndex='-1'
                                     >
                                         <div className='right-0 flex flex-col items-center py-1 '>
+                                            <p>{user.displayName}</p>
+                                            <p>{user.name}</p>
                                             <Link href='/listings'>
                                                 <a
                                                     className='flashing block px-4 py-2 text-sm text-lightpurple'

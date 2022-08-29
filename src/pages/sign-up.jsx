@@ -1,6 +1,7 @@
 /* eslint-disable unused-imports/no-unused-vars */
 import { useAuth } from "context/AuthContext";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import React, { useState } from "react";
@@ -11,8 +12,7 @@ import {
     BsGoogle,
     BsTwitter,
 } from "react-icons/bs";
-// import { toast, ToastContainer } from "react-toastify";
-import { ToastContainer } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 import { injectStyle } from "react-toastify/dist/inject-style";
 
 import Button from "@/components/button";
@@ -24,8 +24,10 @@ if (typeof window !== "undefined") {
 }
 
 export default function Signup() {
+    const router = useRouter();
     const { user, signup } = useAuth();
-    // console.log(user);
+    const { userName, setUserName } = useState("Your Name");
+
     const [data, setData] = useState({
         email: "",
         password: "",
@@ -35,26 +37,20 @@ export default function Signup() {
 
         try {
             await signup(data.email, data.password);
+            toast.success(t("your-account-has-been-created"), {
+                position: toast.POSITION.TOP_CENTER,
+            });
+
+            router.push("/");
         } catch (err) {
-            // console.log(err);
+            toast.error(t("invalid-credentials"), {
+                position: toast.POSITION.TOP_CENTER,
+            });
         }
 
         // console.log(data);
     };
     const { t } = useTranslation("sign");
-    const [userSignUp, setUserSignUp] = useState({
-        email: "",
-        password: "",
-        confirmPassword: "",
-        name: "",
-    });
-
-    const handleChange = (event) => {
-        setUserSignUp({
-            ...userSignUp,
-            [event.target.name]: event.target.value,
-        });
-    };
 
     const [showPassword, setShowPassword] = useState(false);
 
@@ -84,8 +80,10 @@ export default function Signup() {
                                 type='text'
                                 name='firstName'
                                 id='Name'
-                                value={userSignUp.name}
-                                onChange={handleChange}
+                                value={userName}
+                                // onChange={(e) => {
+                                //     setUserName(e.target.value);
+                                // }}
                             />
                             <Input
                                 placeholder='e-mail'
@@ -136,8 +134,6 @@ export default function Signup() {
                                     id='password'
                                     name='password'
                                     placeholder={t("password")}
-                                    value={userSignUp.confirmPassword}
-                                    onChange={handleChange}
                                 />
                                 <div className='absolute top-6 right-4 '>
                                     <button

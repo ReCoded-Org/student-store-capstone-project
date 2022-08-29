@@ -13,7 +13,7 @@ import {
     BsGoogle,
     BsTwitter,
 } from "react-icons/bs";
-import { ToastContainer } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 import { injectStyle } from "react-toastify/dist/inject-style";
 
 import Button from "@/components/button";
@@ -45,9 +45,14 @@ export default function SignInPage() {
         // console.log("user:", user);
         try {
             await login(data.email, data.password);
+            toast.success(t("successfully-signed-in-redirecting"), {
+                position: toast.POSITION.TOP_CENTER,
+            });
             router.push("/");
         } catch (err) {
-            // console.log(err);
+            toast.error(t("invalid-credentials"), {
+                position: toast.POSITION.TOP_CENTER,
+            });
         }
     };
 
