@@ -459,7 +459,7 @@ exports[`renders correctly 1`] = `
       >
         <a
           className="text-md mr-2 block rounded-[20px] bg-darkPurple py-2 px-4 text-white hover:bg-purple"
-          href="#"
+          href="/sign-in"
           onClick={[Function]}
           onMouseEnter={[Function]}
         >

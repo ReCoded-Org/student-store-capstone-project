@@ -1,6 +1,7 @@
 /* eslint-disable unused-imports/no-unused-vars */
 //import Link from "next/link";
-import { getAuth, updateProfile } from "firebase/auth";
+import { auth } from "firebase.config";
+import { updateProfile } from "firebase/auth";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import * as React from "react";
@@ -15,7 +16,6 @@ if (typeof window !== "undefined") {
 
 export default function EditProfile() {
     const { t } = useTranslation("profile");
-    const auth = getAuth();
     const router = useRouter();
 
     const { userName, setUserName } = React.useState("Your Name");
