@@ -19,6 +19,8 @@ export default function HomePage({ productsData }) {
     const [minPrice, setMinPrice] = React.useState("");
     const [currentCategory, setCurrentCategory] = React.useState("");
 
+    // const { data: session } = useSession();
+
     return (
         <>
             <Layout
@@ -54,6 +56,13 @@ export default function HomePage({ productsData }) {
             </Layout>
         </>
     );
+
+    // return (
+    //     <>
+    //         Not signed in <br />
+    //         <button onClick={() => signIn()}>Sign in</button>
+    //     </>
+    // );
 }
 
 export const API_URL =

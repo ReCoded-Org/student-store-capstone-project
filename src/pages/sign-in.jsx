@@ -1,7 +1,8 @@
-import axios from "axios";
+/* eslint-disable unused-imports/no-unused-vars */
+import { useAuth } from "context/AuthContext";
 import Image from "next/image";
 import Link from "next/link";
-import Router from "next/router";
+import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useState } from "react";
@@ -29,86 +30,35 @@ if (typeof window !== "undefined") {
 
 export default function SignInPage() {
     const { t } = useTranslation("sign");
+    const [showPassword, setShowPassword] = useState(false);
 
-    const [userSignIn, setUserSignIn] = useState({
+    const router = useRouter();
+    const { user, login } = useAuth();
+    const [data, setData] = useState({
         email: "",
         password: "",
     });
 
-    const handleChange = (e) => {
-        setUserSignIn({
-            ...userSignIn,
-            [e.target.name]: e.target.value,
-        });
-    };
+    const handleLogin = async (e) => {
+        e.preventDefault();
 
-    const [showPassword, setShowPassword] = useState(false);
+        // console.log("user:", user);
+        try {
+            await login(data.email, data.password);
+            toast.success(t("successfully-signed-in-redirecting"), {
+                position: toast.POSITION.TOP_CENTER,
+            });
+            router.push("/");
+        } catch (err) {
+            toast.error(t("invalid-credentials"), {
+                position: toast.POSITION.TOP_CENTER,
+            });
+        }
+    };
 
     const togglePassword = () => {
         setShowPassword(!showPassword);
     };
-
-    const baseURL = "http://students-store.herokuapp.com/api/auth/signin";
-    // const token = localStorage.getItem("token");
-    const handleSubmit = async (e) => {
-        // const config = {
-        //     headers: { Authorization: `Bearer ${token}` },
-        // };
-
-        e.preventDefault();
-
-        axios
-            .post(baseURL, userSignIn, {
-                withCredentials: true,
-                headers: {
-                    "Access-Control-Allow-Credentials": "true",
-                    "Content-Type": "application/json",
-                    // "Access-Control-Allow-Origin": "*",
-                },
-            })
-            .then((res) => {
-                if (res.status === 200) {
-                    toast.success(t("successfully-signed-in-redirecting"), {
-                        position: toast.POSITION.TOP_CENTER,
-                    });
-
-                    setTimeout(() => {
-                        Router.push("/");
-                    }, 1000);
-                } else if (res.status === 401) {
-                    toast.error(t("invalid-credentials"), {
-                        position: toast.POSITION.TOP_CENTER,
-                    });
-                }
-            })
-            .catch(() => {
-                toast.error(t("invalid-credentials"), {
-                    position: toast.POSITION.TOP_CENTER,
-                });
-            });
-    };
-
-    if (!userSignIn) return null;
-
-    //regular fetch w/out axios
-    // const handleSubmit = async (e) => {
-    //     e.preventDefault();
-    //     const response = await fetch(
-    //         "http://students-store.herokuapp.com/api/auth/signin",
-    //         {
-    //             method: "POST",
-    //             headers: {
-    //                 "Content-Type": "application/json",
-    //                 "Access-Control-Allow-Origin": "*",
-    //             },
-    //             body: JSON.stringify({
-    //                 email: userSignIn.email,
-    //                 password: userSignIn.password,
-    //             }),
-    //         }
-    //     );
-    //     const data = await response.json();
-    // };
 
     return (
         <>
@@ -123,13 +73,18 @@ export default function SignInPage() {
                         </p>
 
                         <div className=' flex w-11/12 max-w-sm flex-col items-center lg:max-w-md'>
-                            <form method='post' onSubmit={handleSubmit}>
+                            <form method='post' onSubmit={handleLogin}>
                                 <Input
                                     id='email'
                                     name='email'
-                                    onChange={handleChange}
                                     placeholder='e-mail'
-                                    value={userSignIn.email}
+                                    onChange={(e) =>
+                                        setData({
+                                            ...data,
+                                            email: e.target.value,
+                                        })
+                                    }
+                                    value={data.email}
                                 />
 
                                 <div className='relative h-auto'>
@@ -140,9 +95,14 @@ export default function SignInPage() {
                                         }
                                         id='password'
                                         name='password'
-                                        onChange={handleChange}
                                         placeholder={t("password")}
-                                        value={userSignIn.password}
+                                        onChange={(e) =>
+                                            setData({
+                                                ...data,
+                                                password: e.target.value,
+                                            })
+                                        }
+                                        value={data.password}
                                     />
                                     <div className='absolute top-2.5 right-4 '>
                                         <button
@@ -181,38 +141,7 @@ export default function SignInPage() {
                                         {t("sign-in-with")}
                                     </p>
                                 </div>
-                                <div className='m-1  mb-1 hidden  md:hidden  lg:mb-12 lg:flex lg:flex-row lg:justify-around'>
-                                    <button className=' m-1 flex items-center rounded-3xl border border-[#F26F6F] p-1  text-[#F26F6F]'>
-                                        <BsGoogle
-                                            size={22}
-                                            style={{ padding: "1px" }}
-                                            color='#F26F6F'
-                                        />
-                                        <p className='mx-2 text-sm md:mx-3'>
-                                            Google
-                                        </p>
-                                    </button>
-                                    <button className='color-darkPurple m-1  flex items-center rounded-3xl border border-darkPurple p-1 text-darkPurple'>
-                                        <BsFacebook
-                                            size={22}
-                                            style={{ padding: "1px" }}
-                                            color='#585785'
-                                        />
-                                        <p className='mx-2 text-sm md:mx-3'>
-                                            Facebook
-                                        </p>
-                                    </button>
-                                    <button className=' m-1 flex justify-around rounded-3xl border border-[#1DA1F2] bg-transparent p-1 text-[#1DA1F2]'>
-                                        <BsTwitter
-                                            size={22}
-                                            style={{ padding: "1px" }}
-                                            color='#1DA1F2'
-                                        />
-                                        <p className='mx-2 text-sm md:mx-3'>
-                                            Twitter
-                                        </p>
-                                    </button>
-                                </div>
+
                                 <div className='hidden items-center md:hidden lg:mb-8 lg:flex lg:flex-col'>
                                     <p className=' text-md mb-3  bg-transparent text-darkpurple'>
                                         {t("don't-have-an-account")}?
@@ -227,6 +156,47 @@ export default function SignInPage() {
                                     </Link>
                                 </div>
                             </form>
+                            <div className='m-1  mb-1 hidden  md:hidden  lg:mb-12 lg:flex lg:flex-row lg:justify-around'>
+                                <button className=' m-1 flex items-center rounded-3xl border border-[#F26F6F] p-1  text-[#F26F6F]'>
+                                    <BsGoogle
+                                        size={22}
+                                        style={{ padding: "1px" }}
+                                        color='#F26F6F'
+                                    />
+                                    <p className='mx-2 text-sm md:mx-3'>
+                                        Google
+                                    </p>
+                                </button>
+
+                                <button
+                                    // onClick={(e) => {
+                                    //     e.preventDefault();
+                                    //     signIn("github");
+                                    // }}
+                                    className='color-darkPurple m-1  flex items-center rounded-3xl border border-darkPurple p-1 text-darkPurple'
+                                >
+                                    <BsFacebook
+                                        size={22}
+                                        style={{ padding: "1px" }}
+                                        color='#585785'
+                                    />
+
+                                    <p className='mx-2 text-sm md:mx-3'>
+                                        Facebook
+                                    </p>
+                                </button>
+
+                                <button className=' m-1 flex justify-around rounded-3xl border border-[#1DA1F2] bg-transparent p-1 text-[#1DA1F2]'>
+                                    <BsTwitter
+                                        size={22}
+                                        style={{ padding: "1px" }}
+                                        color='#1DA1F2'
+                                    />
+                                    <p className='mx-2 text-sm md:mx-3'>
+                                        Twitter
+                                    </p>
+                                </button>
+                            </div>
                         </div>
                     </div>
 
@@ -267,6 +237,7 @@ export default function SignInPage() {
                                 />
                                 <p className='mx-2 text-sm md:mx-3'>Google</p>
                             </button>
+
                             <button className='color-darkPurple m-1  flex items-center rounded-3xl border border-darkPurple p-1 text-darkPurple'>
                                 <BsFacebook
                                     size={22}
@@ -275,6 +246,7 @@ export default function SignInPage() {
                                 />
                                 <p className='mx-2 text-sm md:mx-3'>Facebook</p>
                             </button>
+
                             <button className=' m-1 flex justify-around rounded-3xl border border-[#1DA1F2] bg-transparent p-1 text-[#1DA1F2]'>
                                 <BsTwitter
                                     size={22}
