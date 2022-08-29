@@ -132,6 +132,7 @@ exports[`renders correctly 1`] = `
     >
       Rifik Haspolat
     </p>
+    Rifik Haspolat
     <p
       className="text-sm text-purple xs:text-sm"
     >
@@ -140,7 +141,7 @@ exports[`renders correctly 1`] = `
       >
         E-mail: 
       </span>
-      rifik@haspolat.com
+      YourEmail@gmail.com
     </p>
     <p
       className="text-sm text-purple"

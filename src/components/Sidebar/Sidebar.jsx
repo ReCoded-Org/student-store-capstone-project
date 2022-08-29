@@ -1,3 +1,4 @@
+import { useAuth } from "context/AuthContext";
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
@@ -8,6 +9,7 @@ import rifik from "../../../public/images/rifik.png";
 function Sidebar({ pageName }) {
     const { t } = useTranslation("profile");
     let sidebarClasses = "pb-9 xs:pb-2 sm:pb-4";
+    const { user } = useAuth();
 
     return (
         <aside
@@ -21,11 +23,12 @@ function Sidebar({ pageName }) {
             </div>
             <div className='flex flex-col justify-evenly xs:mb-2 xs:ml-2 xs:text-left sm:mb-5 sm:text-center'>
                 <p className='mt-2 text-xl font-semibold text-purple xs:text-sm sm:mt-0'>
-                    Rifik Haspolat
+                    {user ? user.displayName : "Rifik Haspolat"}
                 </p>
+                {user ? user.Image : "Rifik Haspolat"}
                 <p className='text-sm text-purple xs:text-sm'>
                     <span className='font-semibold'>E-mail: </span>
-                    rifik@haspolat.com
+                    {user ? user.email : "YourEmail@gmail.com"}
                 </p>
                 <p className='text-sm text-purple'>
                     <span className='font-semibold'>Location:</span>
