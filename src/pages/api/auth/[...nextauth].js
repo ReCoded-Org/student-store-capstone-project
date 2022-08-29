@@ -1,19 +1,28 @@
-import NextAuth from "next-auth";
-import GoogleProvider from "next-auth/providers/google";
+// import NextAuth from "next-auth";
+// import GitHubProvider from "next-auth/providers/github";
 
-export default NextAuth({
-    providers: [
-        GoogleProvider({
-            clientId: process.env.GOOGLE_CLIENT_ID,
-            clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-        }),
-    ],
-    callbacks: {
-        async signIn({ account, profile }) {
-            if (account.provider === "google") {
-                return profile.email_verified && profile.email.endsWith(".edu");
-            }
-            return true;
-        },
-    },
-});
+// export default NextAuth({
+//     providers: [
+//         GitHubProvider({
+//             clientId: process.env.GITHUB_ID,
+//             clientSecret: process.env.GITHUB_SECRET,
+//             profile(profile) {
+//                 return {
+//                     id: profile.id.toString(),
+//                     name: profile.name || profile.login,
+//                     email: profile.email,
+//                     image: profile.avatar_url,
+//                 };
+//             },
+//         }),
+//     ],
+//     callbacks: {
+//         async jwt({ token }) {
+//             token.userRole = "admin";
+//             return token;
+//         },
+//     },
+//     pages: {
+//         signIn: "/sign-in",
+//     },
+// });
