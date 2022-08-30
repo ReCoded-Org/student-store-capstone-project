@@ -22,7 +22,8 @@ function Sidebar({ pageName }) {
                 <Image src={rifik} alt='rifik' layout='intrinsic' />
             </div>
             <div className='flex flex-col justify-evenly xs:mb-2 xs:ml-2 xs:text-left sm:mb-5 sm:text-center'>
-                <p className='mt-2 text-xl font-semibold text-purple xs:text-sm sm:mt-0'>
+                <p className='mt-2 text-xl text-purple xs:text-sm sm:mt-0'>
+                    <span className='font-semibold'>Name: </span>
                     {user ? user.displayName : "Rifik Haspolat"}
                 </p>
                 {user ? user.Image : "Rifik Haspolat"}
