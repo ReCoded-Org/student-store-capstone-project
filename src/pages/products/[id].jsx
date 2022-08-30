@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 
+import { useAuth } from "context/AuthContext";
 import Router from "next/router";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
@@ -12,6 +13,7 @@ import Map from "@/components/map";
 
 const Details = ({ singleProduct }) => {
     const { t } = useTranslation("product");
+    const { user } = useAuth();
 
     function popupImage(event) {
         document.querySelector(".popup-image").style.display = "block";
@@ -220,14 +222,18 @@ const Details = ({ singleProduct }) => {
                                     </h2>
                                 </div>
                             </div>
-                            <div className='grid justify-center xxs:pt-4 lg:pt-2'>
-                                <Button
-                                    buttonStyle='orangeSignUp'
-                                    type='button'
-                                    text={t("unlist")}
-                                    handleClick={popupWindow}
-                                />
-                            </div>
+                            {user.email === singleProduct.seller.email ? (
+                                <div className='grid justify-center xxs:pt-4 lg:pt-2'>
+                                    <Button
+                                        buttonStyle='orangeSignUp'
+                                        type='button'
+                                        text={t("unlist")}
+                                        handleClick={popupWindow}
+                                    />
+                                </div>
+                            ) : (
+                                ""
+                            )}
                         </div>
                     </div>
                 </div>
