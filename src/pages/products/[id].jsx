@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 
+import Router from "next/router";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import React from "react";
@@ -37,6 +38,22 @@ const Details = ({ singleProduct }) => {
     function showOwner() {
         document.getElementById("user_info").style.display = "grid";
     }
+
+    const unlist = async () => {
+        const response = await fetch(
+            `http://localhost:3001/products/${singleProduct.id}`,
+            {
+                method: "PATCH",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ status: "Inactive" }),
+            }
+        );
+        document.querySelector(".popup-window").style.display = "none";
+        Router.push("/");
+        return response.json();
+    };
 
     return (
         <Layout>
@@ -228,6 +245,7 @@ const Details = ({ singleProduct }) => {
                                 buttonStyle='orangeSignUp'
                                 type='button'
                                 text={t("yes")}
+                                handleClick={unlist}
                             />
                         </div>
                         <div>
