@@ -327,8 +327,12 @@ function Header({
                                         tabIndex='-1'
                                     >
                                         <div className='right-0 flex flex-col items-center py-1 '>
-                                            <p>{user.displayName}</p>
-                                            <p>{user.name}</p>
+                                            <div className='w-full  px-1'>
+                                                <p className='border-b-[1px] border-darkPurple text-center text-darkPurple'>
+                                                    {user.displayName}
+                                                </p>
+                                            </div>
+
                                             <Link href='/listings'>
                                                 <a
                                                     className='flashing block px-4 py-2 text-sm text-lightpurple'
@@ -369,7 +373,7 @@ function Header({
                                                 onClick={() => {
                                                     logout();
                                                     toast.success(
-                                                        t("logout-succes"),
+                                                        t("logout-success"),
                                                         {
                                                             position:
                                                                 toast.POSITION

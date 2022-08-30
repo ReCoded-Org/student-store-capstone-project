@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
             </Head>
 
             <AuthContextProvider>
-                <Component {...pageProps} />;
+                <Component {...pageProps} />
             </AuthContextProvider>
         </>
     );

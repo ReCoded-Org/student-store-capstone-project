@@ -114,7 +114,7 @@ const Details = ({ singleProduct }) => {
                                 </div>
                                 <div className='grid h-fit rounded-full '>
                                     <h1 className='text-end font-bold text-orange xxs:text-2xl sm:text-3xl'>
-                                        {singleProduct.price}tl
+                                        {singleProduct.price}TL
                                     </h1>
                                 </div>
                             </div>
