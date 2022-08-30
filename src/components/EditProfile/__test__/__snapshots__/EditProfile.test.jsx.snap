@@ -18,8 +18,8 @@ exports[`renders correctly 1`] = `
     <input
       className=" inputtabfont my-3.5 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-center text-xl text-hadrisblue placeholder-hadrisblue focus:border-blue-500 focus:ring-purple"
       id="email"
-      placeholder="email"
-      required={true}
+      name="email"
+      placeholder="Enter Email to Reset Your password"
       type="email"
     />
     <input
@@ -58,6 +58,15 @@ exports[`renders correctly 1`] = `
         type="button"
       >
         save-changes
+      </button>
+    </a>
+    <a>
+      <button
+        className="h-12 w-56 lg:h-14 lg:w-64 m-1 p-1 px-2 hover:bg-purple hover:shadow-lg rounded-lg border-2 bg-pumpkin font-md text-[17px] text-white shadow-sm"
+        onClick={[Function]}
+        type="button"
+      >
+        reset password
       </button>
     </a>
     <div
