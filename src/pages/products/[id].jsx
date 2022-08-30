@@ -4,6 +4,7 @@ import Router from "next/router";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import React from "react";
+import { toast, ToastContainer } from "react-toastify";
 
 import Button from "@/components/button";
 import Layout from "@/components/layout/Layout";
@@ -51,7 +52,12 @@ const Details = ({ singleProduct }) => {
             }
         );
         document.querySelector(".popup-window").style.display = "none";
-        Router.push("/");
+        toast.success(t("removed-successfully"), {
+            position: toast.POSITION.TOP_CENTER,
+        });
+        setTimeout(() => {
+            Router.push("/");
+        }, 3000);
         return response.json();
     };
 
@@ -259,6 +265,44 @@ const Details = ({ singleProduct }) => {
                     </div>
                 </div>
             </div>
+            <style>{`
+      .hideMenuNav {
+        display: none;
+      }
+      .showMenuNav {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background: white;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .showLanguage {
+        display: block;
+        width: 100%;
+        height: auto;
+
+        }
+        .hideLanguage {
+            display: none;
+        }
+        .showUserMenu {
+            display: block;
+            width: 20vh;
+            height: auto;
+            text-align: start;
+        }
+        .hideUserMenu {
+            display: none;
+        }
+      `}</style>
+            <ToastContainer />
         </Layout>
     );
 };
