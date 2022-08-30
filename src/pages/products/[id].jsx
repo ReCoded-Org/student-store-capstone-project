@@ -40,7 +40,7 @@ const Details = ({ singleProduct }) => {
 
     return (
         <Layout>
-            <div className='bg-clay p-10'>
+            <div className='bg-clay p-10 '>
                 <div className='grid md:gap-2 lg:grid-cols-2'>
                     {/* product photos & info */}
                     <div className='grid gap-3 xxs:mb-0 md:grid-flow-row lg:mb-0'>
@@ -50,7 +50,7 @@ const Details = ({ singleProduct }) => {
                             <img
                                 src={singleProduct.coverImage}
                                 alt={singleProduct.title}
-                                className='zoom flashing max-h-[25rem] w-[32rem] rounded-xl shadow-xl hover:cursor-pointer'
+                                className='zoom flashing max-h-[25rem] w-[32rem] rounded-xl object-cover shadow-xl hover:cursor-pointer'
                                 onClick={popupImage}
                             />
                         </div>
@@ -81,7 +81,7 @@ const Details = ({ singleProduct }) => {
                                         key={index}
                                         src={image}
                                         alt={singleProduct.title}
-                                        className='zoom flashing max-h-[7rem] w-[9rem] rounded-xl shadow-xl hover:cursor-pointer lg:h-[7rem]'
+                                        className='zoom flashing max-h-[7rem] w-[9rem] rounded-xl object-cover shadow-xl hover:cursor-pointer lg:h-[7rem]'
                                         onClick={popupImage}
                                     />
                                 );
@@ -94,9 +94,9 @@ const Details = ({ singleProduct }) => {
                             {/* Headers */}
                             <div className='grid grid-cols-3 pb-6'>
                                 <div className='col-span-2'>
-                                    <h1 className='brush w-fit text-left font-bold text-purple xxs:text-2xl sm:text-3xl'>
+                                    <h2 className='brush mb-6 w-fit animate-none text-left font-Poppins font-bold text-purple xxs:text-2xl sm:text-3xl md:text-4xl'>
                                         {singleProduct.title}
-                                    </h1>
+                                    </h2>
                                     <h2 className='text-darkPurple'>
                                         <b>{t("category")}:</b>{" "}
                                         {t(`${singleProduct.category}`)}
@@ -113,8 +113,8 @@ const Details = ({ singleProduct }) => {
                                     </h2>
                                 </div>
                                 <div className='grid h-fit rounded-full '>
-                                    <h1 className='text-end font-bold text-orange xxs:text-2xl sm:text-3xl'>
-                                        {singleProduct.price}tl
+                                    <h1 className='text-end font-Poppins font-bold text-orange xxs:text-2xl sm:text-3xl md:text-4xl'>
+                                        {singleProduct.price} ₺
                                     </h1>
                                 </div>
                             </div>
@@ -139,7 +139,7 @@ const Details = ({ singleProduct }) => {
                                     onClick={() => {
                                         showOwner();
                                     }}
-                                    className='w-fit pt-1 font-bold text-extraDarkPurple underline hover:cursor-pointer'
+                                    className='m-auto mt-4 w-fit pt-1 font-bold text-extraDarkPurple underline hover:cursor-pointer'
                                 >
                                     {t("contact-owner")}
                                 </h2>
@@ -244,11 +244,11 @@ const Details = ({ singleProduct }) => {
         </Layout>
     );
 };
-
+export const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://0.0.0.0:3001";
 export async function getStaticProps(context) {
     const id = context.params.id;
     const res = await fetch(
-        `http://localhost:3001/products/${id.substring(0, id.indexOf("-"))}`
+        `${API_URL}/products/${id.substring(0, id.indexOf("-"))}`
     );
     const singleProduct = await res.json();
     const locale = context.locale;
@@ -267,7 +267,7 @@ export async function getStaticProps(context) {
 }
 
 export const getStaticPaths = async ({ locales }) => {
-    const res = await fetch("http://localhost:3001/products");
+    const res = await fetch(API_URL + "/products");
     const productsData = await res.json();
 
     const paths = productsData.flatMap((product) => {
