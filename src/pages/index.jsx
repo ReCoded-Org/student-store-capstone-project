@@ -19,6 +19,8 @@ export default function HomePage({ productsData }) {
     const [minPrice, setMinPrice] = React.useState("");
     const [currentCategory, setCurrentCategory] = React.useState("");
 
+    // const { data: session } = useSession();
+
     return (
         <>
             <Layout
@@ -54,9 +56,17 @@ export default function HomePage({ productsData }) {
             </Layout>
         </>
     );
+
+    // return (
+    //     <>
+    //         Not signed in <br />
+    //         <button onClick={() => signIn()}>Sign in</button>
+    //     </>
+    // );
 }
 
-export const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://0.0.0.0:3001";
+export const API_URL =
+    process.env.NEXT_PUBLIC_API_URL || "http://localhost:3001";
 
 export async function getStaticProps({ locale }) {
     const res = await fetch(API_URL + "/products");

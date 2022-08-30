@@ -1,8 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 
+import { useAuth } from "context/AuthContext";
+import Router from "next/router";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import React from "react";
+import { toast, ToastContainer } from "react-toastify";
 
 import Button from "@/components/button";
 import Layout from "@/components/layout/Layout";
@@ -10,6 +13,7 @@ import Map from "@/components/map";
 
 const Details = ({ singleProduct }) => {
     const { t } = useTranslation("product");
+    const { user } = useAuth();
 
     function popupImage(event) {
         document.querySelector(".popup-image").style.display = "block";
@@ -37,6 +41,27 @@ const Details = ({ singleProduct }) => {
     function showOwner() {
         document.getElementById("user_info").style.display = "grid";
     }
+
+    const unlist = async () => {
+        const response = await fetch(
+            `http://localhost:3001/products/${singleProduct.id}`,
+            {
+                method: "PATCH",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ status: "Inactive" }),
+            }
+        );
+        document.querySelector(".popup-window").style.display = "none";
+        toast.success(t("removed-successfully"), {
+            position: toast.POSITION.TOP_CENTER,
+        });
+        setTimeout(() => {
+            Router.push("/");
+        }, 3000);
+        return response.json();
+    };
 
     return (
         <Layout>
@@ -197,14 +222,18 @@ const Details = ({ singleProduct }) => {
                                     </h2>
                                 </div>
                             </div>
-                            <div className='grid justify-center xxs:pt-4 lg:pt-2'>
-                                <Button
-                                    buttonStyle='orangeSignUp'
-                                    type='button'
-                                    text={t("unlist")}
-                                    handleClick={popupWindow}
-                                />
-                            </div>
+                            {user.email === singleProduct.seller.email ? (
+                                <div className='grid justify-center xxs:pt-4 lg:pt-2'>
+                                    <Button
+                                        buttonStyle='orangeSignUp'
+                                        type='button'
+                                        text={t("unlist")}
+                                        handleClick={popupWindow}
+                                    />
+                                </div>
+                            ) : (
+                                ""
+                            )}
                         </div>
                     </div>
                 </div>
@@ -228,6 +257,7 @@ const Details = ({ singleProduct }) => {
                                 buttonStyle='orangeSignUp'
                                 type='button'
                                 text={t("yes")}
+                                handleClick={unlist}
                             />
                         </div>
                         <div>
@@ -241,6 +271,44 @@ const Details = ({ singleProduct }) => {
                     </div>
                 </div>
             </div>
+            <style>{`
+      .hideMenuNav {
+        display: none;
+      }
+      .showMenuNav {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background: white;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .showLanguage {
+        display: block;
+        width: 100%;
+        height: auto;
+
+        }
+        .hideLanguage {
+            display: none;
+        }
+        .showUserMenu {
+            display: block;
+            width: 20vh;
+            height: auto;
+            text-align: start;
+        }
+        .hideUserMenu {
+            display: none;
+        }
+      `}</style>
+            <ToastContainer />
         </Layout>
     );
 };
