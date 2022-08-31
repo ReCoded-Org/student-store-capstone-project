@@ -222,7 +222,7 @@ const Details = ({ singleProduct }) => {
                                     </h2>
                                 </div>
                             </div>
-                            {user.email === singleProduct.seller.email ? (
+                            {user?.email === singleProduct.seller.email ? (
                                 <div className='grid justify-center xxs:pt-4 lg:pt-2'>
                                     <Button
                                         buttonStyle='orangeSignUp'
