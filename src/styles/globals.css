@@ -8,7 +8,7 @@
     font-weight: 800;
 }
 .brush {
-    background-image: url("../../public/images/highlight.png");
+    background-image: url("/images/highlight.png");
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
@@ -99,14 +99,14 @@
 
 /* for signup page */
 .signup-container {
-    background: url("../../public/images/signup-bg.png");
+    background: url("/images/signup-bg.png");
     background-size: cover;
 }
 .signup-imgs {
     margin-top: 4rem;
     margin-left: 3rem;
     opacity: 0.9;
-    background: url("../../public/images/hands.png");
+    background: url("/images/hands.png");
     background-size: 600px;
     background-repeat: no-repeat;
 }
@@ -116,7 +116,7 @@
     }
     .inputs {
         width: 100%;
-        background: url("../../public/images/signup-bg.png");
+        background: url("/images/signup-bg.png");
         background-size: cover;
     }
 }
@@ -181,13 +181,13 @@
 }
 
 .activeLink {
-    background-image: url("../../public/images/highlight1.png");
+    background-image: url("/images/highlight1.png");
     background-repeat: no-repeat;
     background-position: center;
 }
 /*for donation page*/
 .donationbrush {
-    background-image: url("../../public/images/brushh.png");
+    background-image: url("/images/brushh.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -233,7 +233,7 @@
 }
 
 .brush {
-    background-image: url("../../public/images/highlight.png");
+    background-image: url("/images/highlight.png");
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
