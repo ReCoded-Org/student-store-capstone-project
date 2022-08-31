@@ -312,7 +312,7 @@ const Details = ({ singleProduct }) => {
         </Layout>
     );
 };
-export const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://0.0.0.0:3001";
+export const API_URL = "https://fakeapibecauseitbrokedown.herokuapp.com";
 export async function getStaticProps(context) {
     const id = context.params.id;
     const res = await fetch(

@@ -65,8 +65,7 @@ export default function HomePage({ productsData }) {
     // );
 }
 
-export const API_URL =
-    process.env.NEXT_PUBLIC_API_URL || "http://localhost:3001";
+export const API_URL = "https://fakeapibecauseitbrokedown.herokuapp.com";
 
 export async function getStaticProps({ locale }) {
     const res = await fetch(API_URL + "/products");
