@@ -22,20 +22,6 @@ exports[`renders correctly 1`] = `
       placeholder="Enter Email to Reset Your password"
       type="email"
     />
-    <input
-      className=" inputtabfont my-3.5 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-center text-xl text-hadrisblue placeholder-hadrisblue focus:border-blue-500 focus:ring-purple"
-      id="password"
-      placeholder="password"
-      required={true}
-      type="password"
-    />
-    <input
-      className=" inputtabfont my-3.5 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-center text-xl text-hadrisblue placeholder-hadrisblue focus:border-blue-500 focus:ring-purple"
-      id="password"
-      placeholder="confirm-new-password"
-      required={true}
-      type="password"
-    />
     <div
       className="flex h-48 items-stretch"
     >

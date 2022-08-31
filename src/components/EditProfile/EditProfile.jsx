@@ -38,9 +38,18 @@ export default function EditProfile() {
             .catch(() => {});
     };
 
-    const resetUserPassword = async () => {
-        await resetPassword(emailRef.current.value);
-        console.log("check your inbox for futher instructions");
+    const resetUserPassword = async (event) => {
+        event.preventDefault();
+
+        await resetPassword(emailRef.current.value)
+            .then(() => {
+                toast.success(
+                    t(
+                        "Check your inbox we Sent you a link to reset your password"
+                    ) + "!"
+                );
+            })
+            .catch(() => {});
     };
 
     return (
@@ -70,11 +79,6 @@ export default function EditProfile() {
                     ref={emailRef}
                 />
 
-                <Input type='password' placeholder={t("password")} />
-                <Input
-                    type='password'
-                    placeholder={t("confirm-new-password")}
-                />
                 <div className='flex h-48 items-stretch'>
                     <Input type='text' placeholder={t("address")} />
                 </div>
@@ -93,7 +97,7 @@ export default function EditProfile() {
                     <Button
                         buttonStyle='saveChanges'
                         type='button'
-                        text={t("reset password")}
+                        text='reset password'
                         handleClick={resetUserPassword}
                     />
                 </a>
