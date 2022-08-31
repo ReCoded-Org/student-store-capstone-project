@@ -119,7 +119,7 @@ const Details = ({ singleProduct }) => {
                             {/* Headers */}
                             <div className='grid grid-cols-3 pb-6'>
                                 <div className='col-span-2'>
-                                    <h2 className='brush mb-6 w-fit animate-none text-left font-Poppins font-bold text-purple xxs:text-2xl sm:text-3xl md:text-4xl'>
+                                    <h2 className='brush mb-6 w-fit animate-none text-left font-Poppins font-bold text-purple xxs:text-2xl sm:text-3xl'>
                                         {singleProduct.title}
                                     </h2>
                                     <h2 className='text-darkPurple'>
@@ -138,7 +138,7 @@ const Details = ({ singleProduct }) => {
                                     </h2>
                                 </div>
                                 <div className='grid h-fit rounded-full '>
-                                    <h1 className='text-end font-Poppins font-bold text-orange xxs:text-2xl sm:text-3xl md:text-4xl'>
+                                    <h1 className='text-end font-Poppins font-bold text-orange xxs:text-2xl sm:text-3xl'>
                                         {singleProduct.price} ₺
                                     </h1>
                                 </div>
